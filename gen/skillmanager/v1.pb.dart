@@ -8,14 +8,15 @@
 // ignore_for_file: constant_identifier_names
 // ignore_for_file: curly_braces_in_flow_control_structures
 // ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_relative_imports
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:async' as $async;
 import 'dart:core' as $core;
 
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
-import 'package:protobuf/well_known_types/google/protobuf/empty.pb.dart' as $0;
+
+import '../google/protobuf/empty.pb.dart' as $0;
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
@@ -49,7 +50,8 @@ class RegisterSkillRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  RegisterSkillRequest clone() => deepCopy();
+  RegisterSkillRequest clone() =>
+      RegisterSkillRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RegisterSkillRequest copyWith(void Function(RegisterSkillRequest) updates) =>
       super.copyWith((message) => updates(message as RegisterSkillRequest))
@@ -62,6 +64,8 @@ class RegisterSkillRequest extends $pb.GeneratedMessage {
   static RegisterSkillRequest create() => RegisterSkillRequest._();
   @$core.override
   RegisterSkillRequest createEmptyInstance() => create();
+  static $pb.PbList<RegisterSkillRequest> createRepeated() =>
+      $pb.PbList<RegisterSkillRequest>();
   @$core.pragma('dart2js:noInline')
   static RegisterSkillRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<RegisterSkillRequest>(create);
@@ -140,7 +144,7 @@ class SkillInfo extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  SkillInfo clone() => deepCopy();
+  SkillInfo clone() => SkillInfo()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SkillInfo copyWith(void Function(SkillInfo) updates) =>
       super.copyWith((message) => updates(message as SkillInfo)) as SkillInfo;
@@ -152,6 +156,7 @@ class SkillInfo extends $pb.GeneratedMessage {
   static SkillInfo create() => SkillInfo._();
   @$core.override
   SkillInfo createEmptyInstance() => create();
+  static $pb.PbList<SkillInfo> createRepeated() => $pb.PbList<SkillInfo>();
   @$core.pragma('dart2js:noInline')
   static SkillInfo getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SkillInfo>(create);
@@ -276,7 +281,8 @@ class RegisterSkillResponse extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  RegisterSkillResponse clone() => deepCopy();
+  RegisterSkillResponse clone() =>
+      RegisterSkillResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RegisterSkillResponse copyWith(
           void Function(RegisterSkillResponse) updates) =>
@@ -290,6 +296,8 @@ class RegisterSkillResponse extends $pb.GeneratedMessage {
   static RegisterSkillResponse create() => RegisterSkillResponse._();
   @$core.override
   RegisterSkillResponse createEmptyInstance() => create();
+  static $pb.PbList<RegisterSkillResponse> createRepeated() =>
+      $pb.PbList<RegisterSkillResponse>();
   @$core.pragma('dart2js:noInline')
   static RegisterSkillResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<RegisterSkillResponse>(create);
@@ -334,7 +342,7 @@ class UpdateSkillRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UpdateSkillRequest clone() => deepCopy();
+  UpdateSkillRequest clone() => UpdateSkillRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UpdateSkillRequest copyWith(void Function(UpdateSkillRequest) updates) =>
       super.copyWith((message) => updates(message as UpdateSkillRequest))
@@ -347,6 +355,8 @@ class UpdateSkillRequest extends $pb.GeneratedMessage {
   static UpdateSkillRequest create() => UpdateSkillRequest._();
   @$core.override
   UpdateSkillRequest createEmptyInstance() => create();
+  static $pb.PbList<UpdateSkillRequest> createRepeated() =>
+      $pb.PbList<UpdateSkillRequest>();
   @$core.pragma('dart2js:noInline')
   static UpdateSkillRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<UpdateSkillRequest>(create);
@@ -390,7 +400,7 @@ class UpdateSkillResponse extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UpdateSkillResponse clone() => deepCopy();
+  UpdateSkillResponse clone() => UpdateSkillResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UpdateSkillResponse copyWith(void Function(UpdateSkillResponse) updates) =>
       super.copyWith((message) => updates(message as UpdateSkillResponse))
@@ -403,6 +413,8 @@ class UpdateSkillResponse extends $pb.GeneratedMessage {
   static UpdateSkillResponse create() => UpdateSkillResponse._();
   @$core.override
   UpdateSkillResponse createEmptyInstance() => create();
+  static $pb.PbList<UpdateSkillResponse> createRepeated() =>
+      $pb.PbList<UpdateSkillResponse>();
   @$core.pragma('dart2js:noInline')
   static UpdateSkillResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<UpdateSkillResponse>(create);
@@ -447,7 +459,7 @@ class DeleteSkillRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DeleteSkillRequest clone() => deepCopy();
+  DeleteSkillRequest clone() => DeleteSkillRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DeleteSkillRequest copyWith(void Function(DeleteSkillRequest) updates) =>
       super.copyWith((message) => updates(message as DeleteSkillRequest))
@@ -460,6 +472,8 @@ class DeleteSkillRequest extends $pb.GeneratedMessage {
   static DeleteSkillRequest create() => DeleteSkillRequest._();
   @$core.override
   DeleteSkillRequest createEmptyInstance() => create();
+  static $pb.PbList<DeleteSkillRequest> createRepeated() =>
+      $pb.PbList<DeleteSkillRequest>();
   @$core.pragma('dart2js:noInline')
   static DeleteSkillRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<DeleteSkillRequest>(create);
@@ -495,7 +509,7 @@ class DeleteSkillResponse extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DeleteSkillResponse clone() => deepCopy();
+  DeleteSkillResponse clone() => DeleteSkillResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DeleteSkillResponse copyWith(void Function(DeleteSkillResponse) updates) =>
       super.copyWith((message) => updates(message as DeleteSkillResponse))
@@ -508,6 +522,8 @@ class DeleteSkillResponse extends $pb.GeneratedMessage {
   static DeleteSkillResponse create() => DeleteSkillResponse._();
   @$core.override
   DeleteSkillResponse createEmptyInstance() => create();
+  static $pb.PbList<DeleteSkillResponse> createRepeated() =>
+      $pb.PbList<DeleteSkillResponse>();
   @$core.pragma('dart2js:noInline')
   static DeleteSkillResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<DeleteSkillResponse>(create);
@@ -534,7 +550,7 @@ class ListSkillsRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListSkillsRequest clone() => deepCopy();
+  ListSkillsRequest clone() => ListSkillsRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListSkillsRequest copyWith(void Function(ListSkillsRequest) updates) =>
       super.copyWith((message) => updates(message as ListSkillsRequest))
@@ -547,6 +563,8 @@ class ListSkillsRequest extends $pb.GeneratedMessage {
   static ListSkillsRequest create() => ListSkillsRequest._();
   @$core.override
   ListSkillsRequest createEmptyInstance() => create();
+  static $pb.PbList<ListSkillsRequest> createRepeated() =>
+      $pb.PbList<ListSkillsRequest>();
   @$core.pragma('dart2js:noInline')
   static ListSkillsRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ListSkillsRequest>(create);
@@ -576,12 +594,12 @@ class ListSkillsResponse extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'skillmanager.v1'),
       createEmptyInstance: create)
-    ..pPM<SkillInfo>(1, _omitFieldNames ? '' : 'skills',
+    ..pc<SkillInfo>(1, _omitFieldNames ? '' : 'skills', $pb.PbFieldType.PM,
         subBuilder: SkillInfo.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListSkillsResponse clone() => deepCopy();
+  ListSkillsResponse clone() => ListSkillsResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListSkillsResponse copyWith(void Function(ListSkillsResponse) updates) =>
       super.copyWith((message) => updates(message as ListSkillsResponse))
@@ -594,6 +612,8 @@ class ListSkillsResponse extends $pb.GeneratedMessage {
   static ListSkillsResponse create() => ListSkillsResponse._();
   @$core.override
   ListSkillsResponse createEmptyInstance() => create();
+  static $pb.PbList<ListSkillsResponse> createRepeated() =>
+      $pb.PbList<ListSkillsResponse>();
   @$core.pragma('dart2js:noInline')
   static ListSkillsResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ListSkillsResponse>(create);
@@ -630,7 +650,7 @@ class GetSkillRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetSkillRequest clone() => deepCopy();
+  GetSkillRequest clone() => GetSkillRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GetSkillRequest copyWith(void Function(GetSkillRequest) updates) =>
       super.copyWith((message) => updates(message as GetSkillRequest))
@@ -643,6 +663,8 @@ class GetSkillRequest extends $pb.GeneratedMessage {
   static GetSkillRequest create() => GetSkillRequest._();
   @$core.override
   GetSkillRequest createEmptyInstance() => create();
+  static $pb.PbList<GetSkillRequest> createRepeated() =>
+      $pb.PbList<GetSkillRequest>();
   @$core.pragma('dart2js:noInline')
   static GetSkillRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<GetSkillRequest>(create);

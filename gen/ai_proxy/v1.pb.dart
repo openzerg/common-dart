@@ -8,14 +8,15 @@
 // ignore_for_file: constant_identifier_names
 // ignore_for_file: curly_braces_in_flow_control_structures
 // ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_relative_imports
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:async' as $async;
 import 'dart:core' as $core;
 
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
-import 'package:protobuf/well_known_types/google/protobuf/empty.pb.dart' as $0;
+
+import '../google/protobuf/empty.pb.dart' as $0;
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
@@ -45,7 +46,7 @@ class ListProxiesRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListProxiesRequest clone() => deepCopy();
+  ListProxiesRequest clone() => ListProxiesRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListProxiesRequest copyWith(void Function(ListProxiesRequest) updates) =>
       super.copyWith((message) => updates(message as ListProxiesRequest))
@@ -58,6 +59,8 @@ class ListProxiesRequest extends $pb.GeneratedMessage {
   static ListProxiesRequest create() => ListProxiesRequest._();
   @$core.override
   ListProxiesRequest createEmptyInstance() => create();
+  static $pb.PbList<ListProxiesRequest> createRepeated() =>
+      $pb.PbList<ListProxiesRequest>();
   @$core.pragma('dart2js:noInline')
   static ListProxiesRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ListProxiesRequest>(create);
@@ -155,15 +158,19 @@ class ProxyInfo extends $pb.GeneratedMessage {
         protoName: 'supportVision')
     ..aOB(17, _omitFieldNames ? '' : 'supportReasoning',
         protoName: 'supportReasoning')
-    ..aI(18, _omitFieldNames ? '' : 'defaultMaxTokens',
+    ..a<$core.int>(
+        18, _omitFieldNames ? '' : 'defaultMaxTokens', $pb.PbFieldType.O3,
         protoName: 'defaultMaxTokens')
-    ..aI(19, _omitFieldNames ? '' : 'contextLength', protoName: 'contextLength')
-    ..aI(20, _omitFieldNames ? '' : 'autoCompactLength',
+    ..a<$core.int>(
+        19, _omitFieldNames ? '' : 'contextLength', $pb.PbFieldType.O3,
+        protoName: 'contextLength')
+    ..a<$core.int>(
+        20, _omitFieldNames ? '' : 'autoCompactLength', $pb.PbFieldType.O3,
         protoName: 'autoCompactLength')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ProxyInfo clone() => deepCopy();
+  ProxyInfo clone() => ProxyInfo()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ProxyInfo copyWith(void Function(ProxyInfo) updates) =>
       super.copyWith((message) => updates(message as ProxyInfo)) as ProxyInfo;
@@ -175,6 +182,7 @@ class ProxyInfo extends $pb.GeneratedMessage {
   static ProxyInfo create() => ProxyInfo._();
   @$core.override
   ProxyInfo createEmptyInstance() => create();
+  static $pb.PbList<ProxyInfo> createRepeated() => $pb.PbList<ProxyInfo>();
   @$core.pragma('dart2js:noInline')
   static ProxyInfo getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ProxyInfo>(create);
@@ -383,12 +391,12 @@ class ListProxiesResponse extends $pb.GeneratedMessage {
       _omitMessageNames ? '' : 'ListProxiesResponse',
       package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
       createEmptyInstance: create)
-    ..pPM<ProxyInfo>(1, _omitFieldNames ? '' : 'proxies',
+    ..pc<ProxyInfo>(1, _omitFieldNames ? '' : 'proxies', $pb.PbFieldType.PM,
         subBuilder: ProxyInfo.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListProxiesResponse clone() => deepCopy();
+  ListProxiesResponse clone() => ListProxiesResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListProxiesResponse copyWith(void Function(ListProxiesResponse) updates) =>
       super.copyWith((message) => updates(message as ListProxiesResponse))
@@ -401,6 +409,8 @@ class ListProxiesResponse extends $pb.GeneratedMessage {
   static ListProxiesResponse create() => ListProxiesResponse._();
   @$core.override
   ListProxiesResponse createEmptyInstance() => create();
+  static $pb.PbList<ListProxiesResponse> createRepeated() =>
+      $pb.PbList<ListProxiesResponse>();
   @$core.pragma('dart2js:noInline')
   static ListProxiesResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ListProxiesResponse>(create);
@@ -436,7 +446,7 @@ class GetProxyRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetProxyRequest clone() => deepCopy();
+  GetProxyRequest clone() => GetProxyRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GetProxyRequest copyWith(void Function(GetProxyRequest) updates) =>
       super.copyWith((message) => updates(message as GetProxyRequest))
@@ -449,6 +459,8 @@ class GetProxyRequest extends $pb.GeneratedMessage {
   static GetProxyRequest create() => GetProxyRequest._();
   @$core.override
   GetProxyRequest createEmptyInstance() => create();
+  static $pb.PbList<GetProxyRequest> createRepeated() =>
+      $pb.PbList<GetProxyRequest>();
   @$core.pragma('dart2js:noInline')
   static GetProxyRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<GetProxyRequest>(create);
@@ -495,7 +507,7 @@ class CreateProxyRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CreateProxyRequest clone() => deepCopy();
+  CreateProxyRequest clone() => CreateProxyRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CreateProxyRequest copyWith(void Function(CreateProxyRequest) updates) =>
       super.copyWith((message) => updates(message as CreateProxyRequest))
@@ -508,6 +520,8 @@ class CreateProxyRequest extends $pb.GeneratedMessage {
   static CreateProxyRequest create() => CreateProxyRequest._();
   @$core.override
   CreateProxyRequest createEmptyInstance() => create();
+  static $pb.PbList<CreateProxyRequest> createRepeated() =>
+      $pb.PbList<CreateProxyRequest>();
   @$core.pragma('dart2js:noInline')
   static CreateProxyRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CreateProxyRequest>(create);
@@ -569,7 +583,7 @@ class UpdateProxyRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UpdateProxyRequest clone() => deepCopy();
+  UpdateProxyRequest clone() => UpdateProxyRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UpdateProxyRequest copyWith(void Function(UpdateProxyRequest) updates) =>
       super.copyWith((message) => updates(message as UpdateProxyRequest))
@@ -582,6 +596,8 @@ class UpdateProxyRequest extends $pb.GeneratedMessage {
   static UpdateProxyRequest create() => UpdateProxyRequest._();
   @$core.override
   UpdateProxyRequest createEmptyInstance() => create();
+  static $pb.PbList<UpdateProxyRequest> createRepeated() =>
+      $pb.PbList<UpdateProxyRequest>();
   @$core.pragma('dart2js:noInline')
   static UpdateProxyRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<UpdateProxyRequest>(create);
@@ -650,7 +666,7 @@ class DeleteProxyRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DeleteProxyRequest clone() => deepCopy();
+  DeleteProxyRequest clone() => DeleteProxyRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DeleteProxyRequest copyWith(void Function(DeleteProxyRequest) updates) =>
       super.copyWith((message) => updates(message as DeleteProxyRequest))
@@ -663,6 +679,8 @@ class DeleteProxyRequest extends $pb.GeneratedMessage {
   static DeleteProxyRequest create() => DeleteProxyRequest._();
   @$core.override
   DeleteProxyRequest createEmptyInstance() => create();
+  static $pb.PbList<DeleteProxyRequest> createRepeated() =>
+      $pb.PbList<DeleteProxyRequest>();
   @$core.pragma('dart2js:noInline')
   static DeleteProxyRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<DeleteProxyRequest>(create);
@@ -697,7 +715,7 @@ class DeleteProxyResponse extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DeleteProxyResponse clone() => deepCopy();
+  DeleteProxyResponse clone() => DeleteProxyResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DeleteProxyResponse copyWith(void Function(DeleteProxyResponse) updates) =>
       super.copyWith((message) => updates(message as DeleteProxyResponse))
@@ -710,6 +728,8 @@ class DeleteProxyResponse extends $pb.GeneratedMessage {
   static DeleteProxyResponse create() => DeleteProxyResponse._();
   @$core.override
   DeleteProxyResponse createEmptyInstance() => create();
+  static $pb.PbList<DeleteProxyResponse> createRepeated() =>
+      $pb.PbList<DeleteProxyResponse>();
   @$core.pragma('dart2js:noInline')
   static DeleteProxyResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<DeleteProxyResponse>(create);
@@ -742,7 +762,8 @@ class ListProviderModelConfigsRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListProviderModelConfigsRequest clone() => deepCopy();
+  ListProviderModelConfigsRequest clone() =>
+      ListProviderModelConfigsRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListProviderModelConfigsRequest copyWith(
           void Function(ListProviderModelConfigsRequest) updates) =>
@@ -758,6 +779,8 @@ class ListProviderModelConfigsRequest extends $pb.GeneratedMessage {
       ListProviderModelConfigsRequest._();
   @$core.override
   ListProviderModelConfigsRequest createEmptyInstance() => create();
+  static $pb.PbList<ListProviderModelConfigsRequest> createRepeated() =>
+      $pb.PbList<ListProviderModelConfigsRequest>();
   @$core.pragma('dart2js:noInline')
   static ListProviderModelConfigsRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ListProviderModelConfigsRequest>(
@@ -842,10 +865,14 @@ class ProviderModelConfigInfo extends $pb.GeneratedMessage {
         protoName: 'supportVision')
     ..aOB(11, _omitFieldNames ? '' : 'supportReasoning',
         protoName: 'supportReasoning')
-    ..aI(12, _omitFieldNames ? '' : 'defaultMaxTokens',
+    ..a<$core.int>(
+        12, _omitFieldNames ? '' : 'defaultMaxTokens', $pb.PbFieldType.O3,
         protoName: 'defaultMaxTokens')
-    ..aI(13, _omitFieldNames ? '' : 'contextLength', protoName: 'contextLength')
-    ..aI(14, _omitFieldNames ? '' : 'autoCompactLength',
+    ..a<$core.int>(
+        13, _omitFieldNames ? '' : 'contextLength', $pb.PbFieldType.O3,
+        protoName: 'contextLength')
+    ..a<$core.int>(
+        14, _omitFieldNames ? '' : 'autoCompactLength', $pb.PbFieldType.O3,
         protoName: 'autoCompactLength')
     ..aOB(15, _omitFieldNames ? '' : 'enabled')
     ..aInt64(16, _omitFieldNames ? '' : 'createdAt', protoName: 'createdAt')
@@ -853,7 +880,8 @@ class ProviderModelConfigInfo extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ProviderModelConfigInfo clone() => deepCopy();
+  ProviderModelConfigInfo clone() =>
+      ProviderModelConfigInfo()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ProviderModelConfigInfo copyWith(
           void Function(ProviderModelConfigInfo) updates) =>
@@ -867,6 +895,8 @@ class ProviderModelConfigInfo extends $pb.GeneratedMessage {
   static ProviderModelConfigInfo create() => ProviderModelConfigInfo._();
   @$core.override
   ProviderModelConfigInfo createEmptyInstance() => create();
+  static $pb.PbList<ProviderModelConfigInfo> createRepeated() =>
+      $pb.PbList<ProviderModelConfigInfo>();
   @$core.pragma('dart2js:noInline')
   static ProviderModelConfigInfo getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ProviderModelConfigInfo>(create);
@@ -1049,12 +1079,14 @@ class ListProviderModelConfigsResponse extends $pb.GeneratedMessage {
       _omitMessageNames ? '' : 'ListProviderModelConfigsResponse',
       package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
       createEmptyInstance: create)
-    ..pPM<ProviderModelConfigInfo>(1, _omitFieldNames ? '' : 'configs',
+    ..pc<ProviderModelConfigInfo>(
+        1, _omitFieldNames ? '' : 'configs', $pb.PbFieldType.PM,
         subBuilder: ProviderModelConfigInfo.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListProviderModelConfigsResponse clone() => deepCopy();
+  ListProviderModelConfigsResponse clone() =>
+      ListProviderModelConfigsResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListProviderModelConfigsResponse copyWith(
           void Function(ListProviderModelConfigsResponse) updates) =>
@@ -1070,6 +1102,8 @@ class ListProviderModelConfigsResponse extends $pb.GeneratedMessage {
       ListProviderModelConfigsResponse._();
   @$core.override
   ListProviderModelConfigsResponse createEmptyInstance() => create();
+  static $pb.PbList<ListProviderModelConfigsResponse> createRepeated() =>
+      $pb.PbList<ListProviderModelConfigsResponse>();
   @$core.pragma('dart2js:noInline')
   static ListProviderModelConfigsResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ListProviderModelConfigsResponse>(
@@ -1106,7 +1140,8 @@ class GetProviderModelConfigRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetProviderModelConfigRequest clone() => deepCopy();
+  GetProviderModelConfigRequest clone() =>
+      GetProviderModelConfigRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GetProviderModelConfigRequest copyWith(
           void Function(GetProviderModelConfigRequest) updates) =>
@@ -1122,6 +1157,8 @@ class GetProviderModelConfigRequest extends $pb.GeneratedMessage {
       GetProviderModelConfigRequest._();
   @$core.override
   GetProviderModelConfigRequest createEmptyInstance() => create();
+  static $pb.PbList<GetProviderModelConfigRequest> createRepeated() =>
+      $pb.PbList<GetProviderModelConfigRequest>();
   @$core.pragma('dart2js:noInline')
   static GetProviderModelConfigRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<GetProviderModelConfigRequest>(create);
@@ -1196,15 +1233,20 @@ class CreateProviderModelConfigRequest extends $pb.GeneratedMessage {
     ..aOB(9, _omitFieldNames ? '' : 'supportVision', protoName: 'supportVision')
     ..aOB(10, _omitFieldNames ? '' : 'supportReasoning',
         protoName: 'supportReasoning')
-    ..aI(11, _omitFieldNames ? '' : 'defaultMaxTokens',
+    ..a<$core.int>(
+        11, _omitFieldNames ? '' : 'defaultMaxTokens', $pb.PbFieldType.O3,
         protoName: 'defaultMaxTokens')
-    ..aI(12, _omitFieldNames ? '' : 'contextLength', protoName: 'contextLength')
-    ..aI(13, _omitFieldNames ? '' : 'autoCompactLength',
+    ..a<$core.int>(
+        12, _omitFieldNames ? '' : 'contextLength', $pb.PbFieldType.O3,
+        protoName: 'contextLength')
+    ..a<$core.int>(
+        13, _omitFieldNames ? '' : 'autoCompactLength', $pb.PbFieldType.O3,
         protoName: 'autoCompactLength')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CreateProviderModelConfigRequest clone() => deepCopy();
+  CreateProviderModelConfigRequest clone() =>
+      CreateProviderModelConfigRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CreateProviderModelConfigRequest copyWith(
           void Function(CreateProviderModelConfigRequest) updates) =>
@@ -1220,6 +1262,8 @@ class CreateProviderModelConfigRequest extends $pb.GeneratedMessage {
       CreateProviderModelConfigRequest._();
   @$core.override
   CreateProviderModelConfigRequest createEmptyInstance() => create();
+  static $pb.PbList<CreateProviderModelConfigRequest> createRepeated() =>
+      $pb.PbList<CreateProviderModelConfigRequest>();
   @$core.pragma('dart2js:noInline')
   static CreateProviderModelConfigRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CreateProviderModelConfigRequest>(
@@ -1402,16 +1446,21 @@ class UpdateProviderModelConfigRequest extends $pb.GeneratedMessage {
     ..aOB(8, _omitFieldNames ? '' : 'supportVision', protoName: 'supportVision')
     ..aOB(9, _omitFieldNames ? '' : 'supportReasoning',
         protoName: 'supportReasoning')
-    ..aI(10, _omitFieldNames ? '' : 'defaultMaxTokens',
+    ..a<$core.int>(
+        10, _omitFieldNames ? '' : 'defaultMaxTokens', $pb.PbFieldType.O3,
         protoName: 'defaultMaxTokens')
-    ..aI(11, _omitFieldNames ? '' : 'contextLength', protoName: 'contextLength')
-    ..aI(12, _omitFieldNames ? '' : 'autoCompactLength',
+    ..a<$core.int>(
+        11, _omitFieldNames ? '' : 'contextLength', $pb.PbFieldType.O3,
+        protoName: 'contextLength')
+    ..a<$core.int>(
+        12, _omitFieldNames ? '' : 'autoCompactLength', $pb.PbFieldType.O3,
         protoName: 'autoCompactLength')
     ..aOB(13, _omitFieldNames ? '' : 'enabled')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UpdateProviderModelConfigRequest clone() => deepCopy();
+  UpdateProviderModelConfigRequest clone() =>
+      UpdateProviderModelConfigRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UpdateProviderModelConfigRequest copyWith(
           void Function(UpdateProviderModelConfigRequest) updates) =>
@@ -1427,6 +1476,8 @@ class UpdateProviderModelConfigRequest extends $pb.GeneratedMessage {
       UpdateProviderModelConfigRequest._();
   @$core.override
   UpdateProviderModelConfigRequest createEmptyInstance() => create();
+  static $pb.PbList<UpdateProviderModelConfigRequest> createRepeated() =>
+      $pb.PbList<UpdateProviderModelConfigRequest>();
   @$core.pragma('dart2js:noInline')
   static UpdateProviderModelConfigRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<UpdateProviderModelConfigRequest>(
@@ -1578,7 +1629,8 @@ class DeleteProviderModelConfigRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DeleteProviderModelConfigRequest clone() => deepCopy();
+  DeleteProviderModelConfigRequest clone() =>
+      DeleteProviderModelConfigRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DeleteProviderModelConfigRequest copyWith(
           void Function(DeleteProviderModelConfigRequest) updates) =>
@@ -1594,6 +1646,8 @@ class DeleteProviderModelConfigRequest extends $pb.GeneratedMessage {
       DeleteProviderModelConfigRequest._();
   @$core.override
   DeleteProviderModelConfigRequest createEmptyInstance() => create();
+  static $pb.PbList<DeleteProviderModelConfigRequest> createRepeated() =>
+      $pb.PbList<DeleteProviderModelConfigRequest>();
   @$core.pragma('dart2js:noInline')
   static DeleteProviderModelConfigRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<DeleteProviderModelConfigRequest>(
@@ -1630,7 +1684,8 @@ class DeleteProviderModelConfigResponse extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DeleteProviderModelConfigResponse clone() => deepCopy();
+  DeleteProviderModelConfigResponse clone() =>
+      DeleteProviderModelConfigResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DeleteProviderModelConfigResponse copyWith(
           void Function(DeleteProviderModelConfigResponse) updates) =>
@@ -1646,6 +1701,8 @@ class DeleteProviderModelConfigResponse extends $pb.GeneratedMessage {
       DeleteProviderModelConfigResponse._();
   @$core.override
   DeleteProviderModelConfigResponse createEmptyInstance() => create();
+  static $pb.PbList<DeleteProviderModelConfigResponse> createRepeated() =>
+      $pb.PbList<DeleteProviderModelConfigResponse>();
   @$core.pragma('dart2js:noInline')
   static DeleteProviderModelConfigResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<DeleteProviderModelConfigResponse>(
@@ -1672,7 +1729,8 @@ class ListProvidersRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListProvidersRequest clone() => deepCopy();
+  ListProvidersRequest clone() =>
+      ListProvidersRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListProvidersRequest copyWith(void Function(ListProvidersRequest) updates) =>
       super.copyWith((message) => updates(message as ListProvidersRequest))
@@ -1685,6 +1743,8 @@ class ListProvidersRequest extends $pb.GeneratedMessage {
   static ListProvidersRequest create() => ListProvidersRequest._();
   @$core.override
   ListProvidersRequest createEmptyInstance() => create();
+  static $pb.PbList<ListProvidersRequest> createRepeated() =>
+      $pb.PbList<ListProvidersRequest>();
   @$core.pragma('dart2js:noInline')
   static ListProvidersRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ListProvidersRequest>(create);
@@ -1729,7 +1789,7 @@ class ProviderInfo extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ProviderInfo clone() => deepCopy();
+  ProviderInfo clone() => ProviderInfo()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ProviderInfo copyWith(void Function(ProviderInfo) updates) =>
       super.copyWith((message) => updates(message as ProviderInfo))
@@ -1742,6 +1802,8 @@ class ProviderInfo extends $pb.GeneratedMessage {
   static ProviderInfo create() => ProviderInfo._();
   @$core.override
   ProviderInfo createEmptyInstance() => create();
+  static $pb.PbList<ProviderInfo> createRepeated() =>
+      $pb.PbList<ProviderInfo>();
   @$core.pragma('dart2js:noInline')
   static ProviderInfo getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ProviderInfo>(create);
@@ -1809,12 +1871,14 @@ class ListProvidersResponse extends $pb.GeneratedMessage {
       _omitMessageNames ? '' : 'ListProvidersResponse',
       package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
       createEmptyInstance: create)
-    ..pPM<ProviderInfo>(1, _omitFieldNames ? '' : 'providers',
+    ..pc<ProviderInfo>(
+        1, _omitFieldNames ? '' : 'providers', $pb.PbFieldType.PM,
         subBuilder: ProviderInfo.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListProvidersResponse clone() => deepCopy();
+  ListProvidersResponse clone() =>
+      ListProvidersResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListProvidersResponse copyWith(
           void Function(ListProvidersResponse) updates) =>
@@ -1828,6 +1892,8 @@ class ListProvidersResponse extends $pb.GeneratedMessage {
   static ListProvidersResponse create() => ListProvidersResponse._();
   @$core.override
   ListProvidersResponse createEmptyInstance() => create();
+  static $pb.PbList<ListProvidersResponse> createRepeated() =>
+      $pb.PbList<ListProvidersResponse>();
   @$core.pragma('dart2js:noInline')
   static ListProvidersResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ListProvidersResponse>(create);
@@ -1863,7 +1929,8 @@ class ListProviderModelsRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListProviderModelsRequest clone() => deepCopy();
+  ListProviderModelsRequest clone() =>
+      ListProviderModelsRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListProviderModelsRequest copyWith(
           void Function(ListProviderModelsRequest) updates) =>
@@ -1877,6 +1944,8 @@ class ListProviderModelsRequest extends $pb.GeneratedMessage {
   static ListProviderModelsRequest create() => ListProviderModelsRequest._();
   @$core.override
   ListProviderModelsRequest createEmptyInstance() => create();
+  static $pb.PbList<ListProviderModelsRequest> createRepeated() =>
+      $pb.PbList<ListProviderModelsRequest>();
   @$core.pragma('dart2js:noInline')
   static ListProviderModelsRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ListProviderModelsRequest>(create);
@@ -1949,16 +2018,20 @@ class ProviderModelInfo extends $pb.GeneratedMessage {
     ..aOB(8, _omitFieldNames ? '' : 'supportVision', protoName: 'supportVision')
     ..aOB(9, _omitFieldNames ? '' : 'supportReasoning',
         protoName: 'supportReasoning')
-    ..aI(10, _omitFieldNames ? '' : 'defaultMaxTokens',
+    ..a<$core.int>(
+        10, _omitFieldNames ? '' : 'defaultMaxTokens', $pb.PbFieldType.O3,
         protoName: 'defaultMaxTokens')
-    ..aI(11, _omitFieldNames ? '' : 'contextLength', protoName: 'contextLength')
-    ..aI(12, _omitFieldNames ? '' : 'autoCompactLength',
+    ..a<$core.int>(
+        11, _omitFieldNames ? '' : 'contextLength', $pb.PbFieldType.O3,
+        protoName: 'contextLength')
+    ..a<$core.int>(
+        12, _omitFieldNames ? '' : 'autoCompactLength', $pb.PbFieldType.O3,
         protoName: 'autoCompactLength')
     ..aOS(13, _omitFieldNames ? '' : 'status')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ProviderModelInfo clone() => deepCopy();
+  ProviderModelInfo clone() => ProviderModelInfo()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ProviderModelInfo copyWith(void Function(ProviderModelInfo) updates) =>
       super.copyWith((message) => updates(message as ProviderModelInfo))
@@ -1971,6 +2044,8 @@ class ProviderModelInfo extends $pb.GeneratedMessage {
   static ProviderModelInfo create() => ProviderModelInfo._();
   @$core.override
   ProviderModelInfo createEmptyInstance() => create();
+  static $pb.PbList<ProviderModelInfo> createRepeated() =>
+      $pb.PbList<ProviderModelInfo>();
   @$core.pragma('dart2js:noInline')
   static ProviderModelInfo getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ProviderModelInfo>(create);
@@ -2116,12 +2191,14 @@ class ListProviderModelsResponse extends $pb.GeneratedMessage {
       _omitMessageNames ? '' : 'ListProviderModelsResponse',
       package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
       createEmptyInstance: create)
-    ..pPM<ProviderModelInfo>(1, _omitFieldNames ? '' : 'models',
+    ..pc<ProviderModelInfo>(
+        1, _omitFieldNames ? '' : 'models', $pb.PbFieldType.PM,
         subBuilder: ProviderModelInfo.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListProviderModelsResponse clone() => deepCopy();
+  ListProviderModelsResponse clone() =>
+      ListProviderModelsResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListProviderModelsResponse copyWith(
           void Function(ListProviderModelsResponse) updates) =>
@@ -2136,6 +2213,8 @@ class ListProviderModelsResponse extends $pb.GeneratedMessage {
   static ListProviderModelsResponse create() => ListProviderModelsResponse._();
   @$core.override
   ListProviderModelsResponse createEmptyInstance() => create();
+  static $pb.PbList<ListProviderModelsResponse> createRepeated() =>
+      $pb.PbList<ListProviderModelsResponse>();
   @$core.pragma('dart2js:noInline')
   static ListProviderModelsResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ListProviderModelsResponse>(create);
@@ -2171,7 +2250,8 @@ class TestProviderModelConfigRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TestProviderModelConfigRequest clone() => deepCopy();
+  TestProviderModelConfigRequest clone() =>
+      TestProviderModelConfigRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TestProviderModelConfigRequest copyWith(
           void Function(TestProviderModelConfigRequest) updates) =>
@@ -2187,6 +2267,8 @@ class TestProviderModelConfigRequest extends $pb.GeneratedMessage {
       TestProviderModelConfigRequest._();
   @$core.override
   TestProviderModelConfigRequest createEmptyInstance() => create();
+  static $pb.PbList<TestProviderModelConfigRequest> createRepeated() =>
+      $pb.PbList<TestProviderModelConfigRequest>();
   @$core.pragma('dart2js:noInline')
   static TestProviderModelConfigRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<TestProviderModelConfigRequest>(create);
@@ -2232,12 +2314,15 @@ class TestProviderModelConfigResponse extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'success')
     ..aOS(2, _omitFieldNames ? '' : 'message')
-    ..aI(3, _omitFieldNames ? '' : 'statusCode', protoName: 'statusCode')
-    ..aI(4, _omitFieldNames ? '' : 'latencyMs', protoName: 'latencyMs')
+    ..a<$core.int>(3, _omitFieldNames ? '' : 'statusCode', $pb.PbFieldType.O3,
+        protoName: 'statusCode')
+    ..a<$core.int>(4, _omitFieldNames ? '' : 'latencyMs', $pb.PbFieldType.O3,
+        protoName: 'latencyMs')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TestProviderModelConfigResponse clone() => deepCopy();
+  TestProviderModelConfigResponse clone() =>
+      TestProviderModelConfigResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TestProviderModelConfigResponse copyWith(
           void Function(TestProviderModelConfigResponse) updates) =>
@@ -2253,6 +2338,8 @@ class TestProviderModelConfigResponse extends $pb.GeneratedMessage {
       TestProviderModelConfigResponse._();
   @$core.override
   TestProviderModelConfigResponse createEmptyInstance() => create();
+  static $pb.PbList<TestProviderModelConfigResponse> createRepeated() =>
+      $pb.PbList<TestProviderModelConfigResponse>();
   @$core.pragma('dart2js:noInline')
   static TestProviderModelConfigResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<TestProviderModelConfigResponse>(
@@ -2322,7 +2409,7 @@ class TestProxyRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TestProxyRequest clone() => deepCopy();
+  TestProxyRequest clone() => TestProxyRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TestProxyRequest copyWith(void Function(TestProxyRequest) updates) =>
       super.copyWith((message) => updates(message as TestProxyRequest))
@@ -2335,6 +2422,8 @@ class TestProxyRequest extends $pb.GeneratedMessage {
   static TestProxyRequest create() => TestProxyRequest._();
   @$core.override
   TestProxyRequest createEmptyInstance() => create();
+  static $pb.PbList<TestProxyRequest> createRepeated() =>
+      $pb.PbList<TestProxyRequest>();
   @$core.pragma('dart2js:noInline')
   static TestProxyRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<TestProxyRequest>(create);
@@ -2380,12 +2469,14 @@ class TestProxyResponse extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'success')
     ..aOS(2, _omitFieldNames ? '' : 'message')
-    ..aI(3, _omitFieldNames ? '' : 'statusCode', protoName: 'statusCode')
-    ..aI(4, _omitFieldNames ? '' : 'latencyMs', protoName: 'latencyMs')
+    ..a<$core.int>(3, _omitFieldNames ? '' : 'statusCode', $pb.PbFieldType.O3,
+        protoName: 'statusCode')
+    ..a<$core.int>(4, _omitFieldNames ? '' : 'latencyMs', $pb.PbFieldType.O3,
+        protoName: 'latencyMs')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TestProxyResponse clone() => deepCopy();
+  TestProxyResponse clone() => TestProxyResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TestProxyResponse copyWith(void Function(TestProxyResponse) updates) =>
       super.copyWith((message) => updates(message as TestProxyResponse))
@@ -2398,6 +2489,8 @@ class TestProxyResponse extends $pb.GeneratedMessage {
   static TestProxyResponse create() => TestProxyResponse._();
   @$core.override
   TestProxyResponse createEmptyInstance() => create();
+  static $pb.PbList<TestProxyResponse> createRepeated() =>
+      $pb.PbList<TestProxyResponse>();
   @$core.pragma('dart2js:noInline')
   static TestProxyResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<TestProxyResponse>(create);
@@ -2473,12 +2566,12 @@ class QueryLogsRequest extends $pb.GeneratedMessage {
     ..aOS(1, _omitFieldNames ? '' : 'proxyId', protoName: 'proxyId')
     ..aInt64(2, _omitFieldNames ? '' : 'fromTs', protoName: 'fromTs')
     ..aInt64(3, _omitFieldNames ? '' : 'toTs', protoName: 'toTs')
-    ..aI(4, _omitFieldNames ? '' : 'limit')
-    ..aI(5, _omitFieldNames ? '' : 'offset')
+    ..a<$core.int>(4, _omitFieldNames ? '' : 'limit', $pb.PbFieldType.O3)
+    ..a<$core.int>(5, _omitFieldNames ? '' : 'offset', $pb.PbFieldType.O3)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  QueryLogsRequest clone() => deepCopy();
+  QueryLogsRequest clone() => QueryLogsRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   QueryLogsRequest copyWith(void Function(QueryLogsRequest) updates) =>
       super.copyWith((message) => updates(message as QueryLogsRequest))
@@ -2491,6 +2584,8 @@ class QueryLogsRequest extends $pb.GeneratedMessage {
   static QueryLogsRequest create() => QueryLogsRequest._();
   @$core.override
   QueryLogsRequest createEmptyInstance() => create();
+  static $pb.PbList<QueryLogsRequest> createRepeated() =>
+      $pb.PbList<QueryLogsRequest>();
   @$core.pragma('dart2js:noInline')
   static QueryLogsRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<QueryLogsRequest>(create);
@@ -2610,7 +2705,7 @@ class LogEntry extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  LogEntry clone() => deepCopy();
+  LogEntry clone() => LogEntry()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LogEntry copyWith(void Function(LogEntry) updates) =>
       super.copyWith((message) => updates(message as LogEntry)) as LogEntry;
@@ -2622,6 +2717,7 @@ class LogEntry extends $pb.GeneratedMessage {
   static LogEntry create() => LogEntry._();
   @$core.override
   LogEntry createEmptyInstance() => create();
+  static $pb.PbList<LogEntry> createRepeated() => $pb.PbList<LogEntry>();
   @$core.pragma('dart2js:noInline')
   static LogEntry getDefault() =>
       _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LogEntry>(create);
@@ -2778,13 +2874,13 @@ class QueryLogsResponse extends $pb.GeneratedMessage {
       _omitMessageNames ? '' : 'QueryLogsResponse',
       package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
       createEmptyInstance: create)
-    ..pPM<LogEntry>(1, _omitFieldNames ? '' : 'logs',
+    ..pc<LogEntry>(1, _omitFieldNames ? '' : 'logs', $pb.PbFieldType.PM,
         subBuilder: LogEntry.create)
     ..aInt64(2, _omitFieldNames ? '' : 'total')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  QueryLogsResponse clone() => deepCopy();
+  QueryLogsResponse clone() => QueryLogsResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   QueryLogsResponse copyWith(void Function(QueryLogsResponse) updates) =>
       super.copyWith((message) => updates(message as QueryLogsResponse))
@@ -2797,6 +2893,8 @@ class QueryLogsResponse extends $pb.GeneratedMessage {
   static QueryLogsResponse create() => QueryLogsResponse._();
   @$core.override
   QueryLogsResponse createEmptyInstance() => create();
+  static $pb.PbList<QueryLogsResponse> createRepeated() =>
+      $pb.PbList<QueryLogsResponse>();
   @$core.pragma('dart2js:noInline')
   static QueryLogsResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<QueryLogsResponse>(create);
@@ -2847,7 +2945,8 @@ class GetTokenStatsRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetTokenStatsRequest clone() => deepCopy();
+  GetTokenStatsRequest clone() =>
+      GetTokenStatsRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GetTokenStatsRequest copyWith(void Function(GetTokenStatsRequest) updates) =>
       super.copyWith((message) => updates(message as GetTokenStatsRequest))
@@ -2860,6 +2959,8 @@ class GetTokenStatsRequest extends $pb.GeneratedMessage {
   static GetTokenStatsRequest create() => GetTokenStatsRequest._();
   @$core.override
   GetTokenStatsRequest createEmptyInstance() => create();
+  static $pb.PbList<GetTokenStatsRequest> createRepeated() =>
+      $pb.PbList<GetTokenStatsRequest>();
   @$core.pragma('dart2js:noInline')
   static GetTokenStatsRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<GetTokenStatsRequest>(create);
@@ -2931,7 +3032,7 @@ class TokenStatsResponse extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TokenStatsResponse clone() => deepCopy();
+  TokenStatsResponse clone() => TokenStatsResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TokenStatsResponse copyWith(void Function(TokenStatsResponse) updates) =>
       super.copyWith((message) => updates(message as TokenStatsResponse))
@@ -2944,6 +3045,8 @@ class TokenStatsResponse extends $pb.GeneratedMessage {
   static TokenStatsResponse create() => TokenStatsResponse._();
   @$core.override
   TokenStatsResponse createEmptyInstance() => create();
+  static $pb.PbList<TokenStatsResponse> createRepeated() =>
+      $pb.PbList<TokenStatsResponse>();
   @$core.pragma('dart2js:noInline')
   static TokenStatsResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<TokenStatsResponse>(create);

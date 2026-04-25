@@ -8,13 +8,14 @@
 // ignore_for_file: constant_identifier_names
 // ignore_for_file: curly_braces_in_flow_control_structures
 // ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_relative_imports
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:async' as $async;
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
-import 'package:protobuf/well_known_types/google/protobuf/empty.pb.dart' as $0;
+
+import '../google/protobuf/empty.pb.dart' as $0;
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
@@ -55,7 +56,7 @@ class ToolServerUrl extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ToolServerUrl clone() => deepCopy();
+  ToolServerUrl clone() => ToolServerUrl()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ToolServerUrl copyWith(void Function(ToolServerUrl) updates) =>
       super.copyWith((message) => updates(message as ToolServerUrl))
@@ -68,6 +69,8 @@ class ToolServerUrl extends $pb.GeneratedMessage {
   static ToolServerUrl create() => ToolServerUrl._();
   @$core.override
   ToolServerUrl createEmptyInstance() => create();
+  static $pb.PbList<ToolServerUrl> createRepeated() =>
+      $pb.PbList<ToolServerUrl>();
   @$core.pragma('dart2js:noInline')
   static ToolServerUrl getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ToolServerUrl>(create);
@@ -137,12 +140,12 @@ class ToolDefinition extends $pb.GeneratedMessage {
     ..aOS(4, _omitFieldNames ? '' : 'outputSchemaJson',
         protoName: 'outputSchemaJson')
     ..aOS(5, _omitFieldNames ? '' : 'group')
-    ..aI(6, _omitFieldNames ? '' : 'priority')
+    ..a<$core.int>(6, _omitFieldNames ? '' : 'priority', $pb.PbFieldType.O3)
     ..pPS(7, _omitFieldNames ? '' : 'dependencies')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ToolDefinition clone() => deepCopy();
+  ToolDefinition clone() => ToolDefinition()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ToolDefinition copyWith(void Function(ToolDefinition) updates) =>
       super.copyWith((message) => updates(message as ToolDefinition))
@@ -155,6 +158,8 @@ class ToolDefinition extends $pb.GeneratedMessage {
   static ToolDefinition create() => ToolDefinition._();
   @$core.override
   ToolDefinition createEmptyInstance() => create();
+  static $pb.PbList<ToolDefinition> createRepeated() =>
+      $pb.PbList<ToolDefinition>();
   @$core.pragma('dart2js:noInline')
   static ToolDefinition getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ToolDefinition>(create);
@@ -248,7 +253,7 @@ class ContainerEnv extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ContainerEnv clone() => deepCopy();
+  ContainerEnv clone() => ContainerEnv()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ContainerEnv copyWith(void Function(ContainerEnv) updates) =>
       super.copyWith((message) => updates(message as ContainerEnv))
@@ -261,6 +266,8 @@ class ContainerEnv extends $pb.GeneratedMessage {
   static ContainerEnv create() => ContainerEnv._();
   @$core.override
   ContainerEnv createEmptyInstance() => create();
+  static $pb.PbList<ContainerEnv> createRepeated() =>
+      $pb.PbList<ContainerEnv>();
   @$core.pragma('dart2js:noInline')
   static ContainerEnv getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ContainerEnv>(create);
@@ -316,13 +323,14 @@ class StartToolServerRequest extends $pb.GeneratedMessage {
       createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'type')
     ..aOS(2, _omitFieldNames ? '' : 'image')
-    ..pPM<ContainerEnv>(3, _omitFieldNames ? '' : 'env',
+    ..pc<ContainerEnv>(3, _omitFieldNames ? '' : 'env', $pb.PbFieldType.PM,
         subBuilder: ContainerEnv.create)
     ..pPS(4, _omitFieldNames ? '' : 'command')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  StartToolServerRequest clone() => deepCopy();
+  StartToolServerRequest clone() =>
+      StartToolServerRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StartToolServerRequest copyWith(
           void Function(StartToolServerRequest) updates) =>
@@ -336,6 +344,8 @@ class StartToolServerRequest extends $pb.GeneratedMessage {
   static StartToolServerRequest create() => StartToolServerRequest._();
   @$core.override
   StartToolServerRequest createEmptyInstance() => create();
+  static $pb.PbList<StartToolServerRequest> createRepeated() =>
+      $pb.PbList<StartToolServerRequest>();
   @$core.pragma('dart2js:noInline')
   static StartToolServerRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<StartToolServerRequest>(create);
@@ -396,7 +406,8 @@ class StartToolServerResponse extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  StartToolServerResponse clone() => deepCopy();
+  StartToolServerResponse clone() =>
+      StartToolServerResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StartToolServerResponse copyWith(
           void Function(StartToolServerResponse) updates) =>
@@ -410,6 +421,8 @@ class StartToolServerResponse extends $pb.GeneratedMessage {
   static StartToolServerResponse create() => StartToolServerResponse._();
   @$core.override
   StartToolServerResponse createEmptyInstance() => create();
+  static $pb.PbList<StartToolServerResponse> createRepeated() =>
+      $pb.PbList<StartToolServerResponse>();
   @$core.pragma('dart2js:noInline')
   static StartToolServerResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<StartToolServerResponse>(create);
@@ -461,7 +474,8 @@ class StopToolServerRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  StopToolServerRequest clone() => deepCopy();
+  StopToolServerRequest clone() =>
+      StopToolServerRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StopToolServerRequest copyWith(
           void Function(StopToolServerRequest) updates) =>
@@ -475,6 +489,8 @@ class StopToolServerRequest extends $pb.GeneratedMessage {
   static StopToolServerRequest create() => StopToolServerRequest._();
   @$core.override
   StopToolServerRequest createEmptyInstance() => create();
+  static $pb.PbList<StopToolServerRequest> createRepeated() =>
+      $pb.PbList<StopToolServerRequest>();
   @$core.pragma('dart2js:noInline')
   static StopToolServerRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<StopToolServerRequest>(create);
@@ -510,7 +526,8 @@ class StopToolServerResponse extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  StopToolServerResponse clone() => deepCopy();
+  StopToolServerResponse clone() =>
+      StopToolServerResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StopToolServerResponse copyWith(
           void Function(StopToolServerResponse) updates) =>
@@ -524,6 +541,8 @@ class StopToolServerResponse extends $pb.GeneratedMessage {
   static StopToolServerResponse create() => StopToolServerResponse._();
   @$core.override
   StopToolServerResponse createEmptyInstance() => create();
+  static $pb.PbList<StopToolServerResponse> createRepeated() =>
+      $pb.PbList<StopToolServerResponse>();
   @$core.pragma('dart2js:noInline')
   static StopToolServerResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<StopToolServerResponse>(create);
@@ -550,7 +569,8 @@ class ListToolServersRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListToolServersRequest clone() => deepCopy();
+  ListToolServersRequest clone() =>
+      ListToolServersRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListToolServersRequest copyWith(
           void Function(ListToolServersRequest) updates) =>
@@ -564,6 +584,8 @@ class ListToolServersRequest extends $pb.GeneratedMessage {
   static ListToolServersRequest create() => ListToolServersRequest._();
   @$core.override
   ListToolServersRequest createEmptyInstance() => create();
+  static $pb.PbList<ListToolServersRequest> createRepeated() =>
+      $pb.PbList<ListToolServersRequest>();
   @$core.pragma('dart2js:noInline')
   static ListToolServersRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ListToolServersRequest>(create);
@@ -611,14 +633,15 @@ class ToolServerInfo extends $pb.GeneratedMessage {
     ..aOS(2, _omitFieldNames ? '' : 'name')
     ..aOS(3, _omitFieldNames ? '' : 'type')
     ..aOS(4, _omitFieldNames ? '' : 'url')
-    ..aI(5, _omitFieldNames ? '' : 'port')
+    ..a<$core.int>(5, _omitFieldNames ? '' : 'port', $pb.PbFieldType.O3)
     ..aOS(6, _omitFieldNames ? '' : 'lifecycle')
-    ..aI(7, _omitFieldNames ? '' : 'toolCount', protoName: 'toolCount')
+    ..a<$core.int>(7, _omitFieldNames ? '' : 'toolCount', $pb.PbFieldType.O3,
+        protoName: 'toolCount')
     ..aOS(8, _omitFieldNames ? '' : 'containerName', protoName: 'containerName')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ToolServerInfo clone() => deepCopy();
+  ToolServerInfo clone() => ToolServerInfo()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ToolServerInfo copyWith(void Function(ToolServerInfo) updates) =>
       super.copyWith((message) => updates(message as ToolServerInfo))
@@ -631,6 +654,8 @@ class ToolServerInfo extends $pb.GeneratedMessage {
   static ToolServerInfo create() => ToolServerInfo._();
   @$core.override
   ToolServerInfo createEmptyInstance() => create();
+  static $pb.PbList<ToolServerInfo> createRepeated() =>
+      $pb.PbList<ToolServerInfo>();
   @$core.pragma('dart2js:noInline')
   static ToolServerInfo getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ToolServerInfo>(create);
@@ -732,12 +757,14 @@ class ListToolServersResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'toolservermanager.v1'),
       createEmptyInstance: create)
-    ..pPM<ToolServerInfo>(1, _omitFieldNames ? '' : 'servers',
+    ..pc<ToolServerInfo>(
+        1, _omitFieldNames ? '' : 'servers', $pb.PbFieldType.PM,
         subBuilder: ToolServerInfo.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListToolServersResponse clone() => deepCopy();
+  ListToolServersResponse clone() =>
+      ListToolServersResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListToolServersResponse copyWith(
           void Function(ListToolServersResponse) updates) =>
@@ -751,6 +778,8 @@ class ListToolServersResponse extends $pb.GeneratedMessage {
   static ListToolServersResponse create() => ListToolServersResponse._();
   @$core.override
   ListToolServersResponse createEmptyInstance() => create();
+  static $pb.PbList<ListToolServersResponse> createRepeated() =>
+      $pb.PbList<ListToolServersResponse>();
   @$core.pragma('dart2js:noInline')
   static ListToolServersResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ListToolServersResponse>(create);
@@ -787,7 +816,8 @@ class RefreshToolCacheRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  RefreshToolCacheRequest clone() => deepCopy();
+  RefreshToolCacheRequest clone() =>
+      RefreshToolCacheRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RefreshToolCacheRequest copyWith(
           void Function(RefreshToolCacheRequest) updates) =>
@@ -801,6 +831,8 @@ class RefreshToolCacheRequest extends $pb.GeneratedMessage {
   static RefreshToolCacheRequest create() => RefreshToolCacheRequest._();
   @$core.override
   RefreshToolCacheRequest createEmptyInstance() => create();
+  static $pb.PbList<RefreshToolCacheRequest> createRepeated() =>
+      $pb.PbList<RefreshToolCacheRequest>();
   @$core.pragma('dart2js:noInline')
   static RefreshToolCacheRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<RefreshToolCacheRequest>(create);
@@ -839,11 +871,13 @@ class RefreshToolCacheResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'toolservermanager.v1'),
       createEmptyInstance: create)
-    ..aI(1, _omitFieldNames ? '' : 'toolCount', protoName: 'toolCount')
+    ..a<$core.int>(1, _omitFieldNames ? '' : 'toolCount', $pb.PbFieldType.O3,
+        protoName: 'toolCount')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  RefreshToolCacheResponse clone() => deepCopy();
+  RefreshToolCacheResponse clone() =>
+      RefreshToolCacheResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   RefreshToolCacheResponse copyWith(
           void Function(RefreshToolCacheResponse) updates) =>
@@ -857,6 +891,8 @@ class RefreshToolCacheResponse extends $pb.GeneratedMessage {
   static RefreshToolCacheResponse create() => RefreshToolCacheResponse._();
   @$core.override
   RefreshToolCacheResponse createEmptyInstance() => create();
+  static $pb.PbList<RefreshToolCacheResponse> createRepeated() =>
+      $pb.PbList<RefreshToolCacheResponse>();
   @$core.pragma('dart2js:noInline')
   static RefreshToolCacheResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<RefreshToolCacheResponse>(create);
@@ -903,7 +939,7 @@ class ResolveToolsRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ResolveToolsRequest clone() => deepCopy();
+  ResolveToolsRequest clone() => ResolveToolsRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ResolveToolsRequest copyWith(void Function(ResolveToolsRequest) updates) =>
       super.copyWith((message) => updates(message as ResolveToolsRequest))
@@ -916,6 +952,8 @@ class ResolveToolsRequest extends $pb.GeneratedMessage {
   static ResolveToolsRequest create() => ResolveToolsRequest._();
   @$core.override
   ResolveToolsRequest createEmptyInstance() => create();
+  static $pb.PbList<ResolveToolsRequest> createRepeated() =>
+      $pb.PbList<ResolveToolsRequest>();
   @$core.pragma('dart2js:noInline')
   static ResolveToolsRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ResolveToolsRequest>(create);
@@ -961,15 +999,17 @@ class ResolveToolsResponse extends $pb.GeneratedMessage {
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'toolservermanager.v1'),
       createEmptyInstance: create)
-    ..pPM<ToolDefinition>(1, _omitFieldNames ? '' : 'tools',
+    ..pc<ToolDefinition>(1, _omitFieldNames ? '' : 'tools', $pb.PbFieldType.PM,
         subBuilder: ToolDefinition.create)
     ..aOS(2, _omitFieldNames ? '' : 'systemContext', protoName: 'systemContext')
-    ..pPM<ToolServerUrl>(3, _omitFieldNames ? '' : 'toolServerUrls',
+    ..pc<ToolServerUrl>(
+        3, _omitFieldNames ? '' : 'toolServerUrls', $pb.PbFieldType.PM,
         protoName: 'toolServerUrls', subBuilder: ToolServerUrl.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ResolveToolsResponse clone() => deepCopy();
+  ResolveToolsResponse clone() =>
+      ResolveToolsResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ResolveToolsResponse copyWith(void Function(ResolveToolsResponse) updates) =>
       super.copyWith((message) => updates(message as ResolveToolsResponse))
@@ -982,6 +1022,8 @@ class ResolveToolsResponse extends $pb.GeneratedMessage {
   static ResolveToolsResponse create() => ResolveToolsResponse._();
   @$core.override
   ResolveToolsResponse createEmptyInstance() => create();
+  static $pb.PbList<ResolveToolsResponse> createRepeated() =>
+      $pb.PbList<ResolveToolsResponse>();
   @$core.pragma('dart2js:noInline')
   static ResolveToolsResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ResolveToolsResponse>(create);
@@ -1039,7 +1081,7 @@ class ExecuteToolRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ExecuteToolRequest clone() => deepCopy();
+  ExecuteToolRequest clone() => ExecuteToolRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ExecuteToolRequest copyWith(void Function(ExecuteToolRequest) updates) =>
       super.copyWith((message) => updates(message as ExecuteToolRequest))
@@ -1052,6 +1094,8 @@ class ExecuteToolRequest extends $pb.GeneratedMessage {
   static ExecuteToolRequest create() => ExecuteToolRequest._();
   @$core.override
   ExecuteToolRequest createEmptyInstance() => create();
+  static $pb.PbList<ExecuteToolRequest> createRepeated() =>
+      $pb.PbList<ExecuteToolRequest>();
   @$core.pragma('dart2js:noInline')
   static ExecuteToolRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ExecuteToolRequest>(create);
@@ -1134,7 +1178,7 @@ class ExecuteToolResponse extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ExecuteToolResponse clone() => deepCopy();
+  ExecuteToolResponse clone() => ExecuteToolResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ExecuteToolResponse copyWith(void Function(ExecuteToolResponse) updates) =>
       super.copyWith((message) => updates(message as ExecuteToolResponse))
@@ -1147,6 +1191,8 @@ class ExecuteToolResponse extends $pb.GeneratedMessage {
   static ExecuteToolResponse create() => ExecuteToolResponse._();
   @$core.override
   ExecuteToolResponse createEmptyInstance() => create();
+  static $pb.PbList<ExecuteToolResponse> createRepeated() =>
+      $pb.PbList<ExecuteToolResponse>();
   @$core.pragma('dart2js:noInline')
   static ExecuteToolResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ExecuteToolResponse>(create);
@@ -1203,7 +1249,7 @@ class HealthRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HealthRequest clone() => deepCopy();
+  HealthRequest clone() => HealthRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HealthRequest copyWith(void Function(HealthRequest) updates) =>
       super.copyWith((message) => updates(message as HealthRequest))
@@ -1216,6 +1262,8 @@ class HealthRequest extends $pb.GeneratedMessage {
   static HealthRequest create() => HealthRequest._();
   @$core.override
   HealthRequest createEmptyInstance() => create();
+  static $pb.PbList<HealthRequest> createRepeated() =>
+      $pb.PbList<HealthRequest>();
   @$core.pragma('dart2js:noInline')
   static HealthRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<HealthRequest>(create);
@@ -1249,7 +1297,7 @@ class HealthResponse extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HealthResponse clone() => deepCopy();
+  HealthResponse clone() => HealthResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HealthResponse copyWith(void Function(HealthResponse) updates) =>
       super.copyWith((message) => updates(message as HealthResponse))
@@ -1262,6 +1310,8 @@ class HealthResponse extends $pb.GeneratedMessage {
   static HealthResponse create() => HealthResponse._();
   @$core.override
   HealthResponse createEmptyInstance() => create();
+  static $pb.PbList<HealthResponse> createRepeated() =>
+      $pb.PbList<HealthResponse>();
   @$core.pragma('dart2js:noInline')
   static HealthResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<HealthResponse>(create);

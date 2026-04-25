@@ -1,8 +1,8 @@
 version: v2
 plugins:
-  - remote: buf.build/connectrpc/dart
+  - local: protoc-gen-connect-dart
     out: gen
-  - remote: buf.build/protocolbuffers/dart
+  - local: protoc-gen-dart
     out: gen
     include_wkt: true
     include_imports: true

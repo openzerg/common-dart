@@ -8,14 +8,15 @@
 // ignore_for_file: constant_identifier_names
 // ignore_for_file: curly_braces_in_flow_control_structures
 // ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_relative_imports
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:async' as $async;
 import 'dart:core' as $core;
 
 import 'package:fixnum/fixnum.dart' as $fixnum;
 import 'package:protobuf/protobuf.dart' as $pb;
-import 'package:protobuf/well_known_types/google/protobuf/empty.pb.dart' as $0;
+
+import '../google/protobuf/empty.pb.dart' as $0;
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
@@ -69,7 +70,7 @@ class WmWorkspaceInfo extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  WmWorkspaceInfo clone() => deepCopy();
+  WmWorkspaceInfo clone() => WmWorkspaceInfo()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   WmWorkspaceInfo copyWith(void Function(WmWorkspaceInfo) updates) =>
       super.copyWith((message) => updates(message as WmWorkspaceInfo))
@@ -82,6 +83,8 @@ class WmWorkspaceInfo extends $pb.GeneratedMessage {
   static WmWorkspaceInfo create() => WmWorkspaceInfo._();
   @$core.override
   WmWorkspaceInfo createEmptyInstance() => create();
+  static $pb.PbList<WmWorkspaceInfo> createRepeated() =>
+      $pb.PbList<WmWorkspaceInfo>();
   @$core.pragma('dart2js:noInline')
   static WmWorkspaceInfo getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<WmWorkspaceInfo>(create);
@@ -220,7 +223,7 @@ class WmWorkerInfo extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  WmWorkerInfo clone() => deepCopy();
+  WmWorkerInfo clone() => WmWorkerInfo()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   WmWorkerInfo copyWith(void Function(WmWorkerInfo) updates) =>
       super.copyWith((message) => updates(message as WmWorkerInfo))
@@ -233,6 +236,8 @@ class WmWorkerInfo extends $pb.GeneratedMessage {
   static WmWorkerInfo create() => WmWorkerInfo._();
   @$core.override
   WmWorkerInfo createEmptyInstance() => create();
+  static $pb.PbList<WmWorkerInfo> createRepeated() =>
+      $pb.PbList<WmWorkerInfo>();
   @$core.pragma('dart2js:noInline')
   static WmWorkerInfo getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<WmWorkerInfo>(create);
@@ -377,7 +382,7 @@ class ContainerVolume extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ContainerVolume clone() => deepCopy();
+  ContainerVolume clone() => ContainerVolume()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ContainerVolume copyWith(void Function(ContainerVolume) updates) =>
       super.copyWith((message) => updates(message as ContainerVolume))
@@ -390,6 +395,8 @@ class ContainerVolume extends $pb.GeneratedMessage {
   static ContainerVolume create() => ContainerVolume._();
   @$core.override
   ContainerVolume createEmptyInstance() => create();
+  static $pb.PbList<ContainerVolume> createRepeated() =>
+      $pb.PbList<ContainerVolume>();
   @$core.pragma('dart2js:noInline')
   static ContainerVolume getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ContainerVolume>(create);
@@ -441,7 +448,8 @@ class CreateWorkspaceRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CreateWorkspaceRequest clone() => deepCopy();
+  CreateWorkspaceRequest clone() =>
+      CreateWorkspaceRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CreateWorkspaceRequest copyWith(
           void Function(CreateWorkspaceRequest) updates) =>
@@ -455,6 +463,8 @@ class CreateWorkspaceRequest extends $pb.GeneratedMessage {
   static CreateWorkspaceRequest create() => CreateWorkspaceRequest._();
   @$core.override
   CreateWorkspaceRequest createEmptyInstance() => create();
+  static $pb.PbList<CreateWorkspaceRequest> createRepeated() =>
+      $pb.PbList<CreateWorkspaceRequest>();
   @$core.pragma('dart2js:noInline')
   static CreateWorkspaceRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CreateWorkspaceRequest>(create);
@@ -500,7 +510,8 @@ class CreateWorkspaceResponse extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CreateWorkspaceResponse clone() => deepCopy();
+  CreateWorkspaceResponse clone() =>
+      CreateWorkspaceResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CreateWorkspaceResponse copyWith(
           void Function(CreateWorkspaceResponse) updates) =>
@@ -514,6 +525,8 @@ class CreateWorkspaceResponse extends $pb.GeneratedMessage {
   static CreateWorkspaceResponse create() => CreateWorkspaceResponse._();
   @$core.override
   CreateWorkspaceResponse createEmptyInstance() => create();
+  static $pb.PbList<CreateWorkspaceResponse> createRepeated() =>
+      $pb.PbList<CreateWorkspaceResponse>();
   @$core.pragma('dart2js:noInline')
   static CreateWorkspaceResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CreateWorkspaceResponse>(create);
@@ -558,7 +571,8 @@ class ListWorkspacesRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListWorkspacesRequest clone() => deepCopy();
+  ListWorkspacesRequest clone() =>
+      ListWorkspacesRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListWorkspacesRequest copyWith(
           void Function(ListWorkspacesRequest) updates) =>
@@ -572,6 +586,8 @@ class ListWorkspacesRequest extends $pb.GeneratedMessage {
   static ListWorkspacesRequest create() => ListWorkspacesRequest._();
   @$core.override
   ListWorkspacesRequest createEmptyInstance() => create();
+  static $pb.PbList<ListWorkspacesRequest> createRepeated() =>
+      $pb.PbList<ListWorkspacesRequest>();
   @$core.pragma('dart2js:noInline')
   static ListWorkspacesRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ListWorkspacesRequest>(create);
@@ -601,12 +617,14 @@ class ListWorkspacesResponse extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'),
       createEmptyInstance: create)
-    ..pPM<WmWorkspaceInfo>(1, _omitFieldNames ? '' : 'workspaces',
+    ..pc<WmWorkspaceInfo>(
+        1, _omitFieldNames ? '' : 'workspaces', $pb.PbFieldType.PM,
         subBuilder: WmWorkspaceInfo.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListWorkspacesResponse clone() => deepCopy();
+  ListWorkspacesResponse clone() =>
+      ListWorkspacesResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListWorkspacesResponse copyWith(
           void Function(ListWorkspacesResponse) updates) =>
@@ -620,6 +638,8 @@ class ListWorkspacesResponse extends $pb.GeneratedMessage {
   static ListWorkspacesResponse create() => ListWorkspacesResponse._();
   @$core.override
   ListWorkspacesResponse createEmptyInstance() => create();
+  static $pb.PbList<ListWorkspacesResponse> createRepeated() =>
+      $pb.PbList<ListWorkspacesResponse>();
   @$core.pragma('dart2js:noInline')
   static ListWorkspacesResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ListWorkspacesResponse>(create);
@@ -656,7 +676,7 @@ class GetWorkspaceRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetWorkspaceRequest clone() => deepCopy();
+  GetWorkspaceRequest clone() => GetWorkspaceRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GetWorkspaceRequest copyWith(void Function(GetWorkspaceRequest) updates) =>
       super.copyWith((message) => updates(message as GetWorkspaceRequest))
@@ -669,6 +689,8 @@ class GetWorkspaceRequest extends $pb.GeneratedMessage {
   static GetWorkspaceRequest create() => GetWorkspaceRequest._();
   @$core.override
   GetWorkspaceRequest createEmptyInstance() => create();
+  static $pb.PbList<GetWorkspaceRequest> createRepeated() =>
+      $pb.PbList<GetWorkspaceRequest>();
   @$core.pragma('dart2js:noInline')
   static GetWorkspaceRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<GetWorkspaceRequest>(create);
@@ -711,7 +733,8 @@ class DeleteWorkspaceRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DeleteWorkspaceRequest clone() => deepCopy();
+  DeleteWorkspaceRequest clone() =>
+      DeleteWorkspaceRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DeleteWorkspaceRequest copyWith(
           void Function(DeleteWorkspaceRequest) updates) =>
@@ -725,6 +748,8 @@ class DeleteWorkspaceRequest extends $pb.GeneratedMessage {
   static DeleteWorkspaceRequest create() => DeleteWorkspaceRequest._();
   @$core.override
   DeleteWorkspaceRequest createEmptyInstance() => create();
+  static $pb.PbList<DeleteWorkspaceRequest> createRepeated() =>
+      $pb.PbList<DeleteWorkspaceRequest>();
   @$core.pragma('dart2js:noInline')
   static DeleteWorkspaceRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<DeleteWorkspaceRequest>(create);
@@ -760,7 +785,8 @@ class DeleteWorkspaceResponse extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DeleteWorkspaceResponse clone() => deepCopy();
+  DeleteWorkspaceResponse clone() =>
+      DeleteWorkspaceResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DeleteWorkspaceResponse copyWith(
           void Function(DeleteWorkspaceResponse) updates) =>
@@ -774,6 +800,8 @@ class DeleteWorkspaceResponse extends $pb.GeneratedMessage {
   static DeleteWorkspaceResponse create() => DeleteWorkspaceResponse._();
   @$core.override
   DeleteWorkspaceResponse createEmptyInstance() => create();
+  static $pb.PbList<DeleteWorkspaceResponse> createRepeated() =>
+      $pb.PbList<DeleteWorkspaceResponse>();
   @$core.pragma('dart2js:noInline')
   static DeleteWorkspaceResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<DeleteWorkspaceResponse>(create);
@@ -818,13 +846,14 @@ class StartWorkerRequest extends $pb.GeneratedMessage {
         keyFieldType: $pb.PbFieldType.OS,
         valueFieldType: $pb.PbFieldType.OS,
         packageName: const $pb.PackageName('workspacemanager.v1'))
-    ..pPM<ContainerVolume>(4, _omitFieldNames ? '' : 'volumes',
+    ..pc<ContainerVolume>(
+        4, _omitFieldNames ? '' : 'volumes', $pb.PbFieldType.PM,
         subBuilder: ContainerVolume.create)
     ..pPS(5, _omitFieldNames ? '' : 'command')
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  StartWorkerRequest clone() => deepCopy();
+  StartWorkerRequest clone() => StartWorkerRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StartWorkerRequest copyWith(void Function(StartWorkerRequest) updates) =>
       super.copyWith((message) => updates(message as StartWorkerRequest))
@@ -837,6 +866,8 @@ class StartWorkerRequest extends $pb.GeneratedMessage {
   static StartWorkerRequest create() => StartWorkerRequest._();
   @$core.override
   StartWorkerRequest createEmptyInstance() => create();
+  static $pb.PbList<StartWorkerRequest> createRepeated() =>
+      $pb.PbList<StartWorkerRequest>();
   @$core.pragma('dart2js:noInline')
   static StartWorkerRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<StartWorkerRequest>(create);
@@ -903,7 +934,7 @@ class StartWorkerResponse extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  StartWorkerResponse clone() => deepCopy();
+  StartWorkerResponse clone() => StartWorkerResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StartWorkerResponse copyWith(void Function(StartWorkerResponse) updates) =>
       super.copyWith((message) => updates(message as StartWorkerResponse))
@@ -916,6 +947,8 @@ class StartWorkerResponse extends $pb.GeneratedMessage {
   static StartWorkerResponse create() => StartWorkerResponse._();
   @$core.override
   StartWorkerResponse createEmptyInstance() => create();
+  static $pb.PbList<StartWorkerResponse> createRepeated() =>
+      $pb.PbList<StartWorkerResponse>();
   @$core.pragma('dart2js:noInline')
   static StartWorkerResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<StartWorkerResponse>(create);
@@ -976,7 +1009,7 @@ class StopWorkerRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  StopWorkerRequest clone() => deepCopy();
+  StopWorkerRequest clone() => StopWorkerRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StopWorkerRequest copyWith(void Function(StopWorkerRequest) updates) =>
       super.copyWith((message) => updates(message as StopWorkerRequest))
@@ -989,6 +1022,8 @@ class StopWorkerRequest extends $pb.GeneratedMessage {
   static StopWorkerRequest create() => StopWorkerRequest._();
   @$core.override
   StopWorkerRequest createEmptyInstance() => create();
+  static $pb.PbList<StopWorkerRequest> createRepeated() =>
+      $pb.PbList<StopWorkerRequest>();
   @$core.pragma('dart2js:noInline')
   static StopWorkerRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<StopWorkerRequest>(create);
@@ -1024,7 +1059,7 @@ class StopWorkerResponse extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  StopWorkerResponse clone() => deepCopy();
+  StopWorkerResponse clone() => StopWorkerResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StopWorkerResponse copyWith(void Function(StopWorkerResponse) updates) =>
       super.copyWith((message) => updates(message as StopWorkerResponse))
@@ -1037,6 +1072,8 @@ class StopWorkerResponse extends $pb.GeneratedMessage {
   static StopWorkerResponse create() => StopWorkerResponse._();
   @$core.override
   StopWorkerResponse createEmptyInstance() => create();
+  static $pb.PbList<StopWorkerResponse> createRepeated() =>
+      $pb.PbList<StopWorkerResponse>();
   @$core.pragma('dart2js:noInline')
   static StopWorkerResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<StopWorkerResponse>(create);
@@ -1070,7 +1107,8 @@ class GetWorkerStatusRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetWorkerStatusRequest clone() => deepCopy();
+  GetWorkerStatusRequest clone() =>
+      GetWorkerStatusRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GetWorkerStatusRequest copyWith(
           void Function(GetWorkerStatusRequest) updates) =>
@@ -1084,6 +1122,8 @@ class GetWorkerStatusRequest extends $pb.GeneratedMessage {
   static GetWorkerStatusRequest create() => GetWorkerStatusRequest._();
   @$core.override
   GetWorkerStatusRequest createEmptyInstance() => create();
+  static $pb.PbList<GetWorkerStatusRequest> createRepeated() =>
+      $pb.PbList<GetWorkerStatusRequest>();
   @$core.pragma('dart2js:noInline')
   static GetWorkerStatusRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<GetWorkerStatusRequest>(create);
@@ -1129,7 +1169,8 @@ class GetWorkerStatusResponse extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetWorkerStatusResponse clone() => deepCopy();
+  GetWorkerStatusResponse clone() =>
+      GetWorkerStatusResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GetWorkerStatusResponse copyWith(
           void Function(GetWorkerStatusResponse) updates) =>
@@ -1143,6 +1184,8 @@ class GetWorkerStatusResponse extends $pb.GeneratedMessage {
   static GetWorkerStatusResponse create() => GetWorkerStatusResponse._();
   @$core.override
   GetWorkerStatusResponse createEmptyInstance() => create();
+  static $pb.PbList<GetWorkerStatusResponse> createRepeated() =>
+      $pb.PbList<GetWorkerStatusResponse>();
   @$core.pragma('dart2js:noInline')
   static GetWorkerStatusResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<GetWorkerStatusResponse>(create);
@@ -1187,7 +1230,7 @@ class ListWorkersRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListWorkersRequest clone() => deepCopy();
+  ListWorkersRequest clone() => ListWorkersRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListWorkersRequest copyWith(void Function(ListWorkersRequest) updates) =>
       super.copyWith((message) => updates(message as ListWorkersRequest))
@@ -1200,6 +1243,8 @@ class ListWorkersRequest extends $pb.GeneratedMessage {
   static ListWorkersRequest create() => ListWorkersRequest._();
   @$core.override
   ListWorkersRequest createEmptyInstance() => create();
+  static $pb.PbList<ListWorkersRequest> createRepeated() =>
+      $pb.PbList<ListWorkersRequest>();
   @$core.pragma('dart2js:noInline')
   static ListWorkersRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ListWorkersRequest>(create);
@@ -1229,12 +1274,12 @@ class ListWorkersResponse extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'),
       createEmptyInstance: create)
-    ..pPM<WmWorkerInfo>(1, _omitFieldNames ? '' : 'workers',
+    ..pc<WmWorkerInfo>(1, _omitFieldNames ? '' : 'workers', $pb.PbFieldType.PM,
         subBuilder: WmWorkerInfo.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListWorkersResponse clone() => deepCopy();
+  ListWorkersResponse clone() => ListWorkersResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListWorkersResponse copyWith(void Function(ListWorkersResponse) updates) =>
       super.copyWith((message) => updates(message as ListWorkersResponse))
@@ -1247,6 +1292,8 @@ class ListWorkersResponse extends $pb.GeneratedMessage {
   static ListWorkersResponse create() => ListWorkersResponse._();
   @$core.override
   ListWorkersResponse createEmptyInstance() => create();
+  static $pb.PbList<ListWorkersResponse> createRepeated() =>
+      $pb.PbList<ListWorkersResponse>();
   @$core.pragma('dart2js:noInline')
   static ListWorkersResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<ListWorkersResponse>(create);
@@ -1293,7 +1340,8 @@ class EnsureWorkspaceWorkerRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EnsureWorkspaceWorkerRequest clone() => deepCopy();
+  EnsureWorkspaceWorkerRequest clone() =>
+      EnsureWorkspaceWorkerRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EnsureWorkspaceWorkerRequest copyWith(
           void Function(EnsureWorkspaceWorkerRequest) updates) =>
@@ -1309,6 +1357,8 @@ class EnsureWorkspaceWorkerRequest extends $pb.GeneratedMessage {
       EnsureWorkspaceWorkerRequest._();
   @$core.override
   EnsureWorkspaceWorkerRequest createEmptyInstance() => create();
+  static $pb.PbList<EnsureWorkspaceWorkerRequest> createRepeated() =>
+      $pb.PbList<EnsureWorkspaceWorkerRequest>();
   @$core.pragma('dart2js:noInline')
   static EnsureWorkspaceWorkerRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<EnsureWorkspaceWorkerRequest>(create);
@@ -1372,7 +1422,8 @@ class EnsureWorkspaceWorkerResponse extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EnsureWorkspaceWorkerResponse clone() => deepCopy();
+  EnsureWorkspaceWorkerResponse clone() =>
+      EnsureWorkspaceWorkerResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   EnsureWorkspaceWorkerResponse copyWith(
           void Function(EnsureWorkspaceWorkerResponse) updates) =>
@@ -1388,6 +1439,8 @@ class EnsureWorkspaceWorkerResponse extends $pb.GeneratedMessage {
       EnsureWorkspaceWorkerResponse._();
   @$core.override
   EnsureWorkspaceWorkerResponse createEmptyInstance() => create();
+  static $pb.PbList<EnsureWorkspaceWorkerResponse> createRepeated() =>
+      $pb.PbList<EnsureWorkspaceWorkerResponse>();
   @$core.pragma('dart2js:noInline')
   static EnsureWorkspaceWorkerResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<EnsureWorkspaceWorkerResponse>(create);
@@ -1463,7 +1516,8 @@ class UpdateWorkspaceConfigRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UpdateWorkspaceConfigRequest clone() => deepCopy();
+  UpdateWorkspaceConfigRequest clone() =>
+      UpdateWorkspaceConfigRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UpdateWorkspaceConfigRequest copyWith(
           void Function(UpdateWorkspaceConfigRequest) updates) =>
@@ -1479,6 +1533,8 @@ class UpdateWorkspaceConfigRequest extends $pb.GeneratedMessage {
       UpdateWorkspaceConfigRequest._();
   @$core.override
   UpdateWorkspaceConfigRequest createEmptyInstance() => create();
+  static $pb.PbList<UpdateWorkspaceConfigRequest> createRepeated() =>
+      $pb.PbList<UpdateWorkspaceConfigRequest>();
   @$core.pragma('dart2js:noInline')
   static UpdateWorkspaceConfigRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<UpdateWorkspaceConfigRequest>(create);
@@ -1532,7 +1588,8 @@ class UpdateWorkspaceConfigResponse extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UpdateWorkspaceConfigResponse clone() => deepCopy();
+  UpdateWorkspaceConfigResponse clone() =>
+      UpdateWorkspaceConfigResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UpdateWorkspaceConfigResponse copyWith(
           void Function(UpdateWorkspaceConfigResponse) updates) =>
@@ -1548,6 +1605,8 @@ class UpdateWorkspaceConfigResponse extends $pb.GeneratedMessage {
       UpdateWorkspaceConfigResponse._();
   @$core.override
   UpdateWorkspaceConfigResponse createEmptyInstance() => create();
+  static $pb.PbList<UpdateWorkspaceConfigResponse> createRepeated() =>
+      $pb.PbList<UpdateWorkspaceConfigResponse>();
   @$core.pragma('dart2js:noInline')
   static UpdateWorkspaceConfigResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<UpdateWorkspaceConfigResponse>(create);
@@ -1574,7 +1633,7 @@ class HealthRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HealthRequest clone() => deepCopy();
+  HealthRequest clone() => HealthRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HealthRequest copyWith(void Function(HealthRequest) updates) =>
       super.copyWith((message) => updates(message as HealthRequest))
@@ -1587,6 +1646,8 @@ class HealthRequest extends $pb.GeneratedMessage {
   static HealthRequest create() => HealthRequest._();
   @$core.override
   HealthRequest createEmptyInstance() => create();
+  static $pb.PbList<HealthRequest> createRepeated() =>
+      $pb.PbList<HealthRequest>();
   @$core.pragma('dart2js:noInline')
   static HealthRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<HealthRequest>(create);
@@ -1620,7 +1681,7 @@ class HealthResponse extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HealthResponse clone() => deepCopy();
+  HealthResponse clone() => HealthResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HealthResponse copyWith(void Function(HealthResponse) updates) =>
       super.copyWith((message) => updates(message as HealthResponse))
@@ -1633,6 +1694,8 @@ class HealthResponse extends $pb.GeneratedMessage {
   static HealthResponse create() => HealthResponse._();
   @$core.override
   HealthResponse createEmptyInstance() => create();
+  static $pb.PbList<HealthResponse> createRepeated() =>
+      $pb.PbList<HealthResponse>();
   @$core.pragma('dart2js:noInline')
   static HealthResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<HealthResponse>(create);

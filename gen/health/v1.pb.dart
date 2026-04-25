@@ -8,13 +8,14 @@
 // ignore_for_file: constant_identifier_names
 // ignore_for_file: curly_braces_in_flow_control_structures
 // ignore_for_file: deprecated_member_use_from_same_package, library_prefixes
-// ignore_for_file: non_constant_identifier_names, prefer_relative_imports
+// ignore_for_file: non_constant_identifier_names
 
 import 'dart:async' as $async;
 import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
-import 'package:protobuf/well_known_types/google/protobuf/empty.pb.dart' as $0;
+
+import '../google/protobuf/empty.pb.dart' as $0;
 
 export 'package:protobuf/protobuf.dart' show GeneratedMessageGenericExtensions;
 
@@ -37,7 +38,7 @@ class CheckRequest extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CheckRequest clone() => deepCopy();
+  CheckRequest clone() => CheckRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CheckRequest copyWith(void Function(CheckRequest) updates) =>
       super.copyWith((message) => updates(message as CheckRequest))
@@ -50,6 +51,8 @@ class CheckRequest extends $pb.GeneratedMessage {
   static CheckRequest create() => CheckRequest._();
   @$core.override
   CheckRequest createEmptyInstance() => create();
+  static $pb.PbList<CheckRequest> createRepeated() =>
+      $pb.PbList<CheckRequest>();
   @$core.pragma('dart2js:noInline')
   static CheckRequest getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CheckRequest>(create);
@@ -85,7 +88,7 @@ class CheckResponse extends $pb.GeneratedMessage {
     ..hasRequiredFields = false;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CheckResponse clone() => deepCopy();
+  CheckResponse clone() => CheckResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CheckResponse copyWith(void Function(CheckResponse) updates) =>
       super.copyWith((message) => updates(message as CheckResponse))
@@ -98,6 +101,8 @@ class CheckResponse extends $pb.GeneratedMessage {
   static CheckResponse create() => CheckResponse._();
   @$core.override
   CheckResponse createEmptyInstance() => create();
+  static $pb.PbList<CheckResponse> createRepeated() =>
+      $pb.PbList<CheckResponse>();
   @$core.pragma('dart2js:noInline')
   static CheckResponse getDefault() => _defaultInstance ??=
       $pb.GeneratedMessage.$_defaultFor<CheckResponse>(create);
