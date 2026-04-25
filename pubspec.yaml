@@ -8,4 +8,4 @@ environment:
 
 dependencies:
   connectrpc: ^1.0.0
-  protobuf: ^6.0.0
+  protobuf: ^4.2.0
