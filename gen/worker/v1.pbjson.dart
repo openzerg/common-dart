@@ -22,14 +22,7 @@ const ExecRequest$json = {
   '2': [
     {'1': 'command', '3': 1, '4': 1, '5': 9, '10': 'command'},
     {'1': 'workdir', '3': 2, '4': 1, '5': 9, '10': 'workdir'},
-    {
-      '1': 'env',
-      '3': 3,
-      '4': 3,
-      '5': 11,
-      '6': '.worker.v1.ExecRequest.EnvEntry',
-      '10': 'env'
-    },
+    {'1': 'env', '3': 3, '4': 3, '5': 11, '6': '.worker.v1.ExecRequest.EnvEntry', '10': 'env'},
     {'1': 'timeoutMs', '3': 4, '4': 1, '5': 5, '10': 'timeoutMs'},
   ],
   '3': [ExecRequest_EnvEntry$json],
@@ -76,14 +69,7 @@ const SpawnRequest$json = {
     {'1': 'jobId', '3': 1, '4': 1, '5': 9, '10': 'jobId'},
     {'1': 'command', '3': 2, '4': 1, '5': 9, '10': 'command'},
     {'1': 'workdir', '3': 3, '4': 1, '5': 9, '10': 'workdir'},
-    {
-      '1': 'env',
-      '3': 4,
-      '4': 3,
-      '5': 11,
-      '6': '.worker.v1.SpawnRequest.EnvEntry',
-      '10': 'env'
-    },
+    {'1': 'env', '3': 4, '4': 3, '5': 11, '6': '.worker.v1.SpawnRequest.EnvEntry', '10': 'env'},
   ],
   '3': [SpawnRequest_EnvEntry$json],
 };
@@ -128,8 +114,8 @@ const ReadFileRequest$json = {
 };
 
 /// Descriptor for `ReadFileRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List readFileRequestDescriptor = $convert
-    .base64Decode('Cg9SZWFkRmlsZVJlcXVlc3QSEgoEcGF0aBgBIAEoCVIEcGF0aA==');
+final $typed_data.Uint8List readFileRequestDescriptor = $convert.base64Decode(
+    'Cg9SZWFkRmlsZVJlcXVlc3QSEgoEcGF0aBgBIAEoCVIEcGF0aA==');
 
 @$core.Deprecated('Use readFileResponseDescriptor instead')
 const ReadFileResponse$json = {
@@ -182,8 +168,8 @@ const StatRequest$json = {
 };
 
 /// Descriptor for `StatRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List statRequestDescriptor =
-    $convert.base64Decode('CgtTdGF0UmVxdWVzdBISCgRwYXRoGAEgASgJUgRwYXRo');
+final $typed_data.Uint8List statRequestDescriptor = $convert.base64Decode(
+    'CgtTdGF0UmVxdWVzdBISCgRwYXRoGAEgASgJUgRwYXRo');
 
 @$core.Deprecated('Use statResponseDescriptor instead')
 const StatResponse$json = {
@@ -212,9 +198,8 @@ const InstallPackagesRequest$json = {
 };
 
 /// Descriptor for `InstallPackagesRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List installPackagesRequestDescriptor =
-    $convert.base64Decode(
-        'ChZJbnN0YWxsUGFja2FnZXNSZXF1ZXN0EhoKCHBhY2thZ2VzGAEgAygJUghwYWNrYWdlcw==');
+final $typed_data.Uint8List installPackagesRequestDescriptor = $convert.base64Decode(
+    'ChZJbnN0YWxsUGFja2FnZXNSZXF1ZXN0EhoKCHBhY2thZ2VzGAEgAygJUghwYWNrYWdlcw==');
 
 @$core.Deprecated('Use installPackagesResponseDescriptor instead')
 const InstallPackagesResponse$json = {
@@ -237,8 +222,8 @@ const HealthRequest$json = {
 };
 
 /// Descriptor for `HealthRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List healthRequestDescriptor =
-    $convert.base64Decode('Cg1IZWFsdGhSZXF1ZXN0');
+final $typed_data.Uint8List healthRequestDescriptor = $convert.base64Decode(
+    'Cg1IZWFsdGhSZXF1ZXN0');
 
 @$core.Deprecated('Use healthResponseDescriptor instead')
 const HealthResponse$json = {
@@ -249,53 +234,24 @@ const HealthResponse$json = {
 };
 
 /// Descriptor for `HealthResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List healthResponseDescriptor = $convert
-    .base64Decode('Cg5IZWFsdGhSZXNwb25zZRIWCgZzdGF0dXMYASABKAlSBnN0YXR1cw==');
+final $typed_data.Uint8List healthResponseDescriptor = $convert.base64Decode(
+    'Cg5IZWFsdGhSZXNwb25zZRIWCgZzdGF0dXMYASABKAlSBnN0YXR1cw==');
 
 const $core.Map<$core.String, $core.dynamic> WorkerServiceBase$json = {
   '1': 'WorkerService',
   '2': [
-    {
-      '1': 'Exec',
-      '2': '.worker.v1.ExecRequest',
-      '3': '.worker.v1.ExecResponse'
-    },
-    {
-      '1': 'Spawn',
-      '2': '.worker.v1.SpawnRequest',
-      '3': '.worker.v1.SpawnResponse'
-    },
-    {
-      '1': 'ReadFile',
-      '2': '.worker.v1.ReadFileRequest',
-      '3': '.worker.v1.ReadFileResponse'
-    },
-    {
-      '1': 'WriteFile',
-      '2': '.worker.v1.WriteFileRequest',
-      '3': '.worker.v1.WriteFileResponse'
-    },
-    {
-      '1': 'Stat',
-      '2': '.worker.v1.StatRequest',
-      '3': '.worker.v1.StatResponse'
-    },
-    {
-      '1': 'InstallPackages',
-      '2': '.worker.v1.InstallPackagesRequest',
-      '3': '.worker.v1.InstallPackagesResponse'
-    },
-    {
-      '1': 'Health',
-      '2': '.google.protobuf.Empty',
-      '3': '.worker.v1.HealthResponse'
-    },
+    {'1': 'Exec', '2': '.worker.v1.ExecRequest', '3': '.worker.v1.ExecResponse'},
+    {'1': 'Spawn', '2': '.worker.v1.SpawnRequest', '3': '.worker.v1.SpawnResponse'},
+    {'1': 'ReadFile', '2': '.worker.v1.ReadFileRequest', '3': '.worker.v1.ReadFileResponse'},
+    {'1': 'WriteFile', '2': '.worker.v1.WriteFileRequest', '3': '.worker.v1.WriteFileResponse'},
+    {'1': 'Stat', '2': '.worker.v1.StatRequest', '3': '.worker.v1.StatResponse'},
+    {'1': 'InstallPackages', '2': '.worker.v1.InstallPackagesRequest', '3': '.worker.v1.InstallPackagesResponse'},
+    {'1': 'Health', '2': '.google.protobuf.Empty', '3': '.worker.v1.HealthResponse'},
   ],
 };
 
 @$core.Deprecated('Use workerServiceDescriptor instead')
-const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
-    WorkerServiceBase$messageJson = {
+const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> WorkerServiceBase$messageJson = {
   '.worker.v1.ExecRequest': ExecRequest$json,
   '.worker.v1.ExecRequest.EnvEntry': ExecRequest_EnvEntry$json,
   '.worker.v1.ExecResponse': ExecResponse$json,
@@ -325,3 +281,4 @@ final $typed_data.Uint8List workerServiceDescriptor = $convert.base64Decode(
     'D0luc3RhbGxQYWNrYWdlcxIhLndvcmtlci52MS5JbnN0YWxsUGFja2FnZXNSZXF1ZXN0GiIud2'
     '9ya2VyLnYxLkluc3RhbGxQYWNrYWdlc1Jlc3BvbnNlEjsKBkhlYWx0aBIWLmdvb2dsZS5wcm90'
     'b2J1Zi5FbXB0eRoZLndvcmtlci52MS5IZWFsdGhSZXNwb25zZQ==');
+

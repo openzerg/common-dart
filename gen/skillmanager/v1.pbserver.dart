@@ -22,54 +22,35 @@ import 'v1.pbjson.dart';
 export 'v1.pb.dart';
 
 abstract class SkillManagerServiceBase extends $pb.GeneratedService {
-  $async.Future<$1.RegisterSkillResponse> registerSkill(
-      $pb.ServerContext ctx, $1.RegisterSkillRequest request);
-  $async.Future<$1.UpdateSkillResponse> updateSkill(
-      $pb.ServerContext ctx, $1.UpdateSkillRequest request);
-  $async.Future<$1.DeleteSkillResponse> deleteSkill(
-      $pb.ServerContext ctx, $1.DeleteSkillRequest request);
-  $async.Future<$1.ListSkillsResponse> listSkills(
-      $pb.ServerContext ctx, $0.Empty request);
-  $async.Future<$1.SkillInfo> getSkill(
-      $pb.ServerContext ctx, $1.GetSkillRequest request);
+  $async.Future<$1.RegisterSkillResponse> registerSkill($pb.ServerContext ctx, $1.RegisterSkillRequest request);
+  $async.Future<$1.UpdateSkillResponse> updateSkill($pb.ServerContext ctx, $1.UpdateSkillRequest request);
+  $async.Future<$1.DeleteSkillResponse> deleteSkill($pb.ServerContext ctx, $1.DeleteSkillRequest request);
+  $async.Future<$1.ListSkillsResponse> listSkills($pb.ServerContext ctx, $0.Empty request);
+  $async.Future<$1.SkillInfo> getSkill($pb.ServerContext ctx, $1.GetSkillRequest request);
 
   $pb.GeneratedMessage createRequest($core.String methodName) {
     switch (methodName) {
-      case 'RegisterSkill':
-        return $1.RegisterSkillRequest();
-      case 'UpdateSkill':
-        return $1.UpdateSkillRequest();
-      case 'DeleteSkill':
-        return $1.DeleteSkillRequest();
-      case 'ListSkills':
-        return $0.Empty();
-      case 'GetSkill':
-        return $1.GetSkillRequest();
-      default:
-        throw $core.ArgumentError('Unknown method: $methodName');
+      case 'RegisterSkill': return $1.RegisterSkillRequest();
+      case 'UpdateSkill': return $1.UpdateSkillRequest();
+      case 'DeleteSkill': return $1.DeleteSkillRequest();
+      case 'ListSkills': return $0.Empty();
+      case 'GetSkill': return $1.GetSkillRequest();
+      default: throw $core.ArgumentError('Unknown method: $methodName');
     }
   }
 
-  $async.Future<$pb.GeneratedMessage> handleCall($pb.ServerContext ctx,
-      $core.String methodName, $pb.GeneratedMessage request) {
+  $async.Future<$pb.GeneratedMessage> handleCall($pb.ServerContext ctx, $core.String methodName, $pb.GeneratedMessage request) {
     switch (methodName) {
-      case 'RegisterSkill':
-        return registerSkill(ctx, request as $1.RegisterSkillRequest);
-      case 'UpdateSkill':
-        return updateSkill(ctx, request as $1.UpdateSkillRequest);
-      case 'DeleteSkill':
-        return deleteSkill(ctx, request as $1.DeleteSkillRequest);
-      case 'ListSkills':
-        return listSkills(ctx, request as $0.Empty);
-      case 'GetSkill':
-        return getSkill(ctx, request as $1.GetSkillRequest);
-      default:
-        throw $core.ArgumentError('Unknown method: $methodName');
+      case 'RegisterSkill': return registerSkill(ctx, request as $1.RegisterSkillRequest);
+      case 'UpdateSkill': return updateSkill(ctx, request as $1.UpdateSkillRequest);
+      case 'DeleteSkill': return deleteSkill(ctx, request as $1.DeleteSkillRequest);
+      case 'ListSkills': return listSkills(ctx, request as $0.Empty);
+      case 'GetSkill': return getSkill(ctx, request as $1.GetSkillRequest);
+      default: throw $core.ArgumentError('Unknown method: $methodName');
     }
   }
 
-  $core.Map<$core.String, $core.dynamic> get $json =>
-      SkillManagerServiceBase$json;
-  $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
-      get $messageJson => SkillManagerServiceBase$messageJson;
+  $core.Map<$core.String, $core.dynamic> get $json => SkillManagerServiceBase$json;
+  $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> get $messageJson => SkillManagerServiceBase$messageJson;
 }
+

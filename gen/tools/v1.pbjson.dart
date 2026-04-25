@@ -22,8 +22,8 @@ const ListToolsRequest$json = {
 };
 
 /// Descriptor for `ListToolsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listToolsRequestDescriptor =
-    $convert.base64Decode('ChBMaXN0VG9vbHNSZXF1ZXN0');
+final $typed_data.Uint8List listToolsRequestDescriptor = $convert.base64Decode(
+    'ChBMaXN0VG9vbHNSZXF1ZXN0');
 
 @$core.Deprecated('Use toolDefinitionDescriptor instead')
 const ToolDefinition$json = {
@@ -51,14 +51,7 @@ final $typed_data.Uint8List toolDefinitionDescriptor = $convert.base64Decode(
 const ListToolsResponse$json = {
   '1': 'ListToolsResponse',
   '2': [
-    {
-      '1': 'tools',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.tools.v1.ToolDefinition',
-      '10': 'tools'
-    },
+    {'1': 'tools', '3': 1, '4': 3, '5': 11, '6': '.tools.v1.ToolDefinition', '10': 'tools'},
     {'1': 'systemContext', '3': 2, '4': 1, '5': 9, '10': 'systemContext'},
   ],
 };
@@ -91,14 +84,7 @@ const ExecuteToolResponse$json = {
     {'1': 'resultJson', '3': 1, '4': 1, '5': 9, '10': 'resultJson'},
     {'1': 'success', '3': 2, '4': 1, '5': 8, '10': 'success'},
     {'1': 'error', '3': 3, '4': 1, '5': 9, '10': 'error'},
-    {
-      '1': 'metadata',
-      '3': 4,
-      '4': 3,
-      '5': 11,
-      '6': '.tools.v1.ExecuteToolResponse.MetadataEntry',
-      '10': 'metadata'
-    },
+    {'1': 'metadata', '3': 4, '4': 3, '5': 11, '6': '.tools.v1.ExecuteToolResponse.MetadataEntry', '10': 'metadata'},
   ],
   '3': [ExecuteToolResponse_MetadataEntry$json],
 };
@@ -124,29 +110,19 @@ final $typed_data.Uint8List executeToolResponseDescriptor = $convert.base64Decod
 const $core.Map<$core.String, $core.dynamic> ToolServiceBase$json = {
   '1': 'ToolService',
   '2': [
-    {
-      '1': 'ListTools',
-      '2': '.google.protobuf.Empty',
-      '3': '.tools.v1.ListToolsResponse'
-    },
-    {
-      '1': 'ExecuteTool',
-      '2': '.tools.v1.ExecuteToolRequest',
-      '3': '.tools.v1.ExecuteToolResponse'
-    },
+    {'1': 'ListTools', '2': '.google.protobuf.Empty', '3': '.tools.v1.ListToolsResponse'},
+    {'1': 'ExecuteTool', '2': '.tools.v1.ExecuteToolRequest', '3': '.tools.v1.ExecuteToolResponse'},
   ],
 };
 
 @$core.Deprecated('Use toolServiceDescriptor instead')
-const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
-    ToolServiceBase$messageJson = {
+const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> ToolServiceBase$messageJson = {
   '.google.protobuf.Empty': $0.Empty$json,
   '.tools.v1.ListToolsResponse': ListToolsResponse$json,
   '.tools.v1.ToolDefinition': ToolDefinition$json,
   '.tools.v1.ExecuteToolRequest': ExecuteToolRequest$json,
   '.tools.v1.ExecuteToolResponse': ExecuteToolResponse$json,
-  '.tools.v1.ExecuteToolResponse.MetadataEntry':
-      ExecuteToolResponse_MetadataEntry$json,
+  '.tools.v1.ExecuteToolResponse.MetadataEntry': ExecuteToolResponse_MetadataEntry$json,
 };
 
 /// Descriptor for `ToolService`. Decode as a `google.protobuf.ServiceDescriptorProto`.
@@ -154,3 +130,4 @@ final $typed_data.Uint8List toolServiceDescriptor = $convert.base64Decode(
     'CgtUb29sU2VydmljZRJACglMaXN0VG9vbHMSFi5nb29nbGUucHJvdG9idWYuRW1wdHkaGy50b2'
     '9scy52MS5MaXN0VG9vbHNSZXNwb25zZRJKCgtFeGVjdXRlVG9vbBIcLnRvb2xzLnYxLkV4ZWN1'
     'dGVUb29sUmVxdWVzdBodLnRvb2xzLnYxLkV4ZWN1dGVUb29sUmVzcG9uc2U=');
+

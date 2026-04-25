@@ -23,13 +23,7 @@ const WmWorkspaceInfo$json = {
     {'1': 'workspaceId', '3': 1, '4': 1, '5': 9, '10': 'workspaceId'},
     {'1': 'volumeName', '3': 2, '4': 1, '5': 9, '10': 'volumeName'},
     {'1': 'state', '3': 3, '4': 1, '5': 9, '10': 'state'},
-    {
-      '1': 'createdBySessionId',
-      '3': 4,
-      '4': 1,
-      '5': 9,
-      '10': 'createdBySessionId'
-    },
+    {'1': 'createdBySessionId', '3': 4, '4': 1, '5': 9, '10': 'createdBySessionId'},
     {'1': 'createdAt', '3': 5, '4': 1, '5': 3, '10': 'createdAt'},
     {'1': 'workerPodName', '3': 6, '4': 1, '5': 9, '10': 'workerPodName'},
     {'1': 'skillSlugs', '3': 7, '4': 1, '5': 9, '10': 'skillSlugs'},
@@ -98,9 +92,8 @@ const CreateWorkspaceRequest$json = {
 };
 
 /// Descriptor for `CreateWorkspaceRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List createWorkspaceRequestDescriptor =
-    $convert.base64Decode(
-        'ChZDcmVhdGVXb3Jrc3BhY2VSZXF1ZXN0EhwKCXNlc3Npb25JZBgBIAEoCVIJc2Vzc2lvbklk');
+final $typed_data.Uint8List createWorkspaceRequestDescriptor = $convert.base64Decode(
+    'ChZDcmVhdGVXb3Jrc3BhY2VSZXF1ZXN0EhwKCXNlc3Npb25JZBgBIAEoCVIJc2Vzc2lvbklk');
 
 @$core.Deprecated('Use createWorkspaceResponseDescriptor instead')
 const CreateWorkspaceResponse$json = {
@@ -112,10 +105,9 @@ const CreateWorkspaceResponse$json = {
 };
 
 /// Descriptor for `CreateWorkspaceResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List createWorkspaceResponseDescriptor =
-    $convert.base64Decode(
-        'ChdDcmVhdGVXb3Jrc3BhY2VSZXNwb25zZRIgCgt3b3Jrc3BhY2VJZBgBIAEoCVILd29ya3NwYW'
-        'NlSWQSHgoKdm9sdW1lTmFtZRgCIAEoCVIKdm9sdW1lTmFtZQ==');
+final $typed_data.Uint8List createWorkspaceResponseDescriptor = $convert.base64Decode(
+    'ChdDcmVhdGVXb3Jrc3BhY2VSZXNwb25zZRIgCgt3b3Jrc3BhY2VJZBgBIAEoCVILd29ya3NwYW'
+    'NlSWQSHgoKdm9sdW1lTmFtZRgCIAEoCVIKdm9sdW1lTmFtZQ==');
 
 @$core.Deprecated('Use listWorkspacesRequestDescriptor instead')
 const ListWorkspacesRequest$json = {
@@ -123,29 +115,21 @@ const ListWorkspacesRequest$json = {
 };
 
 /// Descriptor for `ListWorkspacesRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listWorkspacesRequestDescriptor =
-    $convert.base64Decode('ChVMaXN0V29ya3NwYWNlc1JlcXVlc3Q=');
+final $typed_data.Uint8List listWorkspacesRequestDescriptor = $convert.base64Decode(
+    'ChVMaXN0V29ya3NwYWNlc1JlcXVlc3Q=');
 
 @$core.Deprecated('Use listWorkspacesResponseDescriptor instead')
 const ListWorkspacesResponse$json = {
   '1': 'ListWorkspacesResponse',
   '2': [
-    {
-      '1': 'workspaces',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.workspacemanager.v1.WmWorkspaceInfo',
-      '10': 'workspaces'
-    },
+    {'1': 'workspaces', '3': 1, '4': 3, '5': 11, '6': '.workspacemanager.v1.WmWorkspaceInfo', '10': 'workspaces'},
   ],
 };
 
 /// Descriptor for `ListWorkspacesResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listWorkspacesResponseDescriptor =
-    $convert.base64Decode(
-        'ChZMaXN0V29ya3NwYWNlc1Jlc3BvbnNlEkQKCndvcmtzcGFjZXMYASADKAsyJC53b3Jrc3BhY2'
-        'VtYW5hZ2VyLnYxLldtV29ya3NwYWNlSW5mb1IKd29ya3NwYWNlcw==');
+final $typed_data.Uint8List listWorkspacesResponseDescriptor = $convert.base64Decode(
+    'ChZMaXN0V29ya3NwYWNlc1Jlc3BvbnNlEkQKCndvcmtzcGFjZXMYASADKAsyJC53b3Jrc3BhY2'
+    'VtYW5hZ2VyLnYxLldtV29ya3NwYWNlSW5mb1IKd29ya3NwYWNlcw==');
 
 @$core.Deprecated('Use getWorkspaceRequestDescriptor instead')
 const GetWorkspaceRequest$json = {
@@ -169,10 +153,9 @@ const DeleteWorkspaceRequest$json = {
 };
 
 /// Descriptor for `DeleteWorkspaceRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteWorkspaceRequestDescriptor =
-    $convert.base64Decode(
-        'ChZEZWxldGVXb3Jrc3BhY2VSZXF1ZXN0EiAKC3dvcmtzcGFjZUlkGAEgASgJUgt3b3Jrc3BhY2'
-        'VJZA==');
+final $typed_data.Uint8List deleteWorkspaceRequestDescriptor = $convert.base64Decode(
+    'ChZEZWxldGVXb3Jrc3BhY2VSZXF1ZXN0EiAKC3dvcmtzcGFjZUlkGAEgASgJUgt3b3Jrc3BhY2'
+    'VJZA==');
 
 @$core.Deprecated('Use deleteWorkspaceResponseDescriptor instead')
 const DeleteWorkspaceResponse$json = {
@@ -180,8 +163,8 @@ const DeleteWorkspaceResponse$json = {
 };
 
 /// Descriptor for `DeleteWorkspaceResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteWorkspaceResponseDescriptor =
-    $convert.base64Decode('ChdEZWxldGVXb3Jrc3BhY2VSZXNwb25zZQ==');
+final $typed_data.Uint8List deleteWorkspaceResponseDescriptor = $convert.base64Decode(
+    'ChdEZWxldGVXb3Jrc3BhY2VSZXNwb25zZQ==');
 
 @$core.Deprecated('Use startWorkerRequestDescriptor instead')
 const StartWorkerRequest$json = {
@@ -189,22 +172,8 @@ const StartWorkerRequest$json = {
   '2': [
     {'1': 'sessionId', '3': 1, '4': 1, '5': 9, '10': 'sessionId'},
     {'1': 'image', '3': 2, '4': 1, '5': 9, '10': 'image'},
-    {
-      '1': 'env',
-      '3': 3,
-      '4': 3,
-      '5': 11,
-      '6': '.workspacemanager.v1.StartWorkerRequest.EnvEntry',
-      '10': 'env'
-    },
-    {
-      '1': 'volumes',
-      '3': 4,
-      '4': 3,
-      '5': 11,
-      '6': '.workspacemanager.v1.ContainerVolume',
-      '10': 'volumes'
-    },
+    {'1': 'env', '3': 3, '4': 3, '5': 11, '6': '.workspacemanager.v1.StartWorkerRequest.EnvEntry', '10': 'env'},
+    {'1': 'volumes', '3': 4, '4': 3, '5': 11, '6': '.workspacemanager.v1.ContainerVolume', '10': 'volumes'},
     {'1': 'command', '3': 5, '4': 3, '5': 9, '10': 'command'},
   ],
   '3': [StartWorkerRequest_EnvEntry$json],
@@ -262,8 +231,8 @@ const StopWorkerResponse$json = {
 };
 
 /// Descriptor for `StopWorkerResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List stopWorkerResponseDescriptor =
-    $convert.base64Decode('ChJTdG9wV29ya2VyUmVzcG9uc2U=');
+final $typed_data.Uint8List stopWorkerResponseDescriptor = $convert.base64Decode(
+    'ChJTdG9wV29ya2VyUmVzcG9uc2U=');
 
 @$core.Deprecated('Use getWorkerStatusRequestDescriptor instead')
 const GetWorkerStatusRequest$json = {
@@ -274,9 +243,8 @@ const GetWorkerStatusRequest$json = {
 };
 
 /// Descriptor for `GetWorkerStatusRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getWorkerStatusRequestDescriptor =
-    $convert.base64Decode(
-        'ChZHZXRXb3JrZXJTdGF0dXNSZXF1ZXN0EhoKCHdvcmtlcklkGAEgASgJUgh3b3JrZXJJZA==');
+final $typed_data.Uint8List getWorkerStatusRequestDescriptor = $convert.base64Decode(
+    'ChZHZXRXb3JrZXJTdGF0dXNSZXF1ZXN0EhoKCHdvcmtlcklkGAEgASgJUgh3b3JrZXJJZA==');
 
 @$core.Deprecated('Use getWorkerStatusResponseDescriptor instead')
 const GetWorkerStatusResponse$json = {
@@ -288,10 +256,9 @@ const GetWorkerStatusResponse$json = {
 };
 
 /// Descriptor for `GetWorkerStatusResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getWorkerStatusResponseDescriptor =
-    $convert.base64Decode(
-        'ChdHZXRXb3JrZXJTdGF0dXNSZXNwb25zZRIUCgVzdGF0ZRgBIAEoCVIFc3RhdGUSIAoLY29udG'
-        'FpbmVySWQYAiABKAlSC2NvbnRhaW5lcklk');
+final $typed_data.Uint8List getWorkerStatusResponseDescriptor = $convert.base64Decode(
+    'ChdHZXRXb3JrZXJTdGF0dXNSZXNwb25zZRIUCgVzdGF0ZRgBIAEoCVIFc3RhdGUSIAoLY29udG'
+    'FpbmVySWQYAiABKAlSC2NvbnRhaW5lcklk');
 
 @$core.Deprecated('Use listWorkersRequestDescriptor instead')
 const ListWorkersRequest$json = {
@@ -299,21 +266,14 @@ const ListWorkersRequest$json = {
 };
 
 /// Descriptor for `ListWorkersRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listWorkersRequestDescriptor =
-    $convert.base64Decode('ChJMaXN0V29ya2Vyc1JlcXVlc3Q=');
+final $typed_data.Uint8List listWorkersRequestDescriptor = $convert.base64Decode(
+    'ChJMaXN0V29ya2Vyc1JlcXVlc3Q=');
 
 @$core.Deprecated('Use listWorkersResponseDescriptor instead')
 const ListWorkersResponse$json = {
   '1': 'ListWorkersResponse',
   '2': [
-    {
-      '1': 'workers',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.workspacemanager.v1.WmWorkerInfo',
-      '10': 'workers'
-    },
+    {'1': 'workers', '3': 1, '4': 3, '5': 11, '6': '.workspacemanager.v1.WmWorkerInfo', '10': 'workers'},
   ],
 };
 
@@ -328,14 +288,7 @@ const EnsureWorkspaceWorkerRequest$json = {
   '2': [
     {'1': 'workspaceId', '3': 1, '4': 1, '5': 9, '10': 'workspaceId'},
     {'1': 'image', '3': 2, '4': 1, '5': 9, '10': 'image'},
-    {
-      '1': 'env',
-      '3': 3,
-      '4': 3,
-      '5': 11,
-      '6': '.workspacemanager.v1.EnsureWorkspaceWorkerRequest.EnvEntry',
-      '10': 'env'
-    },
+    {'1': 'env', '3': 3, '4': 3, '5': 11, '6': '.workspacemanager.v1.EnsureWorkspaceWorkerRequest.EnvEntry', '10': 'env'},
   ],
   '3': [EnsureWorkspaceWorkerRequest_EnvEntry$json],
 };
@@ -369,11 +322,10 @@ const EnsureWorkspaceWorkerResponse$json = {
 };
 
 /// Descriptor for `EnsureWorkspaceWorkerResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List ensureWorkspaceWorkerResponseDescriptor =
-    $convert.base64Decode(
-        'Ch1FbnN1cmVXb3Jrc3BhY2VXb3JrZXJSZXNwb25zZRIaCgh3b3JrZXJJZBgBIAEoCVIId29ya2'
-        'VySWQSJAoNY29udGFpbmVyTmFtZRgCIAEoCVINY29udGFpbmVyTmFtZRIWCgZzZWNyZXQYAyAB'
-        'KAlSBnNlY3JldBIeCgp2b2x1bWVOYW1lGAQgASgJUgp2b2x1bWVOYW1l');
+final $typed_data.Uint8List ensureWorkspaceWorkerResponseDescriptor = $convert.base64Decode(
+    'Ch1FbnN1cmVXb3Jrc3BhY2VXb3JrZXJSZXNwb25zZRIaCgh3b3JrZXJJZBgBIAEoCVIId29ya2'
+    'VySWQSJAoNY29udGFpbmVyTmFtZRgCIAEoCVINY29udGFpbmVyTmFtZRIWCgZzZWNyZXQYAyAB'
+    'KAlSBnNlY3JldBIeCgp2b2x1bWVOYW1lGAQgASgJUgp2b2x1bWVOYW1l');
 
 @$core.Deprecated('Use updateWorkspaceConfigRequestDescriptor instead')
 const UpdateWorkspaceConfigRequest$json = {
@@ -386,11 +338,10 @@ const UpdateWorkspaceConfigRequest$json = {
 };
 
 /// Descriptor for `UpdateWorkspaceConfigRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List updateWorkspaceConfigRequestDescriptor =
-    $convert.base64Decode(
-        'ChxVcGRhdGVXb3Jrc3BhY2VDb25maWdSZXF1ZXN0EiAKC3dvcmtzcGFjZUlkGAEgASgJUgt3b3'
-        'Jrc3BhY2VJZBIeCgpza2lsbFNsdWdzGAIgASgJUgpza2lsbFNsdWdzEhgKB25peFBrZ3MYAyAB'
-        'KAlSB25peFBrZ3M=');
+final $typed_data.Uint8List updateWorkspaceConfigRequestDescriptor = $convert.base64Decode(
+    'ChxVcGRhdGVXb3Jrc3BhY2VDb25maWdSZXF1ZXN0EiAKC3dvcmtzcGFjZUlkGAEgASgJUgt3b3'
+    'Jrc3BhY2VJZBIeCgpza2lsbFNsdWdzGAIgASgJUgpza2lsbFNsdWdzEhgKB25peFBrZ3MYAyAB'
+    'KAlSB25peFBrZ3M=');
 
 @$core.Deprecated('Use updateWorkspaceConfigResponseDescriptor instead')
 const UpdateWorkspaceConfigResponse$json = {
@@ -398,8 +349,8 @@ const UpdateWorkspaceConfigResponse$json = {
 };
 
 /// Descriptor for `UpdateWorkspaceConfigResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List updateWorkspaceConfigResponseDescriptor =
-    $convert.base64Decode('Ch1VcGRhdGVXb3Jrc3BhY2VDb25maWdSZXNwb25zZQ==');
+final $typed_data.Uint8List updateWorkspaceConfigResponseDescriptor = $convert.base64Decode(
+    'Ch1VcGRhdGVXb3Jrc3BhY2VDb25maWdSZXNwb25zZQ==');
 
 @$core.Deprecated('Use healthRequestDescriptor instead')
 const HealthRequest$json = {
@@ -407,8 +358,8 @@ const HealthRequest$json = {
 };
 
 /// Descriptor for `HealthRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List healthRequestDescriptor =
-    $convert.base64Decode('Cg1IZWFsdGhSZXF1ZXN0');
+final $typed_data.Uint8List healthRequestDescriptor = $convert.base64Decode(
+    'Cg1IZWFsdGhSZXF1ZXN0');
 
 @$core.Deprecated('Use healthResponseDescriptor instead')
 const HealthResponse$json = {
@@ -419,74 +370,28 @@ const HealthResponse$json = {
 };
 
 /// Descriptor for `HealthResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List healthResponseDescriptor = $convert
-    .base64Decode('Cg5IZWFsdGhSZXNwb25zZRIWCgZzdGF0dXMYASABKAlSBnN0YXR1cw==');
+final $typed_data.Uint8List healthResponseDescriptor = $convert.base64Decode(
+    'Cg5IZWFsdGhSZXNwb25zZRIWCgZzdGF0dXMYASABKAlSBnN0YXR1cw==');
 
-const $core.Map<$core.String, $core.dynamic> WorkspaceManagerServiceBase$json =
-    {
+const $core.Map<$core.String, $core.dynamic> WorkspaceManagerServiceBase$json = {
   '1': 'WorkspaceManagerService',
   '2': [
-    {
-      '1': 'Health',
-      '2': '.google.protobuf.Empty',
-      '3': '.workspacemanager.v1.HealthResponse'
-    },
-    {
-      '1': 'CreateWorkspace',
-      '2': '.workspacemanager.v1.CreateWorkspaceRequest',
-      '3': '.workspacemanager.v1.CreateWorkspaceResponse'
-    },
-    {
-      '1': 'ListWorkspaces',
-      '2': '.google.protobuf.Empty',
-      '3': '.workspacemanager.v1.ListWorkspacesResponse'
-    },
-    {
-      '1': 'GetWorkspace',
-      '2': '.workspacemanager.v1.GetWorkspaceRequest',
-      '3': '.workspacemanager.v1.WmWorkspaceInfo'
-    },
-    {
-      '1': 'DeleteWorkspace',
-      '2': '.workspacemanager.v1.DeleteWorkspaceRequest',
-      '3': '.workspacemanager.v1.DeleteWorkspaceResponse'
-    },
-    {
-      '1': 'StartWorker',
-      '2': '.workspacemanager.v1.StartWorkerRequest',
-      '3': '.workspacemanager.v1.StartWorkerResponse'
-    },
-    {
-      '1': 'StopWorker',
-      '2': '.workspacemanager.v1.StopWorkerRequest',
-      '3': '.workspacemanager.v1.StopWorkerResponse'
-    },
-    {
-      '1': 'GetWorkerStatus',
-      '2': '.workspacemanager.v1.GetWorkerStatusRequest',
-      '3': '.workspacemanager.v1.GetWorkerStatusResponse'
-    },
-    {
-      '1': 'ListWorkers',
-      '2': '.google.protobuf.Empty',
-      '3': '.workspacemanager.v1.ListWorkersResponse'
-    },
-    {
-      '1': 'EnsureWorkspaceWorker',
-      '2': '.workspacemanager.v1.EnsureWorkspaceWorkerRequest',
-      '3': '.workspacemanager.v1.EnsureWorkspaceWorkerResponse'
-    },
-    {
-      '1': 'UpdateWorkspaceConfig',
-      '2': '.workspacemanager.v1.UpdateWorkspaceConfigRequest',
-      '3': '.workspacemanager.v1.UpdateWorkspaceConfigResponse'
-    },
+    {'1': 'Health', '2': '.google.protobuf.Empty', '3': '.workspacemanager.v1.HealthResponse'},
+    {'1': 'CreateWorkspace', '2': '.workspacemanager.v1.CreateWorkspaceRequest', '3': '.workspacemanager.v1.CreateWorkspaceResponse'},
+    {'1': 'ListWorkspaces', '2': '.google.protobuf.Empty', '3': '.workspacemanager.v1.ListWorkspacesResponse'},
+    {'1': 'GetWorkspace', '2': '.workspacemanager.v1.GetWorkspaceRequest', '3': '.workspacemanager.v1.WmWorkspaceInfo'},
+    {'1': 'DeleteWorkspace', '2': '.workspacemanager.v1.DeleteWorkspaceRequest', '3': '.workspacemanager.v1.DeleteWorkspaceResponse'},
+    {'1': 'StartWorker', '2': '.workspacemanager.v1.StartWorkerRequest', '3': '.workspacemanager.v1.StartWorkerResponse'},
+    {'1': 'StopWorker', '2': '.workspacemanager.v1.StopWorkerRequest', '3': '.workspacemanager.v1.StopWorkerResponse'},
+    {'1': 'GetWorkerStatus', '2': '.workspacemanager.v1.GetWorkerStatusRequest', '3': '.workspacemanager.v1.GetWorkerStatusResponse'},
+    {'1': 'ListWorkers', '2': '.google.protobuf.Empty', '3': '.workspacemanager.v1.ListWorkersResponse'},
+    {'1': 'EnsureWorkspaceWorker', '2': '.workspacemanager.v1.EnsureWorkspaceWorkerRequest', '3': '.workspacemanager.v1.EnsureWorkspaceWorkerResponse'},
+    {'1': 'UpdateWorkspaceConfig', '2': '.workspacemanager.v1.UpdateWorkspaceConfigRequest', '3': '.workspacemanager.v1.UpdateWorkspaceConfigResponse'},
   ],
 };
 
 @$core.Deprecated('Use workspaceManagerServiceDescriptor instead')
-const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
-    WorkspaceManagerServiceBase$messageJson = {
+const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> WorkspaceManagerServiceBase$messageJson = {
   '.google.protobuf.Empty': $0.Empty$json,
   '.workspacemanager.v1.HealthResponse': HealthResponse$json,
   '.workspacemanager.v1.CreateWorkspaceRequest': CreateWorkspaceRequest$json,
@@ -497,8 +402,7 @@ const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
   '.workspacemanager.v1.DeleteWorkspaceRequest': DeleteWorkspaceRequest$json,
   '.workspacemanager.v1.DeleteWorkspaceResponse': DeleteWorkspaceResponse$json,
   '.workspacemanager.v1.StartWorkerRequest': StartWorkerRequest$json,
-  '.workspacemanager.v1.StartWorkerRequest.EnvEntry':
-      StartWorkerRequest_EnvEntry$json,
+  '.workspacemanager.v1.StartWorkerRequest.EnvEntry': StartWorkerRequest_EnvEntry$json,
   '.workspacemanager.v1.ContainerVolume': ContainerVolume$json,
   '.workspacemanager.v1.StartWorkerResponse': StartWorkerResponse$json,
   '.workspacemanager.v1.StopWorkerRequest': StopWorkerRequest$json,
@@ -507,16 +411,11 @@ const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
   '.workspacemanager.v1.GetWorkerStatusResponse': GetWorkerStatusResponse$json,
   '.workspacemanager.v1.ListWorkersResponse': ListWorkersResponse$json,
   '.workspacemanager.v1.WmWorkerInfo': WmWorkerInfo$json,
-  '.workspacemanager.v1.EnsureWorkspaceWorkerRequest':
-      EnsureWorkspaceWorkerRequest$json,
-  '.workspacemanager.v1.EnsureWorkspaceWorkerRequest.EnvEntry':
-      EnsureWorkspaceWorkerRequest_EnvEntry$json,
-  '.workspacemanager.v1.EnsureWorkspaceWorkerResponse':
-      EnsureWorkspaceWorkerResponse$json,
-  '.workspacemanager.v1.UpdateWorkspaceConfigRequest':
-      UpdateWorkspaceConfigRequest$json,
-  '.workspacemanager.v1.UpdateWorkspaceConfigResponse':
-      UpdateWorkspaceConfigResponse$json,
+  '.workspacemanager.v1.EnsureWorkspaceWorkerRequest': EnsureWorkspaceWorkerRequest$json,
+  '.workspacemanager.v1.EnsureWorkspaceWorkerRequest.EnvEntry': EnsureWorkspaceWorkerRequest_EnvEntry$json,
+  '.workspacemanager.v1.EnsureWorkspaceWorkerResponse': EnsureWorkspaceWorkerResponse$json,
+  '.workspacemanager.v1.UpdateWorkspaceConfigRequest': UpdateWorkspaceConfigRequest$json,
+  '.workspacemanager.v1.UpdateWorkspaceConfigResponse': UpdateWorkspaceConfigResponse$json,
 };
 
 /// Descriptor for `WorkspaceManagerService`. Decode as a `google.protobuf.ServiceDescriptorProto`.
@@ -542,3 +441,4 @@ final $typed_data.Uint8List workspaceManagerServiceDescriptor = $convert.base64D
     'cmtlclJlc3BvbnNlEn4KFVVwZGF0ZVdvcmtzcGFjZUNvbmZpZxIxLndvcmtzcGFjZW1hbmFnZX'
     'IudjEuVXBkYXRlV29ya3NwYWNlQ29uZmlnUmVxdWVzdBoyLndvcmtzcGFjZW1hbmFnZXIudjEu'
     'VXBkYXRlV29ya3NwYWNlQ29uZmlnUmVzcG9uc2U=');
+

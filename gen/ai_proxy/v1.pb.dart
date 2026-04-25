@@ -31,26 +31,18 @@ class ListProxiesRequest extends $pb.GeneratedMessage {
 
   ListProxiesRequest._();
 
-  factory ListProxiesRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ListProxiesRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ListProxiesRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ListProxiesRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ListProxiesRequest',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListProxiesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'enabledOnly', protoName: 'enabledOnly')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListProxiesRequest clone() => ListProxiesRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListProxiesRequest copyWith(void Function(ListProxiesRequest) updates) =>
-      super.copyWith((message) => updates(message as ListProxiesRequest))
-          as ListProxiesRequest;
+  ListProxiesRequest copyWith(void Function(ListProxiesRequest) updates) => super.copyWith((message) => updates(message as ListProxiesRequest)) as ListProxiesRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -59,11 +51,9 @@ class ListProxiesRequest extends $pb.GeneratedMessage {
   static ListProxiesRequest create() => ListProxiesRequest._();
   @$core.override
   ListProxiesRequest createEmptyInstance() => create();
-  static $pb.PbList<ListProxiesRequest> createRepeated() =>
-      $pb.PbList<ListProxiesRequest>();
+  static $pb.PbList<ListProxiesRequest> createRepeated() => $pb.PbList<ListProxiesRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListProxiesRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ListProxiesRequest>(create);
+  static ListProxiesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListProxiesRequest>(create);
   static ListProxiesRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -102,8 +92,7 @@ class ProxyInfo extends $pb.GeneratedMessage {
     final result = create();
     if (id != null) result.id = id;
     if (sourceModel != null) result.sourceModel = sourceModel;
-    if (providerModelConfigId != null)
-      result.providerModelConfigId = providerModelConfigId;
+    if (providerModelConfigId != null) result.providerModelConfigId = providerModelConfigId;
     if (apiKey != null) result.apiKey = apiKey;
     if (enabled != null) result.enabled = enabled;
     if (createdAt != null) result.createdAt = createdAt;
@@ -126,21 +115,13 @@ class ProxyInfo extends $pb.GeneratedMessage {
 
   ProxyInfo._();
 
-  factory ProxyInfo.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ProxyInfo.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ProxyInfo.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ProxyInfo.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ProxyInfo',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProxyInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'sourceModel', protoName: 'sourceModel')
-    ..aOS(3, _omitFieldNames ? '' : 'providerModelConfigId',
-        protoName: 'providerModelConfigId')
+    ..aOS(3, _omitFieldNames ? '' : 'providerModelConfigId', protoName: 'providerModelConfigId')
     ..aOS(4, _omitFieldNames ? '' : 'apiKey', protoName: 'apiKey')
     ..aOB(5, _omitFieldNames ? '' : 'enabled')
     ..aInt64(6, _omitFieldNames ? '' : 'createdAt', protoName: 'createdAt')
@@ -151,29 +132,20 @@ class ProxyInfo extends $pb.GeneratedMessage {
     ..aOS(11, _omitFieldNames ? '' : 'modelName', protoName: 'modelName')
     ..aOS(12, _omitFieldNames ? '' : 'upstream')
     ..aOS(13, _omitFieldNames ? '' : 'targetModel', protoName: 'targetModel')
-    ..aOB(14, _omitFieldNames ? '' : 'supportStreaming',
-        protoName: 'supportStreaming')
+    ..aOB(14, _omitFieldNames ? '' : 'supportStreaming', protoName: 'supportStreaming')
     ..aOB(15, _omitFieldNames ? '' : 'supportTools', protoName: 'supportTools')
-    ..aOB(16, _omitFieldNames ? '' : 'supportVision',
-        protoName: 'supportVision')
-    ..aOB(17, _omitFieldNames ? '' : 'supportReasoning',
-        protoName: 'supportReasoning')
-    ..a<$core.int>(
-        18, _omitFieldNames ? '' : 'defaultMaxTokens', $pb.PbFieldType.O3,
-        protoName: 'defaultMaxTokens')
-    ..a<$core.int>(
-        19, _omitFieldNames ? '' : 'contextLength', $pb.PbFieldType.O3,
-        protoName: 'contextLength')
-    ..a<$core.int>(
-        20, _omitFieldNames ? '' : 'autoCompactLength', $pb.PbFieldType.O3,
-        protoName: 'autoCompactLength')
-    ..hasRequiredFields = false;
+    ..aOB(16, _omitFieldNames ? '' : 'supportVision', protoName: 'supportVision')
+    ..aOB(17, _omitFieldNames ? '' : 'supportReasoning', protoName: 'supportReasoning')
+    ..a<$core.int>(18, _omitFieldNames ? '' : 'defaultMaxTokens', $pb.PbFieldType.O3, protoName: 'defaultMaxTokens')
+    ..a<$core.int>(19, _omitFieldNames ? '' : 'contextLength', $pb.PbFieldType.O3, protoName: 'contextLength')
+    ..a<$core.int>(20, _omitFieldNames ? '' : 'autoCompactLength', $pb.PbFieldType.O3, protoName: 'autoCompactLength')
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ProxyInfo clone() => ProxyInfo()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ProxyInfo copyWith(void Function(ProxyInfo) updates) =>
-      super.copyWith((message) => updates(message as ProxyInfo)) as ProxyInfo;
+  ProxyInfo copyWith(void Function(ProxyInfo) updates) => super.copyWith((message) => updates(message as ProxyInfo)) as ProxyInfo;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -184,8 +156,7 @@ class ProxyInfo extends $pb.GeneratedMessage {
   ProxyInfo createEmptyInstance() => create();
   static $pb.PbList<ProxyInfo> createRepeated() => $pb.PbList<ProxyInfo>();
   @$core.pragma('dart2js:noInline')
-  static ProxyInfo getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ProxyInfo>(create);
+  static ProxyInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ProxyInfo>(create);
   static ProxyInfo? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -380,27 +351,18 @@ class ListProxiesResponse extends $pb.GeneratedMessage {
 
   ListProxiesResponse._();
 
-  factory ListProxiesResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ListProxiesResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ListProxiesResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ListProxiesResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ListProxiesResponse',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
-    ..pc<ProxyInfo>(1, _omitFieldNames ? '' : 'proxies', $pb.PbFieldType.PM,
-        subBuilder: ProxyInfo.create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListProxiesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
+    ..pc<ProxyInfo>(1, _omitFieldNames ? '' : 'proxies', $pb.PbFieldType.PM, subBuilder: ProxyInfo.create)
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListProxiesResponse clone() => ListProxiesResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListProxiesResponse copyWith(void Function(ListProxiesResponse) updates) =>
-      super.copyWith((message) => updates(message as ListProxiesResponse))
-          as ListProxiesResponse;
+  ListProxiesResponse copyWith(void Function(ListProxiesResponse) updates) => super.copyWith((message) => updates(message as ListProxiesResponse)) as ListProxiesResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -409,11 +371,9 @@ class ListProxiesResponse extends $pb.GeneratedMessage {
   static ListProxiesResponse create() => ListProxiesResponse._();
   @$core.override
   ListProxiesResponse createEmptyInstance() => create();
-  static $pb.PbList<ListProxiesResponse> createRepeated() =>
-      $pb.PbList<ListProxiesResponse>();
+  static $pb.PbList<ListProxiesResponse> createRepeated() => $pb.PbList<ListProxiesResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListProxiesResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ListProxiesResponse>(create);
+  static ListProxiesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListProxiesResponse>(create);
   static ListProxiesResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -431,26 +391,18 @@ class GetProxyRequest extends $pb.GeneratedMessage {
 
   GetProxyRequest._();
 
-  factory GetProxyRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory GetProxyRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory GetProxyRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory GetProxyRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'GetProxyRequest',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetProxyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GetProxyRequest clone() => GetProxyRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetProxyRequest copyWith(void Function(GetProxyRequest) updates) =>
-      super.copyWith((message) => updates(message as GetProxyRequest))
-          as GetProxyRequest;
+  GetProxyRequest copyWith(void Function(GetProxyRequest) updates) => super.copyWith((message) => updates(message as GetProxyRequest)) as GetProxyRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -459,11 +411,9 @@ class GetProxyRequest extends $pb.GeneratedMessage {
   static GetProxyRequest create() => GetProxyRequest._();
   @$core.override
   GetProxyRequest createEmptyInstance() => create();
-  static $pb.PbList<GetProxyRequest> createRepeated() =>
-      $pb.PbList<GetProxyRequest>();
+  static $pb.PbList<GetProxyRequest> createRepeated() => $pb.PbList<GetProxyRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetProxyRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<GetProxyRequest>(create);
+  static GetProxyRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetProxyRequest>(create);
   static GetProxyRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -483,35 +433,25 @@ class CreateProxyRequest extends $pb.GeneratedMessage {
   }) {
     final result = create();
     if (sourceModel != null) result.sourceModel = sourceModel;
-    if (providerModelConfigId != null)
-      result.providerModelConfigId = providerModelConfigId;
+    if (providerModelConfigId != null) result.providerModelConfigId = providerModelConfigId;
     return result;
   }
 
   CreateProxyRequest._();
 
-  factory CreateProxyRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory CreateProxyRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory CreateProxyRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory CreateProxyRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'CreateProxyRequest',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateProxyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'sourceModel', protoName: 'sourceModel')
-    ..aOS(2, _omitFieldNames ? '' : 'providerModelConfigId',
-        protoName: 'providerModelConfigId')
-    ..hasRequiredFields = false;
+    ..aOS(2, _omitFieldNames ? '' : 'providerModelConfigId', protoName: 'providerModelConfigId')
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CreateProxyRequest clone() => CreateProxyRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CreateProxyRequest copyWith(void Function(CreateProxyRequest) updates) =>
-      super.copyWith((message) => updates(message as CreateProxyRequest))
-          as CreateProxyRequest;
+  CreateProxyRequest copyWith(void Function(CreateProxyRequest) updates) => super.copyWith((message) => updates(message as CreateProxyRequest)) as CreateProxyRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -520,11 +460,9 @@ class CreateProxyRequest extends $pb.GeneratedMessage {
   static CreateProxyRequest create() => CreateProxyRequest._();
   @$core.override
   CreateProxyRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateProxyRequest> createRepeated() =>
-      $pb.PbList<CreateProxyRequest>();
+  static $pb.PbList<CreateProxyRequest> createRepeated() => $pb.PbList<CreateProxyRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateProxyRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<CreateProxyRequest>(create);
+  static CreateProxyRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateProxyRequest>(create);
   static CreateProxyRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -556,38 +494,28 @@ class UpdateProxyRequest extends $pb.GeneratedMessage {
     final result = create();
     if (id != null) result.id = id;
     if (sourceModel != null) result.sourceModel = sourceModel;
-    if (providerModelConfigId != null)
-      result.providerModelConfigId = providerModelConfigId;
+    if (providerModelConfigId != null) result.providerModelConfigId = providerModelConfigId;
     if (enabled != null) result.enabled = enabled;
     return result;
   }
 
   UpdateProxyRequest._();
 
-  factory UpdateProxyRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory UpdateProxyRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory UpdateProxyRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory UpdateProxyRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'UpdateProxyRequest',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateProxyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'sourceModel', protoName: 'sourceModel')
-    ..aOS(3, _omitFieldNames ? '' : 'providerModelConfigId',
-        protoName: 'providerModelConfigId')
+    ..aOS(3, _omitFieldNames ? '' : 'providerModelConfigId', protoName: 'providerModelConfigId')
     ..aOB(4, _omitFieldNames ? '' : 'enabled')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UpdateProxyRequest clone() => UpdateProxyRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UpdateProxyRequest copyWith(void Function(UpdateProxyRequest) updates) =>
-      super.copyWith((message) => updates(message as UpdateProxyRequest))
-          as UpdateProxyRequest;
+  UpdateProxyRequest copyWith(void Function(UpdateProxyRequest) updates) => super.copyWith((message) => updates(message as UpdateProxyRequest)) as UpdateProxyRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -596,11 +524,9 @@ class UpdateProxyRequest extends $pb.GeneratedMessage {
   static UpdateProxyRequest create() => UpdateProxyRequest._();
   @$core.override
   UpdateProxyRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateProxyRequest> createRepeated() =>
-      $pb.PbList<UpdateProxyRequest>();
+  static $pb.PbList<UpdateProxyRequest> createRepeated() => $pb.PbList<UpdateProxyRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateProxyRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<UpdateProxyRequest>(create);
+  static UpdateProxyRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateProxyRequest>(create);
   static UpdateProxyRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -651,26 +577,18 @@ class DeleteProxyRequest extends $pb.GeneratedMessage {
 
   DeleteProxyRequest._();
 
-  factory DeleteProxyRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory DeleteProxyRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory DeleteProxyRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory DeleteProxyRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'DeleteProxyRequest',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteProxyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DeleteProxyRequest clone() => DeleteProxyRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DeleteProxyRequest copyWith(void Function(DeleteProxyRequest) updates) =>
-      super.copyWith((message) => updates(message as DeleteProxyRequest))
-          as DeleteProxyRequest;
+  DeleteProxyRequest copyWith(void Function(DeleteProxyRequest) updates) => super.copyWith((message) => updates(message as DeleteProxyRequest)) as DeleteProxyRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -679,11 +597,9 @@ class DeleteProxyRequest extends $pb.GeneratedMessage {
   static DeleteProxyRequest create() => DeleteProxyRequest._();
   @$core.override
   DeleteProxyRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteProxyRequest> createRepeated() =>
-      $pb.PbList<DeleteProxyRequest>();
+  static $pb.PbList<DeleteProxyRequest> createRepeated() => $pb.PbList<DeleteProxyRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteProxyRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<DeleteProxyRequest>(create);
+  static DeleteProxyRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteProxyRequest>(create);
   static DeleteProxyRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -701,25 +617,17 @@ class DeleteProxyResponse extends $pb.GeneratedMessage {
 
   DeleteProxyResponse._();
 
-  factory DeleteProxyResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory DeleteProxyResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory DeleteProxyResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory DeleteProxyResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'DeleteProxyResponse',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteProxyResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DeleteProxyResponse clone() => DeleteProxyResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DeleteProxyResponse copyWith(void Function(DeleteProxyResponse) updates) =>
-      super.copyWith((message) => updates(message as DeleteProxyResponse))
-          as DeleteProxyResponse;
+  DeleteProxyResponse copyWith(void Function(DeleteProxyResponse) updates) => super.copyWith((message) => updates(message as DeleteProxyResponse)) as DeleteProxyResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -728,11 +636,9 @@ class DeleteProxyResponse extends $pb.GeneratedMessage {
   static DeleteProxyResponse create() => DeleteProxyResponse._();
   @$core.override
   DeleteProxyResponse createEmptyInstance() => create();
-  static $pb.PbList<DeleteProxyResponse> createRepeated() =>
-      $pb.PbList<DeleteProxyResponse>();
+  static $pb.PbList<DeleteProxyResponse> createRepeated() => $pb.PbList<DeleteProxyResponse>();
   @$core.pragma('dart2js:noInline')
-  static DeleteProxyResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<DeleteProxyResponse>(create);
+  static DeleteProxyResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteProxyResponse>(create);
   static DeleteProxyResponse? _defaultInstance;
 }
 
@@ -747,44 +653,29 @@ class ListProviderModelConfigsRequest extends $pb.GeneratedMessage {
 
   ListProviderModelConfigsRequest._();
 
-  factory ListProviderModelConfigsRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ListProviderModelConfigsRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ListProviderModelConfigsRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ListProviderModelConfigsRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ListProviderModelConfigsRequest',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListProviderModelConfigsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'enabledOnly', protoName: 'enabledOnly')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListProviderModelConfigsRequest clone() =>
-      ListProviderModelConfigsRequest()..mergeFromMessage(this);
+  ListProviderModelConfigsRequest clone() => ListProviderModelConfigsRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListProviderModelConfigsRequest copyWith(
-          void Function(ListProviderModelConfigsRequest) updates) =>
-      super.copyWith(
-              (message) => updates(message as ListProviderModelConfigsRequest))
-          as ListProviderModelConfigsRequest;
+  ListProviderModelConfigsRequest copyWith(void Function(ListProviderModelConfigsRequest) updates) => super.copyWith((message) => updates(message as ListProviderModelConfigsRequest)) as ListProviderModelConfigsRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListProviderModelConfigsRequest create() =>
-      ListProviderModelConfigsRequest._();
+  static ListProviderModelConfigsRequest create() => ListProviderModelConfigsRequest._();
   @$core.override
   ListProviderModelConfigsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListProviderModelConfigsRequest> createRepeated() =>
-      $pb.PbList<ListProviderModelConfigsRequest>();
+  static $pb.PbList<ListProviderModelConfigsRequest> createRepeated() => $pb.PbList<ListProviderModelConfigsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListProviderModelConfigsRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ListProviderModelConfigsRequest>(
-          create);
+  static ListProviderModelConfigsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListProviderModelConfigsRequest>(create);
   static ListProviderModelConfigsRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -840,17 +731,10 @@ class ProviderModelConfigInfo extends $pb.GeneratedMessage {
 
   ProviderModelConfigInfo._();
 
-  factory ProviderModelConfigInfo.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ProviderModelConfigInfo.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ProviderModelConfigInfo.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ProviderModelConfigInfo.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ProviderModelConfigInfo',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProviderModelConfigInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'providerId', protoName: 'providerId')
     ..aOS(3, _omitFieldNames ? '' : 'providerName', protoName: 'providerName')
@@ -858,35 +742,23 @@ class ProviderModelConfigInfo extends $pb.GeneratedMessage {
     ..aOS(5, _omitFieldNames ? '' : 'modelName', protoName: 'modelName')
     ..aOS(6, _omitFieldNames ? '' : 'upstream')
     ..aOS(7, _omitFieldNames ? '' : 'apiKey', protoName: 'apiKey')
-    ..aOB(8, _omitFieldNames ? '' : 'supportStreaming',
-        protoName: 'supportStreaming')
+    ..aOB(8, _omitFieldNames ? '' : 'supportStreaming', protoName: 'supportStreaming')
     ..aOB(9, _omitFieldNames ? '' : 'supportTools', protoName: 'supportTools')
-    ..aOB(10, _omitFieldNames ? '' : 'supportVision',
-        protoName: 'supportVision')
-    ..aOB(11, _omitFieldNames ? '' : 'supportReasoning',
-        protoName: 'supportReasoning')
-    ..a<$core.int>(
-        12, _omitFieldNames ? '' : 'defaultMaxTokens', $pb.PbFieldType.O3,
-        protoName: 'defaultMaxTokens')
-    ..a<$core.int>(
-        13, _omitFieldNames ? '' : 'contextLength', $pb.PbFieldType.O3,
-        protoName: 'contextLength')
-    ..a<$core.int>(
-        14, _omitFieldNames ? '' : 'autoCompactLength', $pb.PbFieldType.O3,
-        protoName: 'autoCompactLength')
+    ..aOB(10, _omitFieldNames ? '' : 'supportVision', protoName: 'supportVision')
+    ..aOB(11, _omitFieldNames ? '' : 'supportReasoning', protoName: 'supportReasoning')
+    ..a<$core.int>(12, _omitFieldNames ? '' : 'defaultMaxTokens', $pb.PbFieldType.O3, protoName: 'defaultMaxTokens')
+    ..a<$core.int>(13, _omitFieldNames ? '' : 'contextLength', $pb.PbFieldType.O3, protoName: 'contextLength')
+    ..a<$core.int>(14, _omitFieldNames ? '' : 'autoCompactLength', $pb.PbFieldType.O3, protoName: 'autoCompactLength')
     ..aOB(15, _omitFieldNames ? '' : 'enabled')
     ..aInt64(16, _omitFieldNames ? '' : 'createdAt', protoName: 'createdAt')
     ..aInt64(17, _omitFieldNames ? '' : 'updatedAt', protoName: 'updatedAt')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ProviderModelConfigInfo clone() =>
-      ProviderModelConfigInfo()..mergeFromMessage(this);
+  ProviderModelConfigInfo clone() => ProviderModelConfigInfo()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ProviderModelConfigInfo copyWith(
-          void Function(ProviderModelConfigInfo) updates) =>
-      super.copyWith((message) => updates(message as ProviderModelConfigInfo))
-          as ProviderModelConfigInfo;
+  ProviderModelConfigInfo copyWith(void Function(ProviderModelConfigInfo) updates) => super.copyWith((message) => updates(message as ProviderModelConfigInfo)) as ProviderModelConfigInfo;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -895,11 +767,9 @@ class ProviderModelConfigInfo extends $pb.GeneratedMessage {
   static ProviderModelConfigInfo create() => ProviderModelConfigInfo._();
   @$core.override
   ProviderModelConfigInfo createEmptyInstance() => create();
-  static $pb.PbList<ProviderModelConfigInfo> createRepeated() =>
-      $pb.PbList<ProviderModelConfigInfo>();
+  static $pb.PbList<ProviderModelConfigInfo> createRepeated() => $pb.PbList<ProviderModelConfigInfo>();
   @$core.pragma('dart2js:noInline')
-  static ProviderModelConfigInfo getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ProviderModelConfigInfo>(create);
+  static ProviderModelConfigInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ProviderModelConfigInfo>(create);
   static ProviderModelConfigInfo? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1067,47 +937,29 @@ class ListProviderModelConfigsResponse extends $pb.GeneratedMessage {
 
   ListProviderModelConfigsResponse._();
 
-  factory ListProviderModelConfigsResponse.fromBuffer(
-          $core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ListProviderModelConfigsResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ListProviderModelConfigsResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ListProviderModelConfigsResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ListProviderModelConfigsResponse',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
-    ..pc<ProviderModelConfigInfo>(
-        1, _omitFieldNames ? '' : 'configs', $pb.PbFieldType.PM,
-        subBuilder: ProviderModelConfigInfo.create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListProviderModelConfigsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
+    ..pc<ProviderModelConfigInfo>(1, _omitFieldNames ? '' : 'configs', $pb.PbFieldType.PM, subBuilder: ProviderModelConfigInfo.create)
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListProviderModelConfigsResponse clone() =>
-      ListProviderModelConfigsResponse()..mergeFromMessage(this);
+  ListProviderModelConfigsResponse clone() => ListProviderModelConfigsResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListProviderModelConfigsResponse copyWith(
-          void Function(ListProviderModelConfigsResponse) updates) =>
-      super.copyWith(
-              (message) => updates(message as ListProviderModelConfigsResponse))
-          as ListProviderModelConfigsResponse;
+  ListProviderModelConfigsResponse copyWith(void Function(ListProviderModelConfigsResponse) updates) => super.copyWith((message) => updates(message as ListProviderModelConfigsResponse)) as ListProviderModelConfigsResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static ListProviderModelConfigsResponse create() =>
-      ListProviderModelConfigsResponse._();
+  static ListProviderModelConfigsResponse create() => ListProviderModelConfigsResponse._();
   @$core.override
   ListProviderModelConfigsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListProviderModelConfigsResponse> createRepeated() =>
-      $pb.PbList<ListProviderModelConfigsResponse>();
+  static $pb.PbList<ListProviderModelConfigsResponse> createRepeated() => $pb.PbList<ListProviderModelConfigsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListProviderModelConfigsResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ListProviderModelConfigsResponse>(
-          create);
+  static ListProviderModelConfigsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListProviderModelConfigsResponse>(create);
   static ListProviderModelConfigsResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1125,43 +977,29 @@ class GetProviderModelConfigRequest extends $pb.GeneratedMessage {
 
   GetProviderModelConfigRequest._();
 
-  factory GetProviderModelConfigRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory GetProviderModelConfigRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory GetProviderModelConfigRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory GetProviderModelConfigRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'GetProviderModelConfigRequest',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetProviderModelConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetProviderModelConfigRequest clone() =>
-      GetProviderModelConfigRequest()..mergeFromMessage(this);
+  GetProviderModelConfigRequest clone() => GetProviderModelConfigRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetProviderModelConfigRequest copyWith(
-          void Function(GetProviderModelConfigRequest) updates) =>
-      super.copyWith(
-              (message) => updates(message as GetProviderModelConfigRequest))
-          as GetProviderModelConfigRequest;
+  GetProviderModelConfigRequest copyWith(void Function(GetProviderModelConfigRequest) updates) => super.copyWith((message) => updates(message as GetProviderModelConfigRequest)) as GetProviderModelConfigRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static GetProviderModelConfigRequest create() =>
-      GetProviderModelConfigRequest._();
+  static GetProviderModelConfigRequest create() => GetProviderModelConfigRequest._();
   @$core.override
   GetProviderModelConfigRequest createEmptyInstance() => create();
-  static $pb.PbList<GetProviderModelConfigRequest> createRepeated() =>
-      $pb.PbList<GetProviderModelConfigRequest>();
+  static $pb.PbList<GetProviderModelConfigRequest> createRepeated() => $pb.PbList<GetProviderModelConfigRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetProviderModelConfigRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<GetProviderModelConfigRequest>(create);
+  static GetProviderModelConfigRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetProviderModelConfigRequest>(create);
   static GetProviderModelConfigRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1209,65 +1047,41 @@ class CreateProviderModelConfigRequest extends $pb.GeneratedMessage {
 
   CreateProviderModelConfigRequest._();
 
-  factory CreateProviderModelConfigRequest.fromBuffer(
-          $core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory CreateProviderModelConfigRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory CreateProviderModelConfigRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory CreateProviderModelConfigRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'CreateProviderModelConfigRequest',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateProviderModelConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'providerId', protoName: 'providerId')
     ..aOS(2, _omitFieldNames ? '' : 'providerName', protoName: 'providerName')
     ..aOS(3, _omitFieldNames ? '' : 'modelId', protoName: 'modelId')
     ..aOS(4, _omitFieldNames ? '' : 'modelName', protoName: 'modelName')
     ..aOS(5, _omitFieldNames ? '' : 'upstream')
     ..aOS(6, _omitFieldNames ? '' : 'apiKey', protoName: 'apiKey')
-    ..aOB(7, _omitFieldNames ? '' : 'supportStreaming',
-        protoName: 'supportStreaming')
+    ..aOB(7, _omitFieldNames ? '' : 'supportStreaming', protoName: 'supportStreaming')
     ..aOB(8, _omitFieldNames ? '' : 'supportTools', protoName: 'supportTools')
     ..aOB(9, _omitFieldNames ? '' : 'supportVision', protoName: 'supportVision')
-    ..aOB(10, _omitFieldNames ? '' : 'supportReasoning',
-        protoName: 'supportReasoning')
-    ..a<$core.int>(
-        11, _omitFieldNames ? '' : 'defaultMaxTokens', $pb.PbFieldType.O3,
-        protoName: 'defaultMaxTokens')
-    ..a<$core.int>(
-        12, _omitFieldNames ? '' : 'contextLength', $pb.PbFieldType.O3,
-        protoName: 'contextLength')
-    ..a<$core.int>(
-        13, _omitFieldNames ? '' : 'autoCompactLength', $pb.PbFieldType.O3,
-        protoName: 'autoCompactLength')
-    ..hasRequiredFields = false;
+    ..aOB(10, _omitFieldNames ? '' : 'supportReasoning', protoName: 'supportReasoning')
+    ..a<$core.int>(11, _omitFieldNames ? '' : 'defaultMaxTokens', $pb.PbFieldType.O3, protoName: 'defaultMaxTokens')
+    ..a<$core.int>(12, _omitFieldNames ? '' : 'contextLength', $pb.PbFieldType.O3, protoName: 'contextLength')
+    ..a<$core.int>(13, _omitFieldNames ? '' : 'autoCompactLength', $pb.PbFieldType.O3, protoName: 'autoCompactLength')
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CreateProviderModelConfigRequest clone() =>
-      CreateProviderModelConfigRequest()..mergeFromMessage(this);
+  CreateProviderModelConfigRequest clone() => CreateProviderModelConfigRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CreateProviderModelConfigRequest copyWith(
-          void Function(CreateProviderModelConfigRequest) updates) =>
-      super.copyWith(
-              (message) => updates(message as CreateProviderModelConfigRequest))
-          as CreateProviderModelConfigRequest;
+  CreateProviderModelConfigRequest copyWith(void Function(CreateProviderModelConfigRequest) updates) => super.copyWith((message) => updates(message as CreateProviderModelConfigRequest)) as CreateProviderModelConfigRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static CreateProviderModelConfigRequest create() =>
-      CreateProviderModelConfigRequest._();
+  static CreateProviderModelConfigRequest create() => CreateProviderModelConfigRequest._();
   @$core.override
   CreateProviderModelConfigRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateProviderModelConfigRequest> createRepeated() =>
-      $pb.PbList<CreateProviderModelConfigRequest>();
+  static $pb.PbList<CreateProviderModelConfigRequest> createRepeated() => $pb.PbList<CreateProviderModelConfigRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateProviderModelConfigRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<CreateProviderModelConfigRequest>(
-          create);
+  static CreateProviderModelConfigRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateProviderModelConfigRequest>(create);
   static CreateProviderModelConfigRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1423,65 +1237,41 @@ class UpdateProviderModelConfigRequest extends $pb.GeneratedMessage {
 
   UpdateProviderModelConfigRequest._();
 
-  factory UpdateProviderModelConfigRequest.fromBuffer(
-          $core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory UpdateProviderModelConfigRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory UpdateProviderModelConfigRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory UpdateProviderModelConfigRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'UpdateProviderModelConfigRequest',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateProviderModelConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'providerName', protoName: 'providerName')
     ..aOS(3, _omitFieldNames ? '' : 'modelName', protoName: 'modelName')
     ..aOS(4, _omitFieldNames ? '' : 'upstream')
     ..aOS(5, _omitFieldNames ? '' : 'apiKey', protoName: 'apiKey')
-    ..aOB(6, _omitFieldNames ? '' : 'supportStreaming',
-        protoName: 'supportStreaming')
+    ..aOB(6, _omitFieldNames ? '' : 'supportStreaming', protoName: 'supportStreaming')
     ..aOB(7, _omitFieldNames ? '' : 'supportTools', protoName: 'supportTools')
     ..aOB(8, _omitFieldNames ? '' : 'supportVision', protoName: 'supportVision')
-    ..aOB(9, _omitFieldNames ? '' : 'supportReasoning',
-        protoName: 'supportReasoning')
-    ..a<$core.int>(
-        10, _omitFieldNames ? '' : 'defaultMaxTokens', $pb.PbFieldType.O3,
-        protoName: 'defaultMaxTokens')
-    ..a<$core.int>(
-        11, _omitFieldNames ? '' : 'contextLength', $pb.PbFieldType.O3,
-        protoName: 'contextLength')
-    ..a<$core.int>(
-        12, _omitFieldNames ? '' : 'autoCompactLength', $pb.PbFieldType.O3,
-        protoName: 'autoCompactLength')
+    ..aOB(9, _omitFieldNames ? '' : 'supportReasoning', protoName: 'supportReasoning')
+    ..a<$core.int>(10, _omitFieldNames ? '' : 'defaultMaxTokens', $pb.PbFieldType.O3, protoName: 'defaultMaxTokens')
+    ..a<$core.int>(11, _omitFieldNames ? '' : 'contextLength', $pb.PbFieldType.O3, protoName: 'contextLength')
+    ..a<$core.int>(12, _omitFieldNames ? '' : 'autoCompactLength', $pb.PbFieldType.O3, protoName: 'autoCompactLength')
     ..aOB(13, _omitFieldNames ? '' : 'enabled')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UpdateProviderModelConfigRequest clone() =>
-      UpdateProviderModelConfigRequest()..mergeFromMessage(this);
+  UpdateProviderModelConfigRequest clone() => UpdateProviderModelConfigRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UpdateProviderModelConfigRequest copyWith(
-          void Function(UpdateProviderModelConfigRequest) updates) =>
-      super.copyWith(
-              (message) => updates(message as UpdateProviderModelConfigRequest))
-          as UpdateProviderModelConfigRequest;
+  UpdateProviderModelConfigRequest copyWith(void Function(UpdateProviderModelConfigRequest) updates) => super.copyWith((message) => updates(message as UpdateProviderModelConfigRequest)) as UpdateProviderModelConfigRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static UpdateProviderModelConfigRequest create() =>
-      UpdateProviderModelConfigRequest._();
+  static UpdateProviderModelConfigRequest create() => UpdateProviderModelConfigRequest._();
   @$core.override
   UpdateProviderModelConfigRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateProviderModelConfigRequest> createRepeated() =>
-      $pb.PbList<UpdateProviderModelConfigRequest>();
+  static $pb.PbList<UpdateProviderModelConfigRequest> createRepeated() => $pb.PbList<UpdateProviderModelConfigRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateProviderModelConfigRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<UpdateProviderModelConfigRequest>(
-          create);
+  static UpdateProviderModelConfigRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateProviderModelConfigRequest>(create);
   static UpdateProviderModelConfigRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1613,45 +1403,29 @@ class DeleteProviderModelConfigRequest extends $pb.GeneratedMessage {
 
   DeleteProviderModelConfigRequest._();
 
-  factory DeleteProviderModelConfigRequest.fromBuffer(
-          $core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory DeleteProviderModelConfigRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory DeleteProviderModelConfigRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory DeleteProviderModelConfigRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'DeleteProviderModelConfigRequest',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteProviderModelConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DeleteProviderModelConfigRequest clone() =>
-      DeleteProviderModelConfigRequest()..mergeFromMessage(this);
+  DeleteProviderModelConfigRequest clone() => DeleteProviderModelConfigRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DeleteProviderModelConfigRequest copyWith(
-          void Function(DeleteProviderModelConfigRequest) updates) =>
-      super.copyWith(
-              (message) => updates(message as DeleteProviderModelConfigRequest))
-          as DeleteProviderModelConfigRequest;
+  DeleteProviderModelConfigRequest copyWith(void Function(DeleteProviderModelConfigRequest) updates) => super.copyWith((message) => updates(message as DeleteProviderModelConfigRequest)) as DeleteProviderModelConfigRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static DeleteProviderModelConfigRequest create() =>
-      DeleteProviderModelConfigRequest._();
+  static DeleteProviderModelConfigRequest create() => DeleteProviderModelConfigRequest._();
   @$core.override
   DeleteProviderModelConfigRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteProviderModelConfigRequest> createRepeated() =>
-      $pb.PbList<DeleteProviderModelConfigRequest>();
+  static $pb.PbList<DeleteProviderModelConfigRequest> createRepeated() => $pb.PbList<DeleteProviderModelConfigRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteProviderModelConfigRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<DeleteProviderModelConfigRequest>(
-          create);
+  static DeleteProviderModelConfigRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteProviderModelConfigRequest>(create);
   static DeleteProviderModelConfigRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1669,44 +1443,28 @@ class DeleteProviderModelConfigResponse extends $pb.GeneratedMessage {
 
   DeleteProviderModelConfigResponse._();
 
-  factory DeleteProviderModelConfigResponse.fromBuffer(
-          $core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory DeleteProviderModelConfigResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory DeleteProviderModelConfigResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory DeleteProviderModelConfigResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'DeleteProviderModelConfigResponse',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteProviderModelConfigResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DeleteProviderModelConfigResponse clone() =>
-      DeleteProviderModelConfigResponse()..mergeFromMessage(this);
+  DeleteProviderModelConfigResponse clone() => DeleteProviderModelConfigResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DeleteProviderModelConfigResponse copyWith(
-          void Function(DeleteProviderModelConfigResponse) updates) =>
-      super.copyWith((message) =>
-              updates(message as DeleteProviderModelConfigResponse))
-          as DeleteProviderModelConfigResponse;
+  DeleteProviderModelConfigResponse copyWith(void Function(DeleteProviderModelConfigResponse) updates) => super.copyWith((message) => updates(message as DeleteProviderModelConfigResponse)) as DeleteProviderModelConfigResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static DeleteProviderModelConfigResponse create() =>
-      DeleteProviderModelConfigResponse._();
+  static DeleteProviderModelConfigResponse create() => DeleteProviderModelConfigResponse._();
   @$core.override
   DeleteProviderModelConfigResponse createEmptyInstance() => create();
-  static $pb.PbList<DeleteProviderModelConfigResponse> createRepeated() =>
-      $pb.PbList<DeleteProviderModelConfigResponse>();
+  static $pb.PbList<DeleteProviderModelConfigResponse> createRepeated() => $pb.PbList<DeleteProviderModelConfigResponse>();
   @$core.pragma('dart2js:noInline')
-  static DeleteProviderModelConfigResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<DeleteProviderModelConfigResponse>(
-          create);
+  static DeleteProviderModelConfigResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteProviderModelConfigResponse>(create);
   static DeleteProviderModelConfigResponse? _defaultInstance;
 }
 
@@ -1715,26 +1473,17 @@ class ListProvidersRequest extends $pb.GeneratedMessage {
 
   ListProvidersRequest._();
 
-  factory ListProvidersRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ListProvidersRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ListProvidersRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ListProvidersRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ListProvidersRequest',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListProvidersRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListProvidersRequest clone() =>
-      ListProvidersRequest()..mergeFromMessage(this);
+  ListProvidersRequest clone() => ListProvidersRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListProvidersRequest copyWith(void Function(ListProvidersRequest) updates) =>
-      super.copyWith((message) => updates(message as ListProvidersRequest))
-          as ListProvidersRequest;
+  ListProvidersRequest copyWith(void Function(ListProvidersRequest) updates) => super.copyWith((message) => updates(message as ListProvidersRequest)) as ListProvidersRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1743,11 +1492,9 @@ class ListProvidersRequest extends $pb.GeneratedMessage {
   static ListProvidersRequest create() => ListProvidersRequest._();
   @$core.override
   ListProvidersRequest createEmptyInstance() => create();
-  static $pb.PbList<ListProvidersRequest> createRepeated() =>
-      $pb.PbList<ListProvidersRequest>();
+  static $pb.PbList<ListProvidersRequest> createRepeated() => $pb.PbList<ListProvidersRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListProvidersRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ListProvidersRequest>(create);
+  static ListProvidersRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListProvidersRequest>(create);
   static ListProvidersRequest? _defaultInstance;
 }
 
@@ -1770,30 +1517,22 @@ class ProviderInfo extends $pb.GeneratedMessage {
 
   ProviderInfo._();
 
-  factory ProviderInfo.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ProviderInfo.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ProviderInfo.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ProviderInfo.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ProviderInfo',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProviderInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'name')
     ..aOS(3, _omitFieldNames ? '' : 'api')
     ..aOS(4, _omitFieldNames ? '' : 'doc')
     ..pPS(5, _omitFieldNames ? '' : 'env')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ProviderInfo clone() => ProviderInfo()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ProviderInfo copyWith(void Function(ProviderInfo) updates) =>
-      super.copyWith((message) => updates(message as ProviderInfo))
-          as ProviderInfo;
+  ProviderInfo copyWith(void Function(ProviderInfo) updates) => super.copyWith((message) => updates(message as ProviderInfo)) as ProviderInfo;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1802,11 +1541,9 @@ class ProviderInfo extends $pb.GeneratedMessage {
   static ProviderInfo create() => ProviderInfo._();
   @$core.override
   ProviderInfo createEmptyInstance() => create();
-  static $pb.PbList<ProviderInfo> createRepeated() =>
-      $pb.PbList<ProviderInfo>();
+  static $pb.PbList<ProviderInfo> createRepeated() => $pb.PbList<ProviderInfo>();
   @$core.pragma('dart2js:noInline')
-  static ProviderInfo getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ProviderInfo>(create);
+  static ProviderInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ProviderInfo>(create);
   static ProviderInfo? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1860,30 +1597,18 @@ class ListProvidersResponse extends $pb.GeneratedMessage {
 
   ListProvidersResponse._();
 
-  factory ListProvidersResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ListProvidersResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ListProvidersResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ListProvidersResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ListProvidersResponse',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
-    ..pc<ProviderInfo>(
-        1, _omitFieldNames ? '' : 'providers', $pb.PbFieldType.PM,
-        subBuilder: ProviderInfo.create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListProvidersResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
+    ..pc<ProviderInfo>(1, _omitFieldNames ? '' : 'providers', $pb.PbFieldType.PM, subBuilder: ProviderInfo.create)
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListProvidersResponse clone() =>
-      ListProvidersResponse()..mergeFromMessage(this);
+  ListProvidersResponse clone() => ListProvidersResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListProvidersResponse copyWith(
-          void Function(ListProvidersResponse) updates) =>
-      super.copyWith((message) => updates(message as ListProvidersResponse))
-          as ListProvidersResponse;
+  ListProvidersResponse copyWith(void Function(ListProvidersResponse) updates) => super.copyWith((message) => updates(message as ListProvidersResponse)) as ListProvidersResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1892,11 +1617,9 @@ class ListProvidersResponse extends $pb.GeneratedMessage {
   static ListProvidersResponse create() => ListProvidersResponse._();
   @$core.override
   ListProvidersResponse createEmptyInstance() => create();
-  static $pb.PbList<ListProvidersResponse> createRepeated() =>
-      $pb.PbList<ListProvidersResponse>();
+  static $pb.PbList<ListProvidersResponse> createRepeated() => $pb.PbList<ListProvidersResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListProvidersResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ListProvidersResponse>(create);
+  static ListProvidersResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListProvidersResponse>(create);
   static ListProvidersResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1914,28 +1637,18 @@ class ListProviderModelsRequest extends $pb.GeneratedMessage {
 
   ListProviderModelsRequest._();
 
-  factory ListProviderModelsRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ListProviderModelsRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ListProviderModelsRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ListProviderModelsRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ListProviderModelsRequest',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListProviderModelsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'providerId', protoName: 'providerId')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListProviderModelsRequest clone() =>
-      ListProviderModelsRequest()..mergeFromMessage(this);
+  ListProviderModelsRequest clone() => ListProviderModelsRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListProviderModelsRequest copyWith(
-          void Function(ListProviderModelsRequest) updates) =>
-      super.copyWith((message) => updates(message as ListProviderModelsRequest))
-          as ListProviderModelsRequest;
+  ListProviderModelsRequest copyWith(void Function(ListProviderModelsRequest) updates) => super.copyWith((message) => updates(message as ListProviderModelsRequest)) as ListProviderModelsRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1944,11 +1657,9 @@ class ListProviderModelsRequest extends $pb.GeneratedMessage {
   static ListProviderModelsRequest create() => ListProviderModelsRequest._();
   @$core.override
   ListProviderModelsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListProviderModelsRequest> createRepeated() =>
-      $pb.PbList<ListProviderModelsRequest>();
+  static $pb.PbList<ListProviderModelsRequest> createRepeated() => $pb.PbList<ListProviderModelsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListProviderModelsRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ListProviderModelsRequest>(create);
+  static ListProviderModelsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListProviderModelsRequest>(create);
   static ListProviderModelsRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1996,46 +1707,30 @@ class ProviderModelInfo extends $pb.GeneratedMessage {
 
   ProviderModelInfo._();
 
-  factory ProviderModelInfo.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ProviderModelInfo.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ProviderModelInfo.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ProviderModelInfo.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ProviderModelInfo',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ProviderModelInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'providerId', protoName: 'providerId')
     ..aOS(2, _omitFieldNames ? '' : 'providerName', protoName: 'providerName')
     ..aOS(3, _omitFieldNames ? '' : 'modelId', protoName: 'modelId')
     ..aOS(4, _omitFieldNames ? '' : 'modelName', protoName: 'modelName')
     ..aOS(5, _omitFieldNames ? '' : 'upstream')
-    ..aOB(6, _omitFieldNames ? '' : 'supportStreaming',
-        protoName: 'supportStreaming')
+    ..aOB(6, _omitFieldNames ? '' : 'supportStreaming', protoName: 'supportStreaming')
     ..aOB(7, _omitFieldNames ? '' : 'supportTools', protoName: 'supportTools')
     ..aOB(8, _omitFieldNames ? '' : 'supportVision', protoName: 'supportVision')
-    ..aOB(9, _omitFieldNames ? '' : 'supportReasoning',
-        protoName: 'supportReasoning')
-    ..a<$core.int>(
-        10, _omitFieldNames ? '' : 'defaultMaxTokens', $pb.PbFieldType.O3,
-        protoName: 'defaultMaxTokens')
-    ..a<$core.int>(
-        11, _omitFieldNames ? '' : 'contextLength', $pb.PbFieldType.O3,
-        protoName: 'contextLength')
-    ..a<$core.int>(
-        12, _omitFieldNames ? '' : 'autoCompactLength', $pb.PbFieldType.O3,
-        protoName: 'autoCompactLength')
+    ..aOB(9, _omitFieldNames ? '' : 'supportReasoning', protoName: 'supportReasoning')
+    ..a<$core.int>(10, _omitFieldNames ? '' : 'defaultMaxTokens', $pb.PbFieldType.O3, protoName: 'defaultMaxTokens')
+    ..a<$core.int>(11, _omitFieldNames ? '' : 'contextLength', $pb.PbFieldType.O3, protoName: 'contextLength')
+    ..a<$core.int>(12, _omitFieldNames ? '' : 'autoCompactLength', $pb.PbFieldType.O3, protoName: 'autoCompactLength')
     ..aOS(13, _omitFieldNames ? '' : 'status')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ProviderModelInfo clone() => ProviderModelInfo()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ProviderModelInfo copyWith(void Function(ProviderModelInfo) updates) =>
-      super.copyWith((message) => updates(message as ProviderModelInfo))
-          as ProviderModelInfo;
+  ProviderModelInfo copyWith(void Function(ProviderModelInfo) updates) => super.copyWith((message) => updates(message as ProviderModelInfo)) as ProviderModelInfo;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -2044,11 +1739,9 @@ class ProviderModelInfo extends $pb.GeneratedMessage {
   static ProviderModelInfo create() => ProviderModelInfo._();
   @$core.override
   ProviderModelInfo createEmptyInstance() => create();
-  static $pb.PbList<ProviderModelInfo> createRepeated() =>
-      $pb.PbList<ProviderModelInfo>();
+  static $pb.PbList<ProviderModelInfo> createRepeated() => $pb.PbList<ProviderModelInfo>();
   @$core.pragma('dart2js:noInline')
-  static ProviderModelInfo getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ProviderModelInfo>(create);
+  static ProviderModelInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ProviderModelInfo>(create);
   static ProviderModelInfo? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -2180,31 +1873,18 @@ class ListProviderModelsResponse extends $pb.GeneratedMessage {
 
   ListProviderModelsResponse._();
 
-  factory ListProviderModelsResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ListProviderModelsResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ListProviderModelsResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ListProviderModelsResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ListProviderModelsResponse',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
-    ..pc<ProviderModelInfo>(
-        1, _omitFieldNames ? '' : 'models', $pb.PbFieldType.PM,
-        subBuilder: ProviderModelInfo.create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListProviderModelsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
+    ..pc<ProviderModelInfo>(1, _omitFieldNames ? '' : 'models', $pb.PbFieldType.PM, subBuilder: ProviderModelInfo.create)
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListProviderModelsResponse clone() =>
-      ListProviderModelsResponse()..mergeFromMessage(this);
+  ListProviderModelsResponse clone() => ListProviderModelsResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListProviderModelsResponse copyWith(
-          void Function(ListProviderModelsResponse) updates) =>
-      super.copyWith(
-              (message) => updates(message as ListProviderModelsResponse))
-          as ListProviderModelsResponse;
+  ListProviderModelsResponse copyWith(void Function(ListProviderModelsResponse) updates) => super.copyWith((message) => updates(message as ListProviderModelsResponse)) as ListProviderModelsResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -2213,11 +1893,9 @@ class ListProviderModelsResponse extends $pb.GeneratedMessage {
   static ListProviderModelsResponse create() => ListProviderModelsResponse._();
   @$core.override
   ListProviderModelsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListProviderModelsResponse> createRepeated() =>
-      $pb.PbList<ListProviderModelsResponse>();
+  static $pb.PbList<ListProviderModelsResponse> createRepeated() => $pb.PbList<ListProviderModelsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListProviderModelsResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ListProviderModelsResponse>(create);
+  static ListProviderModelsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListProviderModelsResponse>(create);
   static ListProviderModelsResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -2235,43 +1913,29 @@ class TestProviderModelConfigRequest extends $pb.GeneratedMessage {
 
   TestProviderModelConfigRequest._();
 
-  factory TestProviderModelConfigRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory TestProviderModelConfigRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory TestProviderModelConfigRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory TestProviderModelConfigRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'TestProviderModelConfigRequest',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TestProviderModelConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TestProviderModelConfigRequest clone() =>
-      TestProviderModelConfigRequest()..mergeFromMessage(this);
+  TestProviderModelConfigRequest clone() => TestProviderModelConfigRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TestProviderModelConfigRequest copyWith(
-          void Function(TestProviderModelConfigRequest) updates) =>
-      super.copyWith(
-              (message) => updates(message as TestProviderModelConfigRequest))
-          as TestProviderModelConfigRequest;
+  TestProviderModelConfigRequest copyWith(void Function(TestProviderModelConfigRequest) updates) => super.copyWith((message) => updates(message as TestProviderModelConfigRequest)) as TestProviderModelConfigRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static TestProviderModelConfigRequest create() =>
-      TestProviderModelConfigRequest._();
+  static TestProviderModelConfigRequest create() => TestProviderModelConfigRequest._();
   @$core.override
   TestProviderModelConfigRequest createEmptyInstance() => create();
-  static $pb.PbList<TestProviderModelConfigRequest> createRepeated() =>
-      $pb.PbList<TestProviderModelConfigRequest>();
+  static $pb.PbList<TestProviderModelConfigRequest> createRepeated() => $pb.PbList<TestProviderModelConfigRequest>();
   @$core.pragma('dart2js:noInline')
-  static TestProviderModelConfigRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<TestProviderModelConfigRequest>(create);
+  static TestProviderModelConfigRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TestProviderModelConfigRequest>(create);
   static TestProviderModelConfigRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -2301,49 +1965,32 @@ class TestProviderModelConfigResponse extends $pb.GeneratedMessage {
 
   TestProviderModelConfigResponse._();
 
-  factory TestProviderModelConfigResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory TestProviderModelConfigResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory TestProviderModelConfigResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory TestProviderModelConfigResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'TestProviderModelConfigResponse',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TestProviderModelConfigResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'success')
     ..aOS(2, _omitFieldNames ? '' : 'message')
-    ..a<$core.int>(3, _omitFieldNames ? '' : 'statusCode', $pb.PbFieldType.O3,
-        protoName: 'statusCode')
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'latencyMs', $pb.PbFieldType.O3,
-        protoName: 'latencyMs')
-    ..hasRequiredFields = false;
+    ..a<$core.int>(3, _omitFieldNames ? '' : 'statusCode', $pb.PbFieldType.O3, protoName: 'statusCode')
+    ..a<$core.int>(4, _omitFieldNames ? '' : 'latencyMs', $pb.PbFieldType.O3, protoName: 'latencyMs')
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TestProviderModelConfigResponse clone() =>
-      TestProviderModelConfigResponse()..mergeFromMessage(this);
+  TestProviderModelConfigResponse clone() => TestProviderModelConfigResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TestProviderModelConfigResponse copyWith(
-          void Function(TestProviderModelConfigResponse) updates) =>
-      super.copyWith(
-              (message) => updates(message as TestProviderModelConfigResponse))
-          as TestProviderModelConfigResponse;
+  TestProviderModelConfigResponse copyWith(void Function(TestProviderModelConfigResponse) updates) => super.copyWith((message) => updates(message as TestProviderModelConfigResponse)) as TestProviderModelConfigResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static TestProviderModelConfigResponse create() =>
-      TestProviderModelConfigResponse._();
+  static TestProviderModelConfigResponse create() => TestProviderModelConfigResponse._();
   @$core.override
   TestProviderModelConfigResponse createEmptyInstance() => create();
-  static $pb.PbList<TestProviderModelConfigResponse> createRepeated() =>
-      $pb.PbList<TestProviderModelConfigResponse>();
+  static $pb.PbList<TestProviderModelConfigResponse> createRepeated() => $pb.PbList<TestProviderModelConfigResponse>();
   @$core.pragma('dart2js:noInline')
-  static TestProviderModelConfigResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<TestProviderModelConfigResponse>(
-          create);
+  static TestProviderModelConfigResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TestProviderModelConfigResponse>(create);
   static TestProviderModelConfigResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -2394,26 +2041,18 @@ class TestProxyRequest extends $pb.GeneratedMessage {
 
   TestProxyRequest._();
 
-  factory TestProxyRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory TestProxyRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory TestProxyRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory TestProxyRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'TestProxyRequest',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TestProxyRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TestProxyRequest clone() => TestProxyRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TestProxyRequest copyWith(void Function(TestProxyRequest) updates) =>
-      super.copyWith((message) => updates(message as TestProxyRequest))
-          as TestProxyRequest;
+  TestProxyRequest copyWith(void Function(TestProxyRequest) updates) => super.copyWith((message) => updates(message as TestProxyRequest)) as TestProxyRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -2422,11 +2061,9 @@ class TestProxyRequest extends $pb.GeneratedMessage {
   static TestProxyRequest create() => TestProxyRequest._();
   @$core.override
   TestProxyRequest createEmptyInstance() => create();
-  static $pb.PbList<TestProxyRequest> createRepeated() =>
-      $pb.PbList<TestProxyRequest>();
+  static $pb.PbList<TestProxyRequest> createRepeated() => $pb.PbList<TestProxyRequest>();
   @$core.pragma('dart2js:noInline')
-  static TestProxyRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<TestProxyRequest>(create);
+  static TestProxyRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TestProxyRequest>(create);
   static TestProxyRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -2456,31 +2093,21 @@ class TestProxyResponse extends $pb.GeneratedMessage {
 
   TestProxyResponse._();
 
-  factory TestProxyResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory TestProxyResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory TestProxyResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory TestProxyResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'TestProxyResponse',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TestProxyResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'success')
     ..aOS(2, _omitFieldNames ? '' : 'message')
-    ..a<$core.int>(3, _omitFieldNames ? '' : 'statusCode', $pb.PbFieldType.O3,
-        protoName: 'statusCode')
-    ..a<$core.int>(4, _omitFieldNames ? '' : 'latencyMs', $pb.PbFieldType.O3,
-        protoName: 'latencyMs')
-    ..hasRequiredFields = false;
+    ..a<$core.int>(3, _omitFieldNames ? '' : 'statusCode', $pb.PbFieldType.O3, protoName: 'statusCode')
+    ..a<$core.int>(4, _omitFieldNames ? '' : 'latencyMs', $pb.PbFieldType.O3, protoName: 'latencyMs')
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TestProxyResponse clone() => TestProxyResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TestProxyResponse copyWith(void Function(TestProxyResponse) updates) =>
-      super.copyWith((message) => updates(message as TestProxyResponse))
-          as TestProxyResponse;
+  TestProxyResponse copyWith(void Function(TestProxyResponse) updates) => super.copyWith((message) => updates(message as TestProxyResponse)) as TestProxyResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -2489,11 +2116,9 @@ class TestProxyResponse extends $pb.GeneratedMessage {
   static TestProxyResponse create() => TestProxyResponse._();
   @$core.override
   TestProxyResponse createEmptyInstance() => create();
-  static $pb.PbList<TestProxyResponse> createRepeated() =>
-      $pb.PbList<TestProxyResponse>();
+  static $pb.PbList<TestProxyResponse> createRepeated() => $pb.PbList<TestProxyResponse>();
   @$core.pragma('dart2js:noInline')
-  static TestProxyResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<TestProxyResponse>(create);
+  static TestProxyResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TestProxyResponse>(create);
   static TestProxyResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -2552,30 +2177,22 @@ class QueryLogsRequest extends $pb.GeneratedMessage {
 
   QueryLogsRequest._();
 
-  factory QueryLogsRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory QueryLogsRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory QueryLogsRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory QueryLogsRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'QueryLogsRequest',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueryLogsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'proxyId', protoName: 'proxyId')
     ..aInt64(2, _omitFieldNames ? '' : 'fromTs', protoName: 'fromTs')
     ..aInt64(3, _omitFieldNames ? '' : 'toTs', protoName: 'toTs')
     ..a<$core.int>(4, _omitFieldNames ? '' : 'limit', $pb.PbFieldType.O3)
     ..a<$core.int>(5, _omitFieldNames ? '' : 'offset', $pb.PbFieldType.O3)
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   QueryLogsRequest clone() => QueryLogsRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  QueryLogsRequest copyWith(void Function(QueryLogsRequest) updates) =>
-      super.copyWith((message) => updates(message as QueryLogsRequest))
-          as QueryLogsRequest;
+  QueryLogsRequest copyWith(void Function(QueryLogsRequest) updates) => super.copyWith((message) => updates(message as QueryLogsRequest)) as QueryLogsRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -2584,11 +2201,9 @@ class QueryLogsRequest extends $pb.GeneratedMessage {
   static QueryLogsRequest create() => QueryLogsRequest._();
   @$core.override
   QueryLogsRequest createEmptyInstance() => create();
-  static $pb.PbList<QueryLogsRequest> createRepeated() =>
-      $pb.PbList<QueryLogsRequest>();
+  static $pb.PbList<QueryLogsRequest> createRepeated() => $pb.PbList<QueryLogsRequest>();
   @$core.pragma('dart2js:noInline')
-  static QueryLogsRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<QueryLogsRequest>(create);
+  static QueryLogsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<QueryLogsRequest>(create);
   static QueryLogsRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -2664,8 +2279,7 @@ class LogEntry extends $pb.GeneratedMessage {
     if (outputTokens != null) result.outputTokens = outputTokens;
     if (totalTokens != null) result.totalTokens = totalTokens;
     if (durationMs != null) result.durationMs = durationMs;
-    if (timeToFirstTokenMs != null)
-      result.timeToFirstTokenMs = timeToFirstTokenMs;
+    if (timeToFirstTokenMs != null) result.timeToFirstTokenMs = timeToFirstTokenMs;
     if (isStream != null) result.isStream = isStream;
     if (isSuccess != null) result.isSuccess = isSuccess;
     if (errorMessage != null) result.errorMessage = errorMessage;
@@ -2675,40 +2289,31 @@ class LogEntry extends $pb.GeneratedMessage {
 
   LogEntry._();
 
-  factory LogEntry.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory LogEntry.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory LogEntry.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory LogEntry.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'LogEntry',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'LogEntry', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'proxyId', protoName: 'proxyId')
     ..aOS(3, _omitFieldNames ? '' : 'sourceModel', protoName: 'sourceModel')
     ..aOS(4, _omitFieldNames ? '' : 'targetModel', protoName: 'targetModel')
     ..aOS(5, _omitFieldNames ? '' : 'upstream')
     ..aInt64(6, _omitFieldNames ? '' : 'inputTokens', protoName: 'inputTokens')
-    ..aInt64(7, _omitFieldNames ? '' : 'outputTokens',
-        protoName: 'outputTokens')
+    ..aInt64(7, _omitFieldNames ? '' : 'outputTokens', protoName: 'outputTokens')
     ..aInt64(8, _omitFieldNames ? '' : 'totalTokens', protoName: 'totalTokens')
     ..aInt64(9, _omitFieldNames ? '' : 'durationMs', protoName: 'durationMs')
-    ..aInt64(10, _omitFieldNames ? '' : 'timeToFirstTokenMs',
-        protoName: 'timeToFirstTokenMs')
+    ..aInt64(10, _omitFieldNames ? '' : 'timeToFirstTokenMs', protoName: 'timeToFirstTokenMs')
     ..aOB(11, _omitFieldNames ? '' : 'isStream', protoName: 'isStream')
     ..aOB(12, _omitFieldNames ? '' : 'isSuccess', protoName: 'isSuccess')
     ..aOS(13, _omitFieldNames ? '' : 'errorMessage', protoName: 'errorMessage')
     ..aInt64(14, _omitFieldNames ? '' : 'createdAt', protoName: 'createdAt')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   LogEntry clone() => LogEntry()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  LogEntry copyWith(void Function(LogEntry) updates) =>
-      super.copyWith((message) => updates(message as LogEntry)) as LogEntry;
+  LogEntry copyWith(void Function(LogEntry) updates) => super.copyWith((message) => updates(message as LogEntry)) as LogEntry;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -2719,8 +2324,7 @@ class LogEntry extends $pb.GeneratedMessage {
   LogEntry createEmptyInstance() => create();
   static $pb.PbList<LogEntry> createRepeated() => $pb.PbList<LogEntry>();
   @$core.pragma('dart2js:noInline')
-  static LogEntry getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LogEntry>(create);
+  static LogEntry getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<LogEntry>(create);
   static LogEntry? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -2863,28 +2467,19 @@ class QueryLogsResponse extends $pb.GeneratedMessage {
 
   QueryLogsResponse._();
 
-  factory QueryLogsResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory QueryLogsResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory QueryLogsResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory QueryLogsResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'QueryLogsResponse',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
-    ..pc<LogEntry>(1, _omitFieldNames ? '' : 'logs', $pb.PbFieldType.PM,
-        subBuilder: LogEntry.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'QueryLogsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
+    ..pc<LogEntry>(1, _omitFieldNames ? '' : 'logs', $pb.PbFieldType.PM, subBuilder: LogEntry.create)
     ..aInt64(2, _omitFieldNames ? '' : 'total')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   QueryLogsResponse clone() => QueryLogsResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  QueryLogsResponse copyWith(void Function(QueryLogsResponse) updates) =>
-      super.copyWith((message) => updates(message as QueryLogsResponse))
-          as QueryLogsResponse;
+  QueryLogsResponse copyWith(void Function(QueryLogsResponse) updates) => super.copyWith((message) => updates(message as QueryLogsResponse)) as QueryLogsResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -2893,11 +2488,9 @@ class QueryLogsResponse extends $pb.GeneratedMessage {
   static QueryLogsResponse create() => QueryLogsResponse._();
   @$core.override
   QueryLogsResponse createEmptyInstance() => create();
-  static $pb.PbList<QueryLogsResponse> createRepeated() =>
-      $pb.PbList<QueryLogsResponse>();
+  static $pb.PbList<QueryLogsResponse> createRepeated() => $pb.PbList<QueryLogsResponse>();
   @$core.pragma('dart2js:noInline')
-  static QueryLogsResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<QueryLogsResponse>(create);
+  static QueryLogsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<QueryLogsResponse>(create);
   static QueryLogsResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -2928,29 +2521,20 @@ class GetTokenStatsRequest extends $pb.GeneratedMessage {
 
   GetTokenStatsRequest._();
 
-  factory GetTokenStatsRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory GetTokenStatsRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory GetTokenStatsRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory GetTokenStatsRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'GetTokenStatsRequest',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetTokenStatsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'proxyId', protoName: 'proxyId')
     ..aInt64(2, _omitFieldNames ? '' : 'fromTs', protoName: 'fromTs')
     ..aInt64(3, _omitFieldNames ? '' : 'toTs', protoName: 'toTs')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetTokenStatsRequest clone() =>
-      GetTokenStatsRequest()..mergeFromMessage(this);
+  GetTokenStatsRequest clone() => GetTokenStatsRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetTokenStatsRequest copyWith(void Function(GetTokenStatsRequest) updates) =>
-      super.copyWith((message) => updates(message as GetTokenStatsRequest))
-          as GetTokenStatsRequest;
+  GetTokenStatsRequest copyWith(void Function(GetTokenStatsRequest) updates) => super.copyWith((message) => updates(message as GetTokenStatsRequest)) as GetTokenStatsRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -2959,11 +2543,9 @@ class GetTokenStatsRequest extends $pb.GeneratedMessage {
   static GetTokenStatsRequest create() => GetTokenStatsRequest._();
   @$core.override
   GetTokenStatsRequest createEmptyInstance() => create();
-  static $pb.PbList<GetTokenStatsRequest> createRepeated() =>
-      $pb.PbList<GetTokenStatsRequest>();
+  static $pb.PbList<GetTokenStatsRequest> createRepeated() => $pb.PbList<GetTokenStatsRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetTokenStatsRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<GetTokenStatsRequest>(create);
+  static GetTokenStatsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetTokenStatsRequest>(create);
   static GetTokenStatsRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -3011,32 +2593,21 @@ class TokenStatsResponse extends $pb.GeneratedMessage {
 
   TokenStatsResponse._();
 
-  factory TokenStatsResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory TokenStatsResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory TokenStatsResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory TokenStatsResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'TokenStatsResponse',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'),
-      createEmptyInstance: create)
-    ..aInt64(1, _omitFieldNames ? '' : 'totalInputTokens',
-        protoName: 'totalInputTokens')
-    ..aInt64(2, _omitFieldNames ? '' : 'totalOutputTokens',
-        protoName: 'totalOutputTokens')
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'TokenStatsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'ai_proxy.v1'), createEmptyInstance: create)
+    ..aInt64(1, _omitFieldNames ? '' : 'totalInputTokens', protoName: 'totalInputTokens')
+    ..aInt64(2, _omitFieldNames ? '' : 'totalOutputTokens', protoName: 'totalOutputTokens')
     ..aInt64(3, _omitFieldNames ? '' : 'totalTokens', protoName: 'totalTokens')
-    ..aInt64(4, _omitFieldNames ? '' : 'requestCount',
-        protoName: 'requestCount')
-    ..hasRequiredFields = false;
+    ..aInt64(4, _omitFieldNames ? '' : 'requestCount', protoName: 'requestCount')
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   TokenStatsResponse clone() => TokenStatsResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  TokenStatsResponse copyWith(void Function(TokenStatsResponse) updates) =>
-      super.copyWith((message) => updates(message as TokenStatsResponse))
-          as TokenStatsResponse;
+  TokenStatsResponse copyWith(void Function(TokenStatsResponse) updates) => super.copyWith((message) => updates(message as TokenStatsResponse)) as TokenStatsResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -3045,11 +2616,9 @@ class TokenStatsResponse extends $pb.GeneratedMessage {
   static TokenStatsResponse create() => TokenStatsResponse._();
   @$core.override
   TokenStatsResponse createEmptyInstance() => create();
-  static $pb.PbList<TokenStatsResponse> createRepeated() =>
-      $pb.PbList<TokenStatsResponse>();
+  static $pb.PbList<TokenStatsResponse> createRepeated() => $pb.PbList<TokenStatsResponse>();
   @$core.pragma('dart2js:noInline')
-  static TokenStatsResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<TokenStatsResponse>(create);
+  static TokenStatsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<TokenStatsResponse>(create);
   static TokenStatsResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -3094,85 +2663,56 @@ class AiProxyServiceApi {
 
   AiProxyServiceApi(this._client);
 
-  $async.Future<ListProxiesResponse> listProxies(
-          $pb.ClientContext? ctx, ListProxiesRequest request) =>
-      _client.invoke<ListProxiesResponse>(
-          ctx, 'AiProxyService', 'ListProxies', request, ListProxiesResponse());
-  $async.Future<ProxyInfo> getProxy(
-          $pb.ClientContext? ctx, GetProxyRequest request) =>
-      _client.invoke<ProxyInfo>(
-          ctx, 'AiProxyService', 'GetProxy', request, ProxyInfo());
-  $async.Future<ProxyInfo> createProxy(
-          $pb.ClientContext? ctx, CreateProxyRequest request) =>
-      _client.invoke<ProxyInfo>(
-          ctx, 'AiProxyService', 'CreateProxy', request, ProxyInfo());
-  $async.Future<ProxyInfo> updateProxy(
-          $pb.ClientContext? ctx, UpdateProxyRequest request) =>
-      _client.invoke<ProxyInfo>(
-          ctx, 'AiProxyService', 'UpdateProxy', request, ProxyInfo());
-  $async.Future<DeleteProxyResponse> deleteProxy(
-          $pb.ClientContext? ctx, DeleteProxyRequest request) =>
-      _client.invoke<DeleteProxyResponse>(
-          ctx, 'AiProxyService', 'DeleteProxy', request, DeleteProxyResponse());
-  $async.Future<ListProviderModelConfigsResponse> listProviderModelConfigs(
-          $pb.ClientContext? ctx, ListProviderModelConfigsRequest request) =>
-      _client.invoke<ListProviderModelConfigsResponse>(
-          ctx,
-          'AiProxyService',
-          'ListProviderModelConfigs',
-          request,
-          ListProviderModelConfigsResponse());
-  $async.Future<ProviderModelConfigInfo> getProviderModelConfig(
-          $pb.ClientContext? ctx, GetProviderModelConfigRequest request) =>
-      _client.invoke<ProviderModelConfigInfo>(ctx, 'AiProxyService',
-          'GetProviderModelConfig', request, ProviderModelConfigInfo());
-  $async.Future<ProviderModelConfigInfo> createProviderModelConfig(
-          $pb.ClientContext? ctx, CreateProviderModelConfigRequest request) =>
-      _client.invoke<ProviderModelConfigInfo>(ctx, 'AiProxyService',
-          'CreateProviderModelConfig', request, ProviderModelConfigInfo());
-  $async.Future<ProviderModelConfigInfo> updateProviderModelConfig(
-          $pb.ClientContext? ctx, UpdateProviderModelConfigRequest request) =>
-      _client.invoke<ProviderModelConfigInfo>(ctx, 'AiProxyService',
-          'UpdateProviderModelConfig', request, ProviderModelConfigInfo());
-  $async.Future<DeleteProviderModelConfigResponse> deleteProviderModelConfig(
-          $pb.ClientContext? ctx, DeleteProviderModelConfigRequest request) =>
-      _client.invoke<DeleteProviderModelConfigResponse>(
-          ctx,
-          'AiProxyService',
-          'DeleteProviderModelConfig',
-          request,
-          DeleteProviderModelConfigResponse());
-  $async.Future<ListProvidersResponse> listProviders(
-          $pb.ClientContext? ctx, $0.Empty request) =>
-      _client.invoke<ListProvidersResponse>(ctx, 'AiProxyService',
-          'ListProviders', request, ListProvidersResponse());
-  $async.Future<ListProviderModelsResponse> listProviderModels(
-          $pb.ClientContext? ctx, ListProviderModelsRequest request) =>
-      _client.invoke<ListProviderModelsResponse>(ctx, 'AiProxyService',
-          'ListProviderModels', request, ListProviderModelsResponse());
-  $async.Future<TestProviderModelConfigResponse> testProviderModelConfig(
-          $pb.ClientContext? ctx, TestProviderModelConfigRequest request) =>
-      _client.invoke<TestProviderModelConfigResponse>(
-          ctx,
-          'AiProxyService',
-          'TestProviderModelConfig',
-          request,
-          TestProviderModelConfigResponse());
-  $async.Future<TestProxyResponse> testProxy(
-          $pb.ClientContext? ctx, TestProxyRequest request) =>
-      _client.invoke<TestProxyResponse>(
-          ctx, 'AiProxyService', 'TestProxy', request, TestProxyResponse());
-  $async.Future<QueryLogsResponse> queryLogs(
-          $pb.ClientContext? ctx, QueryLogsRequest request) =>
-      _client.invoke<QueryLogsResponse>(
-          ctx, 'AiProxyService', 'QueryLogs', request, QueryLogsResponse());
-  $async.Future<TokenStatsResponse> getTokenStats(
-          $pb.ClientContext? ctx, GetTokenStatsRequest request) =>
-      _client.invoke<TokenStatsResponse>(ctx, 'AiProxyService', 'GetTokenStats',
-          request, TokenStatsResponse());
+  $async.Future<ListProxiesResponse> listProxies($pb.ClientContext? ctx, ListProxiesRequest request) =>
+    _client.invoke<ListProxiesResponse>(ctx, 'AiProxyService', 'ListProxies', request, ListProxiesResponse())
+  ;
+  $async.Future<ProxyInfo> getProxy($pb.ClientContext? ctx, GetProxyRequest request) =>
+    _client.invoke<ProxyInfo>(ctx, 'AiProxyService', 'GetProxy', request, ProxyInfo())
+  ;
+  $async.Future<ProxyInfo> createProxy($pb.ClientContext? ctx, CreateProxyRequest request) =>
+    _client.invoke<ProxyInfo>(ctx, 'AiProxyService', 'CreateProxy', request, ProxyInfo())
+  ;
+  $async.Future<ProxyInfo> updateProxy($pb.ClientContext? ctx, UpdateProxyRequest request) =>
+    _client.invoke<ProxyInfo>(ctx, 'AiProxyService', 'UpdateProxy', request, ProxyInfo())
+  ;
+  $async.Future<DeleteProxyResponse> deleteProxy($pb.ClientContext? ctx, DeleteProxyRequest request) =>
+    _client.invoke<DeleteProxyResponse>(ctx, 'AiProxyService', 'DeleteProxy', request, DeleteProxyResponse())
+  ;
+  $async.Future<ListProviderModelConfigsResponse> listProviderModelConfigs($pb.ClientContext? ctx, ListProviderModelConfigsRequest request) =>
+    _client.invoke<ListProviderModelConfigsResponse>(ctx, 'AiProxyService', 'ListProviderModelConfigs', request, ListProviderModelConfigsResponse())
+  ;
+  $async.Future<ProviderModelConfigInfo> getProviderModelConfig($pb.ClientContext? ctx, GetProviderModelConfigRequest request) =>
+    _client.invoke<ProviderModelConfigInfo>(ctx, 'AiProxyService', 'GetProviderModelConfig', request, ProviderModelConfigInfo())
+  ;
+  $async.Future<ProviderModelConfigInfo> createProviderModelConfig($pb.ClientContext? ctx, CreateProviderModelConfigRequest request) =>
+    _client.invoke<ProviderModelConfigInfo>(ctx, 'AiProxyService', 'CreateProviderModelConfig', request, ProviderModelConfigInfo())
+  ;
+  $async.Future<ProviderModelConfigInfo> updateProviderModelConfig($pb.ClientContext? ctx, UpdateProviderModelConfigRequest request) =>
+    _client.invoke<ProviderModelConfigInfo>(ctx, 'AiProxyService', 'UpdateProviderModelConfig', request, ProviderModelConfigInfo())
+  ;
+  $async.Future<DeleteProviderModelConfigResponse> deleteProviderModelConfig($pb.ClientContext? ctx, DeleteProviderModelConfigRequest request) =>
+    _client.invoke<DeleteProviderModelConfigResponse>(ctx, 'AiProxyService', 'DeleteProviderModelConfig', request, DeleteProviderModelConfigResponse())
+  ;
+  $async.Future<ListProvidersResponse> listProviders($pb.ClientContext? ctx, $0.Empty request) =>
+    _client.invoke<ListProvidersResponse>(ctx, 'AiProxyService', 'ListProviders', request, ListProvidersResponse())
+  ;
+  $async.Future<ListProviderModelsResponse> listProviderModels($pb.ClientContext? ctx, ListProviderModelsRequest request) =>
+    _client.invoke<ListProviderModelsResponse>(ctx, 'AiProxyService', 'ListProviderModels', request, ListProviderModelsResponse())
+  ;
+  $async.Future<TestProviderModelConfigResponse> testProviderModelConfig($pb.ClientContext? ctx, TestProviderModelConfigRequest request) =>
+    _client.invoke<TestProviderModelConfigResponse>(ctx, 'AiProxyService', 'TestProviderModelConfig', request, TestProviderModelConfigResponse())
+  ;
+  $async.Future<TestProxyResponse> testProxy($pb.ClientContext? ctx, TestProxyRequest request) =>
+    _client.invoke<TestProxyResponse>(ctx, 'AiProxyService', 'TestProxy', request, TestProxyResponse())
+  ;
+  $async.Future<QueryLogsResponse> queryLogs($pb.ClientContext? ctx, QueryLogsRequest request) =>
+    _client.invoke<QueryLogsResponse>(ctx, 'AiProxyService', 'QueryLogs', request, QueryLogsResponse())
+  ;
+  $async.Future<TokenStatsResponse> getTokenStats($pb.ClientContext? ctx, GetTokenStatsRequest request) =>
+    _client.invoke<TokenStatsResponse>(ctx, 'AiProxyService', 'GetTokenStats', request, TokenStatsResponse())
+  ;
 }
 
-const $core.bool _omitFieldNames =
-    $core.bool.fromEnvironment('protobuf.omit_field_names');
-const $core.bool _omitMessageNames =
-    $core.bool.fromEnvironment('protobuf.omit_message_names');
+
+const $core.bool _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');

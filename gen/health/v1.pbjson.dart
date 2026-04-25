@@ -22,8 +22,8 @@ const CheckRequest$json = {
 };
 
 /// Descriptor for `CheckRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List checkRequestDescriptor =
-    $convert.base64Decode('CgxDaGVja1JlcXVlc3Q=');
+final $typed_data.Uint8List checkRequestDescriptor = $convert.base64Decode(
+    'CgxDaGVja1JlcXVlc3Q=');
 
 @$core.Deprecated('Use checkResponseDescriptor instead')
 const CheckResponse$json = {
@@ -42,17 +42,12 @@ final $typed_data.Uint8List checkResponseDescriptor = $convert.base64Decode(
 const $core.Map<$core.String, $core.dynamic> HealthServiceBase$json = {
   '1': 'HealthService',
   '2': [
-    {
-      '1': 'Check',
-      '2': '.google.protobuf.Empty',
-      '3': '.health.v1.CheckResponse'
-    },
+    {'1': 'Check', '2': '.google.protobuf.Empty', '3': '.health.v1.CheckResponse'},
   ],
 };
 
 @$core.Deprecated('Use healthServiceDescriptor instead')
-const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
-    HealthServiceBase$messageJson = {
+const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> HealthServiceBase$messageJson = {
   '.google.protobuf.Empty': $0.Empty$json,
   '.health.v1.CheckResponse': CheckResponse$json,
 };
@@ -61,3 +56,4 @@ const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
 final $typed_data.Uint8List healthServiceDescriptor = $convert.base64Decode(
     'Cg1IZWFsdGhTZXJ2aWNlEjkKBUNoZWNrEhYuZ29vZ2xlLnByb3RvYnVmLkVtcHR5GhguaGVhbH'
     'RoLnYxLkNoZWNrUmVzcG9uc2U=');
+

@@ -34,13 +34,7 @@ const ProxyInfo$json = {
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
     {'1': 'sourceModel', '3': 2, '4': 1, '5': 9, '10': 'sourceModel'},
-    {
-      '1': 'providerModelConfigId',
-      '3': 3,
-      '4': 1,
-      '5': 9,
-      '10': 'providerModelConfigId'
-    },
+    {'1': 'providerModelConfigId', '3': 3, '4': 1, '5': 9, '10': 'providerModelConfigId'},
     {'1': 'apiKey', '3': 4, '4': 1, '5': 9, '10': 'apiKey'},
     {'1': 'enabled', '3': 5, '4': 1, '5': 8, '10': 'enabled'},
     {'1': 'createdAt', '3': 6, '4': 1, '5': 3, '10': 'createdAt'},
@@ -51,37 +45,13 @@ const ProxyInfo$json = {
     {'1': 'modelName', '3': 11, '4': 1, '5': 9, '10': 'modelName'},
     {'1': 'upstream', '3': 12, '4': 1, '5': 9, '10': 'upstream'},
     {'1': 'targetModel', '3': 13, '4': 1, '5': 9, '10': 'targetModel'},
-    {
-      '1': 'supportStreaming',
-      '3': 14,
-      '4': 1,
-      '5': 8,
-      '10': 'supportStreaming'
-    },
+    {'1': 'supportStreaming', '3': 14, '4': 1, '5': 8, '10': 'supportStreaming'},
     {'1': 'supportTools', '3': 15, '4': 1, '5': 8, '10': 'supportTools'},
     {'1': 'supportVision', '3': 16, '4': 1, '5': 8, '10': 'supportVision'},
-    {
-      '1': 'supportReasoning',
-      '3': 17,
-      '4': 1,
-      '5': 8,
-      '10': 'supportReasoning'
-    },
-    {
-      '1': 'defaultMaxTokens',
-      '3': 18,
-      '4': 1,
-      '5': 5,
-      '10': 'defaultMaxTokens'
-    },
+    {'1': 'supportReasoning', '3': 17, '4': 1, '5': 8, '10': 'supportReasoning'},
+    {'1': 'defaultMaxTokens', '3': 18, '4': 1, '5': 5, '10': 'defaultMaxTokens'},
     {'1': 'contextLength', '3': 19, '4': 1, '5': 5, '10': 'contextLength'},
-    {
-      '1': 'autoCompactLength',
-      '3': 20,
-      '4': 1,
-      '5': 5,
-      '10': 'autoCompactLength'
-    },
+    {'1': 'autoCompactLength', '3': 20, '4': 1, '5': 5, '10': 'autoCompactLength'},
   ],
 };
 
@@ -105,14 +75,7 @@ final $typed_data.Uint8List proxyInfoDescriptor = $convert.base64Decode(
 const ListProxiesResponse$json = {
   '1': 'ListProxiesResponse',
   '2': [
-    {
-      '1': 'proxies',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.ai_proxy.v1.ProxyInfo',
-      '10': 'proxies'
-    },
+    {'1': 'proxies', '3': 1, '4': 3, '5': 11, '6': '.ai_proxy.v1.ProxyInfo', '10': 'proxies'},
   ],
 };
 
@@ -130,21 +93,15 @@ const GetProxyRequest$json = {
 };
 
 /// Descriptor for `GetProxyRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getProxyRequestDescriptor =
-    $convert.base64Decode('Cg9HZXRQcm94eVJlcXVlc3QSDgoCaWQYASABKAlSAmlk');
+final $typed_data.Uint8List getProxyRequestDescriptor = $convert.base64Decode(
+    'Cg9HZXRQcm94eVJlcXVlc3QSDgoCaWQYASABKAlSAmlk');
 
 @$core.Deprecated('Use createProxyRequestDescriptor instead')
 const CreateProxyRequest$json = {
   '1': 'CreateProxyRequest',
   '2': [
     {'1': 'sourceModel', '3': 1, '4': 1, '5': 9, '10': 'sourceModel'},
-    {
-      '1': 'providerModelConfigId',
-      '3': 2,
-      '4': 1,
-      '5': 9,
-      '10': 'providerModelConfigId'
-    },
+    {'1': 'providerModelConfigId', '3': 2, '4': 1, '5': 9, '10': 'providerModelConfigId'},
   ],
 };
 
@@ -159,13 +116,7 @@ const UpdateProxyRequest$json = {
   '2': [
     {'1': 'id', '3': 1, '4': 1, '5': 9, '10': 'id'},
     {'1': 'sourceModel', '3': 2, '4': 1, '5': 9, '10': 'sourceModel'},
-    {
-      '1': 'providerModelConfigId',
-      '3': 3,
-      '4': 1,
-      '5': 9,
-      '10': 'providerModelConfigId'
-    },
+    {'1': 'providerModelConfigId', '3': 3, '4': 1, '5': 9, '10': 'providerModelConfigId'},
     {'1': 'enabled', '3': 4, '4': 1, '5': 8, '10': 'enabled'},
   ],
 };
@@ -185,8 +136,8 @@ const DeleteProxyRequest$json = {
 };
 
 /// Descriptor for `DeleteProxyRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteProxyRequestDescriptor =
-    $convert.base64Decode('ChJEZWxldGVQcm94eVJlcXVlc3QSDgoCaWQYASABKAlSAmlk');
+final $typed_data.Uint8List deleteProxyRequestDescriptor = $convert.base64Decode(
+    'ChJEZWxldGVQcm94eVJlcXVlc3QSDgoCaWQYASABKAlSAmlk');
 
 @$core.Deprecated('Use deleteProxyResponseDescriptor instead')
 const DeleteProxyResponse$json = {
@@ -194,8 +145,8 @@ const DeleteProxyResponse$json = {
 };
 
 /// Descriptor for `DeleteProxyResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteProxyResponseDescriptor =
-    $convert.base64Decode('ChNEZWxldGVQcm94eVJlc3BvbnNl');
+final $typed_data.Uint8List deleteProxyResponseDescriptor = $convert.base64Decode(
+    'ChNEZWxldGVQcm94eVJlc3BvbnNl');
 
 @$core.Deprecated('Use listProviderModelConfigsRequestDescriptor instead')
 const ListProviderModelConfigsRequest$json = {
@@ -206,10 +157,9 @@ const ListProviderModelConfigsRequest$json = {
 };
 
 /// Descriptor for `ListProviderModelConfigsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listProviderModelConfigsRequestDescriptor =
-    $convert.base64Decode(
-        'Ch9MaXN0UHJvdmlkZXJNb2RlbENvbmZpZ3NSZXF1ZXN0EiAKC2VuYWJsZWRPbmx5GAEgASgIUg'
-        'tlbmFibGVkT25seQ==');
+final $typed_data.Uint8List listProviderModelConfigsRequestDescriptor = $convert.base64Decode(
+    'Ch9MaXN0UHJvdmlkZXJNb2RlbENvbmZpZ3NSZXF1ZXN0EiAKC2VuYWJsZWRPbmx5GAEgASgIUg'
+    'tlbmFibGVkT25seQ==');
 
 @$core.Deprecated('Use providerModelConfigInfoDescriptor instead')
 const ProviderModelConfigInfo$json = {
@@ -225,28 +175,10 @@ const ProviderModelConfigInfo$json = {
     {'1': 'supportStreaming', '3': 8, '4': 1, '5': 8, '10': 'supportStreaming'},
     {'1': 'supportTools', '3': 9, '4': 1, '5': 8, '10': 'supportTools'},
     {'1': 'supportVision', '3': 10, '4': 1, '5': 8, '10': 'supportVision'},
-    {
-      '1': 'supportReasoning',
-      '3': 11,
-      '4': 1,
-      '5': 8,
-      '10': 'supportReasoning'
-    },
-    {
-      '1': 'defaultMaxTokens',
-      '3': 12,
-      '4': 1,
-      '5': 5,
-      '10': 'defaultMaxTokens'
-    },
+    {'1': 'supportReasoning', '3': 11, '4': 1, '5': 8, '10': 'supportReasoning'},
+    {'1': 'defaultMaxTokens', '3': 12, '4': 1, '5': 5, '10': 'defaultMaxTokens'},
     {'1': 'contextLength', '3': 13, '4': 1, '5': 5, '10': 'contextLength'},
-    {
-      '1': 'autoCompactLength',
-      '3': 14,
-      '4': 1,
-      '5': 5,
-      '10': 'autoCompactLength'
-    },
+    {'1': 'autoCompactLength', '3': 14, '4': 1, '5': 5, '10': 'autoCompactLength'},
     {'1': 'enabled', '3': 15, '4': 1, '5': 8, '10': 'enabled'},
     {'1': 'createdAt', '3': 16, '4': 1, '5': 3, '10': 'createdAt'},
     {'1': 'updatedAt', '3': 17, '4': 1, '5': 3, '10': 'updatedAt'},
@@ -271,22 +203,14 @@ final $typed_data.Uint8List providerModelConfigInfoDescriptor = $convert.base64D
 const ListProviderModelConfigsResponse$json = {
   '1': 'ListProviderModelConfigsResponse',
   '2': [
-    {
-      '1': 'configs',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.ai_proxy.v1.ProviderModelConfigInfo',
-      '10': 'configs'
-    },
+    {'1': 'configs', '3': 1, '4': 3, '5': 11, '6': '.ai_proxy.v1.ProviderModelConfigInfo', '10': 'configs'},
   ],
 };
 
 /// Descriptor for `ListProviderModelConfigsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listProviderModelConfigsResponseDescriptor =
-    $convert.base64Decode(
-        'CiBMaXN0UHJvdmlkZXJNb2RlbENvbmZpZ3NSZXNwb25zZRI+Cgdjb25maWdzGAEgAygLMiQuYW'
-        'lfcHJveHkudjEuUHJvdmlkZXJNb2RlbENvbmZpZ0luZm9SB2NvbmZpZ3M=');
+final $typed_data.Uint8List listProviderModelConfigsResponseDescriptor = $convert.base64Decode(
+    'CiBMaXN0UHJvdmlkZXJNb2RlbENvbmZpZ3NSZXNwb25zZRI+Cgdjb25maWdzGAEgAygLMiQuYW'
+    'lfcHJveHkudjEuUHJvdmlkZXJNb2RlbENvbmZpZ0luZm9SB2NvbmZpZ3M=');
 
 @$core.Deprecated('Use getProviderModelConfigRequestDescriptor instead')
 const GetProviderModelConfigRequest$json = {
@@ -297,9 +221,8 @@ const GetProviderModelConfigRequest$json = {
 };
 
 /// Descriptor for `GetProviderModelConfigRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getProviderModelConfigRequestDescriptor =
-    $convert.base64Decode(
-        'Ch1HZXRQcm92aWRlck1vZGVsQ29uZmlnUmVxdWVzdBIOCgJpZBgBIAEoCVICaWQ=');
+final $typed_data.Uint8List getProviderModelConfigRequestDescriptor = $convert.base64Decode(
+    'Ch1HZXRQcm92aWRlck1vZGVsQ29uZmlnUmVxdWVzdBIOCgJpZBgBIAEoCVICaWQ=');
 
 @$core.Deprecated('Use createProviderModelConfigRequestDescriptor instead')
 const CreateProviderModelConfigRequest$json = {
@@ -314,28 +237,10 @@ const CreateProviderModelConfigRequest$json = {
     {'1': 'supportStreaming', '3': 7, '4': 1, '5': 8, '10': 'supportStreaming'},
     {'1': 'supportTools', '3': 8, '4': 1, '5': 8, '10': 'supportTools'},
     {'1': 'supportVision', '3': 9, '4': 1, '5': 8, '10': 'supportVision'},
-    {
-      '1': 'supportReasoning',
-      '3': 10,
-      '4': 1,
-      '5': 8,
-      '10': 'supportReasoning'
-    },
-    {
-      '1': 'defaultMaxTokens',
-      '3': 11,
-      '4': 1,
-      '5': 5,
-      '10': 'defaultMaxTokens'
-    },
+    {'1': 'supportReasoning', '3': 10, '4': 1, '5': 8, '10': 'supportReasoning'},
+    {'1': 'defaultMaxTokens', '3': 11, '4': 1, '5': 5, '10': 'defaultMaxTokens'},
     {'1': 'contextLength', '3': 12, '4': 1, '5': 5, '10': 'contextLength'},
-    {
-      '1': 'autoCompactLength',
-      '3': 13,
-      '4': 1,
-      '5': 5,
-      '10': 'autoCompactLength'
-    },
+    {'1': 'autoCompactLength', '3': 13, '4': 1, '5': 5, '10': 'autoCompactLength'},
   ],
 };
 
@@ -365,21 +270,9 @@ const UpdateProviderModelConfigRequest$json = {
     {'1': 'supportTools', '3': 7, '4': 1, '5': 8, '10': 'supportTools'},
     {'1': 'supportVision', '3': 8, '4': 1, '5': 8, '10': 'supportVision'},
     {'1': 'supportReasoning', '3': 9, '4': 1, '5': 8, '10': 'supportReasoning'},
-    {
-      '1': 'defaultMaxTokens',
-      '3': 10,
-      '4': 1,
-      '5': 5,
-      '10': 'defaultMaxTokens'
-    },
+    {'1': 'defaultMaxTokens', '3': 10, '4': 1, '5': 5, '10': 'defaultMaxTokens'},
     {'1': 'contextLength', '3': 11, '4': 1, '5': 5, '10': 'contextLength'},
-    {
-      '1': 'autoCompactLength',
-      '3': 12,
-      '4': 1,
-      '5': 5,
-      '10': 'autoCompactLength'
-    },
+    {'1': 'autoCompactLength', '3': 12, '4': 1, '5': 5, '10': 'autoCompactLength'},
     {'1': 'enabled', '3': 13, '4': 1, '5': 8, '10': 'enabled'},
   ],
 };
@@ -405,9 +298,8 @@ const DeleteProviderModelConfigRequest$json = {
 };
 
 /// Descriptor for `DeleteProviderModelConfigRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteProviderModelConfigRequestDescriptor =
-    $convert.base64Decode(
-        'CiBEZWxldGVQcm92aWRlck1vZGVsQ29uZmlnUmVxdWVzdBIOCgJpZBgBIAEoCVICaWQ=');
+final $typed_data.Uint8List deleteProviderModelConfigRequestDescriptor = $convert.base64Decode(
+    'CiBEZWxldGVQcm92aWRlck1vZGVsQ29uZmlnUmVxdWVzdBIOCgJpZBgBIAEoCVICaWQ=');
 
 @$core.Deprecated('Use deleteProviderModelConfigResponseDescriptor instead')
 const DeleteProviderModelConfigResponse$json = {
@@ -415,8 +307,8 @@ const DeleteProviderModelConfigResponse$json = {
 };
 
 /// Descriptor for `DeleteProviderModelConfigResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteProviderModelConfigResponseDescriptor =
-    $convert.base64Decode('CiFEZWxldGVQcm92aWRlck1vZGVsQ29uZmlnUmVzcG9uc2U=');
+final $typed_data.Uint8List deleteProviderModelConfigResponseDescriptor = $convert.base64Decode(
+    'CiFEZWxldGVQcm92aWRlck1vZGVsQ29uZmlnUmVzcG9uc2U=');
 
 @$core.Deprecated('Use listProvidersRequestDescriptor instead')
 const ListProvidersRequest$json = {
@@ -424,8 +316,8 @@ const ListProvidersRequest$json = {
 };
 
 /// Descriptor for `ListProvidersRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listProvidersRequestDescriptor =
-    $convert.base64Decode('ChRMaXN0UHJvdmlkZXJzUmVxdWVzdA==');
+final $typed_data.Uint8List listProvidersRequestDescriptor = $convert.base64Decode(
+    'ChRMaXN0UHJvdmlkZXJzUmVxdWVzdA==');
 
 @$core.Deprecated('Use providerInfoDescriptor instead')
 const ProviderInfo$json = {
@@ -448,14 +340,7 @@ final $typed_data.Uint8List providerInfoDescriptor = $convert.base64Decode(
 const ListProvidersResponse$json = {
   '1': 'ListProvidersResponse',
   '2': [
-    {
-      '1': 'providers',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.ai_proxy.v1.ProviderInfo',
-      '10': 'providers'
-    },
+    {'1': 'providers', '3': 1, '4': 3, '5': 11, '6': '.ai_proxy.v1.ProviderInfo', '10': 'providers'},
   ],
 };
 
@@ -473,10 +358,9 @@ const ListProviderModelsRequest$json = {
 };
 
 /// Descriptor for `ListProviderModelsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listProviderModelsRequestDescriptor =
-    $convert.base64Decode(
-        'ChlMaXN0UHJvdmlkZXJNb2RlbHNSZXF1ZXN0Eh4KCnByb3ZpZGVySWQYASABKAlSCnByb3ZpZG'
-        'VySWQ=');
+final $typed_data.Uint8List listProviderModelsRequestDescriptor = $convert.base64Decode(
+    'ChlMaXN0UHJvdmlkZXJNb2RlbHNSZXF1ZXN0Eh4KCnByb3ZpZGVySWQYASABKAlSCnByb3ZpZG'
+    'VySWQ=');
 
 @$core.Deprecated('Use providerModelInfoDescriptor instead')
 const ProviderModelInfo$json = {
@@ -491,21 +375,9 @@ const ProviderModelInfo$json = {
     {'1': 'supportTools', '3': 7, '4': 1, '5': 8, '10': 'supportTools'},
     {'1': 'supportVision', '3': 8, '4': 1, '5': 8, '10': 'supportVision'},
     {'1': 'supportReasoning', '3': 9, '4': 1, '5': 8, '10': 'supportReasoning'},
-    {
-      '1': 'defaultMaxTokens',
-      '3': 10,
-      '4': 1,
-      '5': 5,
-      '10': 'defaultMaxTokens'
-    },
+    {'1': 'defaultMaxTokens', '3': 10, '4': 1, '5': 5, '10': 'defaultMaxTokens'},
     {'1': 'contextLength', '3': 11, '4': 1, '5': 5, '10': 'contextLength'},
-    {
-      '1': 'autoCompactLength',
-      '3': 12,
-      '4': 1,
-      '5': 5,
-      '10': 'autoCompactLength'
-    },
+    {'1': 'autoCompactLength', '3': 12, '4': 1, '5': 5, '10': 'autoCompactLength'},
     {'1': 'status', '3': 13, '4': 1, '5': 9, '10': 'status'},
   ],
 };
@@ -526,22 +398,14 @@ final $typed_data.Uint8List providerModelInfoDescriptor = $convert.base64Decode(
 const ListProviderModelsResponse$json = {
   '1': 'ListProviderModelsResponse',
   '2': [
-    {
-      '1': 'models',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.ai_proxy.v1.ProviderModelInfo',
-      '10': 'models'
-    },
+    {'1': 'models', '3': 1, '4': 3, '5': 11, '6': '.ai_proxy.v1.ProviderModelInfo', '10': 'models'},
   ],
 };
 
 /// Descriptor for `ListProviderModelsResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listProviderModelsResponseDescriptor =
-    $convert.base64Decode(
-        'ChpMaXN0UHJvdmlkZXJNb2RlbHNSZXNwb25zZRI2CgZtb2RlbHMYASADKAsyHi5haV9wcm94eS'
-        '52MS5Qcm92aWRlck1vZGVsSW5mb1IGbW9kZWxz');
+final $typed_data.Uint8List listProviderModelsResponseDescriptor = $convert.base64Decode(
+    'ChpMaXN0UHJvdmlkZXJNb2RlbHNSZXNwb25zZRI2CgZtb2RlbHMYASADKAsyHi5haV9wcm94eS'
+    '52MS5Qcm92aWRlck1vZGVsSW5mb1IGbW9kZWxz');
 
 @$core.Deprecated('Use testProviderModelConfigRequestDescriptor instead')
 const TestProviderModelConfigRequest$json = {
@@ -552,9 +416,8 @@ const TestProviderModelConfigRequest$json = {
 };
 
 /// Descriptor for `TestProviderModelConfigRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List testProviderModelConfigRequestDescriptor =
-    $convert.base64Decode(
-        'Ch5UZXN0UHJvdmlkZXJNb2RlbENvbmZpZ1JlcXVlc3QSDgoCaWQYASABKAlSAmlk');
+final $typed_data.Uint8List testProviderModelConfigRequestDescriptor = $convert.base64Decode(
+    'Ch5UZXN0UHJvdmlkZXJNb2RlbENvbmZpZ1JlcXVlc3QSDgoCaWQYASABKAlSAmlk');
 
 @$core.Deprecated('Use testProviderModelConfigResponseDescriptor instead')
 const TestProviderModelConfigResponse$json = {
@@ -568,11 +431,10 @@ const TestProviderModelConfigResponse$json = {
 };
 
 /// Descriptor for `TestProviderModelConfigResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List testProviderModelConfigResponseDescriptor =
-    $convert.base64Decode(
-        'Ch9UZXN0UHJvdmlkZXJNb2RlbENvbmZpZ1Jlc3BvbnNlEhgKB3N1Y2Nlc3MYASABKAhSB3N1Y2'
-        'Nlc3MSGAoHbWVzc2FnZRgCIAEoCVIHbWVzc2FnZRIeCgpzdGF0dXNDb2RlGAMgASgFUgpzdGF0'
-        'dXNDb2RlEhwKCWxhdGVuY3lNcxgEIAEoBVIJbGF0ZW5jeU1z');
+final $typed_data.Uint8List testProviderModelConfigResponseDescriptor = $convert.base64Decode(
+    'Ch9UZXN0UHJvdmlkZXJNb2RlbENvbmZpZ1Jlc3BvbnNlEhgKB3N1Y2Nlc3MYASABKAhSB3N1Y2'
+    'Nlc3MSGAoHbWVzc2FnZRgCIAEoCVIHbWVzc2FnZRIeCgpzdGF0dXNDb2RlGAMgASgFUgpzdGF0'
+    'dXNDb2RlEhwKCWxhdGVuY3lNcxgEIAEoBVIJbGF0ZW5jeU1z');
 
 @$core.Deprecated('Use testProxyRequestDescriptor instead')
 const TestProxyRequest$json = {
@@ -583,8 +445,8 @@ const TestProxyRequest$json = {
 };
 
 /// Descriptor for `TestProxyRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List testProxyRequestDescriptor =
-    $convert.base64Decode('ChBUZXN0UHJveHlSZXF1ZXN0Eg4KAmlkGAEgASgJUgJpZA==');
+final $typed_data.Uint8List testProxyRequestDescriptor = $convert.base64Decode(
+    'ChBUZXN0UHJveHlSZXF1ZXN0Eg4KAmlkGAEgASgJUgJpZA==');
 
 @$core.Deprecated('Use testProxyResponseDescriptor instead')
 const TestProxyResponse$json = {
@@ -634,13 +496,7 @@ const LogEntry$json = {
     {'1': 'outputTokens', '3': 7, '4': 1, '5': 3, '10': 'outputTokens'},
     {'1': 'totalTokens', '3': 8, '4': 1, '5': 3, '10': 'totalTokens'},
     {'1': 'durationMs', '3': 9, '4': 1, '5': 3, '10': 'durationMs'},
-    {
-      '1': 'timeToFirstTokenMs',
-      '3': 10,
-      '4': 1,
-      '5': 3,
-      '10': 'timeToFirstTokenMs'
-    },
+    {'1': 'timeToFirstTokenMs', '3': 10, '4': 1, '5': 3, '10': 'timeToFirstTokenMs'},
     {'1': 'isStream', '3': 11, '4': 1, '5': 8, '10': 'isStream'},
     {'1': 'isSuccess', '3': 12, '4': 1, '5': 8, '10': 'isSuccess'},
     {'1': 'errorMessage', '3': 13, '4': 1, '5': 9, '10': 'errorMessage'},
@@ -664,14 +520,7 @@ final $typed_data.Uint8List logEntryDescriptor = $convert.base64Decode(
 const QueryLogsResponse$json = {
   '1': 'QueryLogsResponse',
   '2': [
-    {
-      '1': 'logs',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.ai_proxy.v1.LogEntry',
-      '10': 'logs'
-    },
+    {'1': 'logs', '3': 1, '4': 3, '5': 11, '6': '.ai_proxy.v1.LogEntry', '10': 'logs'},
     {'1': 'total', '3': 2, '4': 1, '5': 3, '10': 'total'},
   ],
 };
@@ -701,13 +550,7 @@ const TokenStatsResponse$json = {
   '1': 'TokenStatsResponse',
   '2': [
     {'1': 'totalInputTokens', '3': 1, '4': 1, '5': 3, '10': 'totalInputTokens'},
-    {
-      '1': 'totalOutputTokens',
-      '3': 2,
-      '4': 1,
-      '5': 3,
-      '10': 'totalOutputTokens'
-    },
+    {'1': 'totalOutputTokens', '3': 2, '4': 1, '5': 3, '10': 'totalOutputTokens'},
     {'1': 'totalTokens', '3': 3, '4': 1, '5': 3, '10': 'totalTokens'},
     {'1': 'requestCount', '3': 4, '4': 1, '5': 3, '10': 'requestCount'},
   ],
@@ -723,92 +566,27 @@ final $typed_data.Uint8List tokenStatsResponseDescriptor = $convert.base64Decode
 const $core.Map<$core.String, $core.dynamic> AiProxyServiceBase$json = {
   '1': 'AiProxyService',
   '2': [
-    {
-      '1': 'ListProxies',
-      '2': '.ai_proxy.v1.ListProxiesRequest',
-      '3': '.ai_proxy.v1.ListProxiesResponse'
-    },
-    {
-      '1': 'GetProxy',
-      '2': '.ai_proxy.v1.GetProxyRequest',
-      '3': '.ai_proxy.v1.ProxyInfo'
-    },
-    {
-      '1': 'CreateProxy',
-      '2': '.ai_proxy.v1.CreateProxyRequest',
-      '3': '.ai_proxy.v1.ProxyInfo'
-    },
-    {
-      '1': 'UpdateProxy',
-      '2': '.ai_proxy.v1.UpdateProxyRequest',
-      '3': '.ai_proxy.v1.ProxyInfo'
-    },
-    {
-      '1': 'DeleteProxy',
-      '2': '.ai_proxy.v1.DeleteProxyRequest',
-      '3': '.ai_proxy.v1.DeleteProxyResponse'
-    },
-    {
-      '1': 'ListProviderModelConfigs',
-      '2': '.ai_proxy.v1.ListProviderModelConfigsRequest',
-      '3': '.ai_proxy.v1.ListProviderModelConfigsResponse'
-    },
-    {
-      '1': 'GetProviderModelConfig',
-      '2': '.ai_proxy.v1.GetProviderModelConfigRequest',
-      '3': '.ai_proxy.v1.ProviderModelConfigInfo'
-    },
-    {
-      '1': 'CreateProviderModelConfig',
-      '2': '.ai_proxy.v1.CreateProviderModelConfigRequest',
-      '3': '.ai_proxy.v1.ProviderModelConfigInfo'
-    },
-    {
-      '1': 'UpdateProviderModelConfig',
-      '2': '.ai_proxy.v1.UpdateProviderModelConfigRequest',
-      '3': '.ai_proxy.v1.ProviderModelConfigInfo'
-    },
-    {
-      '1': 'DeleteProviderModelConfig',
-      '2': '.ai_proxy.v1.DeleteProviderModelConfigRequest',
-      '3': '.ai_proxy.v1.DeleteProviderModelConfigResponse'
-    },
-    {
-      '1': 'ListProviders',
-      '2': '.google.protobuf.Empty',
-      '3': '.ai_proxy.v1.ListProvidersResponse'
-    },
-    {
-      '1': 'ListProviderModels',
-      '2': '.ai_proxy.v1.ListProviderModelsRequest',
-      '3': '.ai_proxy.v1.ListProviderModelsResponse'
-    },
-    {
-      '1': 'TestProviderModelConfig',
-      '2': '.ai_proxy.v1.TestProviderModelConfigRequest',
-      '3': '.ai_proxy.v1.TestProviderModelConfigResponse'
-    },
-    {
-      '1': 'TestProxy',
-      '2': '.ai_proxy.v1.TestProxyRequest',
-      '3': '.ai_proxy.v1.TestProxyResponse'
-    },
-    {
-      '1': 'QueryLogs',
-      '2': '.ai_proxy.v1.QueryLogsRequest',
-      '3': '.ai_proxy.v1.QueryLogsResponse'
-    },
-    {
-      '1': 'GetTokenStats',
-      '2': '.ai_proxy.v1.GetTokenStatsRequest',
-      '3': '.ai_proxy.v1.TokenStatsResponse'
-    },
+    {'1': 'ListProxies', '2': '.ai_proxy.v1.ListProxiesRequest', '3': '.ai_proxy.v1.ListProxiesResponse'},
+    {'1': 'GetProxy', '2': '.ai_proxy.v1.GetProxyRequest', '3': '.ai_proxy.v1.ProxyInfo'},
+    {'1': 'CreateProxy', '2': '.ai_proxy.v1.CreateProxyRequest', '3': '.ai_proxy.v1.ProxyInfo'},
+    {'1': 'UpdateProxy', '2': '.ai_proxy.v1.UpdateProxyRequest', '3': '.ai_proxy.v1.ProxyInfo'},
+    {'1': 'DeleteProxy', '2': '.ai_proxy.v1.DeleteProxyRequest', '3': '.ai_proxy.v1.DeleteProxyResponse'},
+    {'1': 'ListProviderModelConfigs', '2': '.ai_proxy.v1.ListProviderModelConfigsRequest', '3': '.ai_proxy.v1.ListProviderModelConfigsResponse'},
+    {'1': 'GetProviderModelConfig', '2': '.ai_proxy.v1.GetProviderModelConfigRequest', '3': '.ai_proxy.v1.ProviderModelConfigInfo'},
+    {'1': 'CreateProviderModelConfig', '2': '.ai_proxy.v1.CreateProviderModelConfigRequest', '3': '.ai_proxy.v1.ProviderModelConfigInfo'},
+    {'1': 'UpdateProviderModelConfig', '2': '.ai_proxy.v1.UpdateProviderModelConfigRequest', '3': '.ai_proxy.v1.ProviderModelConfigInfo'},
+    {'1': 'DeleteProviderModelConfig', '2': '.ai_proxy.v1.DeleteProviderModelConfigRequest', '3': '.ai_proxy.v1.DeleteProviderModelConfigResponse'},
+    {'1': 'ListProviders', '2': '.google.protobuf.Empty', '3': '.ai_proxy.v1.ListProvidersResponse'},
+    {'1': 'ListProviderModels', '2': '.ai_proxy.v1.ListProviderModelsRequest', '3': '.ai_proxy.v1.ListProviderModelsResponse'},
+    {'1': 'TestProviderModelConfig', '2': '.ai_proxy.v1.TestProviderModelConfigRequest', '3': '.ai_proxy.v1.TestProviderModelConfigResponse'},
+    {'1': 'TestProxy', '2': '.ai_proxy.v1.TestProxyRequest', '3': '.ai_proxy.v1.TestProxyResponse'},
+    {'1': 'QueryLogs', '2': '.ai_proxy.v1.QueryLogsRequest', '3': '.ai_proxy.v1.QueryLogsResponse'},
+    {'1': 'GetTokenStats', '2': '.ai_proxy.v1.GetTokenStatsRequest', '3': '.ai_proxy.v1.TokenStatsResponse'},
   ],
 };
 
 @$core.Deprecated('Use aiProxyServiceDescriptor instead')
-const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
-    AiProxyServiceBase$messageJson = {
+const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> AiProxyServiceBase$messageJson = {
   '.ai_proxy.v1.ListProxiesRequest': ListProxiesRequest$json,
   '.ai_proxy.v1.ListProxiesResponse': ListProxiesResponse$json,
   '.ai_proxy.v1.ProxyInfo': ProxyInfo$json,
@@ -817,31 +595,22 @@ const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
   '.ai_proxy.v1.UpdateProxyRequest': UpdateProxyRequest$json,
   '.ai_proxy.v1.DeleteProxyRequest': DeleteProxyRequest$json,
   '.ai_proxy.v1.DeleteProxyResponse': DeleteProxyResponse$json,
-  '.ai_proxy.v1.ListProviderModelConfigsRequest':
-      ListProviderModelConfigsRequest$json,
-  '.ai_proxy.v1.ListProviderModelConfigsResponse':
-      ListProviderModelConfigsResponse$json,
+  '.ai_proxy.v1.ListProviderModelConfigsRequest': ListProviderModelConfigsRequest$json,
+  '.ai_proxy.v1.ListProviderModelConfigsResponse': ListProviderModelConfigsResponse$json,
   '.ai_proxy.v1.ProviderModelConfigInfo': ProviderModelConfigInfo$json,
-  '.ai_proxy.v1.GetProviderModelConfigRequest':
-      GetProviderModelConfigRequest$json,
-  '.ai_proxy.v1.CreateProviderModelConfigRequest':
-      CreateProviderModelConfigRequest$json,
-  '.ai_proxy.v1.UpdateProviderModelConfigRequest':
-      UpdateProviderModelConfigRequest$json,
-  '.ai_proxy.v1.DeleteProviderModelConfigRequest':
-      DeleteProviderModelConfigRequest$json,
-  '.ai_proxy.v1.DeleteProviderModelConfigResponse':
-      DeleteProviderModelConfigResponse$json,
+  '.ai_proxy.v1.GetProviderModelConfigRequest': GetProviderModelConfigRequest$json,
+  '.ai_proxy.v1.CreateProviderModelConfigRequest': CreateProviderModelConfigRequest$json,
+  '.ai_proxy.v1.UpdateProviderModelConfigRequest': UpdateProviderModelConfigRequest$json,
+  '.ai_proxy.v1.DeleteProviderModelConfigRequest': DeleteProviderModelConfigRequest$json,
+  '.ai_proxy.v1.DeleteProviderModelConfigResponse': DeleteProviderModelConfigResponse$json,
   '.google.protobuf.Empty': $0.Empty$json,
   '.ai_proxy.v1.ListProvidersResponse': ListProvidersResponse$json,
   '.ai_proxy.v1.ProviderInfo': ProviderInfo$json,
   '.ai_proxy.v1.ListProviderModelsRequest': ListProviderModelsRequest$json,
   '.ai_proxy.v1.ListProviderModelsResponse': ListProviderModelsResponse$json,
   '.ai_proxy.v1.ProviderModelInfo': ProviderModelInfo$json,
-  '.ai_proxy.v1.TestProviderModelConfigRequest':
-      TestProviderModelConfigRequest$json,
-  '.ai_proxy.v1.TestProviderModelConfigResponse':
-      TestProviderModelConfigResponse$json,
+  '.ai_proxy.v1.TestProviderModelConfigRequest': TestProviderModelConfigRequest$json,
+  '.ai_proxy.v1.TestProviderModelConfigResponse': TestProviderModelConfigResponse$json,
   '.ai_proxy.v1.TestProxyRequest': TestProxyRequest$json,
   '.ai_proxy.v1.TestProxyResponse': TestProxyResponse$json,
   '.ai_proxy.v1.QueryLogsRequest': QueryLogsRequest$json,
@@ -881,3 +650,4 @@ final $typed_data.Uint8List aiProxyServiceDescriptor = $convert.base64Decode(
     'N0Gh4uYWlfcHJveHkudjEuUXVlcnlMb2dzUmVzcG9uc2USUwoNR2V0VG9rZW5TdGF0cxIhLmFp'
     'X3Byb3h5LnYxLkdldFRva2VuU3RhdHNSZXF1ZXN0Gh8uYWlfcHJveHkudjEuVG9rZW5TdGF0c1'
     'Jlc3BvbnNl');
+

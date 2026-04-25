@@ -22,35 +22,26 @@ import 'v1.pbjson.dart';
 export 'v1.pb.dart';
 
 abstract class ToolServiceBase extends $pb.GeneratedService {
-  $async.Future<$1.ListToolsResponse> listTools(
-      $pb.ServerContext ctx, $0.Empty request);
-  $async.Future<$1.ExecuteToolResponse> executeTool(
-      $pb.ServerContext ctx, $1.ExecuteToolRequest request);
+  $async.Future<$1.ListToolsResponse> listTools($pb.ServerContext ctx, $0.Empty request);
+  $async.Future<$1.ExecuteToolResponse> executeTool($pb.ServerContext ctx, $1.ExecuteToolRequest request);
 
   $pb.GeneratedMessage createRequest($core.String methodName) {
     switch (methodName) {
-      case 'ListTools':
-        return $0.Empty();
-      case 'ExecuteTool':
-        return $1.ExecuteToolRequest();
-      default:
-        throw $core.ArgumentError('Unknown method: $methodName');
+      case 'ListTools': return $0.Empty();
+      case 'ExecuteTool': return $1.ExecuteToolRequest();
+      default: throw $core.ArgumentError('Unknown method: $methodName');
     }
   }
 
-  $async.Future<$pb.GeneratedMessage> handleCall($pb.ServerContext ctx,
-      $core.String methodName, $pb.GeneratedMessage request) {
+  $async.Future<$pb.GeneratedMessage> handleCall($pb.ServerContext ctx, $core.String methodName, $pb.GeneratedMessage request) {
     switch (methodName) {
-      case 'ListTools':
-        return listTools(ctx, request as $0.Empty);
-      case 'ExecuteTool':
-        return executeTool(ctx, request as $1.ExecuteToolRequest);
-      default:
-        throw $core.ArgumentError('Unknown method: $methodName');
+      case 'ListTools': return listTools(ctx, request as $0.Empty);
+      case 'ExecuteTool': return executeTool(ctx, request as $1.ExecuteToolRequest);
+      default: throw $core.ArgumentError('Unknown method: $methodName');
     }
   }
 
   $core.Map<$core.String, $core.dynamic> get $json => ToolServiceBase$json;
-  $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
-      get $messageJson => ToolServiceBase$messageJson;
+  $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> get $messageJson => ToolServiceBase$messageJson;
 }
+

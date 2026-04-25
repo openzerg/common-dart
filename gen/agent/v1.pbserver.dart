@@ -22,54 +22,35 @@ import 'v1.pbjson.dart';
 export 'v1.pb.dart';
 
 abstract class AgentServiceBase extends $pb.GeneratedService {
-  $async.Future<$1.ChatResponse> chat(
-      $pb.ServerContext ctx, $1.ChatRequest request);
-  $async.Future<$1.InterruptResponse> interrupt(
-      $pb.ServerContext ctx, $1.InterruptRequest request);
-  $async.Future<$1.DeleteMessagesFromResponse> deleteMessagesFrom(
-      $pb.ServerContext ctx, $1.DeleteMessagesFromRequest request);
-  $async.Future<$1.SessionEvent> subscribeSessionEvents(
-      $pb.ServerContext ctx, $1.SubscribeEventsRequest request);
-  $async.Future<$1.HealthResponse> health(
-      $pb.ServerContext ctx, $0.Empty request);
+  $async.Future<$1.ChatResponse> chat($pb.ServerContext ctx, $1.ChatRequest request);
+  $async.Future<$1.InterruptResponse> interrupt($pb.ServerContext ctx, $1.InterruptRequest request);
+  $async.Future<$1.DeleteMessagesFromResponse> deleteMessagesFrom($pb.ServerContext ctx, $1.DeleteMessagesFromRequest request);
+  $async.Future<$1.SessionEvent> subscribeSessionEvents($pb.ServerContext ctx, $1.SubscribeEventsRequest request);
+  $async.Future<$1.HealthResponse> health($pb.ServerContext ctx, $0.Empty request);
 
   $pb.GeneratedMessage createRequest($core.String methodName) {
     switch (methodName) {
-      case 'Chat':
-        return $1.ChatRequest();
-      case 'Interrupt':
-        return $1.InterruptRequest();
-      case 'DeleteMessagesFrom':
-        return $1.DeleteMessagesFromRequest();
-      case 'SubscribeSessionEvents':
-        return $1.SubscribeEventsRequest();
-      case 'Health':
-        return $0.Empty();
-      default:
-        throw $core.ArgumentError('Unknown method: $methodName');
+      case 'Chat': return $1.ChatRequest();
+      case 'Interrupt': return $1.InterruptRequest();
+      case 'DeleteMessagesFrom': return $1.DeleteMessagesFromRequest();
+      case 'SubscribeSessionEvents': return $1.SubscribeEventsRequest();
+      case 'Health': return $0.Empty();
+      default: throw $core.ArgumentError('Unknown method: $methodName');
     }
   }
 
-  $async.Future<$pb.GeneratedMessage> handleCall($pb.ServerContext ctx,
-      $core.String methodName, $pb.GeneratedMessage request) {
+  $async.Future<$pb.GeneratedMessage> handleCall($pb.ServerContext ctx, $core.String methodName, $pb.GeneratedMessage request) {
     switch (methodName) {
-      case 'Chat':
-        return chat(ctx, request as $1.ChatRequest);
-      case 'Interrupt':
-        return interrupt(ctx, request as $1.InterruptRequest);
-      case 'DeleteMessagesFrom':
-        return deleteMessagesFrom(ctx, request as $1.DeleteMessagesFromRequest);
-      case 'SubscribeSessionEvents':
-        return subscribeSessionEvents(
-            ctx, request as $1.SubscribeEventsRequest);
-      case 'Health':
-        return health(ctx, request as $0.Empty);
-      default:
-        throw $core.ArgumentError('Unknown method: $methodName');
+      case 'Chat': return chat(ctx, request as $1.ChatRequest);
+      case 'Interrupt': return interrupt(ctx, request as $1.InterruptRequest);
+      case 'DeleteMessagesFrom': return deleteMessagesFrom(ctx, request as $1.DeleteMessagesFromRequest);
+      case 'SubscribeSessionEvents': return subscribeSessionEvents(ctx, request as $1.SubscribeEventsRequest);
+      case 'Health': return health(ctx, request as $0.Empty);
+      default: throw $core.ArgumentError('Unknown method: $methodName');
     }
   }
 
   $core.Map<$core.String, $core.dynamic> get $json => AgentServiceBase$json;
-  $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
-      get $messageJson => AgentServiceBase$messageJson;
+  $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> get $messageJson => AgentServiceBase$messageJson;
 }
+

@@ -22,29 +22,23 @@ import 'v1.pbjson.dart';
 export 'v1.pb.dart';
 
 abstract class HealthServiceBase extends $pb.GeneratedService {
-  $async.Future<$1.CheckResponse> check(
-      $pb.ServerContext ctx, $0.Empty request);
+  $async.Future<$1.CheckResponse> check($pb.ServerContext ctx, $0.Empty request);
 
   $pb.GeneratedMessage createRequest($core.String methodName) {
     switch (methodName) {
-      case 'Check':
-        return $0.Empty();
-      default:
-        throw $core.ArgumentError('Unknown method: $methodName');
+      case 'Check': return $0.Empty();
+      default: throw $core.ArgumentError('Unknown method: $methodName');
     }
   }
 
-  $async.Future<$pb.GeneratedMessage> handleCall($pb.ServerContext ctx,
-      $core.String methodName, $pb.GeneratedMessage request) {
+  $async.Future<$pb.GeneratedMessage> handleCall($pb.ServerContext ctx, $core.String methodName, $pb.GeneratedMessage request) {
     switch (methodName) {
-      case 'Check':
-        return check(ctx, request as $0.Empty);
-      default:
-        throw $core.ArgumentError('Unknown method: $methodName');
+      case 'Check': return check(ctx, request as $0.Empty);
+      default: throw $core.ArgumentError('Unknown method: $methodName');
     }
   }
 
   $core.Map<$core.String, $core.dynamic> get $json => HealthServiceBase$json;
-  $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
-      get $messageJson => HealthServiceBase$messageJson;
+  $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> get $messageJson => HealthServiceBase$messageJson;
 }
+

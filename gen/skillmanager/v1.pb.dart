@@ -33,29 +33,19 @@ class RegisterSkillRequest extends $pb.GeneratedMessage {
 
   RegisterSkillRequest._();
 
-  factory RegisterSkillRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory RegisterSkillRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory RegisterSkillRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory RegisterSkillRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'RegisterSkillRequest',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'skillmanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RegisterSkillRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'skillmanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'slug')
     ..aOS(2, _omitFieldNames ? '' : 'gitUrl', protoName: 'gitUrl')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  RegisterSkillRequest clone() =>
-      RegisterSkillRequest()..mergeFromMessage(this);
+  RegisterSkillRequest clone() => RegisterSkillRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  RegisterSkillRequest copyWith(void Function(RegisterSkillRequest) updates) =>
-      super.copyWith((message) => updates(message as RegisterSkillRequest))
-          as RegisterSkillRequest;
+  RegisterSkillRequest copyWith(void Function(RegisterSkillRequest) updates) => super.copyWith((message) => updates(message as RegisterSkillRequest)) as RegisterSkillRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -64,11 +54,9 @@ class RegisterSkillRequest extends $pb.GeneratedMessage {
   static RegisterSkillRequest create() => RegisterSkillRequest._();
   @$core.override
   RegisterSkillRequest createEmptyInstance() => create();
-  static $pb.PbList<RegisterSkillRequest> createRepeated() =>
-      $pb.PbList<RegisterSkillRequest>();
+  static $pb.PbList<RegisterSkillRequest> createRepeated() => $pb.PbList<RegisterSkillRequest>();
   @$core.pragma('dart2js:noInline')
-  static RegisterSkillRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<RegisterSkillRequest>(create);
+  static RegisterSkillRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RegisterSkillRequest>(create);
   static RegisterSkillRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -119,18 +107,10 @@ class SkillInfo extends $pb.GeneratedMessage {
 
   SkillInfo._();
 
-  factory SkillInfo.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory SkillInfo.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory SkillInfo.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory SkillInfo.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'SkillInfo',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'skillmanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'SkillInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'skillmanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'id')
     ..aOS(2, _omitFieldNames ? '' : 'slug')
     ..aOS(3, _omitFieldNames ? '' : 'name')
@@ -141,13 +121,13 @@ class SkillInfo extends $pb.GeneratedMessage {
     ..aOS(8, _omitFieldNames ? '' : 'pkgs')
     ..aInt64(9, _omitFieldNames ? '' : 'createdAt', protoName: 'createdAt')
     ..aInt64(10, _omitFieldNames ? '' : 'updatedAt', protoName: 'updatedAt')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   SkillInfo clone() => SkillInfo()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  SkillInfo copyWith(void Function(SkillInfo) updates) =>
-      super.copyWith((message) => updates(message as SkillInfo)) as SkillInfo;
+  SkillInfo copyWith(void Function(SkillInfo) updates) => super.copyWith((message) => updates(message as SkillInfo)) as SkillInfo;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -158,8 +138,7 @@ class SkillInfo extends $pb.GeneratedMessage {
   SkillInfo createEmptyInstance() => create();
   static $pb.PbList<SkillInfo> createRepeated() => $pb.PbList<SkillInfo>();
   @$core.pragma('dart2js:noInline')
-  static SkillInfo getDefault() =>
-      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SkillInfo>(create);
+  static SkillInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<SkillInfo>(create);
   static SkillInfo? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -264,30 +243,18 @@ class RegisterSkillResponse extends $pb.GeneratedMessage {
 
   RegisterSkillResponse._();
 
-  factory RegisterSkillResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory RegisterSkillResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory RegisterSkillResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory RegisterSkillResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'RegisterSkillResponse',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'skillmanager.v1'),
-      createEmptyInstance: create)
-    ..aOM<SkillInfo>(1, _omitFieldNames ? '' : 'skill',
-        subBuilder: SkillInfo.create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RegisterSkillResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'skillmanager.v1'), createEmptyInstance: create)
+    ..aOM<SkillInfo>(1, _omitFieldNames ? '' : 'skill', subBuilder: SkillInfo.create)
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  RegisterSkillResponse clone() =>
-      RegisterSkillResponse()..mergeFromMessage(this);
+  RegisterSkillResponse clone() => RegisterSkillResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  RegisterSkillResponse copyWith(
-          void Function(RegisterSkillResponse) updates) =>
-      super.copyWith((message) => updates(message as RegisterSkillResponse))
-          as RegisterSkillResponse;
+  RegisterSkillResponse copyWith(void Function(RegisterSkillResponse) updates) => super.copyWith((message) => updates(message as RegisterSkillResponse)) as RegisterSkillResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -296,11 +263,9 @@ class RegisterSkillResponse extends $pb.GeneratedMessage {
   static RegisterSkillResponse create() => RegisterSkillResponse._();
   @$core.override
   RegisterSkillResponse createEmptyInstance() => create();
-  static $pb.PbList<RegisterSkillResponse> createRepeated() =>
-      $pb.PbList<RegisterSkillResponse>();
+  static $pb.PbList<RegisterSkillResponse> createRepeated() => $pb.PbList<RegisterSkillResponse>();
   @$core.pragma('dart2js:noInline')
-  static RegisterSkillResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<RegisterSkillResponse>(create);
+  static RegisterSkillResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RegisterSkillResponse>(create);
   static RegisterSkillResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -326,27 +291,18 @@ class UpdateSkillRequest extends $pb.GeneratedMessage {
 
   UpdateSkillRequest._();
 
-  factory UpdateSkillRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory UpdateSkillRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory UpdateSkillRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory UpdateSkillRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'UpdateSkillRequest',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'skillmanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSkillRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'skillmanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'slug')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UpdateSkillRequest clone() => UpdateSkillRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UpdateSkillRequest copyWith(void Function(UpdateSkillRequest) updates) =>
-      super.copyWith((message) => updates(message as UpdateSkillRequest))
-          as UpdateSkillRequest;
+  UpdateSkillRequest copyWith(void Function(UpdateSkillRequest) updates) => super.copyWith((message) => updates(message as UpdateSkillRequest)) as UpdateSkillRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -355,11 +311,9 @@ class UpdateSkillRequest extends $pb.GeneratedMessage {
   static UpdateSkillRequest create() => UpdateSkillRequest._();
   @$core.override
   UpdateSkillRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateSkillRequest> createRepeated() =>
-      $pb.PbList<UpdateSkillRequest>();
+  static $pb.PbList<UpdateSkillRequest> createRepeated() => $pb.PbList<UpdateSkillRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateSkillRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<UpdateSkillRequest>(create);
+  static UpdateSkillRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateSkillRequest>(create);
   static UpdateSkillRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -383,28 +337,18 @@ class UpdateSkillResponse extends $pb.GeneratedMessage {
 
   UpdateSkillResponse._();
 
-  factory UpdateSkillResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory UpdateSkillResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory UpdateSkillResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory UpdateSkillResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'UpdateSkillResponse',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'skillmanager.v1'),
-      createEmptyInstance: create)
-    ..aOM<SkillInfo>(1, _omitFieldNames ? '' : 'skill',
-        subBuilder: SkillInfo.create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateSkillResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'skillmanager.v1'), createEmptyInstance: create)
+    ..aOM<SkillInfo>(1, _omitFieldNames ? '' : 'skill', subBuilder: SkillInfo.create)
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   UpdateSkillResponse clone() => UpdateSkillResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UpdateSkillResponse copyWith(void Function(UpdateSkillResponse) updates) =>
-      super.copyWith((message) => updates(message as UpdateSkillResponse))
-          as UpdateSkillResponse;
+  UpdateSkillResponse copyWith(void Function(UpdateSkillResponse) updates) => super.copyWith((message) => updates(message as UpdateSkillResponse)) as UpdateSkillResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -413,11 +357,9 @@ class UpdateSkillResponse extends $pb.GeneratedMessage {
   static UpdateSkillResponse create() => UpdateSkillResponse._();
   @$core.override
   UpdateSkillResponse createEmptyInstance() => create();
-  static $pb.PbList<UpdateSkillResponse> createRepeated() =>
-      $pb.PbList<UpdateSkillResponse>();
+  static $pb.PbList<UpdateSkillResponse> createRepeated() => $pb.PbList<UpdateSkillResponse>();
   @$core.pragma('dart2js:noInline')
-  static UpdateSkillResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<UpdateSkillResponse>(create);
+  static UpdateSkillResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateSkillResponse>(create);
   static UpdateSkillResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -443,27 +385,18 @@ class DeleteSkillRequest extends $pb.GeneratedMessage {
 
   DeleteSkillRequest._();
 
-  factory DeleteSkillRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory DeleteSkillRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory DeleteSkillRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory DeleteSkillRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'DeleteSkillRequest',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'skillmanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteSkillRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'skillmanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'slug')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DeleteSkillRequest clone() => DeleteSkillRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DeleteSkillRequest copyWith(void Function(DeleteSkillRequest) updates) =>
-      super.copyWith((message) => updates(message as DeleteSkillRequest))
-          as DeleteSkillRequest;
+  DeleteSkillRequest copyWith(void Function(DeleteSkillRequest) updates) => super.copyWith((message) => updates(message as DeleteSkillRequest)) as DeleteSkillRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -472,11 +405,9 @@ class DeleteSkillRequest extends $pb.GeneratedMessage {
   static DeleteSkillRequest create() => DeleteSkillRequest._();
   @$core.override
   DeleteSkillRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteSkillRequest> createRepeated() =>
-      $pb.PbList<DeleteSkillRequest>();
+  static $pb.PbList<DeleteSkillRequest> createRepeated() => $pb.PbList<DeleteSkillRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteSkillRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<DeleteSkillRequest>(create);
+  static DeleteSkillRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteSkillRequest>(create);
   static DeleteSkillRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -494,26 +425,17 @@ class DeleteSkillResponse extends $pb.GeneratedMessage {
 
   DeleteSkillResponse._();
 
-  factory DeleteSkillResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory DeleteSkillResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory DeleteSkillResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory DeleteSkillResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'DeleteSkillResponse',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'skillmanager.v1'),
-      createEmptyInstance: create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteSkillResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'skillmanager.v1'), createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   DeleteSkillResponse clone() => DeleteSkillResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DeleteSkillResponse copyWith(void Function(DeleteSkillResponse) updates) =>
-      super.copyWith((message) => updates(message as DeleteSkillResponse))
-          as DeleteSkillResponse;
+  DeleteSkillResponse copyWith(void Function(DeleteSkillResponse) updates) => super.copyWith((message) => updates(message as DeleteSkillResponse)) as DeleteSkillResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -522,11 +444,9 @@ class DeleteSkillResponse extends $pb.GeneratedMessage {
   static DeleteSkillResponse create() => DeleteSkillResponse._();
   @$core.override
   DeleteSkillResponse createEmptyInstance() => create();
-  static $pb.PbList<DeleteSkillResponse> createRepeated() =>
-      $pb.PbList<DeleteSkillResponse>();
+  static $pb.PbList<DeleteSkillResponse> createRepeated() => $pb.PbList<DeleteSkillResponse>();
   @$core.pragma('dart2js:noInline')
-  static DeleteSkillResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<DeleteSkillResponse>(create);
+  static DeleteSkillResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteSkillResponse>(create);
   static DeleteSkillResponse? _defaultInstance;
 }
 
@@ -535,26 +455,17 @@ class ListSkillsRequest extends $pb.GeneratedMessage {
 
   ListSkillsRequest._();
 
-  factory ListSkillsRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ListSkillsRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ListSkillsRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ListSkillsRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ListSkillsRequest',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'skillmanager.v1'),
-      createEmptyInstance: create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListSkillsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'skillmanager.v1'), createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListSkillsRequest clone() => ListSkillsRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListSkillsRequest copyWith(void Function(ListSkillsRequest) updates) =>
-      super.copyWith((message) => updates(message as ListSkillsRequest))
-          as ListSkillsRequest;
+  ListSkillsRequest copyWith(void Function(ListSkillsRequest) updates) => super.copyWith((message) => updates(message as ListSkillsRequest)) as ListSkillsRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -563,11 +474,9 @@ class ListSkillsRequest extends $pb.GeneratedMessage {
   static ListSkillsRequest create() => ListSkillsRequest._();
   @$core.override
   ListSkillsRequest createEmptyInstance() => create();
-  static $pb.PbList<ListSkillsRequest> createRepeated() =>
-      $pb.PbList<ListSkillsRequest>();
+  static $pb.PbList<ListSkillsRequest> createRepeated() => $pb.PbList<ListSkillsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListSkillsRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ListSkillsRequest>(create);
+  static ListSkillsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListSkillsRequest>(create);
   static ListSkillsRequest? _defaultInstance;
 }
 
@@ -582,28 +491,18 @@ class ListSkillsResponse extends $pb.GeneratedMessage {
 
   ListSkillsResponse._();
 
-  factory ListSkillsResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ListSkillsResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ListSkillsResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ListSkillsResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ListSkillsResponse',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'skillmanager.v1'),
-      createEmptyInstance: create)
-    ..pc<SkillInfo>(1, _omitFieldNames ? '' : 'skills', $pb.PbFieldType.PM,
-        subBuilder: SkillInfo.create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListSkillsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'skillmanager.v1'), createEmptyInstance: create)
+    ..pc<SkillInfo>(1, _omitFieldNames ? '' : 'skills', $pb.PbFieldType.PM, subBuilder: SkillInfo.create)
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListSkillsResponse clone() => ListSkillsResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListSkillsResponse copyWith(void Function(ListSkillsResponse) updates) =>
-      super.copyWith((message) => updates(message as ListSkillsResponse))
-          as ListSkillsResponse;
+  ListSkillsResponse copyWith(void Function(ListSkillsResponse) updates) => super.copyWith((message) => updates(message as ListSkillsResponse)) as ListSkillsResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -612,11 +511,9 @@ class ListSkillsResponse extends $pb.GeneratedMessage {
   static ListSkillsResponse create() => ListSkillsResponse._();
   @$core.override
   ListSkillsResponse createEmptyInstance() => create();
-  static $pb.PbList<ListSkillsResponse> createRepeated() =>
-      $pb.PbList<ListSkillsResponse>();
+  static $pb.PbList<ListSkillsResponse> createRepeated() => $pb.PbList<ListSkillsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListSkillsResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ListSkillsResponse>(create);
+  static ListSkillsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListSkillsResponse>(create);
   static ListSkillsResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -634,27 +531,18 @@ class GetSkillRequest extends $pb.GeneratedMessage {
 
   GetSkillRequest._();
 
-  factory GetSkillRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory GetSkillRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory GetSkillRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory GetSkillRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'GetSkillRequest',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'skillmanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetSkillRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'skillmanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'slug')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GetSkillRequest clone() => GetSkillRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetSkillRequest copyWith(void Function(GetSkillRequest) updates) =>
-      super.copyWith((message) => updates(message as GetSkillRequest))
-          as GetSkillRequest;
+  GetSkillRequest copyWith(void Function(GetSkillRequest) updates) => super.copyWith((message) => updates(message as GetSkillRequest)) as GetSkillRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -663,11 +551,9 @@ class GetSkillRequest extends $pb.GeneratedMessage {
   static GetSkillRequest create() => GetSkillRequest._();
   @$core.override
   GetSkillRequest createEmptyInstance() => create();
-  static $pb.PbList<GetSkillRequest> createRepeated() =>
-      $pb.PbList<GetSkillRequest>();
+  static $pb.PbList<GetSkillRequest> createRepeated() => $pb.PbList<GetSkillRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetSkillRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<GetSkillRequest>(create);
+  static GetSkillRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetSkillRequest>(create);
   static GetSkillRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -685,29 +571,23 @@ class SkillManagerServiceApi {
 
   SkillManagerServiceApi(this._client);
 
-  $async.Future<RegisterSkillResponse> registerSkill(
-          $pb.ClientContext? ctx, RegisterSkillRequest request) =>
-      _client.invoke<RegisterSkillResponse>(ctx, 'SkillManagerService',
-          'RegisterSkill', request, RegisterSkillResponse());
-  $async.Future<UpdateSkillResponse> updateSkill(
-          $pb.ClientContext? ctx, UpdateSkillRequest request) =>
-      _client.invoke<UpdateSkillResponse>(ctx, 'SkillManagerService',
-          'UpdateSkill', request, UpdateSkillResponse());
-  $async.Future<DeleteSkillResponse> deleteSkill(
-          $pb.ClientContext? ctx, DeleteSkillRequest request) =>
-      _client.invoke<DeleteSkillResponse>(ctx, 'SkillManagerService',
-          'DeleteSkill', request, DeleteSkillResponse());
-  $async.Future<ListSkillsResponse> listSkills(
-          $pb.ClientContext? ctx, $0.Empty request) =>
-      _client.invoke<ListSkillsResponse>(ctx, 'SkillManagerService',
-          'ListSkills', request, ListSkillsResponse());
-  $async.Future<SkillInfo> getSkill(
-          $pb.ClientContext? ctx, GetSkillRequest request) =>
-      _client.invoke<SkillInfo>(
-          ctx, 'SkillManagerService', 'GetSkill', request, SkillInfo());
+  $async.Future<RegisterSkillResponse> registerSkill($pb.ClientContext? ctx, RegisterSkillRequest request) =>
+    _client.invoke<RegisterSkillResponse>(ctx, 'SkillManagerService', 'RegisterSkill', request, RegisterSkillResponse())
+  ;
+  $async.Future<UpdateSkillResponse> updateSkill($pb.ClientContext? ctx, UpdateSkillRequest request) =>
+    _client.invoke<UpdateSkillResponse>(ctx, 'SkillManagerService', 'UpdateSkill', request, UpdateSkillResponse())
+  ;
+  $async.Future<DeleteSkillResponse> deleteSkill($pb.ClientContext? ctx, DeleteSkillRequest request) =>
+    _client.invoke<DeleteSkillResponse>(ctx, 'SkillManagerService', 'DeleteSkill', request, DeleteSkillResponse())
+  ;
+  $async.Future<ListSkillsResponse> listSkills($pb.ClientContext? ctx, $0.Empty request) =>
+    _client.invoke<ListSkillsResponse>(ctx, 'SkillManagerService', 'ListSkills', request, ListSkillsResponse())
+  ;
+  $async.Future<SkillInfo> getSkill($pb.ClientContext? ctx, GetSkillRequest request) =>
+    _client.invoke<SkillInfo>(ctx, 'SkillManagerService', 'GetSkill', request, SkillInfo())
+  ;
 }
 
-const $core.bool _omitFieldNames =
-    $core.bool.fromEnvironment('protobuf.omit_field_names');
-const $core.bool _omitMessageNames =
-    $core.bool.fromEnvironment('protobuf.omit_message_names');
+
+const $core.bool _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');

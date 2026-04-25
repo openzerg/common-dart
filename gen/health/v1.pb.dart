@@ -24,25 +24,17 @@ class CheckRequest extends $pb.GeneratedMessage {
 
   CheckRequest._();
 
-  factory CheckRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory CheckRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory CheckRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory CheckRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'CheckRequest',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'health.v1'),
-      createEmptyInstance: create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CheckRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'health.v1'), createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CheckRequest clone() => CheckRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CheckRequest copyWith(void Function(CheckRequest) updates) =>
-      super.copyWith((message) => updates(message as CheckRequest))
-          as CheckRequest;
+  CheckRequest copyWith(void Function(CheckRequest) updates) => super.copyWith((message) => updates(message as CheckRequest)) as CheckRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -51,11 +43,9 @@ class CheckRequest extends $pb.GeneratedMessage {
   static CheckRequest create() => CheckRequest._();
   @$core.override
   CheckRequest createEmptyInstance() => create();
-  static $pb.PbList<CheckRequest> createRepeated() =>
-      $pb.PbList<CheckRequest>();
+  static $pb.PbList<CheckRequest> createRepeated() => $pb.PbList<CheckRequest>();
   @$core.pragma('dart2js:noInline')
-  static CheckRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<CheckRequest>(create);
+  static CheckRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CheckRequest>(create);
   static CheckRequest? _defaultInstance;
 }
 
@@ -72,27 +62,19 @@ class CheckResponse extends $pb.GeneratedMessage {
 
   CheckResponse._();
 
-  factory CheckResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory CheckResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory CheckResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory CheckResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'CheckResponse',
-      package: const $pb.PackageName(_omitMessageNames ? '' : 'health.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CheckResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'health.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'status')
     ..aOS(2, _omitFieldNames ? '' : 'service')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   CheckResponse clone() => CheckResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CheckResponse copyWith(void Function(CheckResponse) updates) =>
-      super.copyWith((message) => updates(message as CheckResponse))
-          as CheckResponse;
+  CheckResponse copyWith(void Function(CheckResponse) updates) => super.copyWith((message) => updates(message as CheckResponse)) as CheckResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -101,11 +83,9 @@ class CheckResponse extends $pb.GeneratedMessage {
   static CheckResponse create() => CheckResponse._();
   @$core.override
   CheckResponse createEmptyInstance() => create();
-  static $pb.PbList<CheckResponse> createRepeated() =>
-      $pb.PbList<CheckResponse>();
+  static $pb.PbList<CheckResponse> createRepeated() => $pb.PbList<CheckResponse>();
   @$core.pragma('dart2js:noInline')
-  static CheckResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<CheckResponse>(create);
+  static CheckResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CheckResponse>(create);
   static CheckResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -132,13 +112,11 @@ class HealthServiceApi {
 
   HealthServiceApi(this._client);
 
-  $async.Future<CheckResponse> check_(
-          $pb.ClientContext? ctx, $0.Empty request) =>
-      _client.invoke<CheckResponse>(
-          ctx, 'HealthService', 'Check', request, CheckResponse());
+  $async.Future<CheckResponse> check_($pb.ClientContext? ctx, $0.Empty request) =>
+    _client.invoke<CheckResponse>(ctx, 'HealthService', 'Check', request, CheckResponse())
+  ;
 }
 
-const $core.bool _omitFieldNames =
-    $core.bool.fromEnvironment('protobuf.omit_field_names');
-const $core.bool _omitMessageNames =
-    $core.bool.fromEnvironment('protobuf.omit_message_names');
+
+const $core.bool _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');

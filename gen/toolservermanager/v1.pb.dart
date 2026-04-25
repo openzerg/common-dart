@@ -34,33 +34,20 @@ class ToolServerUrl extends $pb.GeneratedMessage {
 
   ToolServerUrl._();
 
-  factory ToolServerUrl.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ToolServerUrl.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ToolServerUrl.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ToolServerUrl.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ToolServerUrl',
-      package: const $pb.PackageName(
-          _omitMessageNames ? '' : 'toolservermanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ToolServerUrl', package: const $pb.PackageName(_omitMessageNames ? '' : 'toolservermanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'url')
-    ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'config',
-        entryClassName: 'ToolServerUrl.ConfigEntry',
-        keyFieldType: $pb.PbFieldType.OS,
-        valueFieldType: $pb.PbFieldType.OS,
-        packageName: const $pb.PackageName('toolservermanager.v1'))
-    ..hasRequiredFields = false;
+    ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'config', entryClassName: 'ToolServerUrl.ConfigEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('toolservermanager.v1'))
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ToolServerUrl clone() => ToolServerUrl()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ToolServerUrl copyWith(void Function(ToolServerUrl) updates) =>
-      super.copyWith((message) => updates(message as ToolServerUrl))
-          as ToolServerUrl;
+  ToolServerUrl copyWith(void Function(ToolServerUrl) updates) => super.copyWith((message) => updates(message as ToolServerUrl)) as ToolServerUrl;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -69,11 +56,9 @@ class ToolServerUrl extends $pb.GeneratedMessage {
   static ToolServerUrl create() => ToolServerUrl._();
   @$core.override
   ToolServerUrl createEmptyInstance() => create();
-  static $pb.PbList<ToolServerUrl> createRepeated() =>
-      $pb.PbList<ToolServerUrl>();
+  static $pb.PbList<ToolServerUrl> createRepeated() => $pb.PbList<ToolServerUrl>();
   @$core.pragma('dart2js:noInline')
-  static ToolServerUrl getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ToolServerUrl>(create);
+  static ToolServerUrl getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ToolServerUrl>(create);
   static ToolServerUrl? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -121,35 +106,24 @@ class ToolDefinition extends $pb.GeneratedMessage {
 
   ToolDefinition._();
 
-  factory ToolDefinition.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ToolDefinition.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ToolDefinition.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ToolDefinition.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ToolDefinition',
-      package: const $pb.PackageName(
-          _omitMessageNames ? '' : 'toolservermanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ToolDefinition', package: const $pb.PackageName(_omitMessageNames ? '' : 'toolservermanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'description')
-    ..aOS(3, _omitFieldNames ? '' : 'inputSchemaJson',
-        protoName: 'inputSchemaJson')
-    ..aOS(4, _omitFieldNames ? '' : 'outputSchemaJson',
-        protoName: 'outputSchemaJson')
+    ..aOS(3, _omitFieldNames ? '' : 'inputSchemaJson', protoName: 'inputSchemaJson')
+    ..aOS(4, _omitFieldNames ? '' : 'outputSchemaJson', protoName: 'outputSchemaJson')
     ..aOS(5, _omitFieldNames ? '' : 'group')
     ..a<$core.int>(6, _omitFieldNames ? '' : 'priority', $pb.PbFieldType.O3)
     ..pPS(7, _omitFieldNames ? '' : 'dependencies')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ToolDefinition clone() => ToolDefinition()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ToolDefinition copyWith(void Function(ToolDefinition) updates) =>
-      super.copyWith((message) => updates(message as ToolDefinition))
-          as ToolDefinition;
+  ToolDefinition copyWith(void Function(ToolDefinition) updates) => super.copyWith((message) => updates(message as ToolDefinition)) as ToolDefinition;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -158,11 +132,9 @@ class ToolDefinition extends $pb.GeneratedMessage {
   static ToolDefinition create() => ToolDefinition._();
   @$core.override
   ToolDefinition createEmptyInstance() => create();
-  static $pb.PbList<ToolDefinition> createRepeated() =>
-      $pb.PbList<ToolDefinition>();
+  static $pb.PbList<ToolDefinition> createRepeated() => $pb.PbList<ToolDefinition>();
   @$core.pragma('dart2js:noInline')
-  static ToolDefinition getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ToolDefinition>(create);
+  static ToolDefinition getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ToolDefinition>(create);
   static ToolDefinition? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -236,28 +208,19 @@ class ContainerEnv extends $pb.GeneratedMessage {
 
   ContainerEnv._();
 
-  factory ContainerEnv.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ContainerEnv.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ContainerEnv.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ContainerEnv.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ContainerEnv',
-      package: const $pb.PackageName(
-          _omitMessageNames ? '' : 'toolservermanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ContainerEnv', package: const $pb.PackageName(_omitMessageNames ? '' : 'toolservermanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'key')
     ..aOS(2, _omitFieldNames ? '' : 'value')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ContainerEnv clone() => ContainerEnv()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ContainerEnv copyWith(void Function(ContainerEnv) updates) =>
-      super.copyWith((message) => updates(message as ContainerEnv))
-          as ContainerEnv;
+  ContainerEnv copyWith(void Function(ContainerEnv) updates) => super.copyWith((message) => updates(message as ContainerEnv)) as ContainerEnv;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -266,11 +229,9 @@ class ContainerEnv extends $pb.GeneratedMessage {
   static ContainerEnv create() => ContainerEnv._();
   @$core.override
   ContainerEnv createEmptyInstance() => create();
-  static $pb.PbList<ContainerEnv> createRepeated() =>
-      $pb.PbList<ContainerEnv>();
+  static $pb.PbList<ContainerEnv> createRepeated() => $pb.PbList<ContainerEnv>();
   @$core.pragma('dart2js:noInline')
-  static ContainerEnv getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ContainerEnv>(create);
+  static ContainerEnv getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ContainerEnv>(create);
   static ContainerEnv? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -309,33 +270,21 @@ class StartToolServerRequest extends $pb.GeneratedMessage {
 
   StartToolServerRequest._();
 
-  factory StartToolServerRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory StartToolServerRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory StartToolServerRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory StartToolServerRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'StartToolServerRequest',
-      package: const $pb.PackageName(
-          _omitMessageNames ? '' : 'toolservermanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StartToolServerRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'toolservermanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'type')
     ..aOS(2, _omitFieldNames ? '' : 'image')
-    ..pc<ContainerEnv>(3, _omitFieldNames ? '' : 'env', $pb.PbFieldType.PM,
-        subBuilder: ContainerEnv.create)
+    ..pc<ContainerEnv>(3, _omitFieldNames ? '' : 'env', $pb.PbFieldType.PM, subBuilder: ContainerEnv.create)
     ..pPS(4, _omitFieldNames ? '' : 'command')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  StartToolServerRequest clone() =>
-      StartToolServerRequest()..mergeFromMessage(this);
+  StartToolServerRequest clone() => StartToolServerRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  StartToolServerRequest copyWith(
-          void Function(StartToolServerRequest) updates) =>
-      super.copyWith((message) => updates(message as StartToolServerRequest))
-          as StartToolServerRequest;
+  StartToolServerRequest copyWith(void Function(StartToolServerRequest) updates) => super.copyWith((message) => updates(message as StartToolServerRequest)) as StartToolServerRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -344,11 +293,9 @@ class StartToolServerRequest extends $pb.GeneratedMessage {
   static StartToolServerRequest create() => StartToolServerRequest._();
   @$core.override
   StartToolServerRequest createEmptyInstance() => create();
-  static $pb.PbList<StartToolServerRequest> createRepeated() =>
-      $pb.PbList<StartToolServerRequest>();
+  static $pb.PbList<StartToolServerRequest> createRepeated() => $pb.PbList<StartToolServerRequest>();
   @$core.pragma('dart2js:noInline')
-  static StartToolServerRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<StartToolServerRequest>(create);
+  static StartToolServerRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StartToolServerRequest>(create);
   static StartToolServerRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -389,30 +336,19 @@ class StartToolServerResponse extends $pb.GeneratedMessage {
 
   StartToolServerResponse._();
 
-  factory StartToolServerResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory StartToolServerResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory StartToolServerResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory StartToolServerResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'StartToolServerResponse',
-      package: const $pb.PackageName(
-          _omitMessageNames ? '' : 'toolservermanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StartToolServerResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'toolservermanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'containerName', protoName: 'containerName')
     ..aOS(2, _omitFieldNames ? '' : 'instanceId', protoName: 'instanceId')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  StartToolServerResponse clone() =>
-      StartToolServerResponse()..mergeFromMessage(this);
+  StartToolServerResponse clone() => StartToolServerResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  StartToolServerResponse copyWith(
-          void Function(StartToolServerResponse) updates) =>
-      super.copyWith((message) => updates(message as StartToolServerResponse))
-          as StartToolServerResponse;
+  StartToolServerResponse copyWith(void Function(StartToolServerResponse) updates) => super.copyWith((message) => updates(message as StartToolServerResponse)) as StartToolServerResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -421,11 +357,9 @@ class StartToolServerResponse extends $pb.GeneratedMessage {
   static StartToolServerResponse create() => StartToolServerResponse._();
   @$core.override
   StartToolServerResponse createEmptyInstance() => create();
-  static $pb.PbList<StartToolServerResponse> createRepeated() =>
-      $pb.PbList<StartToolServerResponse>();
+  static $pb.PbList<StartToolServerResponse> createRepeated() => $pb.PbList<StartToolServerResponse>();
   @$core.pragma('dart2js:noInline')
-  static StartToolServerResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<StartToolServerResponse>(create);
+  static StartToolServerResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StartToolServerResponse>(create);
   static StartToolServerResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -458,29 +392,18 @@ class StopToolServerRequest extends $pb.GeneratedMessage {
 
   StopToolServerRequest._();
 
-  factory StopToolServerRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory StopToolServerRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory StopToolServerRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory StopToolServerRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'StopToolServerRequest',
-      package: const $pb.PackageName(
-          _omitMessageNames ? '' : 'toolservermanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StopToolServerRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'toolservermanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'type')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  StopToolServerRequest clone() =>
-      StopToolServerRequest()..mergeFromMessage(this);
+  StopToolServerRequest clone() => StopToolServerRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  StopToolServerRequest copyWith(
-          void Function(StopToolServerRequest) updates) =>
-      super.copyWith((message) => updates(message as StopToolServerRequest))
-          as StopToolServerRequest;
+  StopToolServerRequest copyWith(void Function(StopToolServerRequest) updates) => super.copyWith((message) => updates(message as StopToolServerRequest)) as StopToolServerRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -489,11 +412,9 @@ class StopToolServerRequest extends $pb.GeneratedMessage {
   static StopToolServerRequest create() => StopToolServerRequest._();
   @$core.override
   StopToolServerRequest createEmptyInstance() => create();
-  static $pb.PbList<StopToolServerRequest> createRepeated() =>
-      $pb.PbList<StopToolServerRequest>();
+  static $pb.PbList<StopToolServerRequest> createRepeated() => $pb.PbList<StopToolServerRequest>();
   @$core.pragma('dart2js:noInline')
-  static StopToolServerRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<StopToolServerRequest>(create);
+  static StopToolServerRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StopToolServerRequest>(create);
   static StopToolServerRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -511,28 +432,17 @@ class StopToolServerResponse extends $pb.GeneratedMessage {
 
   StopToolServerResponse._();
 
-  factory StopToolServerResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory StopToolServerResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory StopToolServerResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory StopToolServerResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'StopToolServerResponse',
-      package: const $pb.PackageName(
-          _omitMessageNames ? '' : 'toolservermanager.v1'),
-      createEmptyInstance: create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StopToolServerResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'toolservermanager.v1'), createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  StopToolServerResponse clone() =>
-      StopToolServerResponse()..mergeFromMessage(this);
+  StopToolServerResponse clone() => StopToolServerResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  StopToolServerResponse copyWith(
-          void Function(StopToolServerResponse) updates) =>
-      super.copyWith((message) => updates(message as StopToolServerResponse))
-          as StopToolServerResponse;
+  StopToolServerResponse copyWith(void Function(StopToolServerResponse) updates) => super.copyWith((message) => updates(message as StopToolServerResponse)) as StopToolServerResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -541,11 +451,9 @@ class StopToolServerResponse extends $pb.GeneratedMessage {
   static StopToolServerResponse create() => StopToolServerResponse._();
   @$core.override
   StopToolServerResponse createEmptyInstance() => create();
-  static $pb.PbList<StopToolServerResponse> createRepeated() =>
-      $pb.PbList<StopToolServerResponse>();
+  static $pb.PbList<StopToolServerResponse> createRepeated() => $pb.PbList<StopToolServerResponse>();
   @$core.pragma('dart2js:noInline')
-  static StopToolServerResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<StopToolServerResponse>(create);
+  static StopToolServerResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StopToolServerResponse>(create);
   static StopToolServerResponse? _defaultInstance;
 }
 
@@ -554,28 +462,17 @@ class ListToolServersRequest extends $pb.GeneratedMessage {
 
   ListToolServersRequest._();
 
-  factory ListToolServersRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ListToolServersRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ListToolServersRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ListToolServersRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ListToolServersRequest',
-      package: const $pb.PackageName(
-          _omitMessageNames ? '' : 'toolservermanager.v1'),
-      createEmptyInstance: create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListToolServersRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'toolservermanager.v1'), createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListToolServersRequest clone() =>
-      ListToolServersRequest()..mergeFromMessage(this);
+  ListToolServersRequest clone() => ListToolServersRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListToolServersRequest copyWith(
-          void Function(ListToolServersRequest) updates) =>
-      super.copyWith((message) => updates(message as ListToolServersRequest))
-          as ListToolServersRequest;
+  ListToolServersRequest copyWith(void Function(ListToolServersRequest) updates) => super.copyWith((message) => updates(message as ListToolServersRequest)) as ListToolServersRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -584,11 +481,9 @@ class ListToolServersRequest extends $pb.GeneratedMessage {
   static ListToolServersRequest create() => ListToolServersRequest._();
   @$core.override
   ListToolServersRequest createEmptyInstance() => create();
-  static $pb.PbList<ListToolServersRequest> createRepeated() =>
-      $pb.PbList<ListToolServersRequest>();
+  static $pb.PbList<ListToolServersRequest> createRepeated() => $pb.PbList<ListToolServersRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListToolServersRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ListToolServersRequest>(create);
+  static ListToolServersRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListToolServersRequest>(create);
   static ListToolServersRequest? _defaultInstance;
 }
 
@@ -617,35 +512,25 @@ class ToolServerInfo extends $pb.GeneratedMessage {
 
   ToolServerInfo._();
 
-  factory ToolServerInfo.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ToolServerInfo.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ToolServerInfo.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ToolServerInfo.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ToolServerInfo',
-      package: const $pb.PackageName(
-          _omitMessageNames ? '' : 'toolservermanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ToolServerInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'toolservermanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'instanceId', protoName: 'instanceId')
     ..aOS(2, _omitFieldNames ? '' : 'name')
     ..aOS(3, _omitFieldNames ? '' : 'type')
     ..aOS(4, _omitFieldNames ? '' : 'url')
     ..a<$core.int>(5, _omitFieldNames ? '' : 'port', $pb.PbFieldType.O3)
     ..aOS(6, _omitFieldNames ? '' : 'lifecycle')
-    ..a<$core.int>(7, _omitFieldNames ? '' : 'toolCount', $pb.PbFieldType.O3,
-        protoName: 'toolCount')
+    ..a<$core.int>(7, _omitFieldNames ? '' : 'toolCount', $pb.PbFieldType.O3, protoName: 'toolCount')
     ..aOS(8, _omitFieldNames ? '' : 'containerName', protoName: 'containerName')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ToolServerInfo clone() => ToolServerInfo()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ToolServerInfo copyWith(void Function(ToolServerInfo) updates) =>
-      super.copyWith((message) => updates(message as ToolServerInfo))
-          as ToolServerInfo;
+  ToolServerInfo copyWith(void Function(ToolServerInfo) updates) => super.copyWith((message) => updates(message as ToolServerInfo)) as ToolServerInfo;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -654,11 +539,9 @@ class ToolServerInfo extends $pb.GeneratedMessage {
   static ToolServerInfo create() => ToolServerInfo._();
   @$core.override
   ToolServerInfo createEmptyInstance() => create();
-  static $pb.PbList<ToolServerInfo> createRepeated() =>
-      $pb.PbList<ToolServerInfo>();
+  static $pb.PbList<ToolServerInfo> createRepeated() => $pb.PbList<ToolServerInfo>();
   @$core.pragma('dart2js:noInline')
-  static ToolServerInfo getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ToolServerInfo>(create);
+  static ToolServerInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ToolServerInfo>(create);
   static ToolServerInfo? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -745,31 +628,18 @@ class ListToolServersResponse extends $pb.GeneratedMessage {
 
   ListToolServersResponse._();
 
-  factory ListToolServersResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ListToolServersResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ListToolServersResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ListToolServersResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ListToolServersResponse',
-      package: const $pb.PackageName(
-          _omitMessageNames ? '' : 'toolservermanager.v1'),
-      createEmptyInstance: create)
-    ..pc<ToolServerInfo>(
-        1, _omitFieldNames ? '' : 'servers', $pb.PbFieldType.PM,
-        subBuilder: ToolServerInfo.create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListToolServersResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'toolservermanager.v1'), createEmptyInstance: create)
+    ..pc<ToolServerInfo>(1, _omitFieldNames ? '' : 'servers', $pb.PbFieldType.PM, subBuilder: ToolServerInfo.create)
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListToolServersResponse clone() =>
-      ListToolServersResponse()..mergeFromMessage(this);
+  ListToolServersResponse clone() => ListToolServersResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListToolServersResponse copyWith(
-          void Function(ListToolServersResponse) updates) =>
-      super.copyWith((message) => updates(message as ListToolServersResponse))
-          as ListToolServersResponse;
+  ListToolServersResponse copyWith(void Function(ListToolServersResponse) updates) => super.copyWith((message) => updates(message as ListToolServersResponse)) as ListToolServersResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -778,11 +648,9 @@ class ListToolServersResponse extends $pb.GeneratedMessage {
   static ListToolServersResponse create() => ListToolServersResponse._();
   @$core.override
   ListToolServersResponse createEmptyInstance() => create();
-  static $pb.PbList<ListToolServersResponse> createRepeated() =>
-      $pb.PbList<ListToolServersResponse>();
+  static $pb.PbList<ListToolServersResponse> createRepeated() => $pb.PbList<ListToolServersResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListToolServersResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ListToolServersResponse>(create);
+  static ListToolServersResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListToolServersResponse>(create);
   static ListToolServersResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -800,29 +668,18 @@ class RefreshToolCacheRequest extends $pb.GeneratedMessage {
 
   RefreshToolCacheRequest._();
 
-  factory RefreshToolCacheRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory RefreshToolCacheRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory RefreshToolCacheRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory RefreshToolCacheRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'RefreshToolCacheRequest',
-      package: const $pb.PackageName(
-          _omitMessageNames ? '' : 'toolservermanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RefreshToolCacheRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'toolservermanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'instanceType', protoName: 'instanceType')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  RefreshToolCacheRequest clone() =>
-      RefreshToolCacheRequest()..mergeFromMessage(this);
+  RefreshToolCacheRequest clone() => RefreshToolCacheRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  RefreshToolCacheRequest copyWith(
-          void Function(RefreshToolCacheRequest) updates) =>
-      super.copyWith((message) => updates(message as RefreshToolCacheRequest))
-          as RefreshToolCacheRequest;
+  RefreshToolCacheRequest copyWith(void Function(RefreshToolCacheRequest) updates) => super.copyWith((message) => updates(message as RefreshToolCacheRequest)) as RefreshToolCacheRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -831,11 +688,9 @@ class RefreshToolCacheRequest extends $pb.GeneratedMessage {
   static RefreshToolCacheRequest create() => RefreshToolCacheRequest._();
   @$core.override
   RefreshToolCacheRequest createEmptyInstance() => create();
-  static $pb.PbList<RefreshToolCacheRequest> createRepeated() =>
-      $pb.PbList<RefreshToolCacheRequest>();
+  static $pb.PbList<RefreshToolCacheRequest> createRepeated() => $pb.PbList<RefreshToolCacheRequest>();
   @$core.pragma('dart2js:noInline')
-  static RefreshToolCacheRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<RefreshToolCacheRequest>(create);
+  static RefreshToolCacheRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RefreshToolCacheRequest>(create);
   static RefreshToolCacheRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -859,30 +714,18 @@ class RefreshToolCacheResponse extends $pb.GeneratedMessage {
 
   RefreshToolCacheResponse._();
 
-  factory RefreshToolCacheResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory RefreshToolCacheResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory RefreshToolCacheResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory RefreshToolCacheResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'RefreshToolCacheResponse',
-      package: const $pb.PackageName(
-          _omitMessageNames ? '' : 'toolservermanager.v1'),
-      createEmptyInstance: create)
-    ..a<$core.int>(1, _omitFieldNames ? '' : 'toolCount', $pb.PbFieldType.O3,
-        protoName: 'toolCount')
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'RefreshToolCacheResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'toolservermanager.v1'), createEmptyInstance: create)
+    ..a<$core.int>(1, _omitFieldNames ? '' : 'toolCount', $pb.PbFieldType.O3, protoName: 'toolCount')
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  RefreshToolCacheResponse clone() =>
-      RefreshToolCacheResponse()..mergeFromMessage(this);
+  RefreshToolCacheResponse clone() => RefreshToolCacheResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  RefreshToolCacheResponse copyWith(
-          void Function(RefreshToolCacheResponse) updates) =>
-      super.copyWith((message) => updates(message as RefreshToolCacheResponse))
-          as RefreshToolCacheResponse;
+  RefreshToolCacheResponse copyWith(void Function(RefreshToolCacheResponse) updates) => super.copyWith((message) => updates(message as RefreshToolCacheResponse)) as RefreshToolCacheResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -891,11 +734,9 @@ class RefreshToolCacheResponse extends $pb.GeneratedMessage {
   static RefreshToolCacheResponse create() => RefreshToolCacheResponse._();
   @$core.override
   RefreshToolCacheResponse createEmptyInstance() => create();
-  static $pb.PbList<RefreshToolCacheResponse> createRepeated() =>
-      $pb.PbList<RefreshToolCacheResponse>();
+  static $pb.PbList<RefreshToolCacheResponse> createRepeated() => $pb.PbList<RefreshToolCacheResponse>();
   @$core.pragma('dart2js:noInline')
-  static RefreshToolCacheResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<RefreshToolCacheResponse>(create);
+  static RefreshToolCacheResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<RefreshToolCacheResponse>(create);
   static RefreshToolCacheResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -921,29 +762,19 @@ class ResolveToolsRequest extends $pb.GeneratedMessage {
 
   ResolveToolsRequest._();
 
-  factory ResolveToolsRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ResolveToolsRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ResolveToolsRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ResolveToolsRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ResolveToolsRequest',
-      package: const $pb.PackageName(
-          _omitMessageNames ? '' : 'toolservermanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ResolveToolsRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'toolservermanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'sessionId', protoName: 'sessionId')
-    ..pPS(2, _omitFieldNames ? '' : 'toolServerTypes',
-        protoName: 'toolServerTypes')
-    ..hasRequiredFields = false;
+    ..pPS(2, _omitFieldNames ? '' : 'toolServerTypes', protoName: 'toolServerTypes')
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ResolveToolsRequest clone() => ResolveToolsRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ResolveToolsRequest copyWith(void Function(ResolveToolsRequest) updates) =>
-      super.copyWith((message) => updates(message as ResolveToolsRequest))
-          as ResolveToolsRequest;
+  ResolveToolsRequest copyWith(void Function(ResolveToolsRequest) updates) => super.copyWith((message) => updates(message as ResolveToolsRequest)) as ResolveToolsRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -952,11 +783,9 @@ class ResolveToolsRequest extends $pb.GeneratedMessage {
   static ResolveToolsRequest create() => ResolveToolsRequest._();
   @$core.override
   ResolveToolsRequest createEmptyInstance() => create();
-  static $pb.PbList<ResolveToolsRequest> createRepeated() =>
-      $pb.PbList<ResolveToolsRequest>();
+  static $pb.PbList<ResolveToolsRequest> createRepeated() => $pb.PbList<ResolveToolsRequest>();
   @$core.pragma('dart2js:noInline')
-  static ResolveToolsRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ResolveToolsRequest>(create);
+  static ResolveToolsRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ResolveToolsRequest>(create);
   static ResolveToolsRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -987,33 +816,20 @@ class ResolveToolsResponse extends $pb.GeneratedMessage {
 
   ResolveToolsResponse._();
 
-  factory ResolveToolsResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ResolveToolsResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ResolveToolsResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ResolveToolsResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ResolveToolsResponse',
-      package: const $pb.PackageName(
-          _omitMessageNames ? '' : 'toolservermanager.v1'),
-      createEmptyInstance: create)
-    ..pc<ToolDefinition>(1, _omitFieldNames ? '' : 'tools', $pb.PbFieldType.PM,
-        subBuilder: ToolDefinition.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ResolveToolsResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'toolservermanager.v1'), createEmptyInstance: create)
+    ..pc<ToolDefinition>(1, _omitFieldNames ? '' : 'tools', $pb.PbFieldType.PM, subBuilder: ToolDefinition.create)
     ..aOS(2, _omitFieldNames ? '' : 'systemContext', protoName: 'systemContext')
-    ..pc<ToolServerUrl>(
-        3, _omitFieldNames ? '' : 'toolServerUrls', $pb.PbFieldType.PM,
-        protoName: 'toolServerUrls', subBuilder: ToolServerUrl.create)
-    ..hasRequiredFields = false;
+    ..pc<ToolServerUrl>(3, _omitFieldNames ? '' : 'toolServerUrls', $pb.PbFieldType.PM, protoName: 'toolServerUrls', subBuilder: ToolServerUrl.create)
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ResolveToolsResponse clone() =>
-      ResolveToolsResponse()..mergeFromMessage(this);
+  ResolveToolsResponse clone() => ResolveToolsResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ResolveToolsResponse copyWith(void Function(ResolveToolsResponse) updates) =>
-      super.copyWith((message) => updates(message as ResolveToolsResponse))
-          as ResolveToolsResponse;
+  ResolveToolsResponse copyWith(void Function(ResolveToolsResponse) updates) => super.copyWith((message) => updates(message as ResolveToolsResponse)) as ResolveToolsResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1022,11 +838,9 @@ class ResolveToolsResponse extends $pb.GeneratedMessage {
   static ResolveToolsResponse create() => ResolveToolsResponse._();
   @$core.override
   ResolveToolsResponse createEmptyInstance() => create();
-  static $pb.PbList<ResolveToolsResponse> createRepeated() =>
-      $pb.PbList<ResolveToolsResponse>();
+  static $pb.PbList<ResolveToolsResponse> createRepeated() => $pb.PbList<ResolveToolsResponse>();
   @$core.pragma('dart2js:noInline')
-  static ResolveToolsResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ResolveToolsResponse>(create);
+  static ResolveToolsResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ResolveToolsResponse>(create);
   static ResolveToolsResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1062,30 +876,21 @@ class ExecuteToolRequest extends $pb.GeneratedMessage {
 
   ExecuteToolRequest._();
 
-  factory ExecuteToolRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ExecuteToolRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ExecuteToolRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ExecuteToolRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ExecuteToolRequest',
-      package: const $pb.PackageName(
-          _omitMessageNames ? '' : 'toolservermanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExecuteToolRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'toolservermanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'sessionId', protoName: 'sessionId')
     ..aOS(2, _omitFieldNames ? '' : 'toolName', protoName: 'toolName')
     ..aOS(3, _omitFieldNames ? '' : 'argsJson', protoName: 'argsJson')
     ..aOS(4, _omitFieldNames ? '' : 'sessionToken', protoName: 'sessionToken')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ExecuteToolRequest clone() => ExecuteToolRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ExecuteToolRequest copyWith(void Function(ExecuteToolRequest) updates) =>
-      super.copyWith((message) => updates(message as ExecuteToolRequest))
-          as ExecuteToolRequest;
+  ExecuteToolRequest copyWith(void Function(ExecuteToolRequest) updates) => super.copyWith((message) => updates(message as ExecuteToolRequest)) as ExecuteToolRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1094,11 +899,9 @@ class ExecuteToolRequest extends $pb.GeneratedMessage {
   static ExecuteToolRequest create() => ExecuteToolRequest._();
   @$core.override
   ExecuteToolRequest createEmptyInstance() => create();
-  static $pb.PbList<ExecuteToolRequest> createRepeated() =>
-      $pb.PbList<ExecuteToolRequest>();
+  static $pb.PbList<ExecuteToolRequest> createRepeated() => $pb.PbList<ExecuteToolRequest>();
   @$core.pragma('dart2js:noInline')
-  static ExecuteToolRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ExecuteToolRequest>(create);
+  static ExecuteToolRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ExecuteToolRequest>(create);
   static ExecuteToolRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1155,34 +958,21 @@ class ExecuteToolResponse extends $pb.GeneratedMessage {
 
   ExecuteToolResponse._();
 
-  factory ExecuteToolResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ExecuteToolResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ExecuteToolResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ExecuteToolResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ExecuteToolResponse',
-      package: const $pb.PackageName(
-          _omitMessageNames ? '' : 'toolservermanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ExecuteToolResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'toolservermanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'resultJson', protoName: 'resultJson')
     ..aOB(2, _omitFieldNames ? '' : 'success')
     ..aOS(3, _omitFieldNames ? '' : 'error')
-    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'metadata',
-        entryClassName: 'ExecuteToolResponse.MetadataEntry',
-        keyFieldType: $pb.PbFieldType.OS,
-        valueFieldType: $pb.PbFieldType.OS,
-        packageName: const $pb.PackageName('toolservermanager.v1'))
-    ..hasRequiredFields = false;
+    ..m<$core.String, $core.String>(4, _omitFieldNames ? '' : 'metadata', entryClassName: 'ExecuteToolResponse.MetadataEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('toolservermanager.v1'))
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ExecuteToolResponse clone() => ExecuteToolResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ExecuteToolResponse copyWith(void Function(ExecuteToolResponse) updates) =>
-      super.copyWith((message) => updates(message as ExecuteToolResponse))
-          as ExecuteToolResponse;
+  ExecuteToolResponse copyWith(void Function(ExecuteToolResponse) updates) => super.copyWith((message) => updates(message as ExecuteToolResponse)) as ExecuteToolResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1191,11 +981,9 @@ class ExecuteToolResponse extends $pb.GeneratedMessage {
   static ExecuteToolResponse create() => ExecuteToolResponse._();
   @$core.override
   ExecuteToolResponse createEmptyInstance() => create();
-  static $pb.PbList<ExecuteToolResponse> createRepeated() =>
-      $pb.PbList<ExecuteToolResponse>();
+  static $pb.PbList<ExecuteToolResponse> createRepeated() => $pb.PbList<ExecuteToolResponse>();
   @$core.pragma('dart2js:noInline')
-  static ExecuteToolResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ExecuteToolResponse>(create);
+  static ExecuteToolResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ExecuteToolResponse>(create);
   static ExecuteToolResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1234,26 +1022,17 @@ class HealthRequest extends $pb.GeneratedMessage {
 
   HealthRequest._();
 
-  factory HealthRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory HealthRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory HealthRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory HealthRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'HealthRequest',
-      package: const $pb.PackageName(
-          _omitMessageNames ? '' : 'toolservermanager.v1'),
-      createEmptyInstance: create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'HealthRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'toolservermanager.v1'), createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HealthRequest clone() => HealthRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HealthRequest copyWith(void Function(HealthRequest) updates) =>
-      super.copyWith((message) => updates(message as HealthRequest))
-          as HealthRequest;
+  HealthRequest copyWith(void Function(HealthRequest) updates) => super.copyWith((message) => updates(message as HealthRequest)) as HealthRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1262,11 +1041,9 @@ class HealthRequest extends $pb.GeneratedMessage {
   static HealthRequest create() => HealthRequest._();
   @$core.override
   HealthRequest createEmptyInstance() => create();
-  static $pb.PbList<HealthRequest> createRepeated() =>
-      $pb.PbList<HealthRequest>();
+  static $pb.PbList<HealthRequest> createRepeated() => $pb.PbList<HealthRequest>();
   @$core.pragma('dart2js:noInline')
-  static HealthRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<HealthRequest>(create);
+  static HealthRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<HealthRequest>(create);
   static HealthRequest? _defaultInstance;
 }
 
@@ -1281,27 +1058,18 @@ class HealthResponse extends $pb.GeneratedMessage {
 
   HealthResponse._();
 
-  factory HealthResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory HealthResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory HealthResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory HealthResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'HealthResponse',
-      package: const $pb.PackageName(
-          _omitMessageNames ? '' : 'toolservermanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'HealthResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'toolservermanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'status')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HealthResponse clone() => HealthResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HealthResponse copyWith(void Function(HealthResponse) updates) =>
-      super.copyWith((message) => updates(message as HealthResponse))
-          as HealthResponse;
+  HealthResponse copyWith(void Function(HealthResponse) updates) => super.copyWith((message) => updates(message as HealthResponse)) as HealthResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1310,11 +1078,9 @@ class HealthResponse extends $pb.GeneratedMessage {
   static HealthResponse create() => HealthResponse._();
   @$core.override
   HealthResponse createEmptyInstance() => create();
-  static $pb.PbList<HealthResponse> createRepeated() =>
-      $pb.PbList<HealthResponse>();
+  static $pb.PbList<HealthResponse> createRepeated() => $pb.PbList<HealthResponse>();
   @$core.pragma('dart2js:noInline')
-  static HealthResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<HealthResponse>(create);
+  static HealthResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<HealthResponse>(create);
   static HealthResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1332,37 +1098,29 @@ class ToolServerManagerServiceApi {
 
   ToolServerManagerServiceApi(this._client);
 
-  $async.Future<HealthResponse> health(
-          $pb.ClientContext? ctx, $0.Empty request) =>
-      _client.invoke<HealthResponse>(
-          ctx, 'ToolServerManagerService', 'Health', request, HealthResponse());
-  $async.Future<StartToolServerResponse> startToolServer(
-          $pb.ClientContext? ctx, StartToolServerRequest request) =>
-      _client.invoke<StartToolServerResponse>(ctx, 'ToolServerManagerService',
-          'StartToolServer', request, StartToolServerResponse());
-  $async.Future<StopToolServerResponse> stopToolServer(
-          $pb.ClientContext? ctx, StopToolServerRequest request) =>
-      _client.invoke<StopToolServerResponse>(ctx, 'ToolServerManagerService',
-          'StopToolServer', request, StopToolServerResponse());
-  $async.Future<ListToolServersResponse> listToolServers(
-          $pb.ClientContext? ctx, $0.Empty request) =>
-      _client.invoke<ListToolServersResponse>(ctx, 'ToolServerManagerService',
-          'ListToolServers', request, ListToolServersResponse());
-  $async.Future<RefreshToolCacheResponse> refreshToolCache(
-          $pb.ClientContext? ctx, RefreshToolCacheRequest request) =>
-      _client.invoke<RefreshToolCacheResponse>(ctx, 'ToolServerManagerService',
-          'RefreshToolCache', request, RefreshToolCacheResponse());
-  $async.Future<ResolveToolsResponse> resolveTools(
-          $pb.ClientContext? ctx, ResolveToolsRequest request) =>
-      _client.invoke<ResolveToolsResponse>(ctx, 'ToolServerManagerService',
-          'ResolveTools', request, ResolveToolsResponse());
-  $async.Future<ExecuteToolResponse> executeTool(
-          $pb.ClientContext? ctx, ExecuteToolRequest request) =>
-      _client.invoke<ExecuteToolResponse>(ctx, 'ToolServerManagerService',
-          'ExecuteTool', request, ExecuteToolResponse());
+  $async.Future<HealthResponse> health($pb.ClientContext? ctx, $0.Empty request) =>
+    _client.invoke<HealthResponse>(ctx, 'ToolServerManagerService', 'Health', request, HealthResponse())
+  ;
+  $async.Future<StartToolServerResponse> startToolServer($pb.ClientContext? ctx, StartToolServerRequest request) =>
+    _client.invoke<StartToolServerResponse>(ctx, 'ToolServerManagerService', 'StartToolServer', request, StartToolServerResponse())
+  ;
+  $async.Future<StopToolServerResponse> stopToolServer($pb.ClientContext? ctx, StopToolServerRequest request) =>
+    _client.invoke<StopToolServerResponse>(ctx, 'ToolServerManagerService', 'StopToolServer', request, StopToolServerResponse())
+  ;
+  $async.Future<ListToolServersResponse> listToolServers($pb.ClientContext? ctx, $0.Empty request) =>
+    _client.invoke<ListToolServersResponse>(ctx, 'ToolServerManagerService', 'ListToolServers', request, ListToolServersResponse())
+  ;
+  $async.Future<RefreshToolCacheResponse> refreshToolCache($pb.ClientContext? ctx, RefreshToolCacheRequest request) =>
+    _client.invoke<RefreshToolCacheResponse>(ctx, 'ToolServerManagerService', 'RefreshToolCache', request, RefreshToolCacheResponse())
+  ;
+  $async.Future<ResolveToolsResponse> resolveTools($pb.ClientContext? ctx, ResolveToolsRequest request) =>
+    _client.invoke<ResolveToolsResponse>(ctx, 'ToolServerManagerService', 'ResolveTools', request, ResolveToolsResponse())
+  ;
+  $async.Future<ExecuteToolResponse> executeTool($pb.ClientContext? ctx, ExecuteToolRequest request) =>
+    _client.invoke<ExecuteToolResponse>(ctx, 'ToolServerManagerService', 'ExecuteTool', request, ExecuteToolResponse())
+  ;
 }
 
-const $core.bool _omitFieldNames =
-    $core.bool.fromEnvironment('protobuf.omit_field_names');
-const $core.bool _omitMessageNames =
-    $core.bool.fromEnvironment('protobuf.omit_message_names');
+
+const $core.bool _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');

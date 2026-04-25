@@ -25,13 +25,7 @@ const ProviderConfig$json = {
     {'1': 'modelId', '3': 3, '4': 1, '5': 9, '10': 'modelId'},
     {'1': 'maxTokens', '3': 4, '4': 1, '5': 5, '10': 'maxTokens'},
     {'1': 'contextLength', '3': 5, '4': 1, '5': 5, '10': 'contextLength'},
-    {
-      '1': 'autoCompactLength',
-      '3': 6,
-      '4': 1,
-      '5': 5,
-      '10': 'autoCompactLength'
-    },
+    {'1': 'autoCompactLength', '3': 6, '4': 1, '5': 5, '10': 'autoCompactLength'},
   ],
 };
 
@@ -47,14 +41,7 @@ const ToolServerEntry$json = {
   '1': 'ToolServerEntry',
   '2': [
     {'1': 'type', '3': 1, '4': 1, '5': 9, '10': 'type'},
-    {
-      '1': 'config',
-      '3': 2,
-      '4': 3,
-      '5': 11,
-      '6': '.registry.v1.ToolServerEntry.ConfigEntry',
-      '10': 'config'
-    },
+    {'1': 'config', '3': 2, '4': 3, '5': 11, '6': '.registry.v1.ToolServerEntry.ConfigEntry', '10': 'config'},
   ],
   '3': [ToolServerEntry_ConfigEntry$json],
 };
@@ -84,8 +71,8 @@ const SkillRef$json = {
 };
 
 /// Descriptor for `SkillRef`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List skillRefDescriptor =
-    $convert.base64Decode('CghTa2lsbFJlZhISCgRzbHVnGAEgASgJUgRzbHVn');
+final $typed_data.Uint8List skillRefDescriptor = $convert.base64Decode(
+    'CghTa2lsbFJlZhISCgRzbHVnGAEgASgJUgRzbHVn');
 
 @$core.Deprecated('Use workspaceConfigDescriptor instead')
 const WorkspaceConfig$json = {
@@ -93,8 +80,8 @@ const WorkspaceConfig$json = {
 };
 
 /// Descriptor for `WorkspaceConfig`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List workspaceConfigDescriptor =
-    $convert.base64Decode('Cg9Xb3Jrc3BhY2VDb25maWc=');
+final $typed_data.Uint8List workspaceConfigDescriptor = $convert.base64Decode(
+    'Cg9Xb3Jrc3BhY2VDb25maWc=');
 
 @$core.Deprecated('Use loginRequestDescriptor instead')
 const LoginRequest$json = {
@@ -105,8 +92,8 @@ const LoginRequest$json = {
 };
 
 /// Descriptor for `LoginRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List loginRequestDescriptor = $convert
-    .base64Decode('CgxMb2dpblJlcXVlc3QSFgoGYXBpS2V5GAEgASgJUgZhcGlLZXk=');
+final $typed_data.Uint8List loginRequestDescriptor = $convert.base64Decode(
+    'CgxMb2dpblJlcXVlc3QSFgoGYXBpS2V5GAEgASgJUgZhcGlLZXk=');
 
 @$core.Deprecated('Use loginResponseDescriptor instead')
 const LoginResponse$json = {
@@ -131,14 +118,7 @@ const RegisterRequest$json = {
     {'1': 'ip', '3': 3, '4': 1, '5': 9, '10': 'ip'},
     {'1': 'port', '3': 4, '4': 1, '5': 5, '10': 'port'},
     {'1': 'publicUrl', '3': 5, '4': 1, '5': 9, '10': 'publicUrl'},
-    {
-      '1': 'metadata',
-      '3': 6,
-      '4': 3,
-      '5': 11,
-      '6': '.registry.v1.RegisterRequest.MetadataEntry',
-      '10': 'metadata'
-    },
+    {'1': 'metadata', '3': 6, '4': 3, '5': 11, '6': '.registry.v1.RegisterRequest.MetadataEntry', '10': 'metadata'},
   ],
   '3': [RegisterRequest_MetadataEntry$json],
 };
@@ -193,8 +173,8 @@ const HeartbeatResponse$json = {
 };
 
 /// Descriptor for `HeartbeatResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List heartbeatResponseDescriptor =
-    $convert.base64Decode('ChFIZWFydGJlYXRSZXNwb25zZQ==');
+final $typed_data.Uint8List heartbeatResponseDescriptor = $convert.base64Decode(
+    'ChFIZWFydGJlYXRSZXNwb25zZQ==');
 
 @$core.Deprecated('Use listInstancesRequestDescriptor instead')
 const ListInstancesRequest$json = {
@@ -219,14 +199,7 @@ const InstanceInfo$json = {
     {'1': 'url', '3': 4, '4': 1, '5': 9, '10': 'url'},
     {'1': 'lifecycle', '3': 5, '4': 1, '5': 9, '10': 'lifecycle'},
     {'1': 'lastSeen', '3': 6, '4': 1, '5': 3, '10': 'lastSeen'},
-    {
-      '1': 'metadata',
-      '3': 7,
-      '4': 3,
-      '5': 11,
-      '6': '.registry.v1.InstanceInfo.MetadataEntry',
-      '10': 'metadata'
-    },
+    {'1': 'metadata', '3': 7, '4': 3, '5': 11, '6': '.registry.v1.InstanceInfo.MetadataEntry', '10': 'metadata'},
   ],
   '3': [InstanceInfo_MetadataEntry$json],
 };
@@ -254,14 +227,7 @@ final $typed_data.Uint8List instanceInfoDescriptor = $convert.base64Decode(
 const ListInstancesResponse$json = {
   '1': 'ListInstancesResponse',
   '2': [
-    {
-      '1': 'instances',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.registry.v1.InstanceInfo',
-      '10': 'instances'
-    },
+    {'1': 'instances', '3': 1, '4': 3, '5': 11, '6': '.registry.v1.InstanceInfo', '10': 'instances'},
   ],
 };
 
@@ -278,38 +244,10 @@ const TemplateInfo$json = {
     {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
     {'1': 'systemPrompt', '3': 4, '4': 1, '5': 9, '10': 'systemPrompt'},
-    {
-      '1': 'providerConfig',
-      '3': 5,
-      '4': 1,
-      '5': 11,
-      '6': '.registry.v1.ProviderConfig',
-      '10': 'providerConfig'
-    },
-    {
-      '1': 'toolServerConfig',
-      '3': 6,
-      '4': 3,
-      '5': 11,
-      '6': '.registry.v1.ToolServerEntry',
-      '10': 'toolServerConfig'
-    },
-    {
-      '1': 'skillConfig',
-      '3': 7,
-      '4': 3,
-      '5': 11,
-      '6': '.registry.v1.SkillRef',
-      '10': 'skillConfig'
-    },
-    {
-      '1': 'workspaceConfig',
-      '3': 8,
-      '4': 1,
-      '5': 11,
-      '6': '.registry.v1.WorkspaceConfig',
-      '10': 'workspaceConfig'
-    },
+    {'1': 'providerConfig', '3': 5, '4': 1, '5': 11, '6': '.registry.v1.ProviderConfig', '10': 'providerConfig'},
+    {'1': 'toolServerConfig', '3': 6, '4': 3, '5': 11, '6': '.registry.v1.ToolServerEntry', '10': 'toolServerConfig'},
+    {'1': 'skillConfig', '3': 7, '4': 3, '5': 11, '6': '.registry.v1.SkillRef', '10': 'skillConfig'},
+    {'1': 'workspaceConfig', '3': 8, '4': 1, '5': 11, '6': '.registry.v1.WorkspaceConfig', '10': 'workspaceConfig'},
     {'1': 'extraPackage', '3': 9, '4': 3, '5': 9, '10': 'extraPackage'},
     {'1': 'createdAt', '3': 10, '4': 1, '5': 3, '10': 'createdAt'},
     {'1': 'updatedAt', '3': 11, '4': 1, '5': 3, '10': 'updatedAt'},
@@ -334,21 +272,14 @@ const ListTemplatesRequest$json = {
 };
 
 /// Descriptor for `ListTemplatesRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listTemplatesRequestDescriptor =
-    $convert.base64Decode('ChRMaXN0VGVtcGxhdGVzUmVxdWVzdA==');
+final $typed_data.Uint8List listTemplatesRequestDescriptor = $convert.base64Decode(
+    'ChRMaXN0VGVtcGxhdGVzUmVxdWVzdA==');
 
 @$core.Deprecated('Use listTemplatesResponseDescriptor instead')
 const ListTemplatesResponse$json = {
   '1': 'ListTemplatesResponse',
   '2': [
-    {
-      '1': 'templates',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.registry.v1.TemplateInfo',
-      '10': 'templates'
-    },
+    {'1': 'templates', '3': 1, '4': 3, '5': 11, '6': '.registry.v1.TemplateInfo', '10': 'templates'},
   ],
 };
 
@@ -376,38 +307,10 @@ const CreateTemplateRequest$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'description', '3': 2, '4': 1, '5': 9, '10': 'description'},
     {'1': 'systemPrompt', '3': 3, '4': 1, '5': 9, '10': 'systemPrompt'},
-    {
-      '1': 'providerConfig',
-      '3': 4,
-      '4': 1,
-      '5': 11,
-      '6': '.registry.v1.ProviderConfig',
-      '10': 'providerConfig'
-    },
-    {
-      '1': 'toolServerConfig',
-      '3': 5,
-      '4': 3,
-      '5': 11,
-      '6': '.registry.v1.ToolServerEntry',
-      '10': 'toolServerConfig'
-    },
-    {
-      '1': 'skillConfig',
-      '3': 6,
-      '4': 3,
-      '5': 11,
-      '6': '.registry.v1.SkillRef',
-      '10': 'skillConfig'
-    },
-    {
-      '1': 'workspaceConfig',
-      '3': 7,
-      '4': 1,
-      '5': 11,
-      '6': '.registry.v1.WorkspaceConfig',
-      '10': 'workspaceConfig'
-    },
+    {'1': 'providerConfig', '3': 4, '4': 1, '5': 11, '6': '.registry.v1.ProviderConfig', '10': 'providerConfig'},
+    {'1': 'toolServerConfig', '3': 5, '4': 3, '5': 11, '6': '.registry.v1.ToolServerEntry', '10': 'toolServerConfig'},
+    {'1': 'skillConfig', '3': 6, '4': 3, '5': 11, '6': '.registry.v1.SkillRef', '10': 'skillConfig'},
+    {'1': 'workspaceConfig', '3': 7, '4': 1, '5': 11, '6': '.registry.v1.WorkspaceConfig', '10': 'workspaceConfig'},
     {'1': 'extraPackage', '3': 8, '4': 3, '5': 9, '10': 'extraPackage'},
   ],
 };
@@ -431,38 +334,10 @@ const UpdateTemplateRequest$json = {
     {'1': 'name', '3': 2, '4': 1, '5': 9, '10': 'name'},
     {'1': 'description', '3': 3, '4': 1, '5': 9, '10': 'description'},
     {'1': 'systemPrompt', '3': 4, '4': 1, '5': 9, '10': 'systemPrompt'},
-    {
-      '1': 'providerConfig',
-      '3': 5,
-      '4': 1,
-      '5': 11,
-      '6': '.registry.v1.ProviderConfig',
-      '10': 'providerConfig'
-    },
-    {
-      '1': 'toolServerConfig',
-      '3': 6,
-      '4': 3,
-      '5': 11,
-      '6': '.registry.v1.ToolServerEntry',
-      '10': 'toolServerConfig'
-    },
-    {
-      '1': 'skillConfig',
-      '3': 7,
-      '4': 3,
-      '5': 11,
-      '6': '.registry.v1.SkillRef',
-      '10': 'skillConfig'
-    },
-    {
-      '1': 'workspaceConfig',
-      '3': 8,
-      '4': 1,
-      '5': 11,
-      '6': '.registry.v1.WorkspaceConfig',
-      '10': 'workspaceConfig'
-    },
+    {'1': 'providerConfig', '3': 5, '4': 1, '5': 11, '6': '.registry.v1.ProviderConfig', '10': 'providerConfig'},
+    {'1': 'toolServerConfig', '3': 6, '4': 3, '5': 11, '6': '.registry.v1.ToolServerEntry', '10': 'toolServerConfig'},
+    {'1': 'skillConfig', '3': 7, '4': 3, '5': 11, '6': '.registry.v1.SkillRef', '10': 'skillConfig'},
+    {'1': 'workspaceConfig', '3': 8, '4': 1, '5': 11, '6': '.registry.v1.WorkspaceConfig', '10': 'workspaceConfig'},
     {'1': 'extraPackage', '3': 9, '4': 3, '5': 9, '10': 'extraPackage'},
   ],
 };
@@ -497,8 +372,8 @@ const DeleteTemplateResponse$json = {
 };
 
 /// Descriptor for `DeleteTemplateResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteTemplateResponseDescriptor =
-    $convert.base64Decode('ChZEZWxldGVUZW1wbGF0ZVJlc3BvbnNl');
+final $typed_data.Uint8List deleteTemplateResponseDescriptor = $convert.base64Decode(
+    'ChZEZWxldGVUZW1wbGF0ZVJlc3BvbnNl');
 
 @$core.Deprecated('Use sessionInfoDescriptor instead')
 const SessionInfo$json = {
@@ -511,38 +386,10 @@ const SessionInfo$json = {
     {'1': 'createdAt', '3': 5, '4': 1, '5': 3, '10': 'createdAt'},
     {'1': 'updatedAt', '3': 6, '4': 1, '5': 3, '10': 'updatedAt'},
     {'1': 'systemPrompt', '3': 7, '4': 1, '5': 9, '10': 'systemPrompt'},
-    {
-      '1': 'providerConfig',
-      '3': 8,
-      '4': 1,
-      '5': 11,
-      '6': '.registry.v1.ProviderConfig',
-      '10': 'providerConfig'
-    },
-    {
-      '1': 'toolServerConfig',
-      '3': 9,
-      '4': 3,
-      '5': 11,
-      '6': '.registry.v1.ToolServerEntry',
-      '10': 'toolServerConfig'
-    },
-    {
-      '1': 'skillConfig',
-      '3': 10,
-      '4': 3,
-      '5': 11,
-      '6': '.registry.v1.SkillRef',
-      '10': 'skillConfig'
-    },
-    {
-      '1': 'workspaceConfig',
-      '3': 11,
-      '4': 1,
-      '5': 11,
-      '6': '.registry.v1.WorkspaceConfig',
-      '10': 'workspaceConfig'
-    },
+    {'1': 'providerConfig', '3': 8, '4': 1, '5': 11, '6': '.registry.v1.ProviderConfig', '10': 'providerConfig'},
+    {'1': 'toolServerConfig', '3': 9, '4': 3, '5': 11, '6': '.registry.v1.ToolServerEntry', '10': 'toolServerConfig'},
+    {'1': 'skillConfig', '3': 10, '4': 3, '5': 11, '6': '.registry.v1.SkillRef', '10': 'skillConfig'},
+    {'1': 'workspaceConfig', '3': 11, '4': 1, '5': 11, '6': '.registry.v1.WorkspaceConfig', '10': 'workspaceConfig'},
     {'1': 'extraPackage', '3': 12, '4': 3, '5': 9, '10': 'extraPackage'},
     {'1': 'workerId', '3': 13, '4': 1, '5': 9, '10': 'workerId'},
     {'1': 'agentId', '3': 14, '4': 1, '5': 9, '10': 'agentId'},
@@ -580,22 +427,14 @@ const ListSessionsRequest$json = {
 };
 
 /// Descriptor for `ListSessionsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listSessionsRequestDescriptor =
-    $convert.base64Decode(
-        'ChNMaXN0U2Vzc2lvbnNSZXF1ZXN0EhQKBXN0YXRlGAEgASgJUgVzdGF0ZQ==');
+final $typed_data.Uint8List listSessionsRequestDescriptor = $convert.base64Decode(
+    'ChNMaXN0U2Vzc2lvbnNSZXF1ZXN0EhQKBXN0YXRlGAEgASgJUgVzdGF0ZQ==');
 
 @$core.Deprecated('Use listSessionsResponseDescriptor instead')
 const ListSessionsResponse$json = {
   '1': 'ListSessionsResponse',
   '2': [
-    {
-      '1': 'sessions',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.registry.v1.SessionInfo',
-      '10': 'sessions'
-    },
+    {'1': 'sessions', '3': 1, '4': 3, '5': 11, '6': '.registry.v1.SessionInfo', '10': 'sessions'},
   ],
 };
 
@@ -623,38 +462,10 @@ const CreateSessionRequest$json = {
     {'1': 'title', '3': 1, '4': 1, '5': 9, '10': 'title'},
     {'1': 'templateId', '3': 2, '4': 1, '5': 9, '10': 'templateId'},
     {'1': 'systemPrompt', '3': 3, '4': 1, '5': 9, '10': 'systemPrompt'},
-    {
-      '1': 'providerConfig',
-      '3': 4,
-      '4': 1,
-      '5': 11,
-      '6': '.registry.v1.ProviderConfig',
-      '10': 'providerConfig'
-    },
-    {
-      '1': 'toolServerConfig',
-      '3': 5,
-      '4': 3,
-      '5': 11,
-      '6': '.registry.v1.ToolServerEntry',
-      '10': 'toolServerConfig'
-    },
-    {
-      '1': 'skillConfig',
-      '3': 6,
-      '4': 3,
-      '5': 11,
-      '6': '.registry.v1.SkillRef',
-      '10': 'skillConfig'
-    },
-    {
-      '1': 'workspaceConfig',
-      '3': 7,
-      '4': 1,
-      '5': 11,
-      '6': '.registry.v1.WorkspaceConfig',
-      '10': 'workspaceConfig'
-    },
+    {'1': 'providerConfig', '3': 4, '4': 1, '5': 11, '6': '.registry.v1.ProviderConfig', '10': 'providerConfig'},
+    {'1': 'toolServerConfig', '3': 5, '4': 3, '5': 11, '6': '.registry.v1.ToolServerEntry', '10': 'toolServerConfig'},
+    {'1': 'skillConfig', '3': 6, '4': 3, '5': 11, '6': '.registry.v1.SkillRef', '10': 'skillConfig'},
+    {'1': 'workspaceConfig', '3': 7, '4': 1, '5': 11, '6': '.registry.v1.WorkspaceConfig', '10': 'workspaceConfig'},
     {'1': 'extraPackage', '3': 8, '4': 3, '5': 9, '10': 'extraPackage'},
     {'1': 'workspaceId', '3': 9, '4': 1, '5': 9, '10': 'workspaceId'},
   ],
@@ -678,14 +489,7 @@ const CreateSessionResponse$json = {
   '2': [
     {'1': 'sessionId', '3': 1, '4': 1, '5': 9, '10': 'sessionId'},
     {'1': 'sessionToken', '3': 2, '4': 1, '5': 9, '10': 'sessionToken'},
-    {
-      '1': 'session',
-      '3': 3,
-      '4': 1,
-      '5': 11,
-      '6': '.registry.v1.SessionInfo',
-      '10': 'session'
-    },
+    {'1': 'session', '3': 3, '4': 1, '5': 11, '6': '.registry.v1.SessionInfo', '10': 'session'},
   ],
 };
 
@@ -705,10 +509,9 @@ const UpdateSessionMetaRequest$json = {
 };
 
 /// Descriptor for `UpdateSessionMetaRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List updateSessionMetaRequestDescriptor =
-    $convert.base64Decode(
-        'ChhVcGRhdGVTZXNzaW9uTWV0YVJlcXVlc3QSHAoJc2Vzc2lvbklkGAEgASgJUglzZXNzaW9uSW'
-        'QSFAoFdGl0bGUYAiABKAlSBXRpdGxl');
+final $typed_data.Uint8List updateSessionMetaRequestDescriptor = $convert.base64Decode(
+    'ChhVcGRhdGVTZXNzaW9uTWV0YVJlcXVlc3QSHAoJc2Vzc2lvbklkGAEgASgJUglzZXNzaW9uSW'
+    'QSFAoFdGl0bGUYAiABKAlSBXRpdGxl');
 
 @$core.Deprecated('Use updateSessionHotConfigRequestDescriptor instead')
 const UpdateSessionHotConfigRequest$json = {
@@ -716,22 +519,8 @@ const UpdateSessionHotConfigRequest$json = {
   '2': [
     {'1': 'sessionId', '3': 1, '4': 1, '5': 9, '10': 'sessionId'},
     {'1': 'systemPrompt', '3': 2, '4': 1, '5': 9, '10': 'systemPrompt'},
-    {
-      '1': 'providerConfig',
-      '3': 3,
-      '4': 1,
-      '5': 11,
-      '6': '.registry.v1.ProviderConfig',
-      '10': 'providerConfig'
-    },
-    {
-      '1': 'skillConfig',
-      '3': 4,
-      '4': 3,
-      '5': 11,
-      '6': '.registry.v1.SkillRef',
-      '10': 'skillConfig'
-    },
+    {'1': 'providerConfig', '3': 3, '4': 1, '5': 11, '6': '.registry.v1.ProviderConfig', '10': 'providerConfig'},
+    {'1': 'skillConfig', '3': 4, '4': 3, '5': 11, '6': '.registry.v1.SkillRef', '10': 'skillConfig'},
   ],
 };
 
@@ -748,25 +537,17 @@ const UpdateSessionColdConfigRequest$json = {
   '1': 'UpdateSessionColdConfigRequest',
   '2': [
     {'1': 'sessionId', '3': 1, '4': 1, '5': 9, '10': 'sessionId'},
-    {
-      '1': 'toolServerConfig',
-      '3': 2,
-      '4': 3,
-      '5': 11,
-      '6': '.registry.v1.ToolServerEntry',
-      '10': 'toolServerConfig'
-    },
+    {'1': 'toolServerConfig', '3': 2, '4': 3, '5': 11, '6': '.registry.v1.ToolServerEntry', '10': 'toolServerConfig'},
     {'1': 'extraPackage', '3': 3, '4': 3, '5': 9, '10': 'extraPackage'},
   ],
 };
 
 /// Descriptor for `UpdateSessionColdConfigRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List updateSessionColdConfigRequestDescriptor =
-    $convert.base64Decode(
-        'Ch5VcGRhdGVTZXNzaW9uQ29sZENvbmZpZ1JlcXVlc3QSHAoJc2Vzc2lvbklkGAEgASgJUglzZX'
-        'NzaW9uSWQSSAoQdG9vbFNlcnZlckNvbmZpZxgCIAMoCzIcLnJlZ2lzdHJ5LnYxLlRvb2xTZXJ2'
-        'ZXJFbnRyeVIQdG9vbFNlcnZlckNvbmZpZxIiCgxleHRyYVBhY2thZ2UYAyADKAlSDGV4dHJhUG'
-        'Fja2FnZQ==');
+final $typed_data.Uint8List updateSessionColdConfigRequestDescriptor = $convert.base64Decode(
+    'Ch5VcGRhdGVTZXNzaW9uQ29sZENvbmZpZ1JlcXVlc3QSHAoJc2Vzc2lvbklkGAEgASgJUglzZX'
+    'NzaW9uSWQSSAoQdG9vbFNlcnZlckNvbmZpZxgCIAMoCzIcLnJlZ2lzdHJ5LnYxLlRvb2xTZXJ2'
+    'ZXJFbnRyeVIQdG9vbFNlcnZlckNvbmZpZxIiCgxleHRyYVBhY2thZ2UYAyADKAlSDGV4dHJhUG'
+    'Fja2FnZQ==');
 
 @$core.Deprecated('Use switchSessionTemplateRequestDescriptor instead')
 const SwitchSessionTemplateRequest$json = {
@@ -778,10 +559,9 @@ const SwitchSessionTemplateRequest$json = {
 };
 
 /// Descriptor for `SwitchSessionTemplateRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List switchSessionTemplateRequestDescriptor =
-    $convert.base64Decode(
-        'ChxTd2l0Y2hTZXNzaW9uVGVtcGxhdGVSZXF1ZXN0EhwKCXNlc3Npb25JZBgBIAEoCVIJc2Vzc2'
-        'lvbklkEh4KCnRlbXBsYXRlSWQYAiABKAlSCnRlbXBsYXRlSWQ=');
+final $typed_data.Uint8List switchSessionTemplateRequestDescriptor = $convert.base64Decode(
+    'ChxTd2l0Y2hTZXNzaW9uVGVtcGxhdGVSZXF1ZXN0EhwKCXNlc3Npb25JZBgBIAEoCVIJc2Vzc2'
+    'lvbklkEh4KCnRlbXBsYXRlSWQYAiABKAlSCnRlbXBsYXRlSWQ=');
 
 @$core.Deprecated('Use deleteSessionRequestDescriptor instead')
 const DeleteSessionRequest$json = {
@@ -801,8 +581,8 @@ const DeleteSessionResponse$json = {
 };
 
 /// Descriptor for `DeleteSessionResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteSessionResponseDescriptor =
-    $convert.base64Decode('ChVEZWxldGVTZXNzaW9uUmVzcG9uc2U=');
+final $typed_data.Uint8List deleteSessionResponseDescriptor = $convert.base64Decode(
+    'ChVEZWxldGVTZXNzaW9uUmVzcG9uc2U=');
 
 @$core.Deprecated('Use startSessionRequestDescriptor instead')
 const StartSessionRequest$json = {
@@ -813,9 +593,8 @@ const StartSessionRequest$json = {
 };
 
 /// Descriptor for `StartSessionRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List startSessionRequestDescriptor =
-    $convert.base64Decode(
-        'ChNTdGFydFNlc3Npb25SZXF1ZXN0EhwKCXNlc3Npb25JZBgBIAEoCVIJc2Vzc2lvbklk');
+final $typed_data.Uint8List startSessionRequestDescriptor = $convert.base64Decode(
+    'ChNTdGFydFNlc3Npb25SZXF1ZXN0EhwKCXNlc3Npb25JZBgBIAEoCVIJc2Vzc2lvbklk');
 
 @$core.Deprecated('Use startSessionResponseDescriptor instead')
 const StartSessionResponse$json = {
@@ -823,8 +602,8 @@ const StartSessionResponse$json = {
 };
 
 /// Descriptor for `StartSessionResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List startSessionResponseDescriptor =
-    $convert.base64Decode('ChRTdGFydFNlc3Npb25SZXNwb25zZQ==');
+final $typed_data.Uint8List startSessionResponseDescriptor = $convert.base64Decode(
+    'ChRTdGFydFNlc3Npb25SZXNwb25zZQ==');
 
 @$core.Deprecated('Use stopSessionRequestDescriptor instead')
 const StopSessionRequest$json = {
@@ -835,9 +614,8 @@ const StopSessionRequest$json = {
 };
 
 /// Descriptor for `StopSessionRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List stopSessionRequestDescriptor =
-    $convert.base64Decode(
-        'ChJTdG9wU2Vzc2lvblJlcXVlc3QSHAoJc2Vzc2lvbklkGAEgASgJUglzZXNzaW9uSWQ=');
+final $typed_data.Uint8List stopSessionRequestDescriptor = $convert.base64Decode(
+    'ChJTdG9wU2Vzc2lvblJlcXVlc3QSHAoJc2Vzc2lvbklkGAEgASgJUglzZXNzaW9uSWQ=');
 
 @$core.Deprecated('Use stopSessionResponseDescriptor instead')
 const StopSessionResponse$json = {
@@ -845,8 +623,8 @@ const StopSessionResponse$json = {
 };
 
 /// Descriptor for `StopSessionResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List stopSessionResponseDescriptor =
-    $convert.base64Decode('ChNTdG9wU2Vzc2lvblJlc3BvbnNl');
+final $typed_data.Uint8List stopSessionResponseDescriptor = $convert.base64Decode(
+    'ChNTdG9wU2Vzc2lvblJlc3BvbnNl');
 
 @$core.Deprecated('Use resolveSessionRequestDescriptor instead')
 const ResolveSessionRequest$json = {
@@ -883,44 +661,16 @@ const ResolveSessionResponse$json = {
     {'1': 'sessionId', '3': 1, '4': 1, '5': 9, '10': 'sessionId'},
     {'1': 'templateId', '3': 2, '4': 1, '5': 9, '10': 'templateId'},
     {'1': 'systemPrompt', '3': 3, '4': 1, '5': 9, '10': 'systemPrompt'},
-    {
-      '1': 'providerConfig',
-      '3': 4,
-      '4': 1,
-      '5': 11,
-      '6': '.registry.v1.ProviderConfig',
-      '10': 'providerConfig'
-    },
-    {
-      '1': 'toolServerConfig',
-      '3': 5,
-      '4': 3,
-      '5': 11,
-      '6': '.registry.v1.ToolServerEntry',
-      '10': 'toolServerConfig'
-    },
-    {
-      '1': 'skillConfig',
-      '3': 6,
-      '4': 3,
-      '5': 11,
-      '6': '.registry.v1.SkillRef',
-      '10': 'skillConfig'
-    },
+    {'1': 'providerConfig', '3': 4, '4': 1, '5': 11, '6': '.registry.v1.ProviderConfig', '10': 'providerConfig'},
+    {'1': 'toolServerConfig', '3': 5, '4': 3, '5': 11, '6': '.registry.v1.ToolServerEntry', '10': 'toolServerConfig'},
+    {'1': 'skillConfig', '3': 6, '4': 3, '5': 11, '6': '.registry.v1.SkillRef', '10': 'skillConfig'},
     {'1': 'extraPackage', '3': 7, '4': 3, '5': 9, '10': 'extraPackage'},
     {'1': 'workerId', '3': 8, '4': 1, '5': 9, '10': 'workerId'},
     {'1': 'workerUrl', '3': 9, '4': 1, '5': 9, '10': 'workerUrl'},
     {'1': 'workerSecret', '3': 10, '4': 1, '5': 9, '10': 'workerSecret'},
     {'1': 'workspaceRoot', '3': 11, '4': 1, '5': 9, '10': 'workspaceRoot'},
     {'1': 'agentUrl', '3': 12, '4': 1, '5': 9, '10': 'agentUrl'},
-    {
-      '1': 'toolServerUrls',
-      '3': 13,
-      '4': 3,
-      '5': 11,
-      '6': '.registry.v1.ToolServerUrl',
-      '10': 'toolServerUrls'
-    },
+    {'1': 'toolServerUrls', '3': 13, '4': 3, '5': 11, '6': '.registry.v1.ToolServerUrl', '10': 'toolServerUrls'},
     {'1': 'workspaceId', '3': 14, '4': 1, '5': 9, '10': 'workspaceId'},
   ],
 };
@@ -986,14 +736,7 @@ final $typed_data.Uint8List listMessagesRequestDescriptor = $convert.base64Decod
 const ListMessagesResponse$json = {
   '1': 'ListMessagesResponse',
   '2': [
-    {
-      '1': 'messages',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.registry.v1.MessageInfo',
-      '10': 'messages'
-    },
+    {'1': 'messages', '3': 1, '4': 3, '5': 11, '6': '.registry.v1.MessageInfo', '10': 'messages'},
     {'1': 'hasMore', '3': 2, '4': 1, '5': 8, '10': 'hasMore'},
     {'1': 'nextBeforeId', '3': 3, '4': 1, '5': 9, '10': 'nextBeforeId'},
   ],
@@ -1050,10 +793,9 @@ const DeleteMessagesFromRequest$json = {
 };
 
 /// Descriptor for `DeleteMessagesFromRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteMessagesFromRequestDescriptor =
-    $convert.base64Decode(
-        'ChlEZWxldGVNZXNzYWdlc0Zyb21SZXF1ZXN0EhwKCXNlc3Npb25JZBgBIAEoCVIJc2Vzc2lvbk'
-        'lkEhwKCW1lc3NhZ2VJZBgCIAEoCVIJbWVzc2FnZUlk');
+final $typed_data.Uint8List deleteMessagesFromRequestDescriptor = $convert.base64Decode(
+    'ChlEZWxldGVNZXNzYWdlc0Zyb21SZXF1ZXN0EhwKCXNlc3Npb25JZBgBIAEoCVIJc2Vzc2lvbk'
+    'lkEhwKCW1lc3NhZ2VJZBgCIAEoCVIJbWVzc2FnZUlk');
 
 @$core.Deprecated('Use deleteMessagesFromResponseDescriptor instead')
 const DeleteMessagesFromResponse$json = {
@@ -1061,138 +803,44 @@ const DeleteMessagesFromResponse$json = {
 };
 
 /// Descriptor for `DeleteMessagesFromResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteMessagesFromResponseDescriptor =
-    $convert.base64Decode('ChpEZWxldGVNZXNzYWdlc0Zyb21SZXNwb25zZQ==');
+final $typed_data.Uint8List deleteMessagesFromResponseDescriptor = $convert.base64Decode(
+    'ChpEZWxldGVNZXNzYWdlc0Zyb21SZXNwb25zZQ==');
 
 const $core.Map<$core.String, $core.dynamic> RegistryServiceBase$json = {
   '1': 'RegistryService',
   '2': [
-    {
-      '1': 'Login',
-      '2': '.registry.v1.LoginRequest',
-      '3': '.registry.v1.LoginResponse'
-    },
-    {
-      '1': 'Register',
-      '2': '.registry.v1.RegisterRequest',
-      '3': '.registry.v1.RegisterResponse'
-    },
-    {
-      '1': 'Heartbeat',
-      '2': '.registry.v1.HeartbeatRequest',
-      '3': '.registry.v1.HeartbeatResponse'
-    },
-    {
-      '1': 'ListInstances',
-      '2': '.registry.v1.ListInstancesRequest',
-      '3': '.registry.v1.ListInstancesResponse'
-    },
-    {
-      '1': 'ListTemplates',
-      '2': '.google.protobuf.Empty',
-      '3': '.registry.v1.ListTemplatesResponse'
-    },
-    {
-      '1': 'GetTemplate',
-      '2': '.registry.v1.GetTemplateRequest',
-      '3': '.registry.v1.TemplateInfo'
-    },
-    {
-      '1': 'CreateTemplate',
-      '2': '.registry.v1.CreateTemplateRequest',
-      '3': '.registry.v1.TemplateInfo'
-    },
-    {
-      '1': 'UpdateTemplate',
-      '2': '.registry.v1.UpdateTemplateRequest',
-      '3': '.registry.v1.TemplateInfo'
-    },
-    {
-      '1': 'DeleteTemplate',
-      '2': '.registry.v1.DeleteTemplateRequest',
-      '3': '.registry.v1.DeleteTemplateResponse'
-    },
-    {
-      '1': 'ListSessions',
-      '2': '.registry.v1.ListSessionsRequest',
-      '3': '.registry.v1.ListSessionsResponse'
-    },
-    {
-      '1': 'GetSession',
-      '2': '.registry.v1.GetSessionRequest',
-      '3': '.registry.v1.SessionInfo'
-    },
-    {
-      '1': 'CreateSession',
-      '2': '.registry.v1.CreateSessionRequest',
-      '3': '.registry.v1.CreateSessionResponse'
-    },
-    {
-      '1': 'UpdateSessionMeta',
-      '2': '.registry.v1.UpdateSessionMetaRequest',
-      '3': '.registry.v1.SessionInfo'
-    },
-    {
-      '1': 'UpdateSessionHotConfig',
-      '2': '.registry.v1.UpdateSessionHotConfigRequest',
-      '3': '.registry.v1.SessionInfo'
-    },
-    {
-      '1': 'UpdateSessionColdConfig',
-      '2': '.registry.v1.UpdateSessionColdConfigRequest',
-      '3': '.registry.v1.SessionInfo'
-    },
-    {
-      '1': 'SwitchSessionTemplate',
-      '2': '.registry.v1.SwitchSessionTemplateRequest',
-      '3': '.registry.v1.SessionInfo'
-    },
-    {
-      '1': 'DeleteSession',
-      '2': '.registry.v1.DeleteSessionRequest',
-      '3': '.registry.v1.DeleteSessionResponse'
-    },
-    {
-      '1': 'StartSession',
-      '2': '.registry.v1.StartSessionRequest',
-      '3': '.registry.v1.StartSessionResponse'
-    },
-    {
-      '1': 'StopSession',
-      '2': '.registry.v1.StopSessionRequest',
-      '3': '.registry.v1.StopSessionResponse'
-    },
-    {
-      '1': 'ResolveSession',
-      '2': '.registry.v1.ResolveSessionRequest',
-      '3': '.registry.v1.ResolveSessionResponse'
-    },
-    {
-      '1': 'ListMessages',
-      '2': '.registry.v1.ListMessagesRequest',
-      '3': '.registry.v1.ListMessagesResponse'
-    },
-    {
-      '1': 'CreateMessage',
-      '2': '.registry.v1.CreateMessageRequest',
-      '3': '.registry.v1.CreateMessageResponse'
-    },
-    {
-      '1': 'DeleteMessagesFrom',
-      '2': '.registry.v1.DeleteMessagesFromRequest',
-      '3': '.registry.v1.DeleteMessagesFromResponse'
-    },
+    {'1': 'Login', '2': '.registry.v1.LoginRequest', '3': '.registry.v1.LoginResponse'},
+    {'1': 'Register', '2': '.registry.v1.RegisterRequest', '3': '.registry.v1.RegisterResponse'},
+    {'1': 'Heartbeat', '2': '.registry.v1.HeartbeatRequest', '3': '.registry.v1.HeartbeatResponse'},
+    {'1': 'ListInstances', '2': '.registry.v1.ListInstancesRequest', '3': '.registry.v1.ListInstancesResponse'},
+    {'1': 'ListTemplates', '2': '.google.protobuf.Empty', '3': '.registry.v1.ListTemplatesResponse'},
+    {'1': 'GetTemplate', '2': '.registry.v1.GetTemplateRequest', '3': '.registry.v1.TemplateInfo'},
+    {'1': 'CreateTemplate', '2': '.registry.v1.CreateTemplateRequest', '3': '.registry.v1.TemplateInfo'},
+    {'1': 'UpdateTemplate', '2': '.registry.v1.UpdateTemplateRequest', '3': '.registry.v1.TemplateInfo'},
+    {'1': 'DeleteTemplate', '2': '.registry.v1.DeleteTemplateRequest', '3': '.registry.v1.DeleteTemplateResponse'},
+    {'1': 'ListSessions', '2': '.registry.v1.ListSessionsRequest', '3': '.registry.v1.ListSessionsResponse'},
+    {'1': 'GetSession', '2': '.registry.v1.GetSessionRequest', '3': '.registry.v1.SessionInfo'},
+    {'1': 'CreateSession', '2': '.registry.v1.CreateSessionRequest', '3': '.registry.v1.CreateSessionResponse'},
+    {'1': 'UpdateSessionMeta', '2': '.registry.v1.UpdateSessionMetaRequest', '3': '.registry.v1.SessionInfo'},
+    {'1': 'UpdateSessionHotConfig', '2': '.registry.v1.UpdateSessionHotConfigRequest', '3': '.registry.v1.SessionInfo'},
+    {'1': 'UpdateSessionColdConfig', '2': '.registry.v1.UpdateSessionColdConfigRequest', '3': '.registry.v1.SessionInfo'},
+    {'1': 'SwitchSessionTemplate', '2': '.registry.v1.SwitchSessionTemplateRequest', '3': '.registry.v1.SessionInfo'},
+    {'1': 'DeleteSession', '2': '.registry.v1.DeleteSessionRequest', '3': '.registry.v1.DeleteSessionResponse'},
+    {'1': 'StartSession', '2': '.registry.v1.StartSessionRequest', '3': '.registry.v1.StartSessionResponse'},
+    {'1': 'StopSession', '2': '.registry.v1.StopSessionRequest', '3': '.registry.v1.StopSessionResponse'},
+    {'1': 'ResolveSession', '2': '.registry.v1.ResolveSessionRequest', '3': '.registry.v1.ResolveSessionResponse'},
+    {'1': 'ListMessages', '2': '.registry.v1.ListMessagesRequest', '3': '.registry.v1.ListMessagesResponse'},
+    {'1': 'CreateMessage', '2': '.registry.v1.CreateMessageRequest', '3': '.registry.v1.CreateMessageResponse'},
+    {'1': 'DeleteMessagesFrom', '2': '.registry.v1.DeleteMessagesFromRequest', '3': '.registry.v1.DeleteMessagesFromResponse'},
   ],
 };
 
 @$core.Deprecated('Use registryServiceDescriptor instead')
-const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
-    RegistryServiceBase$messageJson = {
+const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> RegistryServiceBase$messageJson = {
   '.registry.v1.LoginRequest': LoginRequest$json,
   '.registry.v1.LoginResponse': LoginResponse$json,
   '.registry.v1.RegisterRequest': RegisterRequest$json,
-  '.registry.v1.RegisterRequest.MetadataEntry':
-      RegisterRequest_MetadataEntry$json,
+  '.registry.v1.RegisterRequest.MetadataEntry': RegisterRequest_MetadataEntry$json,
   '.registry.v1.RegisterResponse': RegisterResponse$json,
   '.registry.v1.HeartbeatRequest': HeartbeatRequest$json,
   '.registry.v1.HeartbeatResponse': HeartbeatResponse$json,
@@ -1220,12 +868,9 @@ const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
   '.registry.v1.CreateSessionRequest': CreateSessionRequest$json,
   '.registry.v1.CreateSessionResponse': CreateSessionResponse$json,
   '.registry.v1.UpdateSessionMetaRequest': UpdateSessionMetaRequest$json,
-  '.registry.v1.UpdateSessionHotConfigRequest':
-      UpdateSessionHotConfigRequest$json,
-  '.registry.v1.UpdateSessionColdConfigRequest':
-      UpdateSessionColdConfigRequest$json,
-  '.registry.v1.SwitchSessionTemplateRequest':
-      SwitchSessionTemplateRequest$json,
+  '.registry.v1.UpdateSessionHotConfigRequest': UpdateSessionHotConfigRequest$json,
+  '.registry.v1.UpdateSessionColdConfigRequest': UpdateSessionColdConfigRequest$json,
+  '.registry.v1.SwitchSessionTemplateRequest': SwitchSessionTemplateRequest$json,
   '.registry.v1.DeleteSessionRequest': DeleteSessionRequest$json,
   '.registry.v1.DeleteSessionResponse': DeleteSessionResponse$json,
   '.registry.v1.StartSessionRequest': StartSessionRequest$json,
@@ -1282,3 +927,4 @@ final $typed_data.Uint8List registryServiceDescriptor = $convert.base64Decode(
     'lzdHJ5LnYxLkNyZWF0ZU1lc3NhZ2VSZXNwb25zZRJlChJEZWxldGVNZXNzYWdlc0Zyb20SJi5y'
     'ZWdpc3RyeS52MS5EZWxldGVNZXNzYWdlc0Zyb21SZXF1ZXN0GicucmVnaXN0cnkudjEuRGVsZX'
     'RlTWVzc2FnZXNGcm9tUmVzcG9uc2U=');
+

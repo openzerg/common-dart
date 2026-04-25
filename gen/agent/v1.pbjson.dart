@@ -36,8 +36,8 @@ const ChatResponse$json = {
 };
 
 /// Descriptor for `ChatResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List chatResponseDescriptor =
-    $convert.base64Decode('CgxDaGF0UmVzcG9uc2U=');
+final $typed_data.Uint8List chatResponseDescriptor = $convert.base64Decode(
+    'CgxDaGF0UmVzcG9uc2U=');
 
 @$core.Deprecated('Use interruptRequestDescriptor instead')
 const InterruptRequest$json = {
@@ -73,10 +73,9 @@ const DeleteMessagesFromRequest$json = {
 };
 
 /// Descriptor for `DeleteMessagesFromRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteMessagesFromRequestDescriptor =
-    $convert.base64Decode(
-        'ChlEZWxldGVNZXNzYWdlc0Zyb21SZXF1ZXN0EhwKCXNlc3Npb25JZBgBIAEoCVIJc2Vzc2lvbk'
-        'lkEhwKCW1lc3NhZ2VJZBgCIAEoCVIJbWVzc2FnZUlk');
+final $typed_data.Uint8List deleteMessagesFromRequestDescriptor = $convert.base64Decode(
+    'ChlEZWxldGVNZXNzYWdlc0Zyb21SZXF1ZXN0EhwKCXNlc3Npb25JZBgBIAEoCVIJc2Vzc2lvbk'
+    'lkEhwKCW1lc3NhZ2VJZBgCIAEoCVIJbWVzc2FnZUlk');
 
 @$core.Deprecated('Use deleteMessagesFromResponseDescriptor instead')
 const DeleteMessagesFromResponse$json = {
@@ -87,9 +86,8 @@ const DeleteMessagesFromResponse$json = {
 };
 
 /// Descriptor for `DeleteMessagesFromResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteMessagesFromResponseDescriptor =
-    $convert.base64Decode(
-        'ChpEZWxldGVNZXNzYWdlc0Zyb21SZXNwb25zZRIYCgdkZWxldGVkGAEgASgFUgdkZWxldGVk');
+final $typed_data.Uint8List deleteMessagesFromResponseDescriptor = $convert.base64Decode(
+    'ChpEZWxldGVNZXNzYWdlc0Zyb21SZXNwb25zZRIYCgdkZWxldGVkGAEgASgFUgdkZWxldGVk');
 
 @$core.Deprecated('Use subscribeEventsRequestDescriptor instead')
 const SubscribeEventsRequest$json = {
@@ -100,9 +98,8 @@ const SubscribeEventsRequest$json = {
 };
 
 /// Descriptor for `SubscribeEventsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List subscribeEventsRequestDescriptor =
-    $convert.base64Decode(
-        'ChZTdWJzY3JpYmVFdmVudHNSZXF1ZXN0EhwKCXNlc3Npb25JZBgBIAEoCVIJc2Vzc2lvbklk');
+final $typed_data.Uint8List subscribeEventsRequestDescriptor = $convert.base64Decode(
+    'ChZTdWJzY3JpYmVFdmVudHNSZXF1ZXN0EhwKCXNlc3Npb25JZBgBIAEoCVIJc2Vzc2lvbklk');
 
 @$core.Deprecated('Use sessionEventDescriptor instead')
 const SessionEvent$json = {
@@ -125,8 +122,8 @@ const HealthRequest$json = {
 };
 
 /// Descriptor for `HealthRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List healthRequestDescriptor =
-    $convert.base64Decode('Cg1IZWFsdGhSZXF1ZXN0');
+final $typed_data.Uint8List healthRequestDescriptor = $convert.base64Decode(
+    'Cg1IZWFsdGhSZXF1ZXN0');
 
 @$core.Deprecated('Use healthResponseDescriptor instead')
 const HealthResponse$json = {
@@ -137,40 +134,22 @@ const HealthResponse$json = {
 };
 
 /// Descriptor for `HealthResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List healthResponseDescriptor = $convert
-    .base64Decode('Cg5IZWFsdGhSZXNwb25zZRIWCgZzdGF0dXMYASABKAlSBnN0YXR1cw==');
+final $typed_data.Uint8List healthResponseDescriptor = $convert.base64Decode(
+    'Cg5IZWFsdGhSZXNwb25zZRIWCgZzdGF0dXMYASABKAlSBnN0YXR1cw==');
 
 const $core.Map<$core.String, $core.dynamic> AgentServiceBase$json = {
   '1': 'AgentService',
   '2': [
     {'1': 'Chat', '2': '.agent.v1.ChatRequest', '3': '.agent.v1.ChatResponse'},
-    {
-      '1': 'Interrupt',
-      '2': '.agent.v1.InterruptRequest',
-      '3': '.agent.v1.InterruptResponse'
-    },
-    {
-      '1': 'DeleteMessagesFrom',
-      '2': '.agent.v1.DeleteMessagesFromRequest',
-      '3': '.agent.v1.DeleteMessagesFromResponse'
-    },
-    {
-      '1': 'SubscribeSessionEvents',
-      '2': '.agent.v1.SubscribeEventsRequest',
-      '3': '.agent.v1.SessionEvent',
-      '6': true
-    },
-    {
-      '1': 'Health',
-      '2': '.google.protobuf.Empty',
-      '3': '.agent.v1.HealthResponse'
-    },
+    {'1': 'Interrupt', '2': '.agent.v1.InterruptRequest', '3': '.agent.v1.InterruptResponse'},
+    {'1': 'DeleteMessagesFrom', '2': '.agent.v1.DeleteMessagesFromRequest', '3': '.agent.v1.DeleteMessagesFromResponse'},
+    {'1': 'SubscribeSessionEvents', '2': '.agent.v1.SubscribeEventsRequest', '3': '.agent.v1.SessionEvent', '6': true},
+    {'1': 'Health', '2': '.google.protobuf.Empty', '3': '.agent.v1.HealthResponse'},
   ],
 };
 
 @$core.Deprecated('Use agentServiceDescriptor instead')
-const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
-    AgentServiceBase$messageJson = {
+const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> AgentServiceBase$messageJson = {
   '.agent.v1.ChatRequest': ChatRequest$json,
   '.agent.v1.ChatResponse': ChatResponse$json,
   '.agent.v1.InterruptRequest': InterruptRequest$json,
@@ -192,3 +171,4 @@ final $typed_data.Uint8List agentServiceDescriptor = $convert.base64Decode(
     'ZXNGcm9tUmVzcG9uc2USVAoWU3Vic2NyaWJlU2Vzc2lvbkV2ZW50cxIgLmFnZW50LnYxLlN1Yn'
     'NjcmliZUV2ZW50c1JlcXVlc3QaFi5hZ2VudC52MS5TZXNzaW9uRXZlbnQwARI6CgZIZWFsdGgS'
     'Fi5nb29nbGUucHJvdG9idWYuRW1wdHkaGC5hZ2VudC52MS5IZWFsdGhSZXNwb25zZQ==');
+

@@ -35,8 +35,7 @@ class WmWorkspaceInfo extends $pb.GeneratedMessage {
     if (workspaceId != null) result.workspaceId = workspaceId;
     if (volumeName != null) result.volumeName = volumeName;
     if (state != null) result.state = state;
-    if (createdBySessionId != null)
-      result.createdBySessionId = createdBySessionId;
+    if (createdBySessionId != null) result.createdBySessionId = createdBySessionId;
     if (createdAt != null) result.createdAt = createdAt;
     if (workerPodName != null) result.workerPodName = workerPodName;
     if (skillSlugs != null) result.skillSlugs = skillSlugs;
@@ -46,35 +45,25 @@ class WmWorkspaceInfo extends $pb.GeneratedMessage {
 
   WmWorkspaceInfo._();
 
-  factory WmWorkspaceInfo.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory WmWorkspaceInfo.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory WmWorkspaceInfo.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory WmWorkspaceInfo.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'WmWorkspaceInfo',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WmWorkspaceInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'workspaceId', protoName: 'workspaceId')
     ..aOS(2, _omitFieldNames ? '' : 'volumeName', protoName: 'volumeName')
     ..aOS(3, _omitFieldNames ? '' : 'state')
-    ..aOS(4, _omitFieldNames ? '' : 'createdBySessionId',
-        protoName: 'createdBySessionId')
+    ..aOS(4, _omitFieldNames ? '' : 'createdBySessionId', protoName: 'createdBySessionId')
     ..aInt64(5, _omitFieldNames ? '' : 'createdAt', protoName: 'createdAt')
     ..aOS(6, _omitFieldNames ? '' : 'workerPodName', protoName: 'workerPodName')
     ..aOS(7, _omitFieldNames ? '' : 'skillSlugs', protoName: 'skillSlugs')
     ..aOS(8, _omitFieldNames ? '' : 'nixPkgs', protoName: 'nixPkgs')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   WmWorkspaceInfo clone() => WmWorkspaceInfo()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  WmWorkspaceInfo copyWith(void Function(WmWorkspaceInfo) updates) =>
-      super.copyWith((message) => updates(message as WmWorkspaceInfo))
-          as WmWorkspaceInfo;
+  WmWorkspaceInfo copyWith(void Function(WmWorkspaceInfo) updates) => super.copyWith((message) => updates(message as WmWorkspaceInfo)) as WmWorkspaceInfo;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -83,11 +72,9 @@ class WmWorkspaceInfo extends $pb.GeneratedMessage {
   static WmWorkspaceInfo create() => WmWorkspaceInfo._();
   @$core.override
   WmWorkspaceInfo createEmptyInstance() => create();
-  static $pb.PbList<WmWorkspaceInfo> createRepeated() =>
-      $pb.PbList<WmWorkspaceInfo>();
+  static $pb.PbList<WmWorkspaceInfo> createRepeated() => $pb.PbList<WmWorkspaceInfo>();
   @$core.pragma('dart2js:noInline')
-  static WmWorkspaceInfo getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<WmWorkspaceInfo>(create);
+  static WmWorkspaceInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<WmWorkspaceInfo>(create);
   static WmWorkspaceInfo? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -196,18 +183,10 @@ class WmWorkerInfo extends $pb.GeneratedMessage {
 
   WmWorkerInfo._();
 
-  factory WmWorkerInfo.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory WmWorkerInfo.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory WmWorkerInfo.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory WmWorkerInfo.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'WmWorkerInfo',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'WmWorkerInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'workerId', protoName: 'workerId')
     ..aOS(2, _omitFieldNames ? '' : 'sessionId', protoName: 'sessionId')
     ..aOS(3, _omitFieldNames ? '' : 'containerName', protoName: 'containerName')
@@ -220,14 +199,13 @@ class WmWorkerInfo extends $pb.GeneratedMessage {
     ..aOS(10, _omitFieldNames ? '' : 'executionUrl', protoName: 'executionUrl')
     ..aInt64(11, _omitFieldNames ? '' : 'createdAt', protoName: 'createdAt')
     ..aOS(12, _omitFieldNames ? '' : 'workspaceId', protoName: 'workspaceId')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   WmWorkerInfo clone() => WmWorkerInfo()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  WmWorkerInfo copyWith(void Function(WmWorkerInfo) updates) =>
-      super.copyWith((message) => updates(message as WmWorkerInfo))
-          as WmWorkerInfo;
+  WmWorkerInfo copyWith(void Function(WmWorkerInfo) updates) => super.copyWith((message) => updates(message as WmWorkerInfo)) as WmWorkerInfo;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -236,11 +214,9 @@ class WmWorkerInfo extends $pb.GeneratedMessage {
   static WmWorkerInfo create() => WmWorkerInfo._();
   @$core.override
   WmWorkerInfo createEmptyInstance() => create();
-  static $pb.PbList<WmWorkerInfo> createRepeated() =>
-      $pb.PbList<WmWorkerInfo>();
+  static $pb.PbList<WmWorkerInfo> createRepeated() => $pb.PbList<WmWorkerInfo>();
   @$core.pragma('dart2js:noInline')
-  static WmWorkerInfo getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<WmWorkerInfo>(create);
+  static WmWorkerInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<WmWorkerInfo>(create);
   static WmWorkerInfo? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -365,28 +341,19 @@ class ContainerVolume extends $pb.GeneratedMessage {
 
   ContainerVolume._();
 
-  factory ContainerVolume.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ContainerVolume.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ContainerVolume.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ContainerVolume.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ContainerVolume',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ContainerVolume', package: const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'destination')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ContainerVolume clone() => ContainerVolume()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ContainerVolume copyWith(void Function(ContainerVolume) updates) =>
-      super.copyWith((message) => updates(message as ContainerVolume))
-          as ContainerVolume;
+  ContainerVolume copyWith(void Function(ContainerVolume) updates) => super.copyWith((message) => updates(message as ContainerVolume)) as ContainerVolume;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -395,11 +362,9 @@ class ContainerVolume extends $pb.GeneratedMessage {
   static ContainerVolume create() => ContainerVolume._();
   @$core.override
   ContainerVolume createEmptyInstance() => create();
-  static $pb.PbList<ContainerVolume> createRepeated() =>
-      $pb.PbList<ContainerVolume>();
+  static $pb.PbList<ContainerVolume> createRepeated() => $pb.PbList<ContainerVolume>();
   @$core.pragma('dart2js:noInline')
-  static ContainerVolume getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ContainerVolume>(create);
+  static ContainerVolume getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ContainerVolume>(create);
   static ContainerVolume? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -432,29 +397,18 @@ class CreateWorkspaceRequest extends $pb.GeneratedMessage {
 
   CreateWorkspaceRequest._();
 
-  factory CreateWorkspaceRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory CreateWorkspaceRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory CreateWorkspaceRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory CreateWorkspaceRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'CreateWorkspaceRequest',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateWorkspaceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'sessionId', protoName: 'sessionId')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CreateWorkspaceRequest clone() =>
-      CreateWorkspaceRequest()..mergeFromMessage(this);
+  CreateWorkspaceRequest clone() => CreateWorkspaceRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CreateWorkspaceRequest copyWith(
-          void Function(CreateWorkspaceRequest) updates) =>
-      super.copyWith((message) => updates(message as CreateWorkspaceRequest))
-          as CreateWorkspaceRequest;
+  CreateWorkspaceRequest copyWith(void Function(CreateWorkspaceRequest) updates) => super.copyWith((message) => updates(message as CreateWorkspaceRequest)) as CreateWorkspaceRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -463,11 +417,9 @@ class CreateWorkspaceRequest extends $pb.GeneratedMessage {
   static CreateWorkspaceRequest create() => CreateWorkspaceRequest._();
   @$core.override
   CreateWorkspaceRequest createEmptyInstance() => create();
-  static $pb.PbList<CreateWorkspaceRequest> createRepeated() =>
-      $pb.PbList<CreateWorkspaceRequest>();
+  static $pb.PbList<CreateWorkspaceRequest> createRepeated() => $pb.PbList<CreateWorkspaceRequest>();
   @$core.pragma('dart2js:noInline')
-  static CreateWorkspaceRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<CreateWorkspaceRequest>(create);
+  static CreateWorkspaceRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateWorkspaceRequest>(create);
   static CreateWorkspaceRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -493,30 +445,19 @@ class CreateWorkspaceResponse extends $pb.GeneratedMessage {
 
   CreateWorkspaceResponse._();
 
-  factory CreateWorkspaceResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory CreateWorkspaceResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory CreateWorkspaceResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory CreateWorkspaceResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'CreateWorkspaceResponse',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'CreateWorkspaceResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'workspaceId', protoName: 'workspaceId')
     ..aOS(2, _omitFieldNames ? '' : 'volumeName', protoName: 'volumeName')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CreateWorkspaceResponse clone() =>
-      CreateWorkspaceResponse()..mergeFromMessage(this);
+  CreateWorkspaceResponse clone() => CreateWorkspaceResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  CreateWorkspaceResponse copyWith(
-          void Function(CreateWorkspaceResponse) updates) =>
-      super.copyWith((message) => updates(message as CreateWorkspaceResponse))
-          as CreateWorkspaceResponse;
+  CreateWorkspaceResponse copyWith(void Function(CreateWorkspaceResponse) updates) => super.copyWith((message) => updates(message as CreateWorkspaceResponse)) as CreateWorkspaceResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -525,11 +466,9 @@ class CreateWorkspaceResponse extends $pb.GeneratedMessage {
   static CreateWorkspaceResponse create() => CreateWorkspaceResponse._();
   @$core.override
   CreateWorkspaceResponse createEmptyInstance() => create();
-  static $pb.PbList<CreateWorkspaceResponse> createRepeated() =>
-      $pb.PbList<CreateWorkspaceResponse>();
+  static $pb.PbList<CreateWorkspaceResponse> createRepeated() => $pb.PbList<CreateWorkspaceResponse>();
   @$core.pragma('dart2js:noInline')
-  static CreateWorkspaceResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<CreateWorkspaceResponse>(create);
+  static CreateWorkspaceResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<CreateWorkspaceResponse>(create);
   static CreateWorkspaceResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -556,28 +495,17 @@ class ListWorkspacesRequest extends $pb.GeneratedMessage {
 
   ListWorkspacesRequest._();
 
-  factory ListWorkspacesRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ListWorkspacesRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ListWorkspacesRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ListWorkspacesRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ListWorkspacesRequest',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'),
-      createEmptyInstance: create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListWorkspacesRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'), createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListWorkspacesRequest clone() =>
-      ListWorkspacesRequest()..mergeFromMessage(this);
+  ListWorkspacesRequest clone() => ListWorkspacesRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListWorkspacesRequest copyWith(
-          void Function(ListWorkspacesRequest) updates) =>
-      super.copyWith((message) => updates(message as ListWorkspacesRequest))
-          as ListWorkspacesRequest;
+  ListWorkspacesRequest copyWith(void Function(ListWorkspacesRequest) updates) => super.copyWith((message) => updates(message as ListWorkspacesRequest)) as ListWorkspacesRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -586,11 +514,9 @@ class ListWorkspacesRequest extends $pb.GeneratedMessage {
   static ListWorkspacesRequest create() => ListWorkspacesRequest._();
   @$core.override
   ListWorkspacesRequest createEmptyInstance() => create();
-  static $pb.PbList<ListWorkspacesRequest> createRepeated() =>
-      $pb.PbList<ListWorkspacesRequest>();
+  static $pb.PbList<ListWorkspacesRequest> createRepeated() => $pb.PbList<ListWorkspacesRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListWorkspacesRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ListWorkspacesRequest>(create);
+  static ListWorkspacesRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListWorkspacesRequest>(create);
   static ListWorkspacesRequest? _defaultInstance;
 }
 
@@ -605,31 +531,18 @@ class ListWorkspacesResponse extends $pb.GeneratedMessage {
 
   ListWorkspacesResponse._();
 
-  factory ListWorkspacesResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ListWorkspacesResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ListWorkspacesResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ListWorkspacesResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ListWorkspacesResponse',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'),
-      createEmptyInstance: create)
-    ..pc<WmWorkspaceInfo>(
-        1, _omitFieldNames ? '' : 'workspaces', $pb.PbFieldType.PM,
-        subBuilder: WmWorkspaceInfo.create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListWorkspacesResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'), createEmptyInstance: create)
+    ..pc<WmWorkspaceInfo>(1, _omitFieldNames ? '' : 'workspaces', $pb.PbFieldType.PM, subBuilder: WmWorkspaceInfo.create)
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListWorkspacesResponse clone() =>
-      ListWorkspacesResponse()..mergeFromMessage(this);
+  ListWorkspacesResponse clone() => ListWorkspacesResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListWorkspacesResponse copyWith(
-          void Function(ListWorkspacesResponse) updates) =>
-      super.copyWith((message) => updates(message as ListWorkspacesResponse))
-          as ListWorkspacesResponse;
+  ListWorkspacesResponse copyWith(void Function(ListWorkspacesResponse) updates) => super.copyWith((message) => updates(message as ListWorkspacesResponse)) as ListWorkspacesResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -638,11 +551,9 @@ class ListWorkspacesResponse extends $pb.GeneratedMessage {
   static ListWorkspacesResponse create() => ListWorkspacesResponse._();
   @$core.override
   ListWorkspacesResponse createEmptyInstance() => create();
-  static $pb.PbList<ListWorkspacesResponse> createRepeated() =>
-      $pb.PbList<ListWorkspacesResponse>();
+  static $pb.PbList<ListWorkspacesResponse> createRepeated() => $pb.PbList<ListWorkspacesResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListWorkspacesResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ListWorkspacesResponse>(create);
+  static ListWorkspacesResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListWorkspacesResponse>(create);
   static ListWorkspacesResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -660,27 +571,18 @@ class GetWorkspaceRequest extends $pb.GeneratedMessage {
 
   GetWorkspaceRequest._();
 
-  factory GetWorkspaceRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory GetWorkspaceRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory GetWorkspaceRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory GetWorkspaceRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'GetWorkspaceRequest',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetWorkspaceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'workspaceId', protoName: 'workspaceId')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   GetWorkspaceRequest clone() => GetWorkspaceRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetWorkspaceRequest copyWith(void Function(GetWorkspaceRequest) updates) =>
-      super.copyWith((message) => updates(message as GetWorkspaceRequest))
-          as GetWorkspaceRequest;
+  GetWorkspaceRequest copyWith(void Function(GetWorkspaceRequest) updates) => super.copyWith((message) => updates(message as GetWorkspaceRequest)) as GetWorkspaceRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -689,11 +591,9 @@ class GetWorkspaceRequest extends $pb.GeneratedMessage {
   static GetWorkspaceRequest create() => GetWorkspaceRequest._();
   @$core.override
   GetWorkspaceRequest createEmptyInstance() => create();
-  static $pb.PbList<GetWorkspaceRequest> createRepeated() =>
-      $pb.PbList<GetWorkspaceRequest>();
+  static $pb.PbList<GetWorkspaceRequest> createRepeated() => $pb.PbList<GetWorkspaceRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetWorkspaceRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<GetWorkspaceRequest>(create);
+  static GetWorkspaceRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetWorkspaceRequest>(create);
   static GetWorkspaceRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -717,29 +617,18 @@ class DeleteWorkspaceRequest extends $pb.GeneratedMessage {
 
   DeleteWorkspaceRequest._();
 
-  factory DeleteWorkspaceRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory DeleteWorkspaceRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory DeleteWorkspaceRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory DeleteWorkspaceRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'DeleteWorkspaceRequest',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteWorkspaceRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'workspaceId', protoName: 'workspaceId')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DeleteWorkspaceRequest clone() =>
-      DeleteWorkspaceRequest()..mergeFromMessage(this);
+  DeleteWorkspaceRequest clone() => DeleteWorkspaceRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DeleteWorkspaceRequest copyWith(
-          void Function(DeleteWorkspaceRequest) updates) =>
-      super.copyWith((message) => updates(message as DeleteWorkspaceRequest))
-          as DeleteWorkspaceRequest;
+  DeleteWorkspaceRequest copyWith(void Function(DeleteWorkspaceRequest) updates) => super.copyWith((message) => updates(message as DeleteWorkspaceRequest)) as DeleteWorkspaceRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -748,11 +637,9 @@ class DeleteWorkspaceRequest extends $pb.GeneratedMessage {
   static DeleteWorkspaceRequest create() => DeleteWorkspaceRequest._();
   @$core.override
   DeleteWorkspaceRequest createEmptyInstance() => create();
-  static $pb.PbList<DeleteWorkspaceRequest> createRepeated() =>
-      $pb.PbList<DeleteWorkspaceRequest>();
+  static $pb.PbList<DeleteWorkspaceRequest> createRepeated() => $pb.PbList<DeleteWorkspaceRequest>();
   @$core.pragma('dart2js:noInline')
-  static DeleteWorkspaceRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<DeleteWorkspaceRequest>(create);
+  static DeleteWorkspaceRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteWorkspaceRequest>(create);
   static DeleteWorkspaceRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -770,28 +657,17 @@ class DeleteWorkspaceResponse extends $pb.GeneratedMessage {
 
   DeleteWorkspaceResponse._();
 
-  factory DeleteWorkspaceResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory DeleteWorkspaceResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory DeleteWorkspaceResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory DeleteWorkspaceResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'DeleteWorkspaceResponse',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'),
-      createEmptyInstance: create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'DeleteWorkspaceResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'), createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DeleteWorkspaceResponse clone() =>
-      DeleteWorkspaceResponse()..mergeFromMessage(this);
+  DeleteWorkspaceResponse clone() => DeleteWorkspaceResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  DeleteWorkspaceResponse copyWith(
-          void Function(DeleteWorkspaceResponse) updates) =>
-      super.copyWith((message) => updates(message as DeleteWorkspaceResponse))
-          as DeleteWorkspaceResponse;
+  DeleteWorkspaceResponse copyWith(void Function(DeleteWorkspaceResponse) updates) => super.copyWith((message) => updates(message as DeleteWorkspaceResponse)) as DeleteWorkspaceResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -800,11 +676,9 @@ class DeleteWorkspaceResponse extends $pb.GeneratedMessage {
   static DeleteWorkspaceResponse create() => DeleteWorkspaceResponse._();
   @$core.override
   DeleteWorkspaceResponse createEmptyInstance() => create();
-  static $pb.PbList<DeleteWorkspaceResponse> createRepeated() =>
-      $pb.PbList<DeleteWorkspaceResponse>();
+  static $pb.PbList<DeleteWorkspaceResponse> createRepeated() => $pb.PbList<DeleteWorkspaceResponse>();
   @$core.pragma('dart2js:noInline')
-  static DeleteWorkspaceResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<DeleteWorkspaceResponse>(create);
+  static DeleteWorkspaceResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<DeleteWorkspaceResponse>(create);
   static DeleteWorkspaceResponse? _defaultInstance;
 }
 
@@ -827,37 +701,22 @@ class StartWorkerRequest extends $pb.GeneratedMessage {
 
   StartWorkerRequest._();
 
-  factory StartWorkerRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory StartWorkerRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory StartWorkerRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory StartWorkerRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'StartWorkerRequest',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StartWorkerRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'sessionId', protoName: 'sessionId')
     ..aOS(2, _omitFieldNames ? '' : 'image')
-    ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'env',
-        entryClassName: 'StartWorkerRequest.EnvEntry',
-        keyFieldType: $pb.PbFieldType.OS,
-        valueFieldType: $pb.PbFieldType.OS,
-        packageName: const $pb.PackageName('workspacemanager.v1'))
-    ..pc<ContainerVolume>(
-        4, _omitFieldNames ? '' : 'volumes', $pb.PbFieldType.PM,
-        subBuilder: ContainerVolume.create)
+    ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'env', entryClassName: 'StartWorkerRequest.EnvEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('workspacemanager.v1'))
+    ..pc<ContainerVolume>(4, _omitFieldNames ? '' : 'volumes', $pb.PbFieldType.PM, subBuilder: ContainerVolume.create)
     ..pPS(5, _omitFieldNames ? '' : 'command')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StartWorkerRequest clone() => StartWorkerRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  StartWorkerRequest copyWith(void Function(StartWorkerRequest) updates) =>
-      super.copyWith((message) => updates(message as StartWorkerRequest))
-          as StartWorkerRequest;
+  StartWorkerRequest copyWith(void Function(StartWorkerRequest) updates) => super.copyWith((message) => updates(message as StartWorkerRequest)) as StartWorkerRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -866,11 +725,9 @@ class StartWorkerRequest extends $pb.GeneratedMessage {
   static StartWorkerRequest create() => StartWorkerRequest._();
   @$core.override
   StartWorkerRequest createEmptyInstance() => create();
-  static $pb.PbList<StartWorkerRequest> createRepeated() =>
-      $pb.PbList<StartWorkerRequest>();
+  static $pb.PbList<StartWorkerRequest> createRepeated() => $pb.PbList<StartWorkerRequest>();
   @$core.pragma('dart2js:noInline')
-  static StartWorkerRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<StartWorkerRequest>(create);
+  static StartWorkerRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StartWorkerRequest>(create);
   static StartWorkerRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -916,29 +773,20 @@ class StartWorkerResponse extends $pb.GeneratedMessage {
 
   StartWorkerResponse._();
 
-  factory StartWorkerResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory StartWorkerResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory StartWorkerResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory StartWorkerResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'StartWorkerResponse',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StartWorkerResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'workerId', protoName: 'workerId')
     ..aOS(2, _omitFieldNames ? '' : 'containerName', protoName: 'containerName')
     ..aOS(3, _omitFieldNames ? '' : 'secret')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StartWorkerResponse clone() => StartWorkerResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  StartWorkerResponse copyWith(void Function(StartWorkerResponse) updates) =>
-      super.copyWith((message) => updates(message as StartWorkerResponse))
-          as StartWorkerResponse;
+  StartWorkerResponse copyWith(void Function(StartWorkerResponse) updates) => super.copyWith((message) => updates(message as StartWorkerResponse)) as StartWorkerResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -947,11 +795,9 @@ class StartWorkerResponse extends $pb.GeneratedMessage {
   static StartWorkerResponse create() => StartWorkerResponse._();
   @$core.override
   StartWorkerResponse createEmptyInstance() => create();
-  static $pb.PbList<StartWorkerResponse> createRepeated() =>
-      $pb.PbList<StartWorkerResponse>();
+  static $pb.PbList<StartWorkerResponse> createRepeated() => $pb.PbList<StartWorkerResponse>();
   @$core.pragma('dart2js:noInline')
-  static StartWorkerResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<StartWorkerResponse>(create);
+  static StartWorkerResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StartWorkerResponse>(create);
   static StartWorkerResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -993,27 +839,18 @@ class StopWorkerRequest extends $pb.GeneratedMessage {
 
   StopWorkerRequest._();
 
-  factory StopWorkerRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory StopWorkerRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory StopWorkerRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory StopWorkerRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'StopWorkerRequest',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StopWorkerRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'workerId', protoName: 'workerId')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StopWorkerRequest clone() => StopWorkerRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  StopWorkerRequest copyWith(void Function(StopWorkerRequest) updates) =>
-      super.copyWith((message) => updates(message as StopWorkerRequest))
-          as StopWorkerRequest;
+  StopWorkerRequest copyWith(void Function(StopWorkerRequest) updates) => super.copyWith((message) => updates(message as StopWorkerRequest)) as StopWorkerRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1022,11 +859,9 @@ class StopWorkerRequest extends $pb.GeneratedMessage {
   static StopWorkerRequest create() => StopWorkerRequest._();
   @$core.override
   StopWorkerRequest createEmptyInstance() => create();
-  static $pb.PbList<StopWorkerRequest> createRepeated() =>
-      $pb.PbList<StopWorkerRequest>();
+  static $pb.PbList<StopWorkerRequest> createRepeated() => $pb.PbList<StopWorkerRequest>();
   @$core.pragma('dart2js:noInline')
-  static StopWorkerRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<StopWorkerRequest>(create);
+  static StopWorkerRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StopWorkerRequest>(create);
   static StopWorkerRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1044,26 +879,17 @@ class StopWorkerResponse extends $pb.GeneratedMessage {
 
   StopWorkerResponse._();
 
-  factory StopWorkerResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory StopWorkerResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory StopWorkerResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory StopWorkerResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'StopWorkerResponse',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'),
-      createEmptyInstance: create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'StopWorkerResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'), createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   StopWorkerResponse clone() => StopWorkerResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  StopWorkerResponse copyWith(void Function(StopWorkerResponse) updates) =>
-      super.copyWith((message) => updates(message as StopWorkerResponse))
-          as StopWorkerResponse;
+  StopWorkerResponse copyWith(void Function(StopWorkerResponse) updates) => super.copyWith((message) => updates(message as StopWorkerResponse)) as StopWorkerResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1072,11 +898,9 @@ class StopWorkerResponse extends $pb.GeneratedMessage {
   static StopWorkerResponse create() => StopWorkerResponse._();
   @$core.override
   StopWorkerResponse createEmptyInstance() => create();
-  static $pb.PbList<StopWorkerResponse> createRepeated() =>
-      $pb.PbList<StopWorkerResponse>();
+  static $pb.PbList<StopWorkerResponse> createRepeated() => $pb.PbList<StopWorkerResponse>();
   @$core.pragma('dart2js:noInline')
-  static StopWorkerResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<StopWorkerResponse>(create);
+  static StopWorkerResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<StopWorkerResponse>(create);
   static StopWorkerResponse? _defaultInstance;
 }
 
@@ -1091,29 +915,18 @@ class GetWorkerStatusRequest extends $pb.GeneratedMessage {
 
   GetWorkerStatusRequest._();
 
-  factory GetWorkerStatusRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory GetWorkerStatusRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory GetWorkerStatusRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory GetWorkerStatusRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'GetWorkerStatusRequest',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetWorkerStatusRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'workerId', protoName: 'workerId')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetWorkerStatusRequest clone() =>
-      GetWorkerStatusRequest()..mergeFromMessage(this);
+  GetWorkerStatusRequest clone() => GetWorkerStatusRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetWorkerStatusRequest copyWith(
-          void Function(GetWorkerStatusRequest) updates) =>
-      super.copyWith((message) => updates(message as GetWorkerStatusRequest))
-          as GetWorkerStatusRequest;
+  GetWorkerStatusRequest copyWith(void Function(GetWorkerStatusRequest) updates) => super.copyWith((message) => updates(message as GetWorkerStatusRequest)) as GetWorkerStatusRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1122,11 +935,9 @@ class GetWorkerStatusRequest extends $pb.GeneratedMessage {
   static GetWorkerStatusRequest create() => GetWorkerStatusRequest._();
   @$core.override
   GetWorkerStatusRequest createEmptyInstance() => create();
-  static $pb.PbList<GetWorkerStatusRequest> createRepeated() =>
-      $pb.PbList<GetWorkerStatusRequest>();
+  static $pb.PbList<GetWorkerStatusRequest> createRepeated() => $pb.PbList<GetWorkerStatusRequest>();
   @$core.pragma('dart2js:noInline')
-  static GetWorkerStatusRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<GetWorkerStatusRequest>(create);
+  static GetWorkerStatusRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetWorkerStatusRequest>(create);
   static GetWorkerStatusRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1152,30 +963,19 @@ class GetWorkerStatusResponse extends $pb.GeneratedMessage {
 
   GetWorkerStatusResponse._();
 
-  factory GetWorkerStatusResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory GetWorkerStatusResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory GetWorkerStatusResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory GetWorkerStatusResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'GetWorkerStatusResponse',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'GetWorkerStatusResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'state')
     ..aOS(2, _omitFieldNames ? '' : 'containerId', protoName: 'containerId')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetWorkerStatusResponse clone() =>
-      GetWorkerStatusResponse()..mergeFromMessage(this);
+  GetWorkerStatusResponse clone() => GetWorkerStatusResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  GetWorkerStatusResponse copyWith(
-          void Function(GetWorkerStatusResponse) updates) =>
-      super.copyWith((message) => updates(message as GetWorkerStatusResponse))
-          as GetWorkerStatusResponse;
+  GetWorkerStatusResponse copyWith(void Function(GetWorkerStatusResponse) updates) => super.copyWith((message) => updates(message as GetWorkerStatusResponse)) as GetWorkerStatusResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1184,11 +984,9 @@ class GetWorkerStatusResponse extends $pb.GeneratedMessage {
   static GetWorkerStatusResponse create() => GetWorkerStatusResponse._();
   @$core.override
   GetWorkerStatusResponse createEmptyInstance() => create();
-  static $pb.PbList<GetWorkerStatusResponse> createRepeated() =>
-      $pb.PbList<GetWorkerStatusResponse>();
+  static $pb.PbList<GetWorkerStatusResponse> createRepeated() => $pb.PbList<GetWorkerStatusResponse>();
   @$core.pragma('dart2js:noInline')
-  static GetWorkerStatusResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<GetWorkerStatusResponse>(create);
+  static GetWorkerStatusResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<GetWorkerStatusResponse>(create);
   static GetWorkerStatusResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1215,26 +1013,17 @@ class ListWorkersRequest extends $pb.GeneratedMessage {
 
   ListWorkersRequest._();
 
-  factory ListWorkersRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ListWorkersRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ListWorkersRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ListWorkersRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ListWorkersRequest',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'),
-      createEmptyInstance: create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListWorkersRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'), createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListWorkersRequest clone() => ListWorkersRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListWorkersRequest copyWith(void Function(ListWorkersRequest) updates) =>
-      super.copyWith((message) => updates(message as ListWorkersRequest))
-          as ListWorkersRequest;
+  ListWorkersRequest copyWith(void Function(ListWorkersRequest) updates) => super.copyWith((message) => updates(message as ListWorkersRequest)) as ListWorkersRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1243,11 +1032,9 @@ class ListWorkersRequest extends $pb.GeneratedMessage {
   static ListWorkersRequest create() => ListWorkersRequest._();
   @$core.override
   ListWorkersRequest createEmptyInstance() => create();
-  static $pb.PbList<ListWorkersRequest> createRepeated() =>
-      $pb.PbList<ListWorkersRequest>();
+  static $pb.PbList<ListWorkersRequest> createRepeated() => $pb.PbList<ListWorkersRequest>();
   @$core.pragma('dart2js:noInline')
-  static ListWorkersRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ListWorkersRequest>(create);
+  static ListWorkersRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListWorkersRequest>(create);
   static ListWorkersRequest? _defaultInstance;
 }
 
@@ -1262,28 +1049,18 @@ class ListWorkersResponse extends $pb.GeneratedMessage {
 
   ListWorkersResponse._();
 
-  factory ListWorkersResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory ListWorkersResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory ListWorkersResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory ListWorkersResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'ListWorkersResponse',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'),
-      createEmptyInstance: create)
-    ..pc<WmWorkerInfo>(1, _omitFieldNames ? '' : 'workers', $pb.PbFieldType.PM,
-        subBuilder: WmWorkerInfo.create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ListWorkersResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'), createEmptyInstance: create)
+    ..pc<WmWorkerInfo>(1, _omitFieldNames ? '' : 'workers', $pb.PbFieldType.PM, subBuilder: WmWorkerInfo.create)
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   ListWorkersResponse clone() => ListWorkersResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  ListWorkersResponse copyWith(void Function(ListWorkersResponse) updates) =>
-      super.copyWith((message) => updates(message as ListWorkersResponse))
-          as ListWorkersResponse;
+  ListWorkersResponse copyWith(void Function(ListWorkersResponse) updates) => super.copyWith((message) => updates(message as ListWorkersResponse)) as ListWorkersResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1292,11 +1069,9 @@ class ListWorkersResponse extends $pb.GeneratedMessage {
   static ListWorkersResponse create() => ListWorkersResponse._();
   @$core.override
   ListWorkersResponse createEmptyInstance() => create();
-  static $pb.PbList<ListWorkersResponse> createRepeated() =>
-      $pb.PbList<ListWorkersResponse>();
+  static $pb.PbList<ListWorkersResponse> createRepeated() => $pb.PbList<ListWorkersResponse>();
   @$core.pragma('dart2js:noInline')
-  static ListWorkersResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<ListWorkersResponse>(create);
+  static ListWorkersResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ListWorkersResponse>(create);
   static ListWorkersResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1318,50 +1093,31 @@ class EnsureWorkspaceWorkerRequest extends $pb.GeneratedMessage {
 
   EnsureWorkspaceWorkerRequest._();
 
-  factory EnsureWorkspaceWorkerRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory EnsureWorkspaceWorkerRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory EnsureWorkspaceWorkerRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory EnsureWorkspaceWorkerRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'EnsureWorkspaceWorkerRequest',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EnsureWorkspaceWorkerRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'workspaceId', protoName: 'workspaceId')
     ..aOS(2, _omitFieldNames ? '' : 'image')
-    ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'env',
-        entryClassName: 'EnsureWorkspaceWorkerRequest.EnvEntry',
-        keyFieldType: $pb.PbFieldType.OS,
-        valueFieldType: $pb.PbFieldType.OS,
-        packageName: const $pb.PackageName('workspacemanager.v1'))
-    ..hasRequiredFields = false;
+    ..m<$core.String, $core.String>(3, _omitFieldNames ? '' : 'env', entryClassName: 'EnsureWorkspaceWorkerRequest.EnvEntry', keyFieldType: $pb.PbFieldType.OS, valueFieldType: $pb.PbFieldType.OS, packageName: const $pb.PackageName('workspacemanager.v1'))
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EnsureWorkspaceWorkerRequest clone() =>
-      EnsureWorkspaceWorkerRequest()..mergeFromMessage(this);
+  EnsureWorkspaceWorkerRequest clone() => EnsureWorkspaceWorkerRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EnsureWorkspaceWorkerRequest copyWith(
-          void Function(EnsureWorkspaceWorkerRequest) updates) =>
-      super.copyWith(
-              (message) => updates(message as EnsureWorkspaceWorkerRequest))
-          as EnsureWorkspaceWorkerRequest;
+  EnsureWorkspaceWorkerRequest copyWith(void Function(EnsureWorkspaceWorkerRequest) updates) => super.copyWith((message) => updates(message as EnsureWorkspaceWorkerRequest)) as EnsureWorkspaceWorkerRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static EnsureWorkspaceWorkerRequest create() =>
-      EnsureWorkspaceWorkerRequest._();
+  static EnsureWorkspaceWorkerRequest create() => EnsureWorkspaceWorkerRequest._();
   @$core.override
   EnsureWorkspaceWorkerRequest createEmptyInstance() => create();
-  static $pb.PbList<EnsureWorkspaceWorkerRequest> createRepeated() =>
-      $pb.PbList<EnsureWorkspaceWorkerRequest>();
+  static $pb.PbList<EnsureWorkspaceWorkerRequest> createRepeated() => $pb.PbList<EnsureWorkspaceWorkerRequest>();
   @$core.pragma('dart2js:noInline')
-  static EnsureWorkspaceWorkerRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<EnsureWorkspaceWorkerRequest>(create);
+  static EnsureWorkspaceWorkerRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EnsureWorkspaceWorkerRequest>(create);
   static EnsureWorkspaceWorkerRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1403,47 +1159,32 @@ class EnsureWorkspaceWorkerResponse extends $pb.GeneratedMessage {
 
   EnsureWorkspaceWorkerResponse._();
 
-  factory EnsureWorkspaceWorkerResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory EnsureWorkspaceWorkerResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory EnsureWorkspaceWorkerResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory EnsureWorkspaceWorkerResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'EnsureWorkspaceWorkerResponse',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'EnsureWorkspaceWorkerResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'workerId', protoName: 'workerId')
     ..aOS(2, _omitFieldNames ? '' : 'containerName', protoName: 'containerName')
     ..aOS(3, _omitFieldNames ? '' : 'secret')
     ..aOS(4, _omitFieldNames ? '' : 'volumeName', protoName: 'volumeName')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EnsureWorkspaceWorkerResponse clone() =>
-      EnsureWorkspaceWorkerResponse()..mergeFromMessage(this);
+  EnsureWorkspaceWorkerResponse clone() => EnsureWorkspaceWorkerResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  EnsureWorkspaceWorkerResponse copyWith(
-          void Function(EnsureWorkspaceWorkerResponse) updates) =>
-      super.copyWith(
-              (message) => updates(message as EnsureWorkspaceWorkerResponse))
-          as EnsureWorkspaceWorkerResponse;
+  EnsureWorkspaceWorkerResponse copyWith(void Function(EnsureWorkspaceWorkerResponse) updates) => super.copyWith((message) => updates(message as EnsureWorkspaceWorkerResponse)) as EnsureWorkspaceWorkerResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static EnsureWorkspaceWorkerResponse create() =>
-      EnsureWorkspaceWorkerResponse._();
+  static EnsureWorkspaceWorkerResponse create() => EnsureWorkspaceWorkerResponse._();
   @$core.override
   EnsureWorkspaceWorkerResponse createEmptyInstance() => create();
-  static $pb.PbList<EnsureWorkspaceWorkerResponse> createRepeated() =>
-      $pb.PbList<EnsureWorkspaceWorkerResponse>();
+  static $pb.PbList<EnsureWorkspaceWorkerResponse> createRepeated() => $pb.PbList<EnsureWorkspaceWorkerResponse>();
   @$core.pragma('dart2js:noInline')
-  static EnsureWorkspaceWorkerResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<EnsureWorkspaceWorkerResponse>(create);
+  static EnsureWorkspaceWorkerResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<EnsureWorkspaceWorkerResponse>(create);
   static EnsureWorkspaceWorkerResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1498,46 +1239,31 @@ class UpdateWorkspaceConfigRequest extends $pb.GeneratedMessage {
 
   UpdateWorkspaceConfigRequest._();
 
-  factory UpdateWorkspaceConfigRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory UpdateWorkspaceConfigRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory UpdateWorkspaceConfigRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory UpdateWorkspaceConfigRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'UpdateWorkspaceConfigRequest',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateWorkspaceConfigRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'workspaceId', protoName: 'workspaceId')
     ..aOS(2, _omitFieldNames ? '' : 'skillSlugs', protoName: 'skillSlugs')
     ..aOS(3, _omitFieldNames ? '' : 'nixPkgs', protoName: 'nixPkgs')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UpdateWorkspaceConfigRequest clone() =>
-      UpdateWorkspaceConfigRequest()..mergeFromMessage(this);
+  UpdateWorkspaceConfigRequest clone() => UpdateWorkspaceConfigRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UpdateWorkspaceConfigRequest copyWith(
-          void Function(UpdateWorkspaceConfigRequest) updates) =>
-      super.copyWith(
-              (message) => updates(message as UpdateWorkspaceConfigRequest))
-          as UpdateWorkspaceConfigRequest;
+  UpdateWorkspaceConfigRequest copyWith(void Function(UpdateWorkspaceConfigRequest) updates) => super.copyWith((message) => updates(message as UpdateWorkspaceConfigRequest)) as UpdateWorkspaceConfigRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static UpdateWorkspaceConfigRequest create() =>
-      UpdateWorkspaceConfigRequest._();
+  static UpdateWorkspaceConfigRequest create() => UpdateWorkspaceConfigRequest._();
   @$core.override
   UpdateWorkspaceConfigRequest createEmptyInstance() => create();
-  static $pb.PbList<UpdateWorkspaceConfigRequest> createRepeated() =>
-      $pb.PbList<UpdateWorkspaceConfigRequest>();
+  static $pb.PbList<UpdateWorkspaceConfigRequest> createRepeated() => $pb.PbList<UpdateWorkspaceConfigRequest>();
   @$core.pragma('dart2js:noInline')
-  static UpdateWorkspaceConfigRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<UpdateWorkspaceConfigRequest>(create);
+  static UpdateWorkspaceConfigRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateWorkspaceConfigRequest>(create);
   static UpdateWorkspaceConfigRequest? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1573,43 +1299,28 @@ class UpdateWorkspaceConfigResponse extends $pb.GeneratedMessage {
 
   UpdateWorkspaceConfigResponse._();
 
-  factory UpdateWorkspaceConfigResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory UpdateWorkspaceConfigResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory UpdateWorkspaceConfigResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory UpdateWorkspaceConfigResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'UpdateWorkspaceConfigResponse',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'),
-      createEmptyInstance: create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'UpdateWorkspaceConfigResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'), createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UpdateWorkspaceConfigResponse clone() =>
-      UpdateWorkspaceConfigResponse()..mergeFromMessage(this);
+  UpdateWorkspaceConfigResponse clone() => UpdateWorkspaceConfigResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  UpdateWorkspaceConfigResponse copyWith(
-          void Function(UpdateWorkspaceConfigResponse) updates) =>
-      super.copyWith(
-              (message) => updates(message as UpdateWorkspaceConfigResponse))
-          as UpdateWorkspaceConfigResponse;
+  UpdateWorkspaceConfigResponse copyWith(void Function(UpdateWorkspaceConfigResponse) updates) => super.copyWith((message) => updates(message as UpdateWorkspaceConfigResponse)) as UpdateWorkspaceConfigResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static UpdateWorkspaceConfigResponse create() =>
-      UpdateWorkspaceConfigResponse._();
+  static UpdateWorkspaceConfigResponse create() => UpdateWorkspaceConfigResponse._();
   @$core.override
   UpdateWorkspaceConfigResponse createEmptyInstance() => create();
-  static $pb.PbList<UpdateWorkspaceConfigResponse> createRepeated() =>
-      $pb.PbList<UpdateWorkspaceConfigResponse>();
+  static $pb.PbList<UpdateWorkspaceConfigResponse> createRepeated() => $pb.PbList<UpdateWorkspaceConfigResponse>();
   @$core.pragma('dart2js:noInline')
-  static UpdateWorkspaceConfigResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<UpdateWorkspaceConfigResponse>(create);
+  static UpdateWorkspaceConfigResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<UpdateWorkspaceConfigResponse>(create);
   static UpdateWorkspaceConfigResponse? _defaultInstance;
 }
 
@@ -1618,26 +1329,17 @@ class HealthRequest extends $pb.GeneratedMessage {
 
   HealthRequest._();
 
-  factory HealthRequest.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory HealthRequest.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory HealthRequest.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory HealthRequest.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'HealthRequest',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'),
-      createEmptyInstance: create)
-    ..hasRequiredFields = false;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'HealthRequest', package: const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'), createEmptyInstance: create)
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HealthRequest clone() => HealthRequest()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HealthRequest copyWith(void Function(HealthRequest) updates) =>
-      super.copyWith((message) => updates(message as HealthRequest))
-          as HealthRequest;
+  HealthRequest copyWith(void Function(HealthRequest) updates) => super.copyWith((message) => updates(message as HealthRequest)) as HealthRequest;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1646,11 +1348,9 @@ class HealthRequest extends $pb.GeneratedMessage {
   static HealthRequest create() => HealthRequest._();
   @$core.override
   HealthRequest createEmptyInstance() => create();
-  static $pb.PbList<HealthRequest> createRepeated() =>
-      $pb.PbList<HealthRequest>();
+  static $pb.PbList<HealthRequest> createRepeated() => $pb.PbList<HealthRequest>();
   @$core.pragma('dart2js:noInline')
-  static HealthRequest getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<HealthRequest>(create);
+  static HealthRequest getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<HealthRequest>(create);
   static HealthRequest? _defaultInstance;
 }
 
@@ -1665,27 +1365,18 @@ class HealthResponse extends $pb.GeneratedMessage {
 
   HealthResponse._();
 
-  factory HealthResponse.fromBuffer($core.List<$core.int> data,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromBuffer(data, registry);
-  factory HealthResponse.fromJson($core.String json,
-          [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) =>
-      create()..mergeFromJson(json, registry);
+  factory HealthResponse.fromBuffer($core.List<$core.int> data, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(data, registry);
+  factory HealthResponse.fromJson($core.String json, [$pb.ExtensionRegistry registry = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(json, registry);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'HealthResponse',
-      package:
-          const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'),
-      createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'HealthResponse', package: const $pb.PackageName(_omitMessageNames ? '' : 'workspacemanager.v1'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'status')
-    ..hasRequiredFields = false;
+    ..hasRequiredFields = false
+  ;
 
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
   HealthResponse clone() => HealthResponse()..mergeFromMessage(this);
   @$core.Deprecated('See https://github.com/google/protobuf.dart/issues/998.')
-  HealthResponse copyWith(void Function(HealthResponse) updates) =>
-      super.copyWith((message) => updates(message as HealthResponse))
-          as HealthResponse;
+  HealthResponse copyWith(void Function(HealthResponse) updates) => super.copyWith((message) => updates(message as HealthResponse)) as HealthResponse;
 
   @$core.override
   $pb.BuilderInfo get info_ => _i;
@@ -1694,11 +1385,9 @@ class HealthResponse extends $pb.GeneratedMessage {
   static HealthResponse create() => HealthResponse._();
   @$core.override
   HealthResponse createEmptyInstance() => create();
-  static $pb.PbList<HealthResponse> createRepeated() =>
-      $pb.PbList<HealthResponse>();
+  static $pb.PbList<HealthResponse> createRepeated() => $pb.PbList<HealthResponse>();
   @$core.pragma('dart2js:noInline')
-  static HealthResponse getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<HealthResponse>(create);
+  static HealthResponse getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<HealthResponse>(create);
   static HealthResponse? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -1716,61 +1405,41 @@ class WorkspaceManagerServiceApi {
 
   WorkspaceManagerServiceApi(this._client);
 
-  $async.Future<HealthResponse> health(
-          $pb.ClientContext? ctx, $0.Empty request) =>
-      _client.invoke<HealthResponse>(
-          ctx, 'WorkspaceManagerService', 'Health', request, HealthResponse());
-  $async.Future<CreateWorkspaceResponse> createWorkspace(
-          $pb.ClientContext? ctx, CreateWorkspaceRequest request) =>
-      _client.invoke<CreateWorkspaceResponse>(ctx, 'WorkspaceManagerService',
-          'CreateWorkspace', request, CreateWorkspaceResponse());
-  $async.Future<ListWorkspacesResponse> listWorkspaces(
-          $pb.ClientContext? ctx, $0.Empty request) =>
-      _client.invoke<ListWorkspacesResponse>(ctx, 'WorkspaceManagerService',
-          'ListWorkspaces', request, ListWorkspacesResponse());
-  $async.Future<WmWorkspaceInfo> getWorkspace(
-          $pb.ClientContext? ctx, GetWorkspaceRequest request) =>
-      _client.invoke<WmWorkspaceInfo>(ctx, 'WorkspaceManagerService',
-          'GetWorkspace', request, WmWorkspaceInfo());
-  $async.Future<DeleteWorkspaceResponse> deleteWorkspace(
-          $pb.ClientContext? ctx, DeleteWorkspaceRequest request) =>
-      _client.invoke<DeleteWorkspaceResponse>(ctx, 'WorkspaceManagerService',
-          'DeleteWorkspace', request, DeleteWorkspaceResponse());
-  $async.Future<StartWorkerResponse> startWorker(
-          $pb.ClientContext? ctx, StartWorkerRequest request) =>
-      _client.invoke<StartWorkerResponse>(ctx, 'WorkspaceManagerService',
-          'StartWorker', request, StartWorkerResponse());
-  $async.Future<StopWorkerResponse> stopWorker(
-          $pb.ClientContext? ctx, StopWorkerRequest request) =>
-      _client.invoke<StopWorkerResponse>(ctx, 'WorkspaceManagerService',
-          'StopWorker', request, StopWorkerResponse());
-  $async.Future<GetWorkerStatusResponse> getWorkerStatus(
-          $pb.ClientContext? ctx, GetWorkerStatusRequest request) =>
-      _client.invoke<GetWorkerStatusResponse>(ctx, 'WorkspaceManagerService',
-          'GetWorkerStatus', request, GetWorkerStatusResponse());
-  $async.Future<ListWorkersResponse> listWorkers(
-          $pb.ClientContext? ctx, $0.Empty request) =>
-      _client.invoke<ListWorkersResponse>(ctx, 'WorkspaceManagerService',
-          'ListWorkers', request, ListWorkersResponse());
-  $async.Future<EnsureWorkspaceWorkerResponse> ensureWorkspaceWorker(
-          $pb.ClientContext? ctx, EnsureWorkspaceWorkerRequest request) =>
-      _client.invoke<EnsureWorkspaceWorkerResponse>(
-          ctx,
-          'WorkspaceManagerService',
-          'EnsureWorkspaceWorker',
-          request,
-          EnsureWorkspaceWorkerResponse());
-  $async.Future<UpdateWorkspaceConfigResponse> updateWorkspaceConfig(
-          $pb.ClientContext? ctx, UpdateWorkspaceConfigRequest request) =>
-      _client.invoke<UpdateWorkspaceConfigResponse>(
-          ctx,
-          'WorkspaceManagerService',
-          'UpdateWorkspaceConfig',
-          request,
-          UpdateWorkspaceConfigResponse());
+  $async.Future<HealthResponse> health($pb.ClientContext? ctx, $0.Empty request) =>
+    _client.invoke<HealthResponse>(ctx, 'WorkspaceManagerService', 'Health', request, HealthResponse())
+  ;
+  $async.Future<CreateWorkspaceResponse> createWorkspace($pb.ClientContext? ctx, CreateWorkspaceRequest request) =>
+    _client.invoke<CreateWorkspaceResponse>(ctx, 'WorkspaceManagerService', 'CreateWorkspace', request, CreateWorkspaceResponse())
+  ;
+  $async.Future<ListWorkspacesResponse> listWorkspaces($pb.ClientContext? ctx, $0.Empty request) =>
+    _client.invoke<ListWorkspacesResponse>(ctx, 'WorkspaceManagerService', 'ListWorkspaces', request, ListWorkspacesResponse())
+  ;
+  $async.Future<WmWorkspaceInfo> getWorkspace($pb.ClientContext? ctx, GetWorkspaceRequest request) =>
+    _client.invoke<WmWorkspaceInfo>(ctx, 'WorkspaceManagerService', 'GetWorkspace', request, WmWorkspaceInfo())
+  ;
+  $async.Future<DeleteWorkspaceResponse> deleteWorkspace($pb.ClientContext? ctx, DeleteWorkspaceRequest request) =>
+    _client.invoke<DeleteWorkspaceResponse>(ctx, 'WorkspaceManagerService', 'DeleteWorkspace', request, DeleteWorkspaceResponse())
+  ;
+  $async.Future<StartWorkerResponse> startWorker($pb.ClientContext? ctx, StartWorkerRequest request) =>
+    _client.invoke<StartWorkerResponse>(ctx, 'WorkspaceManagerService', 'StartWorker', request, StartWorkerResponse())
+  ;
+  $async.Future<StopWorkerResponse> stopWorker($pb.ClientContext? ctx, StopWorkerRequest request) =>
+    _client.invoke<StopWorkerResponse>(ctx, 'WorkspaceManagerService', 'StopWorker', request, StopWorkerResponse())
+  ;
+  $async.Future<GetWorkerStatusResponse> getWorkerStatus($pb.ClientContext? ctx, GetWorkerStatusRequest request) =>
+    _client.invoke<GetWorkerStatusResponse>(ctx, 'WorkspaceManagerService', 'GetWorkerStatus', request, GetWorkerStatusResponse())
+  ;
+  $async.Future<ListWorkersResponse> listWorkers($pb.ClientContext? ctx, $0.Empty request) =>
+    _client.invoke<ListWorkersResponse>(ctx, 'WorkspaceManagerService', 'ListWorkers', request, ListWorkersResponse())
+  ;
+  $async.Future<EnsureWorkspaceWorkerResponse> ensureWorkspaceWorker($pb.ClientContext? ctx, EnsureWorkspaceWorkerRequest request) =>
+    _client.invoke<EnsureWorkspaceWorkerResponse>(ctx, 'WorkspaceManagerService', 'EnsureWorkspaceWorker', request, EnsureWorkspaceWorkerResponse())
+  ;
+  $async.Future<UpdateWorkspaceConfigResponse> updateWorkspaceConfig($pb.ClientContext? ctx, UpdateWorkspaceConfigRequest request) =>
+    _client.invoke<UpdateWorkspaceConfigResponse>(ctx, 'WorkspaceManagerService', 'UpdateWorkspaceConfig', request, UpdateWorkspaceConfigResponse())
+  ;
 }
 
-const $core.bool _omitFieldNames =
-    $core.bool.fromEnvironment('protobuf.omit_field_names');
-const $core.bool _omitMessageNames =
-    $core.bool.fromEnvironment('protobuf.omit_message_names');
+
+const $core.bool _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
+const $core.bool _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');

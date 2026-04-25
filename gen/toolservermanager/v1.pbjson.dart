@@ -22,14 +22,7 @@ const ToolServerUrl$json = {
   '2': [
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'url', '3': 2, '4': 1, '5': 9, '10': 'url'},
-    {
-      '1': 'config',
-      '3': 3,
-      '4': 3,
-      '5': 11,
-      '6': '.toolservermanager.v1.ToolServerUrl.ConfigEntry',
-      '10': 'config'
-    },
+    {'1': 'config', '3': 3, '4': 3, '5': 11, '6': '.toolservermanager.v1.ToolServerUrl.ConfigEntry', '10': 'config'},
   ],
   '3': [ToolServerUrl_ConfigEntry$json],
 };
@@ -92,14 +85,7 @@ const StartToolServerRequest$json = {
   '2': [
     {'1': 'type', '3': 1, '4': 1, '5': 9, '10': 'type'},
     {'1': 'image', '3': 2, '4': 1, '5': 9, '10': 'image'},
-    {
-      '1': 'env',
-      '3': 3,
-      '4': 3,
-      '5': 11,
-      '6': '.toolservermanager.v1.ContainerEnv',
-      '10': 'env'
-    },
+    {'1': 'env', '3': 3, '4': 3, '5': 11, '6': '.toolservermanager.v1.ContainerEnv', '10': 'env'},
     {'1': 'command', '3': 4, '4': 3, '5': 9, '10': 'command'},
   ],
 };
@@ -120,10 +106,9 @@ const StartToolServerResponse$json = {
 };
 
 /// Descriptor for `StartToolServerResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List startToolServerResponseDescriptor =
-    $convert.base64Decode(
-        'ChdTdGFydFRvb2xTZXJ2ZXJSZXNwb25zZRIkCg1jb250YWluZXJOYW1lGAEgASgJUg1jb250YW'
-        'luZXJOYW1lEh4KCmluc3RhbmNlSWQYAiABKAlSCmluc3RhbmNlSWQ=');
+final $typed_data.Uint8List startToolServerResponseDescriptor = $convert.base64Decode(
+    'ChdTdGFydFRvb2xTZXJ2ZXJSZXNwb25zZRIkCg1jb250YWluZXJOYW1lGAEgASgJUg1jb250YW'
+    'luZXJOYW1lEh4KCmluc3RhbmNlSWQYAiABKAlSCmluc3RhbmNlSWQ=');
 
 @$core.Deprecated('Use stopToolServerRequestDescriptor instead')
 const StopToolServerRequest$json = {
@@ -134,9 +119,8 @@ const StopToolServerRequest$json = {
 };
 
 /// Descriptor for `StopToolServerRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List stopToolServerRequestDescriptor =
-    $convert.base64Decode(
-        'ChVTdG9wVG9vbFNlcnZlclJlcXVlc3QSEgoEdHlwZRgBIAEoCVIEdHlwZQ==');
+final $typed_data.Uint8List stopToolServerRequestDescriptor = $convert.base64Decode(
+    'ChVTdG9wVG9vbFNlcnZlclJlcXVlc3QSEgoEdHlwZRgBIAEoCVIEdHlwZQ==');
 
 @$core.Deprecated('Use stopToolServerResponseDescriptor instead')
 const StopToolServerResponse$json = {
@@ -144,8 +128,8 @@ const StopToolServerResponse$json = {
 };
 
 /// Descriptor for `StopToolServerResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List stopToolServerResponseDescriptor =
-    $convert.base64Decode('ChZTdG9wVG9vbFNlcnZlclJlc3BvbnNl');
+final $typed_data.Uint8List stopToolServerResponseDescriptor = $convert.base64Decode(
+    'ChZTdG9wVG9vbFNlcnZlclJlc3BvbnNl');
 
 @$core.Deprecated('Use listToolServersRequestDescriptor instead')
 const ListToolServersRequest$json = {
@@ -153,8 +137,8 @@ const ListToolServersRequest$json = {
 };
 
 /// Descriptor for `ListToolServersRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listToolServersRequestDescriptor =
-    $convert.base64Decode('ChZMaXN0VG9vbFNlcnZlcnNSZXF1ZXN0');
+final $typed_data.Uint8List listToolServersRequestDescriptor = $convert.base64Decode(
+    'ChZMaXN0VG9vbFNlcnZlcnNSZXF1ZXN0');
 
 @$core.Deprecated('Use toolServerInfoDescriptor instead')
 const ToolServerInfo$json = {
@@ -183,22 +167,14 @@ final $typed_data.Uint8List toolServerInfoDescriptor = $convert.base64Decode(
 const ListToolServersResponse$json = {
   '1': 'ListToolServersResponse',
   '2': [
-    {
-      '1': 'servers',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.toolservermanager.v1.ToolServerInfo',
-      '10': 'servers'
-    },
+    {'1': 'servers', '3': 1, '4': 3, '5': 11, '6': '.toolservermanager.v1.ToolServerInfo', '10': 'servers'},
   ],
 };
 
 /// Descriptor for `ListToolServersResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listToolServersResponseDescriptor =
-    $convert.base64Decode(
-        'ChdMaXN0VG9vbFNlcnZlcnNSZXNwb25zZRI+CgdzZXJ2ZXJzGAEgAygLMiQudG9vbHNlcnZlcm'
-        '1hbmFnZXIudjEuVG9vbFNlcnZlckluZm9SB3NlcnZlcnM=');
+final $typed_data.Uint8List listToolServersResponseDescriptor = $convert.base64Decode(
+    'ChdMaXN0VG9vbFNlcnZlcnNSZXNwb25zZRI+CgdzZXJ2ZXJzGAEgAygLMiQudG9vbHNlcnZlcm'
+    '1hbmFnZXIudjEuVG9vbFNlcnZlckluZm9SB3NlcnZlcnM=');
 
 @$core.Deprecated('Use refreshToolCacheRequestDescriptor instead')
 const RefreshToolCacheRequest$json = {
@@ -209,10 +185,9 @@ const RefreshToolCacheRequest$json = {
 };
 
 /// Descriptor for `RefreshToolCacheRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List refreshToolCacheRequestDescriptor =
-    $convert.base64Decode(
-        'ChdSZWZyZXNoVG9vbENhY2hlUmVxdWVzdBIiCgxpbnN0YW5jZVR5cGUYASABKAlSDGluc3Rhbm'
-        'NlVHlwZQ==');
+final $typed_data.Uint8List refreshToolCacheRequestDescriptor = $convert.base64Decode(
+    'ChdSZWZyZXNoVG9vbENhY2hlUmVxdWVzdBIiCgxpbnN0YW5jZVR5cGUYASABKAlSDGluc3Rhbm'
+    'NlVHlwZQ==');
 
 @$core.Deprecated('Use refreshToolCacheResponseDescriptor instead')
 const RefreshToolCacheResponse$json = {
@@ -223,10 +198,9 @@ const RefreshToolCacheResponse$json = {
 };
 
 /// Descriptor for `RefreshToolCacheResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List refreshToolCacheResponseDescriptor =
-    $convert.base64Decode(
-        'ChhSZWZyZXNoVG9vbENhY2hlUmVzcG9uc2USHAoJdG9vbENvdW50GAEgASgFUgl0b29sQ291bn'
-        'Q=');
+final $typed_data.Uint8List refreshToolCacheResponseDescriptor = $convert.base64Decode(
+    'ChhSZWZyZXNoVG9vbENhY2hlUmVzcG9uc2USHAoJdG9vbENvdW50GAEgASgFUgl0b29sQ291bn'
+    'Q=');
 
 @$core.Deprecated('Use resolveToolsRequestDescriptor instead')
 const ResolveToolsRequest$json = {
@@ -246,23 +220,9 @@ final $typed_data.Uint8List resolveToolsRequestDescriptor = $convert.base64Decod
 const ResolveToolsResponse$json = {
   '1': 'ResolveToolsResponse',
   '2': [
-    {
-      '1': 'tools',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.toolservermanager.v1.ToolDefinition',
-      '10': 'tools'
-    },
+    {'1': 'tools', '3': 1, '4': 3, '5': 11, '6': '.toolservermanager.v1.ToolDefinition', '10': 'tools'},
     {'1': 'systemContext', '3': 2, '4': 1, '5': 9, '10': 'systemContext'},
-    {
-      '1': 'toolServerUrls',
-      '3': 3,
-      '4': 3,
-      '5': 11,
-      '6': '.toolservermanager.v1.ToolServerUrl',
-      '10': 'toolServerUrls'
-    },
+    {'1': 'toolServerUrls', '3': 3, '4': 3, '5': 11, '6': '.toolservermanager.v1.ToolServerUrl', '10': 'toolServerUrls'},
   ],
 };
 
@@ -297,14 +257,7 @@ const ExecuteToolResponse$json = {
     {'1': 'resultJson', '3': 1, '4': 1, '5': 9, '10': 'resultJson'},
     {'1': 'success', '3': 2, '4': 1, '5': 8, '10': 'success'},
     {'1': 'error', '3': 3, '4': 1, '5': 9, '10': 'error'},
-    {
-      '1': 'metadata',
-      '3': 4,
-      '4': 3,
-      '5': 11,
-      '6': '.toolservermanager.v1.ExecuteToolResponse.MetadataEntry',
-      '10': 'metadata'
-    },
+    {'1': 'metadata', '3': 4, '4': 3, '5': 11, '6': '.toolservermanager.v1.ExecuteToolResponse.MetadataEntry', '10': 'metadata'},
   ],
   '3': [ExecuteToolResponse_MetadataEntry$json],
 };
@@ -333,8 +286,8 @@ const HealthRequest$json = {
 };
 
 /// Descriptor for `HealthRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List healthRequestDescriptor =
-    $convert.base64Decode('Cg1IZWFsdGhSZXF1ZXN0');
+final $typed_data.Uint8List healthRequestDescriptor = $convert.base64Decode(
+    'Cg1IZWFsdGhSZXF1ZXN0');
 
 @$core.Deprecated('Use healthResponseDescriptor instead')
 const HealthResponse$json = {
@@ -345,54 +298,24 @@ const HealthResponse$json = {
 };
 
 /// Descriptor for `HealthResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List healthResponseDescriptor = $convert
-    .base64Decode('Cg5IZWFsdGhSZXNwb25zZRIWCgZzdGF0dXMYASABKAlSBnN0YXR1cw==');
+final $typed_data.Uint8List healthResponseDescriptor = $convert.base64Decode(
+    'Cg5IZWFsdGhSZXNwb25zZRIWCgZzdGF0dXMYASABKAlSBnN0YXR1cw==');
 
-const $core.Map<$core.String, $core.dynamic> ToolServerManagerServiceBase$json =
-    {
+const $core.Map<$core.String, $core.dynamic> ToolServerManagerServiceBase$json = {
   '1': 'ToolServerManagerService',
   '2': [
-    {
-      '1': 'Health',
-      '2': '.google.protobuf.Empty',
-      '3': '.toolservermanager.v1.HealthResponse'
-    },
-    {
-      '1': 'StartToolServer',
-      '2': '.toolservermanager.v1.StartToolServerRequest',
-      '3': '.toolservermanager.v1.StartToolServerResponse'
-    },
-    {
-      '1': 'StopToolServer',
-      '2': '.toolservermanager.v1.StopToolServerRequest',
-      '3': '.toolservermanager.v1.StopToolServerResponse'
-    },
-    {
-      '1': 'ListToolServers',
-      '2': '.google.protobuf.Empty',
-      '3': '.toolservermanager.v1.ListToolServersResponse'
-    },
-    {
-      '1': 'RefreshToolCache',
-      '2': '.toolservermanager.v1.RefreshToolCacheRequest',
-      '3': '.toolservermanager.v1.RefreshToolCacheResponse'
-    },
-    {
-      '1': 'ResolveTools',
-      '2': '.toolservermanager.v1.ResolveToolsRequest',
-      '3': '.toolservermanager.v1.ResolveToolsResponse'
-    },
-    {
-      '1': 'ExecuteTool',
-      '2': '.toolservermanager.v1.ExecuteToolRequest',
-      '3': '.toolservermanager.v1.ExecuteToolResponse'
-    },
+    {'1': 'Health', '2': '.google.protobuf.Empty', '3': '.toolservermanager.v1.HealthResponse'},
+    {'1': 'StartToolServer', '2': '.toolservermanager.v1.StartToolServerRequest', '3': '.toolservermanager.v1.StartToolServerResponse'},
+    {'1': 'StopToolServer', '2': '.toolservermanager.v1.StopToolServerRequest', '3': '.toolservermanager.v1.StopToolServerResponse'},
+    {'1': 'ListToolServers', '2': '.google.protobuf.Empty', '3': '.toolservermanager.v1.ListToolServersResponse'},
+    {'1': 'RefreshToolCache', '2': '.toolservermanager.v1.RefreshToolCacheRequest', '3': '.toolservermanager.v1.RefreshToolCacheResponse'},
+    {'1': 'ResolveTools', '2': '.toolservermanager.v1.ResolveToolsRequest', '3': '.toolservermanager.v1.ResolveToolsResponse'},
+    {'1': 'ExecuteTool', '2': '.toolservermanager.v1.ExecuteToolRequest', '3': '.toolservermanager.v1.ExecuteToolResponse'},
   ],
 };
 
 @$core.Deprecated('Use toolServerManagerServiceDescriptor instead')
-const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
-    ToolServerManagerServiceBase$messageJson = {
+const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> ToolServerManagerServiceBase$messageJson = {
   '.google.protobuf.Empty': $0.Empty$json,
   '.toolservermanager.v1.HealthResponse': HealthResponse$json,
   '.toolservermanager.v1.StartToolServerRequest': StartToolServerRequest$json,
@@ -403,18 +326,15 @@ const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
   '.toolservermanager.v1.ListToolServersResponse': ListToolServersResponse$json,
   '.toolservermanager.v1.ToolServerInfo': ToolServerInfo$json,
   '.toolservermanager.v1.RefreshToolCacheRequest': RefreshToolCacheRequest$json,
-  '.toolservermanager.v1.RefreshToolCacheResponse':
-      RefreshToolCacheResponse$json,
+  '.toolservermanager.v1.RefreshToolCacheResponse': RefreshToolCacheResponse$json,
   '.toolservermanager.v1.ResolveToolsRequest': ResolveToolsRequest$json,
   '.toolservermanager.v1.ResolveToolsResponse': ResolveToolsResponse$json,
   '.toolservermanager.v1.ToolDefinition': ToolDefinition$json,
   '.toolservermanager.v1.ToolServerUrl': ToolServerUrl$json,
-  '.toolservermanager.v1.ToolServerUrl.ConfigEntry':
-      ToolServerUrl_ConfigEntry$json,
+  '.toolservermanager.v1.ToolServerUrl.ConfigEntry': ToolServerUrl_ConfigEntry$json,
   '.toolservermanager.v1.ExecuteToolRequest': ExecuteToolRequest$json,
   '.toolservermanager.v1.ExecuteToolResponse': ExecuteToolResponse$json,
-  '.toolservermanager.v1.ExecuteToolResponse.MetadataEntry':
-      ExecuteToolResponse_MetadataEntry$json,
+  '.toolservermanager.v1.ExecuteToolResponse.MetadataEntry': ExecuteToolResponse_MetadataEntry$json,
 };
 
 /// Descriptor for `ToolServerManagerService`. Decode as a `google.protobuf.ServiceDescriptorProto`.
@@ -433,3 +353,4 @@ final $typed_data.Uint8List toolServerManagerServiceDescriptor = $convert.base64
     '9sdmVUb29sc1Jlc3BvbnNlEmIKC0V4ZWN1dGVUb29sEigudG9vbHNlcnZlcm1hbmFnZXIudjEu'
     'RXhlY3V0ZVRvb2xSZXF1ZXN0GikudG9vbHNlcnZlcm1hbmFnZXIudjEuRXhlY3V0ZVRvb2xSZX'
     'Nwb25zZQ==');
+

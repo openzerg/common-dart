@@ -59,14 +59,7 @@ final $typed_data.Uint8List skillInfoDescriptor = $convert.base64Decode(
 const RegisterSkillResponse$json = {
   '1': 'RegisterSkillResponse',
   '2': [
-    {
-      '1': 'skill',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.skillmanager.v1.SkillInfo',
-      '10': 'skill'
-    },
+    {'1': 'skill', '3': 1, '4': 1, '5': 11, '6': '.skillmanager.v1.SkillInfo', '10': 'skill'},
   ],
 };
 
@@ -84,21 +77,14 @@ const UpdateSkillRequest$json = {
 };
 
 /// Descriptor for `UpdateSkillRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List updateSkillRequestDescriptor = $convert
-    .base64Decode('ChJVcGRhdGVTa2lsbFJlcXVlc3QSEgoEc2x1ZxgBIAEoCVIEc2x1Zw==');
+final $typed_data.Uint8List updateSkillRequestDescriptor = $convert.base64Decode(
+    'ChJVcGRhdGVTa2lsbFJlcXVlc3QSEgoEc2x1ZxgBIAEoCVIEc2x1Zw==');
 
 @$core.Deprecated('Use updateSkillResponseDescriptor instead')
 const UpdateSkillResponse$json = {
   '1': 'UpdateSkillResponse',
   '2': [
-    {
-      '1': 'skill',
-      '3': 1,
-      '4': 1,
-      '5': 11,
-      '6': '.skillmanager.v1.SkillInfo',
-      '10': 'skill'
-    },
+    {'1': 'skill', '3': 1, '4': 1, '5': 11, '6': '.skillmanager.v1.SkillInfo', '10': 'skill'},
   ],
 };
 
@@ -116,8 +102,8 @@ const DeleteSkillRequest$json = {
 };
 
 /// Descriptor for `DeleteSkillRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteSkillRequestDescriptor = $convert
-    .base64Decode('ChJEZWxldGVTa2lsbFJlcXVlc3QSEgoEc2x1ZxgBIAEoCVIEc2x1Zw==');
+final $typed_data.Uint8List deleteSkillRequestDescriptor = $convert.base64Decode(
+    'ChJEZWxldGVTa2lsbFJlcXVlc3QSEgoEc2x1ZxgBIAEoCVIEc2x1Zw==');
 
 @$core.Deprecated('Use deleteSkillResponseDescriptor instead')
 const DeleteSkillResponse$json = {
@@ -125,8 +111,8 @@ const DeleteSkillResponse$json = {
 };
 
 /// Descriptor for `DeleteSkillResponse`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List deleteSkillResponseDescriptor =
-    $convert.base64Decode('ChNEZWxldGVTa2lsbFJlc3BvbnNl');
+final $typed_data.Uint8List deleteSkillResponseDescriptor = $convert.base64Decode(
+    'ChNEZWxldGVTa2lsbFJlc3BvbnNl');
 
 @$core.Deprecated('Use listSkillsRequestDescriptor instead')
 const ListSkillsRequest$json = {
@@ -134,21 +120,14 @@ const ListSkillsRequest$json = {
 };
 
 /// Descriptor for `ListSkillsRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List listSkillsRequestDescriptor =
-    $convert.base64Decode('ChFMaXN0U2tpbGxzUmVxdWVzdA==');
+final $typed_data.Uint8List listSkillsRequestDescriptor = $convert.base64Decode(
+    'ChFMaXN0U2tpbGxzUmVxdWVzdA==');
 
 @$core.Deprecated('Use listSkillsResponseDescriptor instead')
 const ListSkillsResponse$json = {
   '1': 'ListSkillsResponse',
   '2': [
-    {
-      '1': 'skills',
-      '3': 1,
-      '4': 3,
-      '5': 11,
-      '6': '.skillmanager.v1.SkillInfo',
-      '10': 'skills'
-    },
+    {'1': 'skills', '3': 1, '4': 3, '5': 11, '6': '.skillmanager.v1.SkillInfo', '10': 'skills'},
   ],
 };
 
@@ -166,43 +145,22 @@ const GetSkillRequest$json = {
 };
 
 /// Descriptor for `GetSkillRequest`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List getSkillRequestDescriptor = $convert
-    .base64Decode('Cg9HZXRTa2lsbFJlcXVlc3QSEgoEc2x1ZxgBIAEoCVIEc2x1Zw==');
+final $typed_data.Uint8List getSkillRequestDescriptor = $convert.base64Decode(
+    'Cg9HZXRTa2lsbFJlcXVlc3QSEgoEc2x1ZxgBIAEoCVIEc2x1Zw==');
 
 const $core.Map<$core.String, $core.dynamic> SkillManagerServiceBase$json = {
   '1': 'SkillManagerService',
   '2': [
-    {
-      '1': 'RegisterSkill',
-      '2': '.skillmanager.v1.RegisterSkillRequest',
-      '3': '.skillmanager.v1.RegisterSkillResponse'
-    },
-    {
-      '1': 'UpdateSkill',
-      '2': '.skillmanager.v1.UpdateSkillRequest',
-      '3': '.skillmanager.v1.UpdateSkillResponse'
-    },
-    {
-      '1': 'DeleteSkill',
-      '2': '.skillmanager.v1.DeleteSkillRequest',
-      '3': '.skillmanager.v1.DeleteSkillResponse'
-    },
-    {
-      '1': 'ListSkills',
-      '2': '.google.protobuf.Empty',
-      '3': '.skillmanager.v1.ListSkillsResponse'
-    },
-    {
-      '1': 'GetSkill',
-      '2': '.skillmanager.v1.GetSkillRequest',
-      '3': '.skillmanager.v1.SkillInfo'
-    },
+    {'1': 'RegisterSkill', '2': '.skillmanager.v1.RegisterSkillRequest', '3': '.skillmanager.v1.RegisterSkillResponse'},
+    {'1': 'UpdateSkill', '2': '.skillmanager.v1.UpdateSkillRequest', '3': '.skillmanager.v1.UpdateSkillResponse'},
+    {'1': 'DeleteSkill', '2': '.skillmanager.v1.DeleteSkillRequest', '3': '.skillmanager.v1.DeleteSkillResponse'},
+    {'1': 'ListSkills', '2': '.google.protobuf.Empty', '3': '.skillmanager.v1.ListSkillsResponse'},
+    {'1': 'GetSkill', '2': '.skillmanager.v1.GetSkillRequest', '3': '.skillmanager.v1.SkillInfo'},
   ],
 };
 
 @$core.Deprecated('Use skillManagerServiceDescriptor instead')
-const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>>
-    SkillManagerServiceBase$messageJson = {
+const $core.Map<$core.String, $core.Map<$core.String, $core.dynamic>> SkillManagerServiceBase$messageJson = {
   '.skillmanager.v1.RegisterSkillRequest': RegisterSkillRequest$json,
   '.skillmanager.v1.RegisterSkillResponse': RegisterSkillResponse$json,
   '.skillmanager.v1.SkillInfo': SkillInfo$json,
@@ -226,3 +184,4 @@ final $typed_data.Uint8List skillManagerServiceDescriptor = $convert.base64Decod
     'dHkaIy5za2lsbG1hbmFnZXIudjEuTGlzdFNraWxsc1Jlc3BvbnNlEkgKCEdldFNraWxsEiAuc2'
     'tpbGxtYW5hZ2VyLnYxLkdldFNraWxsUmVxdWVzdBoaLnNraWxsbWFuYWdlci52MS5Ta2lsbElu'
     'Zm8=');
+
